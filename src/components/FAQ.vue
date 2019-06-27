@@ -1,13 +1,12 @@
 <template>
   <section>
-    <h2>Why a climathon?</h2>
-    <h2>What is the climathon about?</h2>
+    <h2>FAQ</h2>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'About'
+  name: 'FAQ'
 }
 </script>
 
