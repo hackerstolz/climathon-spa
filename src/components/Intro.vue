@@ -4,14 +4,14 @@
       <div>CLIMATHON 2019</div>
       <div>MANNHEIM</div>
     </h1>
-    <h2>{{$t("subtitle")}}</h2>
-    <h3>{{$t("date")}}&nbsp;•&nbsp;{{$t("event")}}</h3>
+    <h2>{{ $t("subtitle") }}</h2>
+    <h3>{{ $t("date") }}&nbsp;•&nbsp;{{ $t("event") }}</h3>
 
     <div class="footer-bgr-gradient"></div>
-    <v-container color="transparent" class="footer">
+    <v-container color="transparent" class="footer mx-0">
       <div class="organizer">
         <p class="made-by-slogan">
-          <span>{{$t('sloganBeforeHeart')}}</span>
+          <span>{{ $t('sloganBeforeHeart') }}</span>
           <v-img
             class="d-inline-block mx-1"
             :src="require('../assets/icon-heart.svg')"
@@ -19,29 +19,33 @@
             width="24"
             contain>
           </v-img>
-          <span>{{$t('sloganAfterHeart')}}</span>
+          <span>{{ $t('sloganAfterHeart') }}</span>
         </p>
         <div class="logos">
           <v-img
               class="mr-2"
               :src="require('../assets/logo-hackerstolz.svg')"
               max-height="40"
+              max-width="232"
               width="20%"
+              position="left center"
               contain>
           </v-img>
           <v-img
               class="mr-2"
               :src="require('../assets/logo-mannheim.svg')"
               max-height="40"
+              max-width="160"
               width="20%"
+              position="left center"
               contain>
           </v-img>
           <v-spacer/>
           <v-img
-              class="mx-2"
               :src="require('../assets/logo-KIC-EU.svg')"
               max-height="40"
               width="58%"
+              position="right center"
               contain>
           </v-img>
         </div>
@@ -93,16 +97,35 @@ section
     font-family Gagalin,sans-serif
     font-weight 400
     font-style normal
+    > div:first-child
+      font-size 76px
+      line-height 1
+      letter-spacing normal
+      text-align center
+    > div:nth-child(2)
+      font-size 100px
+      line-height 1
+      letter-spacing 10px
+      text-align center
+      margin-top -15px
 
   h2
     font-family steinzeit,sans-serif
     font-weight 400
     font-style normal
+    font-size 70px
+    line-height 1.33
+    letter-spacing 1.2px
+    text-align center
 
   h3
     font-family click-clack,sans-serif
     font-weight 400
     font-style normal
+    font-size 28px
+    line-height 1.24
+    letter-spacing 2px
+    text-align center
 
   .footer-bgr-gradient
     position absolute
@@ -114,6 +137,8 @@ section
 
   .footer
     position absolute
+    width 100%
+    max-width initial
     display flex
     left 0
     right 0
@@ -138,4 +163,6 @@ section
         display flex
         align-items center
         justify-content flex-start
+        > *
+          flex-grow 0
 </style>
