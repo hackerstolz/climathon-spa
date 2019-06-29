@@ -1,11 +1,17 @@
 <template>
   <section>
-    <h1>
-      <div>CLIMATHON 2019</div>
-      <div>MANNHEIM</div>
-    </h1>
-    <h2>{{ $t("subtitle") }}</h2>
-    <h3>{{ $t("date") }}&nbsp;•&nbsp;{{ $t("event") }}</h3>
+
+    <v-spacer/>
+    <div class="title">
+      <h1>
+        <div>CLIMATHON 2019</div>
+        <div>MANNHEIM</div>
+      </h1>
+      <h2>{{ $t("subtitle") }}</h2>
+      <h3>{{ $t("date") }}&nbsp;•&nbsp;{{ $t("event") }}</h3>
+    </div>
+    <v-spacer/>
+    <v-spacer/>
 
     <div class="footer-bgr-gradient"></div>
     <v-container color="transparent" class="footer mx-0">
@@ -14,7 +20,7 @@
           <span>{{ $t('sloganBeforeHeart') }}</span>
           <v-img
             class="d-inline-block mx-1"
-            :src="require('../assets/icon-heart.svg')"
+            :src="require('../../assets/icon-heart.svg')"
             height="24"
             width="24"
             contain>
@@ -24,7 +30,7 @@
         <div class="logos">
           <v-img
               class="mr-2"
-              :src="require('../assets/logo-hackerstolz.svg')"
+              :src="require('../../assets/logo-hackerstolz.svg')"
               max-height="40"
               max-width="232"
               width="20%"
@@ -33,7 +39,7 @@
           </v-img>
           <v-img
               class="mr-2"
-              :src="require('../assets/logo-mannheim.svg')"
+              :src="require('../../assets/logo-mannheim.svg')"
               max-height="40"
               max-width="160"
               width="20%"
@@ -42,7 +48,7 @@
           </v-img>
           <v-spacer/>
           <v-img
-              :src="require('../assets/logo-KIC-EU.svg')"
+              :src="require('../../assets/logo-KIC-EU.svg')"
               max-height="40"
               width="58%"
               position="right center"
@@ -72,7 +78,7 @@ export default {
   "de": {
     "date": "25.-27. Oktober",
     "event": "40h Hackathon",
-    "subtitle": "Klimaschutz voran treiben!",
+    "subtitle": "Klimaschutz antreiben!",
     "sloganBeforeHeart": "Ein Hackathon gemacht mit",
     "sloganAfterHeart": "von"
   }
@@ -84,7 +90,7 @@ export default {
 section
   position relative
   height 100vh
-  background-image url("../assets/earth.svg")
+  background-image url("../../assets/earth.svg")
   background-size cover
   background-position center center
   display flex
@@ -93,39 +99,44 @@ section
   align-items center
   color #ffffff
 
-  h1
-    font-family Gagalin,sans-serif
-    font-weight 400
-    font-style normal
-    > div:first-child
-      font-size 76px
-      line-height 1
-      letter-spacing normal
-      text-align center
-    > div:nth-child(2)
-      font-size 100px
-      line-height 1
-      letter-spacing 10px
-      text-align center
-      margin-top -15px
+  .title
+    z-index 1
+    transition transform 0.3s ease-in-out
+    @media screen and (max-width: 600px)
+        transform scale(0.5)
+    h1
+      font-family Gagalin,sans-serif
+      font-weight 400
+      font-style normal
+      > div:first-child
+        font-size 76px
+        line-height 1
+        letter-spacing normal
+        text-align center
+      > div:nth-child(2)
+        font-size 100px
+        line-height 1
+        letter-spacing 10px
+        text-align center
+        margin-top -15px
 
-  h2
-    font-family steinzeit,sans-serif
-    font-weight 400
-    font-style normal
-    font-size 70px
-    line-height 1.33
-    letter-spacing 1.2px
-    text-align center
+    h2
+      font-family steinzeit,sans-serif
+      font-weight 400
+      font-style normal
+      font-size 70px
+      line-height 1.33
+      letter-spacing 1.2px
+      text-align center
 
-  h3
-    font-family click-clack,sans-serif
-    font-weight 400
-    font-style normal
-    font-size 28px
-    line-height 1.24
-    letter-spacing 2px
-    text-align center
+    h3
+      font-family click-clack,sans-serif
+      font-weight 400
+      font-style normal
+      font-size 28px
+      line-height 1.24
+      letter-spacing 2px
+      text-align center
 
   .footer-bgr-gradient
     position absolute
@@ -134,6 +145,7 @@ section
     right 0
     background-image linear-gradient(0deg, rgba(16,24,47,1), rgba(16,24,47,0))
     height 376px
+    max-height 75vh
 
   .footer
     position absolute
