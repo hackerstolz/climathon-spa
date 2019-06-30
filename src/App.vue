@@ -1,15 +1,9 @@
 <template>
   <div id="app">
     <v-app :dark.sync="darkMode">
-      
-      <v-navigation-drawer 
-        app
-        v-model="drawer">
+      <v-navigation-drawer app v-model="drawer">
         <v-menu bottom left="">
-          <v-btn
-            slot="activator"
-            flat
-          >
+          <v-btn slot="activator" flat>
             {{ $t(`label.${$i18n.locale}`) }}
           </v-btn>
 
@@ -17,7 +11,8 @@
             <v-list-tile
               v-for="(lang, i) in langs"
               :key="i"
-              @click="onSetNewLocale(lang)">
+              @click="onSetNewLocale(lang)"
+            >
               <v-list-tile-title>{{ $t(`label.${lang}`) }}</v-list-tile-title>
             </v-list-tile>
           </v-list>
@@ -25,30 +20,30 @@
       </v-navigation-drawer>
 
       <v-toolbar app color="transparent" flat>
-        <v-toolbar-side-icon
-          @click.stop="drawer = !drawer" />
+        <v-toolbar-side-icon @click.stop="drawer = !drawer" />
         <v-spacer></v-spacer>
-        <v-btn 
-          :class="{'app-btn-register': true, large: !isMobile}"
-          color="success" 
-          v-scroll-to="'#registration'">
-          {{ $t('button.register') }}
+        <v-btn
+          :class="{ 'app-btn-register': true, large: !isMobile }"
+          color="success"
+          v-scroll-to="'#registration'"
+        >
+          {{ $t("button.register") }}
         </v-btn>
       </v-toolbar>
-      
-      <v-content class=pa-0>
-          <Intro id="intro" />
-          <About id="about" />
-          <Challenges id="challenges" />
-          <Awards id="awards" />
-          <Location id="location" />
-          <Schedule id="schedule" />
-          <Registration id="registration" />
-          <Staff id="staff" />
-          <FAQ id="faq" />
-          <Parties id="parties" />
-          <Team id="team" />
-          <Footer id="footer" />
+
+      <v-content class="pa-0">
+        <Intro id="intro" />
+        <About id="about" />
+        <Challenges id="challenges" />
+        <Awards id="awards" />
+        <Location id="location" />
+        <Schedule id="schedule" />
+        <Registration id="registration" />
+        <Staff id="staff" />
+        <FAQ id="faq" />
+        <Parties id="parties" />
+        <Team id="team" />
+        <Footer id="footer" />
       </v-content>
 
       <v-snackbar
@@ -70,46 +65,52 @@
           {{ $t("label.snackbarConfirm") }}
         </v-btn>
       </v-snackbar>
-    
     </v-app>
   </div>
 </template>
 
 <script>
-import {setI18nLanguage} from './i18n';
-import { setTimeout } from 'timers';
+import { setI18nLanguage } from "./i18n";
+import { setTimeout } from "timers";
 
-const sectionsContext = require.context('@/components/sections/', true, /\.vue$/)
+const sectionsContext = require.context(
+  "@/components/sections/",
+  true,
+  /\.vue$/
+);
 
 export default {
   components: {
-    ...sectionsContext.keys().reduce((map, key) => ({
-      ...map,
-      [sectionsContext(key).default.name]: sectionsContext(key).default
-    }), {})
+    ...sectionsContext.keys().reduce(
+      (map, key) => ({
+        ...map,
+        [sectionsContext(key).default.name]: sectionsContext(key).default
+      }),
+      {}
+    )
   },
-  data () {
+  data() {
     return {
-        isMobile: false,
-        langs: ['en', 'de'],
-        darkMode: true,
-        drawer: false,
-        snackbar: {
-          show: false,
-          color: 'primary',
-          timeout: 6000
-        }
-    }
+      isMobile: false,
+      langs: ["en", "de"],
+      darkMode: true,
+      drawer: false,
+      snackbar: {
+        show: false,
+        color: "primary",
+        timeout: 6000
+      }
+    };
   },
   mounted() {
     // show snackbar with delay
     setTimeout(() => {
-      this.snackbar.show = true
-    }, 500)
+      this.snackbar.show = true;
+    }, 500);
 
     // reigster resize handler
-    this.onResize()
-    window.addEventListener('resize', this.onResize, { passive: true })
+    this.onResize();
+    window.addEventListener("resize", this.onResize, { passive: true });
   },
   methods: {
     onSetNewLocale(lang) {
@@ -119,8 +120,8 @@ export default {
       // switch vuetify locale
       this.$vuetify.lang.current = lang;
     },
-    onResize () {
-      this.isMobile = window.innerWidth <= 600
+    onResize() {
+      this.isMobile = window.innerWidth <= 600;
     }
   }
 };
@@ -161,18 +162,11 @@ export default {
   font-style normal
   font-font-weight 400
   text-rendering optimizeLegibility
-  src url("./assets/fonts/Gagalin-Regular.woff2"),
+  src local('Gagalin-Regular'),
+    url("./assets/fonts/Gagalin-Regular.woff2") format('woff2'),
     url("./assets/fonts/Gagalin-Regular.woff"),
     url("./assets/fonts/Gagalin-Regular.ttf"),
     url("./assets/fonts/Gagalin-Regular.otf")
-
-$color-primary = '#10182F'
-$color-secondary = '#182445'
-$color-accent = '#A8E5A3'
-$color-error = '#DD543B'
-$color-info = '#DAEEFB'
-$color-success = '#4CAE79'
-$color-warning = '#FFC533'
 
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif

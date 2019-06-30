@@ -1,7 +1,6 @@
 <template>
   <section>
-
-    <v-spacer/>
+    <v-spacer />
     <div class="title">
       <h1>
         <div>CLIMATHON 2019</div>
@@ -10,49 +9,53 @@
       <h2>{{ $t("subtitle") }}</h2>
       <h3>{{ $t("date") }}&nbsp;•&nbsp;{{ $t("event") }}</h3>
     </div>
-    <v-spacer/>
-    <v-spacer/>
+    <v-spacer />
+    <v-spacer />
 
     <div class="footer-bgr-gradient"></div>
     <v-container color="transparent" class="footer mx-0">
       <div class="organizer">
         <p class="made-by-slogan">
-          <span>{{ $t('sloganBeforeHeart') }}</span>
+          <span>{{ $t("sloganBeforeHeart") }}</span>
           <v-img
             class="d-inline-block mx-1"
             :src="require('../../assets/icon-heart.svg')"
             height="24"
             width="24"
-            contain>
+            contain
+          >
           </v-img>
-          <span>{{ $t('sloganAfterHeart') }}</span>
+          <span>{{ $t("sloganAfterHeart") }}</span>
         </p>
         <div class="logos">
           <v-img
-              class="mr-2"
-              :src="require('../../assets/logo-hackerstolz.svg')"
-              max-height="40"
-              max-width="232"
-              width="20%"
-              position="left center"
-              contain>
+            class="mr-2"
+            :src="require('../../assets/logo-hackerstolz.svg')"
+            max-height="40"
+            max-width="232"
+            width="20%"
+            position="left center"
+            contain
+          >
           </v-img>
           <v-img
-              class="mr-2"
-              :src="require('../../assets/logo-mannheim.svg')"
-              max-height="40"
-              max-width="160"
-              width="20%"
-              position="left center"
-              contain>
+            class="mr-2"
+            :src="require('../../assets/logo-mannheim.svg')"
+            max-height="40"
+            max-width="160"
+            width="20%"
+            position="left center"
+            contain
+          >
           </v-img>
-          <v-spacer/>
+          <v-spacer />
           <v-img
-              :src="require('../../assets/logo-KIC-EU.svg')"
-              max-height="40"
-              width="58%"
-              position="right center"
-              contain>
+            :src="require('../../assets/logo-KIC-EU.svg')"
+            max-height="40"
+            width="58%"
+            position="right center"
+            contain
+          >
           </v-img>
         </div>
       </div>
@@ -62,8 +65,8 @@
 
 <script>
 export default {
-  name: 'Intro'
-}
+  name: "Intro"
+};
 </script>
 
 <i18n>

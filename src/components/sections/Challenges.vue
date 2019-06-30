@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'Challenges'
-}
+  name: "Challenges"
+};
 </script>
 
 <i18n>

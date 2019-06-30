@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'FAQ'
-}
+  name: "FAQ"
+};
 </script>
 
 <i18n>

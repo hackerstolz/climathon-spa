@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'Parties'
-}
+  name: "Parties"
+};
 </script>
 
 <i18n>
