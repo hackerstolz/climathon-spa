@@ -30,6 +30,28 @@
       <h2 class="align-center">{{ $t("titleWhat") }}</h2>
       <p class="align-center">{{ $t("textWhat[0]") }}</p>
       <p class="align-center">{{ $t("textWhat[1]") }}</p>
+
+      <v-layout align-center justify-center flexbox>
+        <v-card
+          class="blog-article"
+          width="225px"
+          ripple>
+          <v-img
+            :src="require('../../assets/img-article-01.jpg')"
+            height="118px">
+            <v-container fill-height fluid pa-2>
+              <v-icon class="link-icon pa-1" dark small>open_in_new</v-icon>
+              <v-layout fill-height>
+                <v-flex xs12 align-end flexbox>
+                  <span class="article-text white--text pa-1">
+                    {{ $t('button.link2Article1') }}
+                  </span>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-img>
+        </v-card>
+      </v-layout>
     </v-container>
   </section>
 </template>
@@ -52,7 +74,8 @@ export default {
     ],
     "imgDescription": "1,5° and zero-carbon  goal by 2050",
     "button": {
-      "link2Goal": "why this matters"
+      "link2Goal": "why this matters",
+      "link2Article1": "7 reasons why you should go to a hackathon"
     }
   },
   "de": {
@@ -118,4 +141,26 @@ section
       font-weight 400
       font-style normal
       letter-spacing 1px
+
+  .blog-article
+    position relative
+    border-radius 8px
+    .link-icon
+      position absolute
+      top 8px
+      right 8px
+      // TODO: replace with constants
+      background-color #1c88c6
+    .article-text
+      width 196px
+      height 54px
+      font-family Gagalin,sans-serif
+      font-weight 400
+      font-style normal
+      font-size 16px
+      line-height 1.13
+      letter-spacing 1.6px
+      text-align center
+      // TODO: replace with constants
+      background-color #1c88c6
 </style>
