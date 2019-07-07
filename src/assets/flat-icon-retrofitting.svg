@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="128" viewBox="0 0 256 128">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.51" data-name="Bildschirmfoto 2019-06-16 um 17.29.51" width="256" height="128" rx="8" transform="translate(1040 3052)" fill="#10182f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_43" data-name="Gruppe maskieren 43" transform="translate(-1040 -3052)" clip-path="url(#clip-path)">
+    <g id="Paomedia-Small-N-Flat-Brick" transform="translate(1104 -2432.8)">
+      <path id="Pfad_1093" data-name="Pfad 1093" d="M0,5525.333v44.8L64,5612.8V5568Z" fill="#e67e22"/>
+      <path id="Pfad_1094" data-name="Pfad 1094" d="M128,5525.333v44.8L64,5612.8V5568Z" fill="#f39c12"/>
+      <path id="Pfad_1095" data-name="Pfad 1095" d="M64,5484.8,0,5525.333,64,5568l64-42.667Z" fill="#f1c40f"/>
+      <path id="Pfad_1096" data-name="Pfad 1096" d="M45.333,5496.533v8c0,6.934,8.357,12.267,18.667,12.267s18.667-5.333,18.667-12.267v-8Z" fill="#e67e22"/>
+      <path id="Pfad_1097" data-name="Pfad 1097" d="M45.333,5496.533v8c0,6.934,8.357,12.267,18.667,12.267v-20.267Z" fill="#e67e22"/>
+      <path id="Pfad_1098" data-name="Pfad 1098" d="M85.333,36c0,6.627-8.357,12-18.667,12S48,42.627,48,36s8.357-12,18.667-12,18.667,5.373,18.667,12Z" transform="translate(-2.667 5460.8)" fill="#f1c40f"/>
+      <path id="Pfad_1099" data-name="Pfad 1099" d="M80,5517.867v8c0,6.934,8.357,12.267,18.667,12.267s18.667-5.333,18.667-12.267v-8Z" fill="#e67e22"/>
+      <path id="Pfad_1100" data-name="Pfad 1100" d="M80,5517.867v8c0,6.934,8.357,12.267,18.667,12.267v-20.267Z" fill="#e67e22"/>
+      <path id="Pfad_1101" data-name="Pfad 1101" d="M85.333,36c0,6.627-8.357,12-18.667,12S48,42.627,48,36s8.357-12,18.667-12,18.667,5.373,18.667,12Z" transform="translate(32 5482.133)" fill="#f1c40f"/>
+      <path id="Pfad_1102" data-name="Pfad 1102" d="M10.667,5515.2v8c0,6.934,8.357,12.267,18.667,12.267S48,5530.134,48,5523.2v-8Z" fill="#e67e22"/>
+      <path id="Pfad_1103" data-name="Pfad 1103" d="M10.667,5515.2v8c0,6.934,8.357,12.267,18.667,12.267V5515.2Z" fill="#e67e22"/>
+      <path id="Pfad_1104" data-name="Pfad 1104" d="M85.333,36c0,6.627-8.357,12-18.667,12S48,42.627,48,36s8.357-12,18.667-12,18.667,5.373,18.667,12Z" transform="translate(-37.333 5479.467)" fill="#f1c40f"/>
+      <path id="Pfad_1105" data-name="Pfad 1105" d="M45.333,5536.533v8c0,6.934,8.357,12.267,18.667,12.267s18.667-5.333,18.667-12.267v-8Z" fill="#e67e22"/>
+      <path id="Pfad_1106" data-name="Pfad 1106" d="M45.333,5536.533v8c0,6.934,8.357,12.267,18.667,12.267v-20.267Z" fill="#e67e22"/>
+      <path id="Pfad_1107" data-name="Pfad 1107" d="M85.333,36c0,6.627-8.357,12-18.667,12S48,42.627,48,36s8.357-12,18.667-12,18.667,5.373,18.667,12Z" transform="translate(-2.667 5500.8)" fill="#f1c40f"/>
+    </g>
+  </g>
+</svg>

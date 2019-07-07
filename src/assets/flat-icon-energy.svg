@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="128" viewBox="0 0 256 128">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="256" height="128" rx="8" transform="translate(624 5398)" fill="#10182f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_32" data-name="Gruppe maskieren 32" transform="translate(-624 -5398)" clip-path="url(#clip-path)">
+    <g id="Thesquid.ink-Free-Flat-Sample-Battery" transform="translate(688 5398)">
+      <g id="Body_5_">
+        <g id="Gruppe_146" data-name="Gruppe 146">
+          <path id="Pfad_1037" data-name="Pfad 1037" d="M125.677,35.965,92.036,2.324a7.929,7.929,0,0,0-11.215,0l-78.5,78.5a7.93,7.93,0,0,0,0,11.213l33.643,33.641a7.926,7.926,0,0,0,11.213,0l78.5-78.5A7.93,7.93,0,0,0,125.677,35.965Z" fill="#666"/>
+        </g>
+      </g>
+      <g id="Head_1_">
+        <g id="Gruppe_147" data-name="Gruppe 147">
+          <path id="Pfad_1038" data-name="Pfad 1038" d="M121.566,12.217,115.78,6.431a8.181,8.181,0,0,0-11.571,0l-5.788,5.786a8.181,8.181,0,0,0,0,11.571l5.788,5.788a8.185,8.185,0,0,0,11.571,0l5.785-5.788A8.185,8.185,0,0,0,121.566,12.217Z" fill="#ccc"/>
+        </g>
+      </g>
+      <g id="Shape">
+        <g id="Gruppe_148" data-name="Gruppe 148">
+          <path id="Pfad_1039" data-name="Pfad 1039" d="M125.677,35.965,92.036,2.324a7.929,7.929,0,0,0-11.215,0l-18.5,18.5,44.858,44.858,18.5-18.506A7.934,7.934,0,0,0,125.677,35.965Z" fill="#ffc533"/>
+        </g>
+      </g>
+      <g id="Flash">
+        <g id="Gruppe_149" data-name="Gruppe 149">
+          <path id="Pfad_1040" data-name="Pfad 1040" d="M67.942,70.968a1.456,1.456,0,0,0-1.336-.9l-11.263,1.5L59.3,53.9a1.515,1.515,0,0,0-.752-1.672,1.429,1.429,0,0,0-1.756.342l-20.362,27a1.532,1.532,0,0,0-.234,1.608,1.449,1.449,0,0,0,1.324.882l11.123-1.5L44.854,98.12a1.518,1.518,0,0,0,.658,1.736,1.415,1.415,0,0,0,1.79-.266l20.364-27A1.542,1.542,0,0,0,67.942,70.968Z" fill="#ffc533"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

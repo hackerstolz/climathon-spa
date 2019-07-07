@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="128" viewBox="0 0 256 128">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="256" height="128" rx="8" transform="translate(1040 4982)" fill="#10182f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_36" data-name="Gruppe maskieren 36" transform="translate(-1040 -4982)" clip-path="url(#clip-path)">
+    <g id="Paomedia-Small-N-Flat-Drop" transform="translate(1101.217 -741.27)">
+      <g id="Gruppe_165" data-name="Gruppe 165">
+        <path id="Pfad_1055" data-name="Pfad 1055" d="M66.783,0C60.85,22.984,51.154,45.314,36.87,64.345c-13.928,15.471-11.229,42.012,5.043,54.784a39.3,39.3,0,0,0,49.741,0c16.273-12.772,18.972-39.313,5.042-54.784C82.41,45.314,72.715,22.984,66.783,0Z" transform="translate(0 5723.27)" fill="#2c7db7"/>
+        <path id="Pfad_1056" data-name="Pfad 1056" d="M66.894,5728.279c-3.289,16.139-8.665,31.721-16.585,45.078-7.722,10.574-6.226,28.938,2.8,37.844a19.6,19.6,0,0,0,13.789,6.122,19.625,19.625,0,0,0,13.791-6.122c9.021-8.9,10.518-27.27,2.794-37.844C75.559,5760,70.183,5744.418,66.894,5728.279Z" fill="#70b4df"/>
+      </g>
+    </g>
+  </g>
+</svg>

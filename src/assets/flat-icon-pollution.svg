@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="128" viewBox="0 0 256 128">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="256" height="128" rx="8" transform="translate(1040 5814)" fill="#10182f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_35" data-name="Gruppe maskieren 35" transform="translate(-1040 -5814)" clip-path="url(#clip-path)">
+    <g id="Thesquid.ink-Free-Flat-Sample-Power-plant" transform="translate(1114 5814)">
+      <g id="Smoke">
+        <g id="Gruppe_161" data-name="Gruppe 161">
+          <path id="Pfad_1051" data-name="Pfad 1051" d="M66,16a9.894,9.894,0,0,0-6.4,2.376A7.961,7.961,0,0,0,47.68,9.284,11.993,11.993,0,0,0,25.492,6.208a8,8,0,1,0,0,11.584c.172.31.356.618.554.91a7.962,7.962,0,0,0,10.92,11.524,9.954,9.954,0,0,0,18.57-7.084,7.826,7.826,0,0,0,1.138-.676A9.983,9.983,0,1,0,66,16ZM4,16a4,4,0,1,0,4,4A4,4,0,0,0,4,16Z" fill="#fff" fill-rule="evenodd"/>
+        </g>
+      </g>
+      <g id="Plant">
+        <g id="Gruppe_162" data-name="Gruppe 162">
+          <path id="Pfad_1052" data-name="Pfad 1052" d="M84.286,44V40H27.714v4S30.07,89,12,112h88C81.928,89,84.286,44,84.286,44Z" fill="#ccc"/>
+        </g>
+      </g>
+      <g id="Plant_3_">
+        <g id="Gruppe_163" data-name="Gruppe 163">
+          <path id="Pfad_1053" data-name="Pfad 1053" d="M100,112H12a8,8,0,0,0,0,16h88a8,8,0,0,0,0-16Z" fill="#b3b3b3"/>
+        </g>
+      </g>
+      <g id="Plant_2_">
+        <g id="Gruppe_164" data-name="Gruppe 164">
+          <path id="Pfad_1054" data-name="Pfad 1054" d="M84,28H28a8,8,0,0,0,0,16H84a8,8,0,0,0,0-16Z" fill="#b3b3b3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

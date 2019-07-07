@@ -33,8 +33,8 @@
 
       <v-content class="pa-0">
         <Intro id="intro" />
-        <About id="about" />
-        <Challenges id="challenges" />
+        <About id="about" themeColor="primary" />
+        <Challenges id="challenges" themeColor="secondary" />
         <Awards id="awards" />
         <Location id="location" />
         <Schedule id="schedule" />
@@ -57,7 +57,7 @@
         {{ `${$t("label.snackbarText")}&nbsp;✌️` }}
         <v-btn
           class="app-btn-snackbar"
-          color="accent"
+          color="info"
           dark
           flat
           @click="snackbar.show = false"

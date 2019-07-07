@@ -1,5 +1,6 @@
 <template>
-  <section>
+  <section
+    :style="{ backgroundColor: sectionColor }">
     <v-container>
       <h2 class="align-left">{{ $t("titleWhy") }}</h2>
       <div class="small-earth d-inline-block mx-1">
@@ -10,7 +11,7 @@
           contain
         >
         </v-img>
-        <div class="pa-4">{{ $t("imgDescription") }}</div>
+        <div class="pa-2">{{ $t("imgDescription") }}</div>
         <v-btn
           class="link-to-cgoal mb-4"
           href="https://youtu.be/VOQArPuEWU0"
@@ -31,20 +32,36 @@
       <p class="align-center">{{ $t("textWhat[0]") }}</p>
       <p class="align-center">{{ $t("textWhat[1]") }}</p>
 
-      <v-layout align-center justify-center flexbox>
+      <v-layout 
+        class="article-container"
+        align-center justify-center flexbox wrap>
         <v-card
-          class="blog-article"
+          v-for="(article, i) in articles"
+          :key="i"
+          :href="article.href"
+          target="_blank"
+          class="blog-article mr-4 mb-4"
           width="225px"
-          ripple>
+          ripple
+          flat>
           <v-img
-            :src="require('../../assets/img-article-01.jpg')"
+            :src="article.img"
             height="118px">
-            <v-container fill-height fluid pa-2>
-              <v-icon class="link-icon pa-1" dark small>open_in_new</v-icon>
-              <v-layout fill-height>
-                <v-flex xs12 align-end flexbox>
-                  <span class="article-text white--text pa-1">
-                    {{ $t('button.link2Article1') }}
+            <v-container 
+              fill-height 
+              fluid 
+              pa-2>
+              <v-icon 
+                class="link-icon pa-1"
+                small>
+                open_in_new
+              </v-icon>
+              <v-layout fill-height column>
+                <v-spacer />
+                <v-flex xs6 align-end>
+                  <span 
+                    class="article-text pa-1">
+                    {{ $t(article.i18nLink) }}
                   </span>
                 </v-flex>
               </v-layout>
@@ -58,7 +75,36 @@
 
 <script>
 export default {
-  name: "About"
+  name: "About",
+  props: {
+    themeColor: {
+      type: String,
+      default: "primary"
+    }
+  },
+  computed: {
+    sectionColor: function () {
+      return Object.keys(this.$vuetify.theme).indexOf(this.themeColor) !== -1
+        ? this.$vuetify.theme[this.themeColor]
+        : this.$vuetify.theme.primary
+    }
+  },
+  data() {
+    return {
+      articles: [
+        {
+          img: require('../../assets/img-article-01.jpg'),
+          i18nLink: "button.link2Article1",
+          href: "https://medium.com/@Hackerstolz/7-reasons-why-you-should-go-to-a-hackathon-5242c092e2c4"
+        },
+        {
+          img: require('../../assets/img-article-02.jpg'),
+          i18nLink: "button.link2Article2",
+          href: "https://medium.com/@Hackerstolz/42-hours-at-a-hackathon-4f6444a3c3bd"
+        }
+      ]
+    }
+  }
 };
 </script>
 
@@ -75,7 +121,8 @@ export default {
     "imgDescription": "1,5° and zero-carbon  goal by 2050",
     "button": {
       "link2Goal": "why this matters",
-      "link2Article1": "7 reasons why you should go to a hackathon"
+      "link2Article1": "7 reasons why you should go to a hackathon",
+      "link2Article2": "24 hours at a hackathon"
     }
   },
   "de": {
@@ -88,7 +135,9 @@ export default {
     ],
     "imgDescription": "1,5° und Null-Kohlenstoff-Ziel bis 2050",
     "button": {
-      "link2Goal": "Warum das wichtig ist"
+      "link2Goal": "Warum das wichtig ist",
+      "link2Article1": "7 Gründe, warum du zu einem Hackathon gehen solltest",
+      "link2Article2": "24 Stunden bei einem Hackathon"
     }
   }
 }
@@ -142,25 +191,37 @@ section
       font-style normal
       letter-spacing 1px
 
-  .blog-article
-    position relative
-    border-radius 8px
-    .link-icon
-      position absolute
-      top 8px
-      right 8px
-      // TODO: replace with constants
-      background-color #1c88c6
-    .article-text
-      width 196px
-      height 54px
-      font-family Gagalin,sans-serif
-      font-weight 400
-      font-style normal
-      font-size 16px
-      line-height 1.13
-      letter-spacing 1.6px
-      text-align center
-      // TODO: replace with constants
-      background-color #1c88c6
+  .article-container
+    margin-top 64px
+    margin-bottom 104px
+    .blog-article
+      position relative
+      cursor pointer
+      overflow hidden
+      border-radius 8px
+      .link-icon
+        position absolute
+        top 8px
+        right 8px
+        // TODO: replace with constants
+        background-color #1c88c6
+      .article-text
+        width 196px
+        height 54px
+        font-family Gagalin,sans-serif
+        font-weight 400
+        font-style normal
+        font-size 16px
+        line-height 1.13
+        letter-spacing 1.6px
+        text-align center
+        // TODO: replace with constants
+      &:nth-child(odd) 
+        .article-text, .link-icon
+          color #ffffff
+          background-color #1c88c6
+      &:nth-child(even) 
+        .article-text, .link-icon
+          color #10182F
+          background-color #A8E5A3
 </style>
