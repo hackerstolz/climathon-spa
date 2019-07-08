@@ -19,7 +19,7 @@
         </v-menu>
       </v-navigation-drawer>
 
-      <v-toolbar app color="transparent" flat>
+      <v-toolbar class="toolbar" app color="transparent" flat>
         <v-toolbar-side-icon @click.stop="drawer = !drawer" />
         <v-spacer></v-spacer>
         <v-btn
@@ -32,18 +32,48 @@
       </v-toolbar>
 
       <v-content class="pa-0">
-        <Intro id="intro" />
-        <About id="about" themeColor="primary" />
-        <Challenges id="challenges" themeColor="secondary" />
-        <Awards id="awards" />
-        <Location id="location" />
-        <Schedule id="schedule" />
-        <Registration id="registration" />
-        <Staff id="staff" />
-        <FAQ id="faq" />
-        <Parties id="parties" />
-        <Team id="team" />
-        <Footer id="footer" />
+        <Intro
+          id="intro" 
+        />
+        <About
+          id="about"
+          themeColor="primary"
+        />
+        <Challenges
+          id="challenges"
+          themeColor="secondary"
+          :isMobile="isMobile"
+        />
+        <Awards
+          id="awards"
+          themeColor="primary"
+        />
+        <Location
+          id="location"
+          themeColor="secondary"
+        />
+        <Schedule
+          id="schedule"
+          themeColor="secondary"
+        />
+        <Registration
+          id="registration"
+        />
+        <Staff
+          id="staff"
+        />
+        <FAQ
+          id="faq"
+        />
+        <Parties
+          id="parties"
+        />
+        <Team
+          id="team"
+        />
+        <Footer
+          id="footer"
+        />
       </v-content>
 
       <v-snackbar
@@ -174,6 +204,9 @@ export default {
   -moz-osx-font-smoothing grayscale
   text-align center
   color #2c3e50
+
+  .toolbar
+    z-index 5
 
   .app-btn-register
     font-family Gagalin,sans-serif

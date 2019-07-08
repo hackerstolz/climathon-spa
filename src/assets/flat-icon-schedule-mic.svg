@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" transform="translate(592 10352)" fill="#10182f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_45" data-name="Gruppe maskieren 45" transform="translate(-592 -10352)" clip-path="url(#clip-path)">
+    <g id="Paomedia-Small-N-Flat-Microphone" transform="translate(592 6238.4)">
+      <path id="Pfad_1113" data-name="Pfad 1113" d="M76,4153.6a3.884,3.884,0,0,1,4,4v4a32.126,32.126,0,0,1-28,31.6v8.4H76a3.884,3.884,0,0,1,4,4,4.142,4.142,0,0,1-4,4H20a4.141,4.141,0,0,1-4-4,3.883,3.883,0,0,1,4-4H44v-8.4a32.124,32.124,0,0,1-28-31.6v-4a3.883,3.883,0,0,1,4-4,3.883,3.883,0,0,1,4,4v4a24,24,0,0,0,48,0v-4A3.884,3.884,0,0,1,76,4153.6Z" fill="#95a5a6"/>
+      <path id="Pfad_1114" data-name="Pfad 1114" d="M48,4113.6a16.024,16.024,0,0,1,16,16v32a16,16,0,0,1-32,0v-32A16.024,16.024,0,0,1,48,4113.6Z" fill="#bdc3c7"/>
+      <path id="Pfad_1115" data-name="Pfad 1115" d="M48,4113.6v64a16.024,16.024,0,0,1-16-16v-32A16.024,16.024,0,0,1,48,4113.6Z" fill="#95a5a6"/>
+      <path id="Pfad_1116" data-name="Pfad 1116" d="M64,4133.6v4H56v-4Zm0,8v4H56v-4Zm0,8v4H56v-4Z" fill="#95a5a6"/>
+      <path id="Pfad_1117" data-name="Pfad 1117" d="M40,4133.6v4H32v-4Zm0,8v4H32v-4Zm0,8v4H32v-4Z" fill="#7f8c8d"/>
+    </g>
+  </g>
+</svg>

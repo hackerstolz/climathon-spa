@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" transform="translate(592 10147)" fill="#10182f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_44" data-name="Gruppe maskieren 44" transform="translate(-592 -10147)" clip-path="url(#clip-path)">
+    <g id="Paomedia-Small-N-Flat-Tag" transform="translate(604.599 5884.216)">
+      <path id="Pfad_1108" data-name="Pfad 1108" d="M6.391,4278.031A6.4,6.4,0,0,0,0,4284.422v23.009a7.355,7.355,0,0,0,1.9,4.474l35.05,34.833a6.466,6.466,0,0,0,9.191,0l22.568-22.37a6.563,6.563,0,0,0,2.1-4.793,6.062,6.062,0,0,0-2.1-4.794l-34.852-34.832a5.918,5.918,0,0,0-4.495-1.917H6.39Zm9.587,9.586a6.392,6.392,0,1,1-6.391,6.392A6.4,6.4,0,0,1,15.978,4287.617Z" transform="translate(0 -0.96)" fill="#4cae79"/>
+      <path id="Pfad_1109" data-name="Pfad 1109" d="M6.391,0A6.391,6.391,0,0,0,0,6.391V29.46a6.587,6.587,0,0,0,1.9,4.395L36.947,68.9a6.511,6.511,0,0,0,9.191,0L68.706,46.337a6.529,6.529,0,0,0,0-9.587L33.854,1.9A6.576,6.576,0,0,0,29.359,0H6.39Zm9.587,9.587a6.391,6.391,0,1,1-6.391,6.391A6.391,6.391,0,0,1,15.978,9.587Z" transform="translate(0 4273.875)" fill="#a8e5a3"/>
+      <path id="Pfad_1110" data-name="Pfad 1110" d="M46.344,4346.745l22.37-22.37L43.149,4298.81l-22.37,22.37Z" transform="translate(-4.801 -5.761)" fill="#4cae79"/>
+      <path id="Pfad_1111" data-name="Pfad 1111" d="M46.344,68.714l22.37-22.37L43.149,20.779l-22.37,22.37Z" transform="translate(-4.801 4269.074)" fill="#ecf0f1"/>
+      <path id="Pfad_1112" data-name="Pfad 1112" d="M46.029,4307.122l-11.185,11.185-1.6,1.6,1.6,1.6,12.783-12.783Zm6.391,6.391L41.236,4324.7l-1.6,1.6,1.6,1.6,12.783-12.782Zm6.391,6.392-11.185,11.185-1.6,1.6,1.6,1.6L60.41,4321.5Z" transform="translate(-7.682 -7.682)" fill="#7f8c8d"/>
+    </g>
+  </g>
+</svg>
