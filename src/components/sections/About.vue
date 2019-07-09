@@ -5,8 +5,8 @@
       <div class="small-earth d-inline-block mx-1">
         <v-img
           :src="require('../../assets/earth-small.svg')"
-          height="245"
-          width="364"
+          height="216"
+          width="320"
           contain
         >
         </v-img>

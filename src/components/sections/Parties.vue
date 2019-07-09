@@ -42,7 +42,7 @@
         </v-flex>
       </v-layout>
       <p class="outro-sponsors my-5">{{ $t("outroSponsors") }}</p>
-      <v-layout row align-center justify-center>
+      <v-layout row align-center justify-center wrap>
         <v-btn
           class="mx-2"
           href="https://www.iso.org/iso-50001-energy-management.html"

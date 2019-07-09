@@ -137,8 +137,9 @@ section
         @media screen and (max-width: 600px)
           font-size 40px
       .location-text
+        // TODO: font seems not to be available on mobile
         font-family Roboto
-        font-weight 900
+        font-weight 800
         font-size 28px
         font-style normal
         line-height 1.2

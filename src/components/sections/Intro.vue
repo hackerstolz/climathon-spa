@@ -15,7 +15,7 @@
     <div class="footer-bgr-gradient"></div>
     <v-container color="transparent" class="footer mx-0">
       <div class="organizer">
-        <p class="made-by-slogan">
+        <p class="made-by-slogan my-3">
           <span>{{ $t("sloganBeforeHeart") }}</span>
           <v-img
             class="d-inline-block mx-1"
@@ -27,14 +27,14 @@
           </v-img>
           <span>{{ $t("sloganAfterHeart") }}</span>
         </p>
-        <div class="logos">
+        <div class="logos ma-3">
           <v-img
             class="mr-2"
             :src="require('../../assets/logo-hackerstolz.svg')"
             max-height="40"
             max-width="232"
             width="20%"
-            position="left center"
+            position="center"
             contain
           >
           </v-img>
@@ -44,16 +44,17 @@
             max-height="40"
             max-width="160"
             width="20%"
-            position="left center"
+            position="center"
             contain
           >
           </v-img>
-          <v-spacer />
+        </div>
+        <div class="logos ma-3">
           <v-img
             :src="require('../../assets/logo-KIC-EU.svg')"
             max-height="40"
             width="58%"
-            position="right center"
+            position="center"
             contain
           >
           </v-img>
@@ -171,13 +172,13 @@ section
         font-style normal
         display flex
         align-items center
-        justify-content flex-start
+        justify-content center
         > *
           flex-grow 0
       .logos
         display flex
         align-items center
-        justify-content flex-start
+        justify-content center
         > *
-          flex-grow 0
+          flex-grow 1
 </style>

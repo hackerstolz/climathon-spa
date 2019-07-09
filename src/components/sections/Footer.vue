@@ -33,7 +33,7 @@
           </v-img>
           <span>{{ $t("sloganAfterHeart") }}</span>
         </p>
-        <div class="logos my-3">
+        <div class="logos ma-3">
           <v-img
             class="mr-2"
             :src="require('../../assets/logo-hackerstolz.svg')"
@@ -55,7 +55,7 @@
           >
           </v-img>
         </div>
-        <div class="logos my-3">
+        <div class="logos ma-3">
           <v-img
             :src="require('../../assets/logo-KIC-EU.svg')"
             max-height="40"
@@ -67,8 +67,8 @@
         </div>
       </div>
 
-      <h4 class="credits-title mb-2">{{ $t("creditsTitle") }}</h4>
-      <p class="credits mb-5">
+      <h4 class="credits-title my-1">{{ $t("creditsTitle") }}</h4>
+      <p class="credits pa-2 mb-5">
         {{ $t("credits") }}
       </p>
 

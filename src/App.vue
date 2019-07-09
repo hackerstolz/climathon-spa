@@ -1,22 +1,36 @@
 <template>
   <div id="app">
     <v-app :dark.sync="darkMode">
-      <v-navigation-drawer app v-model="drawer">
-        <v-menu bottom left="">
-          <v-btn slot="activator" flat>
-            {{ $t(`label.${$i18n.locale}`) }}
-          </v-btn>
+      <v-navigation-drawer class="navigation" app v-model="drawer">
+        <v-toolbar class="ma-0 pa-0" color="transparent" flat>
+          <v-menu bottom>
+            <v-btn slot="activator" flat>
+              {{ $t(`label.${$i18n.locale}`) }}
+            </v-btn>
 
-          <v-list>
-            <v-list-tile
-              v-for="(lang, i) in langs"
-              :key="i"
-              @click="onSetNewLocale(lang)"
-            >
-              <v-list-tile-title>{{ $t(`label.${lang}`) }}</v-list-tile-title>
+            <v-list class="language-list">
+              <v-list-tile
+                v-for="(lang, i) in langs"
+                :key="i"
+                @click="onSetNewLocale(lang)"
+              >
+                <v-list-tile-title>{{ $t(`label.${lang}`) }}</v-list-tile-title>
+              </v-list-tile>
+            </v-list>
+          </v-menu>
+          <v-spacer/>
+          <v-btn flat @click.stop="drawer = !drawer" icon>
+            <v-icon>close</v-icon>
+          </v-btn>
+        </v-toolbar>
+        <v-list>
+          <template v-for="(item, i) in menu">
+            <v-list-tile v-scroll-to="`#${item}`" :key="item" ripple @click="()=>{}">
+              <v-list-tile-title>{{ $t(`label.${item}`) }}</v-list-tile-title>
             </v-list-tile>
-          </v-list>
-        </v-menu>
+            <v-divider v-if="i < menu.length - 1" :key="i" inset/>
+          </template>
+        </v-list>
       </v-navigation-drawer>
 
       <v-toolbar class="toolbar" app color="transparent" flat>
@@ -107,7 +121,8 @@ export default {
         show: false,
         color: "primary",
         timeout: 6000
-      }
+      },
+      menu: ["intro","about","challenges","awards","location","schedule","registration","staff","faq","parties","team","footer"]
     };
   },
   mounted() {
@@ -142,7 +157,19 @@ export default {
       "snackbarText": "We don't need any analysis tools so enjoy a cookie-free experience.",
       "snackbarConfirm": "OK",
       "en": "English",
-      "de": "German"
+      "de": "German",
+      "intro": "Intro",
+      "about": "About Climathon",
+      "challenges": "Challenges",
+      "awards": "Awards",
+      "location": "Event Location",
+      "schedule": "Event Schedule",
+      "registration": "Registration",
+      "staff": "Speakers, Jury & Mentors",
+      "faq": "FAQ",
+      "parties": "Sponsors & Partners",
+      "team": "Orga Team",
+      "footer": "Credits"
     },
     "button": {
       "register": "Register Here"
@@ -185,14 +212,19 @@ export default {
 
   .toolbar
     z-index 5
+    .app-btn-register
+      font-family Gagalin,sans-serif
+      font-weight 400
+      font-style normal
+      letter-spacing 1.5px
+      &.large
+        font-size 22px
 
-  .app-btn-register
-    font-family Gagalin,sans-serif
-    font-weight 400
-    font-style normal
-    letter-spacing 1.5px
-    &.large
-      font-size 22px
+  .navigation
+    background-color #10182F
+
+  .language-list
+    background-color #182445
 
   .app-btn-snackbar
     font-family Gagalin,sans-serif

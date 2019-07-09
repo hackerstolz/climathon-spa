@@ -187,7 +187,7 @@ export default {
           schedule: [
             {
               icon: require("../../assets/flat-icon-schedule-carrot.svg"),
-              time: "22:00",
+              time: "08:30",
               i18nTitle: ["Breakfast", ""],
               i18nDescription: [
                 "Almost done, enjoy your breakfast and look back proudly on what you have achieved in the last two days.",
@@ -196,7 +196,7 @@ export default {
             },
             {
               icon: require("../../assets/flat-icon-schedule-timer.svg"),
-              time: "22:00",
+              time: "09:00",
               i18nTitle: ["Deadline of Coding", ""],
               // TODO: add link to climathon site
               i18nDescription: [
@@ -206,7 +206,7 @@ export default {
             },
             {
               icon: require("../../assets/flat-icon-schedule-presentation.svg"),
-              time: "22:00",
+              time: "10:00",
               i18nTitle: ["Pitches", ""],
               i18nDescription: [
                 "Lights out, spot on! Here is the part where your adrenaline is on the highest point.",
@@ -215,7 +215,7 @@ export default {
             },
             {
               icon: require("../../assets/flat-icon-schedule-lunch-gold.svg"),
-              time: "22:00",
+              time: "13:00",
               i18nTitle: ["Lunch Time", ""],
               i18nDescription: [
                 "Relax, it’s over, rediscover your taste buds and find the value in deceleration.",
@@ -224,13 +224,13 @@ export default {
             },
             {
               icon: require("../../assets/flat-icon-schedule-award.svg"),
-              time: "22:00",
+              time: "14:00",
               i18nTitle: ["Award Ceremony", ""],
               i18nDescription: ["Money rain and stuff.", ""]
             },
             {
               icon: require("../../assets/flat-icon-schedule-beer.svg"),
-              time: "22:00",
+              time: "15:00",
               i18nTitle: ["Meet the Winners", ""],
               i18nDescription: [
                 "Don’t forget to exchange numbers with your new friends.",

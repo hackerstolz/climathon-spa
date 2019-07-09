@@ -34,7 +34,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [ ] Complete FAQ  
 [ ] Replace Favicon  
 [ ] Add contact form  
-[ ] Add navbar menu for quick navigation  
+[X] Add navbar menu for quick navigation  
 [ ] Finish intro animation  
 [ ] Add worst-case-4C switch  
 [ ] Add countdown clocks  
