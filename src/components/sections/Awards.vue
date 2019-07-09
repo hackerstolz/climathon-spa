@@ -1,20 +1,17 @@
 <template>
-  <section
-    :style="{ backgroundColor: sectionColor }">
+  <section :style="{ backgroundColor: sectionColor }">
     <v-container>
       <h2>{{ $t("title") }}</h2>
       <v-card
-        v-for="(award, i) in awards" :key="i"
+        v-for="(award, i) in awards"
+        :key="i"
         class="card pa-3 mb-4"
         width="100%"
         color="rgba(255,255,255,0.1)"
-        flat>
+        flat
+      >
         <h3 class="mb-3">{{ $t(`awards.${award.key}.title`) }}</h3>
-        <v-img
-          :src="award.img"
-          max-height="128px"
-          contain
-        ></v-img>
+        <v-img :src="award.img" max-height="128px" contain></v-img>
         <div class="prize my-3">{{ $t(`awards.${award.key}.prize`) }}</div>
         <p class="description">{{ $t(`awards.${award.key}.description`) }}</p>
       </v-card>
@@ -27,7 +24,6 @@
 </template>
 
 <script>
-
 export default {
   name: "Awards",
   props: {
@@ -37,24 +33,27 @@ export default {
     }
   },
   computed: {
-    sectionColor: function () {
+    sectionColor: function() {
       return Object.keys(this.$vuetify.theme).indexOf(this.themeColor) !== -1
         ? this.$vuetify.theme[this.themeColor]
-        : this.$vuetify.theme.primary
+        : this.$vuetify.theme.primary;
     }
   },
   data() {
     return {
-      awards: [{
-        key: "climateGrant",
-        img: require("../../assets/award-gold.svg"),
-        color: this.$vuetify.theme.warning
-      },{
-        key: "cityPrize",
-        img: require("../../assets/award-red.svg"),
-        color: this.$vuetify.theme.error
-      }]
-    }
+      awards: [
+        {
+          key: "climateGrant",
+          img: require("../../assets/award-gold.svg"),
+          color: this.$vuetify.theme.warning
+        },
+        {
+          key: "cityPrize",
+          img: require("../../assets/award-red.svg"),
+          color: this.$vuetify.theme.error
+        }
+      ]
+    };
   }
 };
 </script>

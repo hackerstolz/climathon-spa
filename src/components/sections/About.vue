@@ -1,6 +1,5 @@
 <template>
-  <section
-    :style="{ backgroundColor: sectionColor }">
+  <section :style="{ backgroundColor: sectionColor }">
     <v-container>
       <h2 class="align-left">{{ $t("titleWhy") }}</h2>
       <div class="small-earth d-inline-block mx-1">
@@ -32,9 +31,13 @@
       <p class="align-center">{{ $t("textWhat[0]") }}</p>
       <p class="align-center">{{ $t("textWhat[1]") }}</p>
 
-      <v-layout 
+      <v-layout
         class="article-container"
-        align-center justify-center flexbox wrap>
+        align-center
+        justify-center
+        flexbox
+        wrap
+      >
         <v-card
           v-for="(article, i) in articles"
           :key="i"
@@ -43,24 +46,17 @@
           class="blog-article mr-4 mb-4"
           width="225px"
           ripple
-          flat>
-          <v-img
-            :src="article.img"
-            height="118px">
-            <v-container 
-              fill-height 
-              fluid 
-              pa-2>
-              <v-icon 
-                class="link-icon pa-1"
-                small>
+          flat
+        >
+          <v-img :src="article.img" height="118px">
+            <v-container fill-height fluid pa-2>
+              <v-icon class="link-icon pa-1" small>
                 open_in_new
               </v-icon>
               <v-layout fill-height column>
                 <v-spacer />
                 <v-flex xs6 align-end>
-                  <span 
-                    class="article-text pa-1">
+                  <span class="article-text pa-1">
                     {{ $t(article.i18nLink) }}
                   </span>
                 </v-flex>
@@ -83,27 +79,29 @@ export default {
     }
   },
   computed: {
-    sectionColor: function () {
+    sectionColor: function() {
       return Object.keys(this.$vuetify.theme).indexOf(this.themeColor) !== -1
         ? this.$vuetify.theme[this.themeColor]
-        : this.$vuetify.theme.primary
+        : this.$vuetify.theme.primary;
     }
   },
   data() {
     return {
       articles: [
         {
-          img: require('../../assets/img-article-01.jpg'),
+          img: require("../../assets/img-article-01.jpg"),
           i18nLink: "button.link2Article1",
-          href: "https://medium.com/@Hackerstolz/7-reasons-why-you-should-go-to-a-hackathon-5242c092e2c4"
+          href:
+            "https://medium.com/@Hackerstolz/7-reasons-why-you-should-go-to-a-hackathon-5242c092e2c4"
         },
         {
-          img: require('../../assets/img-article-02.jpg'),
+          img: require("../../assets/img-article-02.jpg"),
           i18nLink: "button.link2Article2",
-          href: "https://medium.com/@Hackerstolz/42-hours-at-a-hackathon-4f6444a3c3bd"
+          href:
+            "https://medium.com/@Hackerstolz/42-hours-at-a-hackathon-4f6444a3c3bd"
         }
       ]
-    }
+    };
   }
 };
 </script>
@@ -216,11 +214,11 @@ section
         letter-spacing 1.6px
         text-align center
         // TODO: replace with constants
-      &:nth-child(odd) 
+      &:nth-child(odd)
         .article-text, .link-icon
           color #ffffff
           background-color #1c88c6
-      &:nth-child(even) 
+      &:nth-child(even)
         .article-text, .link-icon
           color #10182F
           background-color #A8E5A3

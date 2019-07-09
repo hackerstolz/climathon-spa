@@ -27,3 +27,15 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### TODOs
+[ ] Translate all sections
+[ ] Add links to schedule
+[ ] Complete FAQ
+[ ] Replace Favicon
+[ ] Add contact form
+[ ] Add navbar menu for quick navigation
+[ ] Finish intro animation
+[ ] Add worst-case-4C switch
+[ ] Add countdown clocks
+[ ] Add Travis CI pipeline for auto-deployment

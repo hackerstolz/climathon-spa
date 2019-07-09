@@ -1,29 +1,30 @@
 <template>
-  <section
-    :style="{ backgroundColor: sectionColor }">
+  <section :style="{ backgroundColor: sectionColor }">
     <v-container>
       <h2>{{ $t("title") }}</h2>
-      <stack 
+      <stack
         ref="stack"
-        :column-min-width="320" 
-        :gutter-width="24" 
-        :gutter-height="24" 
-        monitor-images-loaded>
-        <stack-item 
-          v-for="(category, i) in categories" :key="i"
-          class="stack-grid-item">
-
+        :column-min-width="320"
+        :gutter-width="24"
+        :gutter-height="24"
+        monitor-images-loaded
+      >
+        <stack-item
+          v-for="(category, i) in categories"
+          :key="i"
+          class="stack-grid-item"
+        >
           <v-card
             :class="{
-              'card': true,
+              card: true,
               'pa-3': true,
               'active-challenges': category.challenges.length > 0
             }"
             color="rgba(255,255,255,0.1)"
             ripple
             flat
-            @click="toogleTile(i)">
-
+            @click="toogleTile(i)"
+          >
             <h3 class="mb-3">{{ $t(`categories.${category.key}.title`) }}</h3>
             <v-img
               :src="category.img"
@@ -31,72 +32,92 @@
               contain
               @load="reflow"
             ></v-img>
-            <div class="count my-3">{{ $tc('challengeCount', category.challenges.length) }}</div>
-            <p class="description">{{ $t(`categories.${category.key}.description`).slice(0, 100).concat('...') }}</p>
+            <div class="count my-3">
+              {{ $tc("challengeCount", category.challenges.length) }}
+            </div>
+            <p class="description">
+              {{
+                $t(`categories.${category.key}.description`)
+                  .slice(0, 100)
+                  .concat("...")
+              }}
+            </p>
 
             <!-- dialog -->
             <v-dialog
-              v-model="category.show" 
+              v-model="category.show"
               scrollable
               width="80%"
               max-width="640px"
-              :fullscreen="isMobile">
+              :fullscreen="isMobile"
+            >
               <v-card
                 :class="{
-                  'card': true,
+                  card: true,
                   'active-challenges': category.challenges.length > 0
                 }"
-                color="#2f3a58">
+                color="#2f3a58"
+              >
                 <div
                   :class="{
                     'dialog-card-content': true,
                     'pa-3': true
-                  }">
-                  <h3 class="mb-3">{{ $t(`categories.${category.key}.title`) }}</h3>
-                  <v-img
-                    :src="category.img"
-                    max-height="128px"
-                    contain
-                  ></v-img>
-                  <div class="count my-3">{{ $tc('challengeCount', category.challenges.length) }}</div>
-                  <p class="description" v-show="category.show">{{ $t(`categories.${category.key}.description`) }}</p>
-                  <div class="challenge" v-for="(challenge, j) in category.challenges" :key="j">
+                  }"
+                >
+                  <h3 class="mb-3">
+                    {{ $t(`categories.${category.key}.title`) }}
+                  </h3>
+                  <v-img :src="category.img" max-height="128px" contain></v-img>
+                  <div class="count my-3">
+                    {{ $tc("challengeCount", category.challenges.length) }}
+                  </div>
+                  <p class="description" v-show="category.show">
+                    {{ $t(`categories.${category.key}.description`) }}
+                  </p>
+                  <div
+                    class="challenge"
+                    v-for="(challenge, j) in category.challenges"
+                    :key="j"
+                  >
                     <v-img
                       :class="{
-                        'batch': true,
+                        batch: true,
                         [challenge.type.toLowerCase()]: true,
                         'mt-5': true,
                         'mb-4': true
                       }"
-                      :src="require(`../../assets/challenge-${challenge.type.toLowerCase()}.svg`)"
+                      :src="
+                        require(`../../assets/challenge-${challenge.type.toLowerCase()}.svg`)
+                      "
                       max-height="84px"
                       contain
                     ></v-img>
                     <h4 class="mb-4">
                       {{ challenge.title }}
                     </h4>
-                    <h5 class="mb-2">{{ $t('challangeSummary') }}</h5>
+                    <h5 class="mb-2">{{ $t("challangeSummary") }}</h5>
                     <p class="mb-4">
                       {{ challenge.summary }}
                     </p>
-                    <h5 class="mb-2">{{ $t('challangeDescription') }}</h5>
+                    <h5 class="mb-2">{{ $t("challangeDescription") }}</h5>
                     <p class="mb-4">
                       {{ challenge.description }}
                     </p>
-                    <h5 class="mb-2">{{ $t('challangeVision') }}</h5>
+                    <h5 class="mb-2">{{ $t("challangeVision") }}</h5>
                     <p class="mb-4">
                       {{ challenge.vision }}
                     </p>
                   </div>
                 </div>
                 <v-card-actions class="dialog-card-footer">
-                  <v-spacer/>
-                  <v-btn color="accent" flat @click="category.show = false">{{ $t('button.close') }}</v-btn>
+                  <v-spacer />
+                  <v-btn color="accent" flat @click="category.show = false">{{
+                    $t("button.close")
+                  }}</v-btn>
                 </v-card-actions>
               </v-card>
             </v-dialog>
           </v-card>
-
         </stack-item>
       </stack>
 
@@ -108,33 +129,33 @@
           contain
         ></v-img>
         <v-btn
-            class="link-to-cgoal my-4"
-            href="https://forms.gle/d5EmFpQPosEJD2PKA"
-            target="_blank"
-            color="info"
-            outline
-            flat
-          >
-            {{ $t("button.link2Form") }}
-            <v-icon dark right>open_in_new</v-icon>
-          </v-btn>
-          <p class="submitText">{{ $t("submitText") }}</p>
-          <p class="submitDeadline">{{ $t("submitDeadline") }}</p>
-          <p class="submitInfo">{{ $t("submitInfo") }}</p>
+          class="link-to-cgoal my-4"
+          href="https://forms.gle/d5EmFpQPosEJD2PKA"
+          target="_blank"
+          color="info"
+          outline
+          flat
+        >
+          {{ $t("button.link2Form") }}
+          <v-icon dark right>open_in_new</v-icon>
+        </v-btn>
+        <p class="submitText">{{ $t("submitText") }}</p>
+        <p class="submitDeadline">{{ $t("submitDeadline") }}</p>
+        <p class="submitInfo">{{ $t("submitInfo") }}</p>
       </div>
     </v-container>
   </section>
 </template>
 
 <script>
-import debounce from 'lodash/debounce'
-import { Stack, StackItem } from 'vue-stack-grid'
+import debounce from "lodash/debounce";
+import { Stack, StackItem } from "vue-stack-grid";
 
-const CHALLENGE_TYPE = {
-  CITY: "CITY",
-  COMMUNITY: "COMMUNITY",
-  SPONSOR: "SPONSOR"
-}
+// const CHALLENGE_TYPE = {
+//   CITY: "CITY",
+//   COMMUNITY: "COMMUNITY",
+//   SPONSOR: "SPONSOR"
+// };
 
 export default {
   name: "Challenges",
@@ -147,29 +168,30 @@ export default {
     isMobile: Boolean
   },
   computed: {
-    sectionColor: function () {
+    sectionColor: function() {
       return Object.keys(this.$vuetify.theme).indexOf(this.themeColor) !== -1
         ? this.$vuetify.theme[this.themeColor]
-        : this.$vuetify.theme.primary
+        : this.$vuetify.theme.primary;
     }
   },
   methods: {
     toogleTile(i) {
-      const clickedCategory = this.categories[i]
-      const prevShow = this.categories[i].show
+      const clickedCategory = this.categories[i];
+      const prevShow = this.categories[i].show;
 
-      this.categories.forEach(c => c.show = false)
-      clickedCategory.show = !prevShow
+      this.categories.forEach(c => (c.show = false));
+      clickedCategory.show = !prevShow;
     },
     reflow: debounce(function() {
-      this.$refs.stack.reflow()
+      this.$refs.stack.reflow();
     }, 100)
   },
   data() {
     return {
-      categories: [{
+      categories: [
+        {
           key: "smartCity",
-          img: require('../../assets/flat-icon-smartCity.svg'),
+          img: require("../../assets/flat-icon-smartCity.svg"),
           show: false,
           challenges: [
             // {
@@ -192,63 +214,75 @@ export default {
             //   vision: "Lorem ipsum. Think about and write down how the best case scenario for your city could look like in the future and what specific output (app, product, service, network etc.) you would like to generate in 40 hours."
             // }
           ]
-        },{
+        },
+        {
           key: "mobility",
-          img: require('../../assets/flat-icon-mobility.svg'),
+          img: require("../../assets/flat-icon-mobility.svg"),
           show: false,
           challenges: []
-        },{
+        },
+        {
           key: "retrofitting",
-          img: require('../../assets/flat-icon-retrofitting.svg'),
+          img: require("../../assets/flat-icon-retrofitting.svg"),
           show: false,
           challenges: []
-        },{
+        },
+        {
           key: "circularEconomy",
-          img: require('../../assets/flat-icon-circularEconomy.svg'),
+          img: require("../../assets/flat-icon-circularEconomy.svg"),
           show: false,
           challenges: []
-        },{
+        },
+        {
           key: "food",
-          img: require('../../assets/flat-icon-food.svg'),
+          img: require("../../assets/flat-icon-food.svg"),
           show: false,
           challenges: []
-        },{
+        },
+        {
           key: "finance",
-          img: require('../../assets/flat-icon-finance.svg'),
+          img: require("../../assets/flat-icon-finance.svg"),
           show: false,
           challenges: []
-        },{
+        },
+        {
           key: "behaviour",
-          img: require('../../assets/flat-icon-behaviour.svg'),
+          img: require("../../assets/flat-icon-behaviour.svg"),
           show: false,
           challenges: []
-        },{
+        },
+        {
           key: "water",
-          img: require('../../assets/flat-icon-water.svg'),
+          img: require("../../assets/flat-icon-water.svg"),
           show: false,
           challenges: []
-        },{
+        },
+        {
           key: "energy",
-          img: require('../../assets/flat-icon-energy.svg'),
+          img: require("../../assets/flat-icon-energy.svg"),
           show: false,
           challenges: []
-        },{
+        },
+        {
           key: "extremeWeather",
-          img: require('../../assets/flat-icon-extremeWeather.svg'),
+          img: require("../../assets/flat-icon-extremeWeather.svg"),
           show: false,
           challenges: []
-      },{
+        },
+        {
           key: "waste",
-          img: require('../../assets/flat-icon-waste.svg'),
+          img: require("../../assets/flat-icon-waste.svg"),
           show: false,
           challenges: []
-      },{
+        },
+        {
           key: "pollution",
-          img: require('../../assets/flat-icon-pollution.svg'),
+          img: require("../../assets/flat-icon-pollution.svg"),
           show: false,
           challenges: []
-      }]
-    }
+        }
+      ]
+    };
   }
 };
 </script>

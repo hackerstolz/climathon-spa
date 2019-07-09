@@ -3,41 +3,39 @@
     <v-container>
       <h2>{{ $t("title") }}</h2>
     </v-container>
-    <video-bg 
+    <video-bg
       class="video-container"
       :sources="[
         require('!file-loader!../../assets/video/ma-earth-footage.webm'),
         require('!file-loader!../../assets/video/ma-earth-footage.ogv'),
         require('!file-loader!../../assets/video/ma-earth-footage.mp4')
       ]"
-      :img="require('../../assets/ma-footage-thumb.jpeg')">
-      <v-layout class="video-content flex align-center py-5" fill-height  column>
+      :img="require('../../assets/ma-footage-thumb.jpeg')"
+    >
+      <v-layout class="video-content flex align-center py-5" fill-height column>
         <h3 class="align-left">{{ $t("locationSlogan") }}</h3>
         <!-- <v-flex xs12 align-end> -->
-          <v-spacer />
-          <v-icon 
-            class="pa-1"
-            color="rgba(255, 255, 255, 0.38)"
-            x-large>
-            place
-          </v-icon>
-          <p class="location-text pa-1">
-            MAFINEX-Technologiezentrum<br/>
-            Julius-Hatry-Str. 1<br/>
-            68163 Mannheim
-          </p>
-          <v-btn
-            class="my-2"
-            width="auto"
-            href="https://www.google.com/maps/place/mg:+mannheimer+gr%C3%BCndungszentren+gmbh/@49.4732698,8.4747424,15z/data=!4m5!3m4!1s0x0:0x9a435721e6fc738d!8m2!3d49.4732698!4d8.4747424"
-            target="_blank"
-            color="rgba(255, 255, 255, 0.8)"
-            outline
-            flat
-          >
-            {{ $t("button.link2Maps") }}
-            <v-icon dark right>open_in_new</v-icon>
-          </v-btn>
+        <v-spacer />
+        <v-icon class="pa-1" color="rgba(255, 255, 255, 0.38)" x-large>
+          place
+        </v-icon>
+        <p class="location-text pa-1">
+          MAFINEX-Technologiezentrum<br />
+          Julius-Hatry-Str. 1<br />
+          68163 Mannheim
+        </p>
+        <v-btn
+          class="my-2"
+          width="auto"
+          href="https://www.google.com/maps/place/mg:+mannheimer+gr%C3%BCndungszentren+gmbh/@49.4732698,8.4747424,15z/data=!4m5!3m4!1s0x0:0x9a435721e6fc738d!8m2!3d49.4732698!4d8.4747424"
+          target="_blank"
+          color="rgba(255, 255, 255, 0.8)"
+          outline
+          flat
+        >
+          {{ $t("button.link2Maps") }}
+          <v-icon dark right>open_in_new</v-icon>
+        </v-btn>
         <!-- </v-flex> -->
       </v-layout>
     </video-bg>
@@ -45,7 +43,7 @@
 </template>
 
 <script>
-import VideoBg from 'vue-videobg'
+import VideoBg from "vue-videobg";
 
 export default {
   name: "Location",
@@ -59,10 +57,10 @@ export default {
     }
   },
   computed: {
-    sectionColor: function () {
+    sectionColor: function() {
       return Object.keys(this.$vuetify.theme).indexOf(this.themeColor) !== -1
         ? this.$vuetify.theme[this.themeColor]
-        : this.$vuetify.theme.primary
+        : this.$vuetify.theme.primary;
     }
   }
 };

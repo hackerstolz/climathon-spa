@@ -5,13 +5,15 @@
       <p class="introText my-5">{{ $t("introText") }}</p>
       <v-layout class="my-4" row wrap align-start justify-center>
         <v-flex
-          v-for="(type, i) in types" :key="i"
+          v-for="(type, i) in types"
+          :key="i"
           :class="{
             'stack-grid-item': true,
             'pa-2': true,
-            'xs4': !isMobile,
-            'xs12': isMobile
-          }">
+            xs4: !isMobile,
+            xs12: isMobile
+          }"
+        >
           <v-img
             class="mx-4 my-2"
             :src="type.icon"
@@ -20,8 +22,16 @@
             width="96px"
             contain
           ></v-img>
-          <p class="type-title my-1">{{ $i18n.locale === "en" ? type.i18nTitle[0] : type.i18nTitle[1] }}</p>
-          <p class="type-description my-1">{{ $i18n.locale === "en" ? type.i18nDescription[0] : type.i18nDescription[1] }}</p>
+          <p class="type-title my-1">
+            {{ $i18n.locale === "en" ? type.i18nTitle[0] : type.i18nTitle[1] }}
+          </p>
+          <p class="type-description my-1">
+            {{
+              $i18n.locale === "en"
+                ? type.i18nDescription[0]
+                : type.i18nDescription[1]
+            }}
+          </p>
         </v-flex>
       </v-layout>
       <p class="highlightText my-3">{{ $t("highlightText") }}</p>
@@ -53,86 +63,73 @@ export default {
     isMobile: Boolean
   },
   computed: {
-    sectionColor: function () {
+    sectionColor: function() {
       return Object.keys(this.$vuetify.theme).indexOf(this.themeColor) !== -1
         ? this.$vuetify.theme[this.themeColor]
-        : this.$vuetify.theme.primary
+        : this.$vuetify.theme.primary;
     }
   },
   data() {
     return {
-      types: [{
-        icon: require("../../assets/flat-icon-terminal.svg"),
-        i18nTitle: [
-          "Developer",
-          ""
-        ],
-        i18nDescription: [
-          "Programmers who turn thoughts into code. Only the input speed of your keyboard sets you limits.",
-          ""
-        ]
-      },{
-        icon: require("../../assets/flat-icon-stack.svg"),
-        i18nTitle: [
-          "Engineer",
-          ""
-        ],
-        i18nDescription: [
-          "With a deep scientific background you build the complex engine room of any technical project.",
-          ""
-        ]
-      },{
-        icon: require("../../assets/flat-icon-network.svg"),
-        i18nTitle: [
-          "Data Scientist",
-          ""
-        ],
-        i18nDescription: [
-          "You and data, it’s a long story. A mixture of data magician and a touch of AI.",
-          ""
-        ]
-      },{
-        icon: require("../../assets/flat-icon-tools.svg"),
-        i18nTitle: [
-          "Maker",
-          ""
-        ],
-        i18nDescription: [
-          "Loves tinkering around with hardware and IoT. Your hands start to itch when you hear a great idea.",
-          ""
-        ]
-      },{
-        icon: require("../../assets/flat-icon-bulp.svg"),
-        i18nTitle: [
-          "Idea Generator",
-          ""
-        ],
-        i18nDescription: [
-          "You spark creation with your original ideas and understand the problem at hand.",
-          ""
-        ]
-      },{
-        icon: require("../../assets/flat-icon-astronaut.svg"),
-        i18nTitle: [
-          "Superpower",
-          ""
-        ],
-        i18nDescription: [
-          "Not techie or a designer, but your magic touch will bring projects to life.",
-          ""
-        ]
-      },{
-        icon: require("../../assets/flat-icon-colors.svg"),
-        i18nTitle: [
-          "Designer",
-          ""
-        ],
-        i18nDescription: [
-          "In your skillful hands, dashboards and applications gain clarity and style.",
-          ""
-        ]
-      }]
-    }
+      types: [
+        {
+          icon: require("../../assets/flat-icon-terminal.svg"),
+          i18nTitle: ["Developer", ""],
+          i18nDescription: [
+            "Programmers who turn thoughts into code. Only the input speed of your keyboard sets you limits.",
+            ""
+          ]
+        },
+        {
+          icon: require("../../assets/flat-icon-stack.svg"),
+          i18nTitle: ["Engineer", ""],
+          i18nDescription: [
+            "With a deep scientific background you build the complex engine room of any technical project.",
+            ""
+          ]
+        },
+        {
+          icon: require("../../assets/flat-icon-network.svg"),
+          i18nTitle: ["Data Scientist", ""],
+          i18nDescription: [
+            "You and data, it’s a long story. A mixture of data magician and a touch of AI.",
+            ""
+          ]
+        },
+        {
+          icon: require("../../assets/flat-icon-tools.svg"),
+          i18nTitle: ["Maker", ""],
+          i18nDescription: [
+            "Loves tinkering around with hardware and IoT. Your hands start to itch when you hear a great idea.",
+            ""
+          ]
+        },
+        {
+          icon: require("../../assets/flat-icon-bulp.svg"),
+          i18nTitle: ["Idea Generator", ""],
+          i18nDescription: [
+            "You spark creation with your original ideas and understand the problem at hand.",
+            ""
+          ]
+        },
+        {
+          icon: require("../../assets/flat-icon-astronaut.svg"),
+          i18nTitle: ["Superpower", ""],
+          i18nDescription: [
+            "Not techie or a designer, but your magic touch will bring projects to life.",
+            ""
+          ]
+        },
+        {
+          icon: require("../../assets/flat-icon-colors.svg"),
+          i18nTitle: ["Designer", ""],
+          i18nDescription: [
+            "In your skillful hands, dashboards and applications gain clarity and style.",
+            ""
+          ]
+        }
+      ]
+    };
   }
 };
 </script>
@@ -210,5 +207,4 @@ section
       letter-spacing 0.5px
       text-align inherit
       color rgba(255, 255, 255, 0.8)
-  
 </style>

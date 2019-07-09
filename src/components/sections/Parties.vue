@@ -15,15 +15,21 @@
       <v-layout
         v-if="sponsors.length > 0"
         class="my-4"
-        row wrap align-center justify-center>
+        row
+        wrap
+        align-center
+        justify-center
+      >
         <v-flex
-          v-for="(sponsor, i) in sponsors" :key="i"
+          v-for="(sponsor, i) in sponsors"
+          :key="i"
           :class="{
             'stack-grid-item': true,
             'pa-2': true,
-            'xs4': !isMobile,
-            'xs12': isMobile
-          }">
+            xs4: !isMobile,
+            xs12: isMobile
+          }"
+        >
           <v-img
             class="mx-4 my-2"
             :src="sponsor.icon"
@@ -36,11 +42,10 @@
         </v-flex>
       </v-layout>
       <p class="outro-sponsors my-5">{{ $t("outroSponsors") }}</p>
-      <!-- TODO: add links -->
       <v-layout row align-center justify-center>
         <v-btn
           class="mx-2"
-          href=""
+          href="https://www.iso.org/iso-50001-energy-management.html"
           target="_blank"
           color="accent"
           outline
@@ -51,7 +56,7 @@
         </v-btn>
         <v-btn
           class="mx-2"
-          href=""
+          href="https://www.right-basedonscience.de/en/xdc-model/"
           target="_blank"
           color="accent"
           outline
@@ -62,7 +67,7 @@
         </v-btn>
         <v-btn
           class="mx-2"
-          href=""
+          href="https://www.cdp.net/en/companies/companies-scores"
           target="_blank"
           color="accent"
           outline
@@ -87,15 +92,21 @@
       <v-layout
         v-if="partners.length > 0"
         class="my-4"
-        row wrap align-center justify-center>
+        row
+        wrap
+        align-center
+        justify-center
+      >
         <v-flex
-          v-for="(partner, i) in partners" :key="i"
+          v-for="(partner, i) in partners"
+          :key="i"
           :class="{
             'stack-grid-item': true,
             'pa-2': true,
-            'xs4': !isMobile,
-            'xs12': isMobile
-          }">
+            xs4: !isMobile,
+            xs12: isMobile
+          }"
+        >
           <v-img
             class="mx-4 my-2"
             :src="partner.icon"
@@ -122,10 +133,10 @@ export default {
     isMobile: Boolean
   },
   computed: {
-    sectionColor: function () {
+    sectionColor: function() {
       return Object.keys(this.$vuetify.theme).indexOf(this.themeColor) !== -1
         ? this.$vuetify.theme[this.themeColor]
-        : this.$vuetify.theme.primary
+        : this.$vuetify.theme.primary;
     }
   },
   data() {
@@ -137,7 +148,7 @@ export default {
         // }
       ],
       partners: []
-    }
+    };
   }
 };
 </script>

@@ -32,58 +32,26 @@
       </v-toolbar>
 
       <v-content class="pa-0">
-        <Intro
-          id="intro" 
-        />
-        <About
-          id="about"
-          themeColor="primary"
-        />
+        <Intro id="intro" />
+        <About id="about" themeColor="primary" />
         <Challenges
           id="challenges"
           themeColor="secondary"
           :isMobile="isMobile"
         />
-        <Awards
-          id="awards"
-          themeColor="primary"
-        />
-        <Location
-          id="location"
-          themeColor="secondary"
-        />
-        <Schedule
-          id="schedule"
-          themeColor="secondary"
-        />
+        <Awards id="awards" themeColor="primary" />
+        <Location id="location" themeColor="secondary" />
+        <Schedule id="schedule" themeColor="secondary" />
         <Registration
           id="registration"
           themeColor="primary"
           :isMobile="isMobile"
         />
-        <Staff
-          id="staff"
-          themeColor="secondary"
-          :isMobile="isMobile"
-        />
-        <FAQ
-          id="faq"
-          themeColor="primary"
-        />
-        <Parties
-          id="parties"
-          themeColor="secondary"
-          :isMobile="isMobile"
-        />
-        <Team
-          id="team"
-          themeColor="primary"
-          :isMobile="isMobile"
-        />
-        <Footer
-          id="footer"
-          themeColor="primary"
-        />
+        <Staff id="staff" themeColor="secondary" :isMobile="isMobile" />
+        <FAQ id="faq" themeColor="primary" />
+        <Parties id="parties" themeColor="secondary" :isMobile="isMobile" />
+        <Team id="team" themeColor="primary" :isMobile="isMobile" />
+        <Footer id="footer" themeColor="primary" />
       </v-content>
 
       <v-snackbar

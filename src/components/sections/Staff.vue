@@ -15,15 +15,21 @@
       <v-layout
         v-if="speakers.length > 0"
         class="my-4"
-        row wrap align-start justify-center>
+        row
+        wrap
+        align-start
+        justify-center
+      >
         <v-flex
-          v-for="(speaker, i) in speakers" :key="i"
+          v-for="(speaker, i) in speakers"
+          :key="i"
           :class="{
             'stack-grid-item': true,
             'pa-2': true,
-            'xs4': !isMobile,
-            'xs12': isMobile
-          }">
+            xs4: !isMobile,
+            xs12: isMobile
+          }"
+        >
           <v-img
             class="mx-4 my-2"
             :src="speaker.icon"
@@ -32,8 +38,20 @@
             width="96px"
             contain
           ></v-img>
-          <p class="speaker-title my-1">{{ $i18n.locale === "en" ? speaker.i18nTitle[0] : speaker.i18nTitle[1] }}</p>
-          <p class="speaker-description my-1">{{ $i18n.locale === "en" ? speaker.i18nDescription[0] : speaker.i18nDescription[1] }}</p>
+          <p class="speaker-title my-1">
+            {{
+              $i18n.locale === "en"
+                ? speaker.i18nTitle[0]
+                : speaker.i18nTitle[1]
+            }}
+          </p>
+          <p class="speaker-description my-1">
+            {{
+              $i18n.locale === "en"
+                ? speaker.i18nDescription[0]
+                : speaker.i18nDescription[1]
+            }}
+          </p>
         </v-flex>
       </v-layout>
 
@@ -42,15 +60,21 @@
       <v-layout
         v-if="jury.length > 0"
         class="my-4"
-        row wrap align-start justify-center>
+        row
+        wrap
+        align-start
+        justify-center
+      >
         <v-flex
-          v-for="(judge, i) in jury" :key="i"
+          v-for="(judge, i) in jury"
+          :key="i"
           :class="{
             'stack-grid-item': true,
             'pa-2': true,
-            'xs4': !isMobile,
-            'xs12': isMobile
-          }">
+            xs4: !isMobile,
+            xs12: isMobile
+          }"
+        >
           <v-img
             class="mx-4 my-2"
             :src="judge.icon"
@@ -59,8 +83,18 @@
             width="96px"
             contain
           ></v-img>
-          <p class="judge-title my-1">{{ $i18n.locale === "en" ? judge.i18nTitle[0] : judge.i18nTitle[1] }}</p>
-          <p class="judge-description my-1">{{ $i18n.locale === "en" ? judge.i18nDescription[0] : judge.i18nDescription[1] }}</p>
+          <p class="judge-title my-1">
+            {{
+              $i18n.locale === "en" ? judge.i18nTitle[0] : judge.i18nTitle[1]
+            }}
+          </p>
+          <p class="judge-description my-1">
+            {{
+              $i18n.locale === "en"
+                ? judge.i18nDescription[0]
+                : judge.i18nDescription[1]
+            }}
+          </p>
         </v-flex>
       </v-layout>
 
@@ -78,15 +112,21 @@
       <v-layout
         v-if="mentors.length > 0"
         class="my-4"
-        row wrap align-start justify-center>
+        row
+        wrap
+        align-start
+        justify-center
+      >
         <v-flex
-          v-for="(mentor, i) in mentors" :key="i"
+          v-for="(mentor, i) in mentors"
+          :key="i"
           :class="{
             'stack-grid-item': true,
             'pa-2': true,
-            'xs4': !isMobile,
-            'xs12': isMobile
-          }">
+            xs4: !isMobile,
+            xs12: isMobile
+          }"
+        >
           <v-img
             class="mx-4 my-2"
             :src="mentor.icon"
@@ -95,8 +135,18 @@
             width="96px"
             contain
           ></v-img>
-          <p class="mentor-title my-1">{{ $i18n.locale === "en" ? mentor.i18nTitle[0] : mentor.i18nTitle[1] }}</p>
-          <p class="mentor-description my-1">{{ $i18n.locale === "en" ? mentor.i18nDescription[0] : mentor.i18nDescription[1] }}</p>
+          <p class="mentor-title my-1">
+            {{
+              $i18n.locale === "en" ? mentor.i18nTitle[0] : mentor.i18nTitle[1]
+            }}
+          </p>
+          <p class="mentor-description my-1">
+            {{
+              $i18n.locale === "en"
+                ? mentor.i18nDescription[0]
+                : mentor.i18nDescription[1]
+            }}
+          </p>
         </v-flex>
       </v-layout>
     </v-container>
@@ -114,78 +164,67 @@ export default {
     isMobile: Boolean
   },
   computed: {
-    sectionColor: function () {
+    sectionColor: function() {
       return Object.keys(this.$vuetify.theme).indexOf(this.themeColor) !== -1
         ? this.$vuetify.theme[this.themeColor]
-        : this.$vuetify.theme.primary
+        : this.$vuetify.theme.primary;
     }
   },
   data() {
     return {
       speakers: [],
-      jury: [{
-        icon: require("../../assets/flat-icon-scientist.svg"),
-        i18nTitle: [
-          "The Scientist",
-          ""
-        ],
-        i18nDescription: [
-          "She observes, discusses and concludes with a knife sharp mind and a concentrated understanding.",
-          ""
-        ]
-      },{
-        icon: require("../../assets/flat-icon-alien.svg"),
-        i18nTitle: [
-          "The Second Scientist",
-          ""
-        ],
-        i18nDescription: [
-          "Experienced, brilliant and heard, our scientists cannot be ignored.",
-          ""
-        ]
-      },{
-        icon: require("../../assets/flat-icon-man.svg"),
-        i18nTitle: [
-          "The Economist",
-          ""
-        ],
-        i18nDescription: [
-          "Every project must also be financed, if there are gaps in the business model our expert will find them.",
-          ""
-        ]
-      },{
-        icon: require("../../assets/flat-icon-man-sunglasses.svg"),
-        i18nTitle: [
-          "Media Expert",
-          ""
-        ],
-        i18nDescription: [
-          "With a broad overview of other climate projects, the media expert knows which needs are not yet covered.",
-          ""
-        ]
-      },{
-        icon: require("../../assets/flat-icon-man-beard.svg"),
-        i18nTitle: [
-          "Rep of the City",
-          ""
-        ],
-        i18nDescription: [
-          "Mannheim is his specialty, you think you are already an expert of your city? Think about it again.",
-          ""
-        ]
-      },{
-        icon: require("../../assets/flat-icon-woman.svg"),
-        i18nTitle: [
-          "Hackerwoman",
-          ""
-        ],
-        i18nDescription: [
-          "0010 1001 1111 1001 1001 1000 0000 0111 0001 0110 1010 0101 0011 1100 0011 0000 0010 0100",
-          ""
-        ]
-      }],
+      jury: [
+        {
+          icon: require("../../assets/flat-icon-scientist.svg"),
+          i18nTitle: ["The Scientist", ""],
+          i18nDescription: [
+            "She observes, discusses and concludes with a knife sharp mind and a concentrated understanding.",
+            ""
+          ]
+        },
+        {
+          icon: require("../../assets/flat-icon-alien.svg"),
+          i18nTitle: ["The Second Scientist", ""],
+          i18nDescription: [
+            "Experienced, brilliant and heard, our scientists cannot be ignored.",
+            ""
+          ]
+        },
+        {
+          icon: require("../../assets/flat-icon-man.svg"),
+          i18nTitle: ["The Economist", ""],
+          i18nDescription: [
+            "Every project must also be financed, if there are gaps in the business model our expert will find them.",
+            ""
+          ]
+        },
+        {
+          icon: require("../../assets/flat-icon-man-sunglasses.svg"),
+          i18nTitle: ["Media Expert", ""],
+          i18nDescription: [
+            "With a broad overview of other climate projects, the media expert knows which needs are not yet covered.",
+            ""
+          ]
+        },
+        {
+          icon: require("../../assets/flat-icon-man-beard.svg"),
+          i18nTitle: ["Rep of the City", ""],
+          i18nDescription: [
+            "Mannheim is his specialty, you think you are already an expert of your city? Think about it again.",
+            ""
+          ]
+        },
+        {
+          icon: require("../../assets/flat-icon-woman.svg"),
+          i18nTitle: ["Hackerwoman", ""],
+          i18nDescription: [
+            "0010 1001 1111 1001 1001 1000 0000 0111 0001 0110 1010 0101 0011 1100 0011 0000 0010 0100",
+            ""
+          ]
+        }
+      ],
       mentors: []
-    }
+    };
   }
 };
 </script>
