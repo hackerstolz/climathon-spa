@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" transform="translate(608 14502)" fill="#10182f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_27" data-name="Gruppe maskieren 27" transform="translate(-608 -14502)" clip-path="url(#clip-path)">
+    <g id="icon_workshop" transform="translate(608 14502.8)">
+      <rect id="Rechteck_719" data-name="Rechteck 719" width="92.8" height="9.6" transform="translate(1.6)" fill="#556080"/>
+      <rect id="Rechteck_720" data-name="Rechteck 720" width="86.4" height="67.2" transform="translate(4.8 9.6)" fill="#ecf0f1"/>
+      <circle id="Ellipse_1713" data-name="Ellipse 1713" cx="24" cy="24" r="24" transform="translate(24 19.2)" fill="#e64c3c"/>
+      <path id="Pfad_1004" data-name="Pfad 1004" d="M41.6,54.4V32L59.2,43.2Z" fill="#fff"/>
+      <line id="Linie_17" data-name="Linie 17" x2="92.8" transform="translate(1.6 76.8)" fill="none" stroke="#556080" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.2"/>
+      <line id="Linie_18" data-name="Linie 18" y2="4.8" transform="translate(48 76.8)" fill="none" stroke="#556080" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.2"/>
+      <circle id="Ellipse_1714" data-name="Ellipse 1714" cx="4.8" cy="4.8" r="4.8" transform="translate(43.2 83.2)" fill="none" stroke="#556080" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.2"/>
+    </g>
+  </g>
+</svg>

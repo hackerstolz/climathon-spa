@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" transform="translate(1187 14965)" fill="rgba(255,255,255,0.1)"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_51" data-name="Gruppe maskieren 51" transform="translate(-1187 -14965)" clip-path="url(#clip-path)">
+    <g id="icon_socialfoodia" transform="translate(1187 14965)">
+      <rect id="Rechteck_724" data-name="Rechteck 724" width="3.804" height="32.972" transform="translate(49.205 50.853)" fill="#535d73"/>
+      <rect id="Rechteck_725" data-name="Rechteck 725" width="3.678" height="38.425" transform="translate(82.132 9.56) rotate(45)" fill="#535d73"/>
+      <rect id="Rechteck_726" data-name="Rechteck 726" width="3.678" height="51.233" transform="translate(45.851 45.773) rotate(45)" fill="#535d73"/>
+      <rect id="Rechteck_727" data-name="Rechteck 727" width="28.153" height="3.678" transform="translate(24.821 15.012) rotate(45)" fill="#535d73"/>
+      <rect id="Rechteck_728" data-name="Rechteck 728" width="38.425" height="3.678" transform="translate(55.586 45.851) rotate(45)" fill="#535d73"/>
+      <circle id="Ellipse_1722" data-name="Ellipse 1722" cx="9.004" cy="9.004" r="9.004" transform="translate(77.992 0)" fill="#4fba6f"/>
+      <circle id="Ellipse_1723" data-name="Ellipse 1723" cx="9.004" cy="9.004" r="9.004" transform="translate(41.723 77.992)" fill="#8697cb"/>
+      <circle id="Ellipse_1724" data-name="Ellipse 1724" cx="9.004" cy="9.004" r="9.004" transform="translate(0 74.441)" fill="#65ddb9"/>
+      <circle id="Ellipse_1725" data-name="Ellipse 1725" cx="5.453" cy="5.453" r="5.453" transform="translate(16.359 9.004)" fill="#e1705c"/>
+      <circle id="Ellipse_1726" data-name="Ellipse 1726" cx="5.453" cy="5.453" r="5.453" transform="translate(74.314 67.086)" fill="#f0c419"/>
+      <circle id="Ellipse_1727" data-name="Ellipse 1727" cx="12.682" cy="12.682" r="12.682" transform="translate(38.045 30.816)" fill="#5c81b8"/>
+    </g>
+  </g>
+</svg>

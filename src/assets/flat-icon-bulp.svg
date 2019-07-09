@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" transform="translate(912 15293)" fill="rgba(255,255,255,0.1)"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_54" data-name="Gruppe maskieren 54" transform="translate(-912 -15293)" clip-path="url(#clip-path)">
+    <g id="Paomedia-Small-N-Flat-Light-bulb" transform="translate(905.143 10582.6)">
+      <path id="Pfad_1193" data-name="Pfad 1193" d="M109.714,80c0,6.312-4.093,11.429-9.143,11.429S91.429,86.312,91.429,80s4.093-11.429,9.143-11.429S109.714,73.688,109.714,80Z" transform="translate(-45.714 4714.972)" fill="#7f8c8d"/>
+      <path id="Pfad_1194" data-name="Pfad 1194" d="M54.857,4710.4c-17.673,0-32,14.628-32,32.914,0,14.171,14.286,26.972,18.286,35.657,4,8.229,0,22.857,0,22.857l13.714-2.286,13.714,2.286s-4-14.628,0-22.857c4-8.686,18.286-21.485,18.286-35.657C86.857,4725.029,72.53,4710.4,54.857,4710.4Z" fill="#f39c12"/>
+      <path id="Pfad_1195" data-name="Pfad 1195" d="M54.857,4710.4c17.673,0,32,14.628,32,32.914,0,14.171-14.286,26.972-18.286,35.657-4,8.229,0,22.857,0,22.857l-13.714-2.286Z" fill="#f1c40f"/>
+      <path id="Pfad_1196" data-name="Pfad 1196" d="M41.143,4737.829l-4.571,4.571,18.286,54.857L73.143,4742.4l-4.571-4.571L64,4742.4l-4.571-4.571-4.571,4.571-4.571-4.571-4.571,4.571Zm0,4.571,4.571,4.571L48,4744.686l2.286-2.286,2.286,2.286,2.286,2.286,2.286-2.286,2.286-2.286,2.286,2.286L64,4746.972l4.571-4.571,2,1.829-15.717,47.086-15.714-47.086Z" fill="#e67e22"/>
+      <rect id="Rechteck_729" data-name="Rechteck 729" width="27.429" height="22.857" transform="translate(41.143 4778.972)" fill="#bdc3c7"/>
+      <path id="Pfad_1197" data-name="Pfad 1197" d="M41.143,4778.972v22.857H54.857v-4.572H68.571v-4.571H54.857v-4.571H68.571v-4.572H54.857v-4.571Z" fill="#95a5a6"/>
+      <path id="Pfad_1198" data-name="Pfad 1198" d="M41.143,4783.543v4.572H54.857v-4.572Zm0,9.143v4.571H54.857v-4.571Z" fill="#7f8c8d"/>
+    </g>
+  </g>
+</svg>

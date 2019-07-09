@@ -1,8 +1,7 @@
 <template>
-  <section
-    :style="{ backgroundColor: sectionColor }">
+  <section :style="{ backgroundColor: sectionColor }">
     <v-container>
-      <h2 class="align-left">{{ $t("title") }}</h2>
+      <h2>{{ $t("title") }}</h2>
     </v-container>
     <video-bg 
       class="video-container"

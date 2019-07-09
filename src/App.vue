@@ -58,21 +58,31 @@
         />
         <Registration
           id="registration"
+          themeColor="primary"
+          :isMobile="isMobile"
         />
         <Staff
           id="staff"
+          themeColor="secondary"
+          :isMobile="isMobile"
         />
         <FAQ
           id="faq"
+          themeColor="primary"
         />
         <Parties
           id="parties"
+          themeColor="secondary"
+          :isMobile="isMobile"
         />
         <Team
           id="team"
+          themeColor="primary"
+          :isMobile="isMobile"
         />
         <Footer
           id="footer"
+          themeColor="primary"
         />
       </v-content>
 

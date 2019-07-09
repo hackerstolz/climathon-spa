@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" transform="translate(592 10352)" fill="#10182f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_34" data-name="Gruppe maskieren 34" transform="translate(-592 -10352)" clip-path="url(#clip-path)">
+    <g id="Thesquid.ink-Free-Flat-Sample-Owl" transform="translate(592 10352)">
+      <g id="Body">
+        <g id="Gruppe_155" data-name="Gruppe 155">
+          <path id="Pfad_1045" data-name="Pfad 1045" d="M78,51c0-16.215-9-24-9-24H27c-.006,0-9,7.785-9,24,0,21.376,18,23.344,18,30,0,7.5-9,7.781-9,15,0,0,7.5-3,12-3,2.907,0,3.188,3,9,3s6.094-3,9-3c4.5,0,12,3,12,3,0-7.219-9-7.5-9-15C60,74.344,78,72.376,78,51Z" fill="#735538"/>
+        </g>
+      </g>
+      <g id="Brench">
+        <g id="Gruppe_156" data-name="Gruppe 156">
+          <path id="Pfad_1046" data-name="Pfad 1046" d="M90,69H6A6,6,0,1,0,6,81H90a6,6,0,1,0,0-12Z" fill="#4d4d4d"/>
+        </g>
+      </g>
+      <g id="Claws">
+        <g id="Gruppe_157" data-name="Gruppe 157">
+          <path id="Pfad_1047" data-name="Pfad 1047" d="M42,66a3,3,0,0,0-3,3,3,3,0,1,0-6,0v6a3,3,0,0,0,6,0,3,3,0,0,0,6,0V69A3,3,0,0,0,42,66Zm18,0a3,3,0,0,0-3,3,3,3,0,1,0-6,0v6a3,3,0,0,0,6,0,3,3,0,0,0,6,0V69A3,3,0,0,0,60,66Z" fill="#bf8d5e" fill-rule="evenodd"/>
+        </g>
+      </g>
+      <g id="Head">
+        <g id="Gruppe_158" data-name="Gruppe 158">
+          <path id="Pfad_1048" data-name="Pfad 1048" d="M70.707,12.555A79.514,79.514,0,0,0,72,0c-3.38,0-7.708,5.545-10.134,9.1A18.262,18.262,0,0,0,60,9a17.917,17.917,0,0,0-12,4.609A17.917,17.917,0,0,0,36,9a18.261,18.261,0,0,0-1.866.1C31.708,5.545,27.38,0,24,0a79.478,79.478,0,0,0,1.293,12.554A17.983,17.983,0,1,0,48,40.39,17.982,17.982,0,1,0,70.707,12.555Z" fill="#a67a51" fill-rule="evenodd"/>
+        </g>
+      </g>
+      <g id="Face">
+        <g id="Gruppe_159" data-name="Gruppe 159">
+          <path id="Pfad_1049" data-name="Pfad 1049" d="M60,15A12,12,0,0,0,48,27a12,12,0,1,0-4.368,9.262L48,45l4.368-8.738A12,12,0,1,0,60,15Z" fill="#e6e6e6" fill-rule="evenodd"/>
+        </g>
+      </g>
+      <g id="Eyes">
+        <g id="Gruppe_160" data-name="Gruppe 160">
+          <path id="Pfad_1050" data-name="Pfad 1050" d="M36,21a6,6,0,1,0,6,6A6,6,0,0,0,36,21Zm24,0a6,6,0,1,0,6,6A6,6,0,0,0,60,21Z" fill="#4d4d4d" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" transform="translate(913 17275)" fill="rgba(255,255,255,0.1)"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_67" data-name="Gruppe maskieren 67" transform="translate(-913 -17275)" clip-path="url(#clip-path)">
+    <g id="icon_ai" transform="translate(913 17276.514)">
+      <path id="Pfad_1266" data-name="Pfad 1266" d="M24.792,24.792a1.659,1.659,0,0,1-1.681-1.681c0-9.139-5.988-16.6-13.236-16.6a1.681,1.681,0,0,1,0-3.362c9.139,0,16.6,8.929,16.6,19.854A1.686,1.686,0,0,1,24.792,24.792Z" fill="#5da892"/>
+      <path id="Pfad_1267" data-name="Pfad 1267" d="M71.224,21.745a1.659,1.659,0,0,1-1.681-1.681c0-9.139,5.673-14.812,14.917-14.812a1.681,1.681,0,0,1,0,3.362c-7.353,0-11.555,4.2-11.555,11.555A1.794,1.794,0,0,1,71.224,21.745Z" fill="#5da892"/>
+      <path id="Pfad_1268" data-name="Pfad 1268" d="M48.638,92.969c18.594.21,28.994-7.353,34.771-15.232,5.988-8.194,7.879-18.7,5.988-28.679C82.674,12.921,48.638,13.236,48.638,13.236S14.5,12.921,7.879,49.058a37.025,37.025,0,0,0,5.988,28.679C19.644,85.615,30.044,93.179,48.638,92.969Z" fill="#81ccb8"/>
+      <path id="Pfad_1269" data-name="Pfad 1269" d="M7.459,51.789a3.761,3.761,0,0,0-2.626-1.156C2.1,50.634,0,53.89,0,57.987c0,3.992,2.206,7.353,4.832,7.353a4.163,4.163,0,0,0,3.046-1.576A38.229,38.229,0,0,1,7.459,51.789Z" fill="#14a085"/>
+      <path id="Pfad_1270" data-name="Pfad 1270" d="M95.7,45.381c-.945-3.887-3.782-6.618-6.408-5.988a3.813,3.813,0,0,0-2,1.366A58.068,58.068,0,0,1,89.5,48.953c.21,1.366.42,2.731.525,4.2a3.9,3.9,0,0,0,2.626.42C95.28,53.05,96.646,49.373,95.7,45.381Z" fill="#14a085"/>
+      <ellipse id="Ellipse_1729" data-name="Ellipse 1729" cx="12.396" cy="9.98" rx="12.396" ry="9.98" transform="translate(36.452 26.683)" fill="#fff"/>
+      <ellipse id="Ellipse_1730" data-name="Ellipse 1730" cx="7.459" cy="4.937" rx="7.459" ry="4.937" transform="translate(41.39 31.725)" fill="#5da892"/>
+      <ellipse id="Ellipse_1731" data-name="Ellipse 1731" cx="12.396" cy="9.98" rx="12.396" ry="9.98" transform="translate(14.917 36.557)" fill="#fff"/>
+      <ellipse id="Ellipse_1732" data-name="Ellipse 1732" cx="7.459" cy="4.937" rx="7.459" ry="4.937" transform="translate(19.854 41.6)" fill="#5da892"/>
+      <ellipse id="Ellipse_1733" data-name="Ellipse 1733" cx="12.396" cy="9.98" rx="12.396" ry="9.98" transform="translate(57.987 36.557)" fill="#fff"/>
+      <ellipse id="Ellipse_1734" data-name="Ellipse 1734" cx="7.459" cy="4.937" rx="7.459" ry="4.937" transform="translate(62.925 41.6)" fill="#5da892"/>
+      <path id="Pfad_1271" data-name="Pfad 1271" d="M75.426,66.812l-6.618-4.937a1.649,1.649,0,1,0-2,2.626l2.311,1.786c-2.1,2.626-8.824,10.19-18.069,11.555-5.778.84-11.661-.945-17.333-5.252l2-1.471a1.649,1.649,0,0,0-2-2.626L27.1,73.43a1.659,1.659,0,0,0-.315,2.311,1.694,1.694,0,0,0,1.366.63,1.466,1.466,0,0,0,.945-.315l2-1.471c.105.105.105.105.105.21q8.351,6.618,17.018,6.618c1.156,0,2.311-.105,3.467-.21,10.5-1.576,17.858-9.98,20.17-12.921l1.681,1.261a1.7,1.7,0,0,0,2.311-.315A1.789,1.789,0,0,0,75.426,66.812Z" fill="#5da892"/>
+      <circle id="Ellipse_1735" data-name="Ellipse 1735" cx="4.937" cy="4.937" r="4.937" transform="translate(0 0)" fill="#14a085"/>
+      <circle id="Ellipse_1736" data-name="Ellipse 1736" cx="4.937" cy="4.937" r="4.937" transform="translate(84.46 1.891)" fill="#14a085"/>
+    </g>
+  </g>
+</svg>

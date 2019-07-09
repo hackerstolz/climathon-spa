@@ -1,13 +1,13 @@
 <template>
-  <v-footer dark height="auto">
-    <v-card flat tile class="primary lighten-1 white--text text-xs-center">
+  <v-footer dark height="auto" :style="{ backgroundColor: sectionColor }">
+    <v-card flat tile color="transparent">
       <v-card-text>
         <v-btn v-for="icon in icons" :key="icon" class="mx-3 white--text" icon>
           <v-icon size="24px">{{ icon }}</v-icon>
         </v-btn>
       </v-card-text>
 
-      <v-card-text class="white--text pt-0">
+      <v-card-text class="pt-0">
         Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
         Mauris cursus commodo interdum. Praesent ut risus eget metus luctus
         accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a
@@ -30,6 +30,19 @@
 <script>
 export default {
   name: "Footer",
+  props: {
+    themeColor: {
+      type: String,
+      default: "primary"
+    }
+  },
+  computed: {
+    sectionColor: function () {
+      return Object.keys(this.$vuetify.theme).indexOf(this.themeColor) !== -1
+        ? this.$vuetify.theme[this.themeColor]
+        : this.$vuetify.theme.primary
+    }
+  },
   data: () => ({
     icons: ["open_in_new"]
   })

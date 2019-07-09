@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" transform="translate(592 10352)" fill="#10182f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_47" data-name="Gruppe maskieren 47" transform="translate(-592 -10352)" clip-path="url(#clip-path)">
+    <g id="icon_dinner" transform="translate(592 10357.125)">
+      <path id="Pfad_1123" data-name="Pfad 1123" d="M88.19,67.525a37.553,37.553,0,0,1,.488,6.02,176.217,176.217,0,0,1-81.356,0,36.084,36.084,0,0,1,.488-6.02c-4.393,2.441-7,4.881-7,6.834C.814,80.217,21.966,84.936,48,84.936s47.186-4.719,47.186-10.576C95.186,72.244,92.583,69.8,88.19,67.525Z" fill="#ffc533" stroke="#ffd772" stroke-miterlimit="10" stroke-width="1.627"/>
+      <path id="Pfad_1124" data-name="Pfad 1124" d="M7.322,73.546a40.678,40.678,0,0,1,81.356,0h0a176.217,176.217,0,0,1-81.356,0Z" fill="#ffd772" stroke="#ffd772" stroke-miterlimit="10" stroke-width="1.627"/>
+      <path id="Pfad_1125" data-name="Pfad 1125" d="M30.264,11.39a5.892,5.892,0,0,1,0,8.3,5.892,5.892,0,0,0,0,8.3" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3.254"/>
+      <path id="Pfad_1126" data-name="Pfad 1126" d="M66.061,11.39a5.892,5.892,0,0,1,0,8.3,5.892,5.892,0,0,0,0,8.3" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3.254"/>
+      <path id="Pfad_1127" data-name="Pfad 1127" d="M48.163,1.627a5.892,5.892,0,0,1,0,8.3,5.892,5.892,0,0,0,0,8.3" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3.254"/>
+      <path id="Pfad_1128" data-name="Pfad 1128" d="M48,32.868a39.587,39.587,0,0,1,6.183.488,8.244,8.244,0,0,0,.325-2.115,6.508,6.508,0,1,0-13.017,0,8.244,8.244,0,0,0,.325,2.115A39.586,39.586,0,0,1,48,32.868Z" fill="none" stroke="#ffd772" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.254"/>
+      <path id="Pfad_1129" data-name="Pfad 1129" d="M40.353,40.19A39.315,39.315,0,0,1,48,39.376" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.254"/>
+      <path id="Pfad_1130" data-name="Pfad 1130" d="M15.458,67.037c1.79-9.437,7.322-18.224,15.783-23.105" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.254"/>
+    </g>
+  </g>
+</svg>

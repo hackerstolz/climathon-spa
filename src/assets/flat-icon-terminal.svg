@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" transform="translate(636 14965)" fill="rgba(255,255,255,0.1)"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_53" data-name="Gruppe maskieren 53" transform="translate(-636 -14965)" clip-path="url(#clip-path)">
+    <g id="Paomedia-Small-N-Flat-Terminal" transform="translate(631.636 10473.072)">
+      <path id="Pfad_1190" data-name="Pfad 1190" d="M13.091,4496.291a8.74,8.74,0,0,0-8.727,8.728v69.818a8.74,8.74,0,0,0,8.727,8.728H91.636a8.739,8.739,0,0,0,8.727-8.728v-69.818a8.739,8.739,0,0,0-8.727-8.728H13.091Z" fill="#2c3e50"/>
+      <path id="Pfad_1191" data-name="Pfad 1191" d="M13.091,8.727a8.727,8.727,0,0,0-8.727,8.727V82.909a8.726,8.726,0,0,0,8.727,8.727H91.636a8.725,8.725,0,0,0,8.727-8.727V17.455a8.726,8.726,0,0,0-8.727-8.727H13.091Z" transform="translate(0 4487.564)" fill="#34495e"/>
+      <path id="Pfad_1192" data-name="Pfad 1192" d="M17.455,22.364v4.909l13.091,7.636L17.455,42.545v4.909L39.273,34.909ZM39.273,43.636V48H61.091V43.636Z" transform="translate(0 4487.564)" fill="#ecf0f1"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" fill="#10182f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_25" data-name="Gruppe maskieren 25" clip-path="url(#clip-path)">
+    <g id="faq_5" transform="translate(0 16.59)">
+      <path id="Pfad_995" data-name="Pfad 995" d="M83.761,66.311H12.215a10.009,10.009,0,0,1-8.027-4.188L.175,56.538a1.692,1.692,0,0,1,1.4-2.618h92.66a1.692,1.692,0,0,1,1.4,2.618l-4.014,5.584A9.456,9.456,0,0,1,83.761,66.311Z" transform="translate(0.099 -1.745)" fill="#e6e6e6"/>
+      <path id="Pfad_996" data-name="Pfad 996" d="M3.49,54.1a43.625,43.625,0,1,1,87.251,0Z" transform="translate(0.099 -1.745)" fill="#f4c44e"/>
+      <path id="Pfad_997" data-name="Pfad 997" d="M47.115,10.47a42.455,42.455,0,0,1,6.631.524A8.841,8.841,0,0,0,54.1,8.725a6.98,6.98,0,0,0-13.96,0,8.841,8.841,0,0,0,.349,2.269A42.455,42.455,0,0,1,47.115,10.47Z" transform="translate(0.099 -1.745)" fill="none" stroke="#f4c44e" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.49"/>
+      <path id="Pfad_998" data-name="Pfad 998" d="M38.914,18.323a42.164,42.164,0,0,1,8.2-.873" transform="translate(0.099 -1.745)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.49"/>
+      <path id="Pfad_999" data-name="Pfad 999" d="M12.215,47.115c1.92-10.121,7.853-19.544,16.927-24.779" transform="translate(0.099 -1.745)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.49"/>
+    </g>
+  </g>
+</svg>

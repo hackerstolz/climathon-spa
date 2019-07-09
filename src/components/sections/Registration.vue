@@ -1,19 +1,152 @@
 <template>
-  <section>
-    <h2>Registration</h2>
+  <section :style="{ backgroundColor: sectionColor }">
+    <v-container>
+      <h2>{{ $t("title") }}</h2>
+      <p class="introText my-5">{{ $t("introText") }}</p>
+      <v-layout class="my-4" row wrap align-start justify-center>
+        <v-flex
+          v-for="(type, i) in types" :key="i"
+          :class="{
+            'stack-grid-item': true,
+            'pa-2': true,
+            'xs4': !isMobile,
+            'xs12': isMobile
+          }">
+          <v-img
+            class="mx-4 my-2"
+            :src="type.icon"
+            max-height="96px"
+            max-width="96px"
+            width="96px"
+            contain
+          ></v-img>
+          <p class="type-title my-1">{{ $i18n.locale === "en" ? type.i18nTitle[0] : type.i18nTitle[1] }}</p>
+          <p class="type-description my-1">{{ $i18n.locale === "en" ? type.i18nDescription[0] : type.i18nDescription[1] }}</p>
+        </v-flex>
+      </v-layout>
+      <p class="highlightText my-3">{{ $t("highlightText") }}</p>
+      <p class="outroText my-5">{{ $t("outroText") }}</p>
+      <v-btn
+        class="mt-2"
+        width="auto"
+        href="https://hackerstolz.mptickets.com"
+        target="_blank"
+        color="info"
+        outline
+        flat
+      >
+        {{ $t("button.link2Ticktes") }}
+        <v-icon dark right>open_in_new</v-icon>
+      </v-btn>
+    </v-container>
   </section>
 </template>
 
 <script>
 export default {
-  name: "Registration"
+  name: "Registration",
+  props: {
+    themeColor: {
+      type: String,
+      default: "primary"
+    },
+    isMobile: Boolean
+  },
+  computed: {
+    sectionColor: function () {
+      return Object.keys(this.$vuetify.theme).indexOf(this.themeColor) !== -1
+        ? this.$vuetify.theme[this.themeColor]
+        : this.$vuetify.theme.primary
+    }
+  },
+  data() {
+    return {
+      types: [{
+        icon: require("../../assets/flat-icon-terminal.svg"),
+        i18nTitle: [
+          "Developer",
+          ""
+        ],
+        i18nDescription: [
+          "Programmers who turn thoughts into code. Only the input speed of your keyboard sets you limits.",
+          ""
+        ]
+      },{
+        icon: require("../../assets/flat-icon-stack.svg"),
+        i18nTitle: [
+          "Engineer",
+          ""
+        ],
+        i18nDescription: [
+          "With a deep scientific background you build the complex engine room of any technical project.",
+          ""
+        ]
+      },{
+        icon: require("../../assets/flat-icon-network.svg"),
+        i18nTitle: [
+          "Data Scientist",
+          ""
+        ],
+        i18nDescription: [
+          "You and data, it’s a long story. A mixture of data magician and a touch of AI.",
+          ""
+        ]
+      },{
+        icon: require("../../assets/flat-icon-tools.svg"),
+        i18nTitle: [
+          "Maker",
+          ""
+        ],
+        i18nDescription: [
+          "Loves tinkering around with hardware and IoT. Your hands start to itch when you hear a great idea.",
+          ""
+        ]
+      },{
+        icon: require("../../assets/flat-icon-bulp.svg"),
+        i18nTitle: [
+          "Idea Generator",
+          ""
+        ],
+        i18nDescription: [
+          "You spark creation with your original ideas and understand the problem at hand.",
+          ""
+        ]
+      },{
+        icon: require("../../assets/flat-icon-astronaut.svg"),
+        i18nTitle: [
+          "Superpower",
+          ""
+        ],
+        i18nDescription: [
+          "Not techie or a designer, but your magic touch will bring projects to life.",
+          ""
+        ]
+      },{
+        icon: require("../../assets/flat-icon-colors.svg"),
+        i18nTitle: [
+          "Designer",
+          ""
+        ],
+        i18nDescription: [
+          "In your skillful hands, dashboards and applications gain clarity and style.",
+          ""
+        ]
+      }]
+    }
+  }
 };
 </script>
 
 <i18n>
 {
   "en": {
-    "hello": "Hello i18n in SFC!"
+    "title": "Registration",
+    "introText": "Wondering what kind of hackers are needed to take on the challenges? Find them here, but please don’t forget, the only really important condition for you as a participant: planet earth lover!",
+    "highlightText": "Teams of 3 to 7 people work together on a project idea.",
+    "outroText": "If you don’t have a complete team yet, don’t worry, you can register as an individual participant  in the application process and then find teammates before the event in our slack community or during the first day.",
+    "button": {
+      "link2Ticktes": "Go to Ticketshop"
+    }
   }
 }
 </i18n>
@@ -21,5 +154,61 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
 section
-  // height 100vh
+  padding-bottom 128px
+  h2
+    font-family Gagalin,sans-serif
+    font-weight 400
+    font-style normal
+    font-size 28px
+    letter-spacing 1.4px
+    text-align center
+    color #ffffff
+    margin-top 128px
+    margin-bottom 64px
+
+  .highlightText
+    font-family Roboto Condensed,sans-serif
+    font-weight 400
+    font-size 20px
+    line-height 1.4
+    letter-spacing normal
+    text-align center
+    // TODO: replace color by constant
+    color #A8E5A3
+
+  .introText, .outroText
+    font-family Roboto Condensed,sans-serif
+    font-weight 400
+    font-size 20px
+    line-height 1.4
+    letter-spacing normal
+    text-align center
+    color rgba(255, 255, 255, 0.8)
+
+  .stack-grid-item
+    transition all 300ms
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
+    .type-title
+      font-family Gagalin,sans-serif
+      font-weight 400
+      font-style normal
+      font-size 20px
+      font-stretch normal
+      line-height 1
+      letter-spacing 1px
+      text-align inherit
+      color #ffffff
+    .type-description
+      font-family click-clack,sans-serif
+      font-weight 300
+      font-size 20px
+      font-style normal
+      line-height 1.2
+      letter-spacing 0.5px
+      text-align inherit
+      color rgba(255, 255, 255, 0.8)
+  
 </style>

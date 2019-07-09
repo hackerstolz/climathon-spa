@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" transform="translate(608 15224)" fill="#10182f"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_29" data-name="Gruppe maskieren 29" transform="translate(-608 -15224)" clip-path="url(#clip-path)">
+    <g id="beer" transform="translate(614.316 15224)">
+      <g id="Desktop-HD" transform="translate(-2549.053 -2324.21)">
+        <g id="Page-1-Copy-27" transform="translate(2549.053 2324.21)">
+          <path id="Fill-1" d="M75.958,37.351H64.842v7.385h7.411a3.71,3.71,0,0,1,3.705,3.692V66.889a3.71,3.71,0,0,1-3.705,3.692H64.842v7.385H75.958a7.419,7.419,0,0,0,7.411-7.385V44.735a7.419,7.419,0,0,0-7.411-7.385" fill="#e6e6e6" fill-rule="evenodd"/>
+          <path id="Fill-3" d="M53.726,7.385a11.073,11.073,0,0,0-6.794,2.322,11.126,11.126,0,0,0-14.3-5.1A12.045,12.045,0,0,0,11.383,9.5,9.187,9.187,0,0,0,0,18.462V33.231a3.71,3.71,0,0,0,3.705,3.692H5.558a3.71,3.71,0,0,0,3.705-3.692V30.284a7.327,7.327,0,0,0,3.831,1.1h3.644a7.389,7.389,0,0,0,5.81-2.863,11.108,11.108,0,0,0,20.188-6.367H64.2A11.046,11.046,0,0,0,53.726,7.385" fill="#e6e6e6" fill-rule="evenodd"/>
+          <path id="Fill-5" d="M42.736,22.154a11.108,11.108,0,0,1-20.188,6.367,7.389,7.389,0,0,1-5.81,2.863H13.094a7.332,7.332,0,0,1-3.831-1.1V86.769A9.274,9.274,0,0,0,18.526,96H55.579a9.274,9.274,0,0,0,9.263-9.231V22.154Z" fill="#f4c44e" fill-rule="evenodd"/>
+          <path id="Fill-7" d="M20.379,46.154a5.558,5.558,0,0,0-11.116,0V84.923H20.379Z" fill="#f9da49" fill-rule="evenodd"/>
+          <path id="Fill-9" d="M31.495,46.154a5.558,5.558,0,0,0-11.116,0V84.923H31.495Z" fill="#eeaf4b" fill-rule="evenodd"/>
+          <path id="Fill-11" d="M42.611,46.154a5.558,5.558,0,0,0-11.116,0V84.923H42.611Z" fill="#f9da49" fill-rule="evenodd"/>
+          <path id="Fill-13" d="M53.726,46.154a5.558,5.558,0,0,0-11.116,0V84.923H53.726Z" fill="#eeaf4b" fill-rule="evenodd"/>
+          <path id="Fill-15" d="M64.842,46.154a5.558,5.558,0,0,0-11.116,0V84.923H64.842Z" fill="#f9da49" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

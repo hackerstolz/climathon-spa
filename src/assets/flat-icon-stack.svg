@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Bildschirmfoto_2019-06-16_um_17.29.45" data-name="Bildschirmfoto 2019-06-16 um 17.29.45" width="96" height="96" rx="8" transform="translate(912 14965)" fill="rgba(255,255,255,0.1)"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_maskieren_52" data-name="Gruppe maskieren 52" transform="translate(-912 -14965)" clip-path="url(#clip-path)">
+    <g id="Paomedia-Small-N-Flat-Layers" transform="translate(912 10851.4)">
+      <path id="Pfad_1185" data-name="Pfad 1185" d="M0,4177.6l48,24,48-24-48-24Z" fill="#e74c3c"/>
+      <path id="Pfad_1186" data-name="Pfad 1186" d="M48,4153.6l-36,18,36,18,36-18Z" fill="#c0392b"/>
+      <path id="Pfad_1187" data-name="Pfad 1187" d="M0,4161.6l48,24,48-24-48-24Z" fill="#3498db"/>
+      <path id="Pfad_1188" data-name="Pfad 1188" d="M48,4137.6l-36,18,36,18,36-18Z" fill="#2980b9"/>
+      <path id="Pfad_1189" data-name="Pfad 1189" d="M0,4145.6l48,24,48-24-48-24Z" fill="#f1c40f"/>
+    </g>
+  </g>
+</svg>

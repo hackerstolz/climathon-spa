@@ -2,7 +2,7 @@
   <section
     :style="{ backgroundColor: sectionColor }">
     <v-container>
-      <h2 class="align-left">{{ $t("title") }}</h2>
+      <h2>{{ $t("title") }}</h2>
       <v-card
         v-for="(award, i) in awards" :key="i"
         class="card pa-3 mb-4"
