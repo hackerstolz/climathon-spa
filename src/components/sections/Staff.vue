@@ -176,50 +176,50 @@ export default {
       jury: [
         {
           icon: require("../../assets/flat-icon-scientist.svg"),
-          i18nTitle: ["The Scientist", ""],
+          i18nTitle: ["The Scientist", "Die Wissenschaftlerin"],
           i18nDescription: [
             "She observes, discusses and concludes with a knife sharp mind and a concentrated understanding.",
-            ""
+            "Sie beobachtet, diskutiert und besticht mit einem messerscharfen Verstand und einem konzentrierten Verständnis."
           ]
         },
         {
           icon: require("../../assets/flat-icon-alien.svg"),
-          i18nTitle: ["The Second Scientist", ""],
+          i18nTitle: ["The Second Scientist", "Der zweite Wissenschaftler"],
           i18nDescription: [
             "Experienced, brilliant and heard, our scientists cannot be ignored.",
-            ""
+            "Erfahren, brillant und hörenswert, können unsere Wissenschaftler nicht ignoriert werden."
           ]
         },
         {
           icon: require("../../assets/flat-icon-man.svg"),
-          i18nTitle: ["The Economist", ""],
+          i18nTitle: ["The Economist", "Der Ökonom"],
           i18nDescription: [
             "Every project must also be financed, if there are gaps in the business model our expert will find them.",
-            ""
+            "Jedes Projekt muss auch finanziert werden, wenn es Lücken im Geschäftsmodell gibt, wird unser Experte sie finden."
           ]
         },
         {
           icon: require("../../assets/flat-icon-man-sunglasses.svg"),
-          i18nTitle: ["Media Expert", ""],
+          i18nTitle: ["Media Expert", "Medienexperte"],
           i18nDescription: [
             "With a broad overview of other climate projects, the media expert knows which needs are not yet covered.",
-            ""
+            "Mit einem breiten Überblick über andere Klimaprojekte weiß der Medienexperte, welche Bedürfnisse noch nicht abgedeckt sind."
           ]
         },
         {
           icon: require("../../assets/flat-icon-man-beard.svg"),
-          i18nTitle: ["Rep of the City", ""],
+          i18nTitle: ["Rep of the City", "Vertreter der Stadt"],
           i18nDescription: [
             "Mannheim is his specialty, you think you are already an expert of your city? Think about it again.",
-            ""
+            "Mannheim ist seine Spezialität. Du denkst, du bist schon ein Experte deiner Stadt? Denke noch einmal darüber nach."
           ]
         },
         {
           icon: require("../../assets/flat-icon-woman.svg"),
-          i18nTitle: ["Hackerwoman", ""],
+          i18nTitle: ["Hackerwoman", "Hackerwoman"],
           i18nDescription: [
             "0010 1001 1111 1001 1001 1000 0000 0111 0001 0110 1010 0101 0011 1100 0011 0000 0010 0100",
-            ""
+            "0010 1001 1111 1001 1001 1000 0000 0111 0001 0110 1010 0101 0011 1100 0011 0000 0010 0100"
           ]
         }
       ],
@@ -238,6 +238,14 @@ export default {
     "introJury": "These faces and names will soon be replaced by really cool jury members. And because science has not been given enough attention so far, we have two jury members from this category.",
     "mentorsTitle": "Mentors",
     "introMentors": "So that you have a contact person ready to answer questions on a wide variety of topics, we will put a battalion of mentors at your side. Find out more soon who you can expect here."
+  },
+  "de": {
+    "speakersTitle": "Referenten",
+    "introSpeakers": "Hier werden wir in Kürze die Referenten veröffentlichen, die dir bei der Eröffnung am Freitag einen Gänsehautmoment verpassen werden.",
+    "juryTitle": "Jury",
+    "introJury": "Diese Gesichter und Namen werden bald durch wirklich coole Jurymitglieder ersetzt. Und weil der Wissenschaft bisher nicht genügend Aufmerksamkeit geschenkt wurde, haben wir zwei Jurymitglieder aus dieser Kategorie.",
+    "mentorsTitle": "Mentoren",
+    "introMentors": "Damit du immer einen Ansprechpartner hast, der dir bei Fragen zu den unterschiedlichsten Themen zur Seite steht, stellen wir dir ein Bataillon von Mentoren zur Seite. Mehr darüber, wen du hier erwarten kannst, erfährst du in Kürze."
   }
 }
 </i18n>

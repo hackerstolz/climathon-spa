@@ -4,6 +4,7 @@
       <h2>{{ $t("title") }}</h2>
     </v-container>
     <video-bg
+      ref="videobg"
       class="video-container"
       :sources="[
         require('!file-loader!../../assets/video/ma-earth-footage.webm'),
@@ -55,6 +56,10 @@ export default {
       type: String,
       default: "primary"
     }
+  },
+  mounted() {
+    // set video to play in slow motion
+    this.$refs.videobg.$refs.video.playbackRate = 0.5;
   },
   computed: {
     sectionColor: function() {
@@ -139,7 +144,7 @@ section
       .location-text
         // TODO: font seems not to be available on mobile
         font-family Roboto
-        font-weight 800
+        font-weight 900
         font-size 28px
         font-style normal
         line-height 1.2

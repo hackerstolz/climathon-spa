@@ -136,7 +136,10 @@ export default {
   },
   "de": {
     "sloganBeforeHeart": "Ein Hackathon gemacht mit",
-    "sloganAfterHeart": "von"
+    "sloganAfterHeart": "von",
+    "creditsTitle": "Credits",
+    "credits": "Schriftart „Gagalin“ von Iordanis Passas • Icons von „Özden Gelgec“, „Arnaud“ und „Squid Ink“",
+    "designedBy": "entworfen und entwickelt von Jascha A. Quintern"
   }
 }
 </i18n>

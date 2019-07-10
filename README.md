@@ -29,13 +29,18 @@ yarn run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### TODOs
-[ ] Translate all sections  
-[ ] Add links to schedule  
-[ ] Complete FAQ  
-[ ] Replace Favicon  
-[ ] Add contact form  
+[X] Translate all sections  
+[X] Replace Favicon  
+[X] Add contact button  
 [X] Add navbar menu for quick navigation  
 [ ] Finish intro animation  
 [ ] Add worst-case-4C switch  
 [ ] Add countdown clocks  
 [ ] Add Travis CI pipeline for auto-deployment  
+[X] Add link to Slack or Spectrum Community  
+
+### TODOs Content
+[X] Complete FAQ  
+[ ] Update Hackathon rules in FAQ  
+[ ] Add jury/prize rules in FAQ  
+[ ] Add links to schedule  

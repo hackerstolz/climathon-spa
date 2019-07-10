@@ -36,17 +36,41 @@
       </v-layout>
       <p class="highlightText my-3">{{ $t("highlightText") }}</p>
       <p class="outroText my-5">{{ $t("outroText") }}</p>
+      <v-layout row align-center justify-center wrap>
+        <v-btn
+          class="mt-2"
+          width="auto"
+          href="https://hackerstolz.mptickets.com"
+          target="_blank"
+          color="info"
+          outline
+          flat
+        >
+          {{ $t("button.link2Ticktes") }}
+          <v-icon dark right>open_in_new</v-icon>
+        </v-btn>
+        <v-btn
+          class="mt-2"
+          width="auto"
+          href="http://community.hackerstolz.de"
+          target="_blank"
+          color="warning"
+          outline
+          flat
+        >
+          {{ $t("button.link2Slack") }}
+          <v-icon dark right>open_in_new</v-icon>
+        </v-btn>
+      </v-layout>
       <v-btn
-        class="mt-2"
+        class="buy-tickets mt-4"
         width="auto"
         href="https://hackerstolz.mptickets.com"
         target="_blank"
-        color="info"
-        outline
-        flat
+        color="success"
+        large
       >
-        {{ $t("button.link2Ticktes") }}
-        <v-icon dark right>open_in_new</v-icon>
+        {{ $t("button.buyTickets") }}
       </v-btn>
     </v-container>
   </section>
@@ -74,58 +98,58 @@ export default {
       types: [
         {
           icon: require("../../assets/flat-icon-terminal.svg"),
-          i18nTitle: ["Developer", ""],
+          i18nTitle: ["Developer", "Entwickler*in"],
           i18nDescription: [
             "Programmers who turn thoughts into code. Only the input speed of your keyboard sets you limits.",
-            ""
+            "Programmierer, die Gedanken in Code verwandeln. Nur die Eingabegeschwindigkeit deiner Tastatur setzt dir Grenzen."
           ]
         },
         {
           icon: require("../../assets/flat-icon-stack.svg"),
-          i18nTitle: ["Engineer", ""],
+          i18nTitle: ["Engineer", "Techniker*in"],
           i18nDescription: [
             "With a deep scientific background you build the complex engine room of any technical project.",
-            ""
+            "Mit einem tiefen wissenschaftlichen Hintergrund baust du den komplexen Maschinenraum eines jeden technischen Projekts."
           ]
         },
         {
           icon: require("../../assets/flat-icon-network.svg"),
-          i18nTitle: ["Data Scientist", ""],
+          i18nTitle: ["Data Scientist", "Datenwissenschaftler*in"],
           i18nDescription: [
-            "You and data, it’s a long story. A mixture of data magician and a touch of AI.",
-            ""
+            "You and data, it’s a long story. A mixture of data magic and a touch of AI.",
+            "Du und Daten, es ist eine lange Geschichte. Eine Mischung aus Datenmagie und einem Hauch von KI."
           ]
         },
         {
           icon: require("../../assets/flat-icon-tools.svg"),
-          i18nTitle: ["Maker", ""],
+          i18nTitle: ["Maker", "Macher*in"],
           i18nDescription: [
             "Loves tinkering around with hardware and IoT. Your hands start to itch when you hear a great idea.",
-            ""
+            "Liebt es, an Hardware und IoT herumzubasteln. Deine Hände fangen an zu jucken, wenn du eine tolle Idee hörst."
           ]
         },
         {
           icon: require("../../assets/flat-icon-bulp.svg"),
-          i18nTitle: ["Idea Generator", ""],
+          i18nTitle: ["Idea Generator", "Ideengenerator*in"],
           i18nDescription: [
             "You spark creation with your original ideas and understand the problem at hand.",
-            ""
+            "Du inspirierst die Kreation mit deinen originellen Ideen und verstehst das anstehende Problem."
           ]
         },
         {
           icon: require("../../assets/flat-icon-astronaut.svg"),
-          i18nTitle: ["Superpower", ""],
+          i18nTitle: ["Superpower", "Superkraft"],
           i18nDescription: [
             "Not techie or a designer, but your magic touch will bring projects to life.",
-            ""
+            "Nicht Techniker oder Designer, aber deine magische Note wird Projekte zum Leben erwecken."
           ]
         },
         {
           icon: require("../../assets/flat-icon-colors.svg"),
-          i18nTitle: ["Designer", ""],
+          i18nTitle: ["Designer", "Designer*in"],
           i18nDescription: [
             "In your skillful hands, dashboards and applications gain clarity and style.",
-            ""
+            "In deinen geschickten Händen gewinnen Dashboards und Anwendungen an Klarheit und Stil."
           ]
         }
       ]
@@ -140,9 +164,22 @@ export default {
     "title": "Registration",
     "introText": "Wondering what kind of hackers are needed to take on the challenges? Find them here, but please don’t forget, the only really important condition for you as a participant: planet earth lover!",
     "highlightText": "Teams of 3 to 7 people work together on a project idea.",
-    "outroText": "If you don’t have a complete team yet, don’t worry, you can register as an individual participant  in the application process and then find teammates before the event in our slack community or during the first day.",
+    "outroText": "If you don’t have a complete team yet, don’t worry, you can register as an individual participant in the application process and then find teammates before the event in our slack community or during the first day.",
     "button": {
-      "link2Ticktes": "Go to Ticketshop"
+      "link2Ticktes": "Go to Ticketshop",
+      "link2Slack": "Join slack community",
+      "buyTickets": "Get tickets now!"
+    }
+  },
+  "de": {
+    "title": "Registrierung",
+    "introText": "Du fragst dich, welche Art von Hackern benötigt werden, um die Herausforderungen anzunehmen? Hier findest du sie, aber vergiss nicht, die einzige wirklich wichtige Bedingung für dich als Teilnehmer: Liebhaber von Planet Erde!",
+    "highlightText": "Teams von 3 bis 7 Personen arbeiten gemeinsam an einer Projektidee.",
+    "outroText": "Wenn du noch kein komplettes Team hast, kannst du dich als Einzelteilnehmer im Bewerbungsprozess anmelden und dann vor der Veranstaltung in unserer Slack Community oder am ersten Tag vor Ort Teamkollegen finden.",
+    "button": {
+      "link2Ticktes": "Zum Ticketshop",
+      "link2Slack": "Slack Community beitreten",
+      "buyTickets": "Jetzt Tickets sichern!"
     }
   }
 }
@@ -207,4 +244,12 @@ section
       letter-spacing 0.5px
       text-align inherit
       color rgba(255, 255, 255, 0.8)
+
+  .buy-tickets
+    font-family Gagalin,sans-serif
+    font-weight 400
+    font-style normal
+    letter-spacing 1.5px
+    font-size 22px
+    color #ffffff
 </style>

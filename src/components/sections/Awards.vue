@@ -12,7 +12,9 @@
       >
         <h3 class="mb-3">{{ $t(`awards.${award.key}.title`) }}</h3>
         <v-img :src="award.img" max-height="128px" contain></v-img>
-        <div :style="{ color: award.color }" class="prize my-3">{{ $t(`awards.${award.key}.prize`) }}</div>
+        <div :style="{ color: award.color }" class="prize my-3">
+          {{ $t(`awards.${award.key}.prize`) }}
+        </div>
         <p class="description">{{ $t(`awards.${award.key}.description`) }}</p>
       </v-card>
 

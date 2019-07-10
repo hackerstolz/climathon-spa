@@ -69,7 +69,7 @@ export default {
           orgColor: "#70B4DF",
           i18nDescription: [
             "He is king of organizing, making the plans and providing structural progress.",
-            ""
+            "Er ist der König der Organisation, der Planung und des strukturellen Fortschritts."
           ]
         },
         {
@@ -79,7 +79,7 @@ export default {
           orgColor: "#70B4DF",
           i18nDescription: [
             "Beside organizing he creates the event experience, pushes the location concepts and creates the hackathon identity.",
-            ""
+            "Neben der Organisation gestaltet er das Veranstaltungserlebnis, treibt die Location-Konzepte voran und schafft die Hackathon-Identität."
           ]
         },
         {
@@ -89,7 +89,7 @@ export default {
           orgColor: "#70B4DF",
           i18nDescription: [
             "She is well experienced in organizing hackathons and a real sustainability professional.",
-            ""
+            "Sie hat viel Erfahrung in der Organisation von Hackathons und ist eine echte Nachhaltigkeitsprofis."
           ]
         },
         {
@@ -99,7 +99,7 @@ export default {
           orgColor: "#70B4DF",
           i18nDescription: [
             "The hidden power in the background. Whenever it got tight, he was on the spot and provided the missing strength.",
-            ""
+            "Die versteckte Macht im Hintergrund. Wann immer es eng wurde, war er vor Ort und sorgte für die fehlende Kraft."
           ]
         },
         {
@@ -109,7 +109,7 @@ export default {
           orgColor: "#DD543B",
           i18nDescription: [
             "Our backbone of the city with the tasks of networking the most important parties and ensuring the necessary support of the city for the entire project.",
-            ""
+            "Unser Rückgrat der Stadt mit der Aufgabe, die wichtigsten Parteien zu vernetzen und die notwendige Unterstützung der Stadt für das gesamte Projekt sicherzustellen."
           ]
         },
         {
@@ -119,7 +119,7 @@ export default {
           orgColor: "#DD543B",
           i18nDescription: [
             "The mouthpiece between city, KIC and project team. He gets stuff done and is the city’s manpower plant.",
-            ""
+            "Das Sprachrohr zwischen Stadt, KIC und Projektteam. Er kümmert sich um alles und ist das Arbeitskraftwerk der Stadt."
           ]
         }
       ]
@@ -132,7 +132,11 @@ export default {
 {
   "en": {
     "title": "Orga Team",
-    "intro": "Yes folks, these are the people who are responsible... well, for all."
+    "intro": "Such a hackathon really needs a lot of helpers, you can identify yourself with our vision and want to support the climathon? Awesome, we can still use a lot of support. Contact us right now!"
+  },
+  "de": {
+    "title": "Orga-Team",
+    "intro": "Ein solcher Hackathon braucht wirklich viele Helfer, du kannst dich mit unserer Vision identifizieren und willst den Climathon unterstützen? Fantastisch, wir können immer noch eine Menge Unterstützung gebrauchen. Kontaktiere uns jetzt!"
   }
 }
 </i18n>

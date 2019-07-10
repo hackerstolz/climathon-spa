@@ -14,28 +14,56 @@
                 :key="i"
                 @click="onSetNewLocale(lang)"
               >
-                <v-list-tile-title>{{ $t(`label.${lang}`) }}</v-list-tile-title>
+                <v-list-tile-title>
+                  {{ $t(`label.${lang}`) }}
+                </v-list-tile-title>
               </v-list-tile>
             </v-list>
           </v-menu>
-          <v-spacer/>
+          <v-spacer />
           <v-btn flat @click.stop="drawer = !drawer" icon>
             <v-icon>close</v-icon>
           </v-btn>
         </v-toolbar>
+        <v-btn
+          color="info"
+          width="100%"
+          href="mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc."
+          large
+          flat
+        >
+          {{ $t("button.contactus") }}
+          <v-icon right>email</v-icon>
+        </v-btn>
         <v-list>
           <template v-for="(item, i) in menu">
-            <v-list-tile v-scroll-to="`#${item}`" :key="item" ripple @click="()=>{}">
-              <v-list-tile-title>{{ $t(`label.${item}`) }}</v-list-tile-title>
+            <v-list-tile
+              v-scroll-to="`#${item}`"
+              :key="item"
+              ripple
+              @click="() => {}"
+            >
+              <v-list-tile-title class="menu-item">{{
+                $t(`label.${item}`)
+              }}</v-list-tile-title>
             </v-list-tile>
-            <v-divider v-if="i < menu.length - 1" :key="i" inset/>
+            <v-divider v-if="i < menu.length - 1" :key="i" inset />
           </template>
         </v-list>
       </v-navigation-drawer>
 
-      <v-toolbar class="toolbar" app color="transparent" flat>
+      <v-toolbar class="toolbar" app color="transparent" flat scroll-off-screen>
         <v-toolbar-side-icon @click.stop="drawer = !drawer" />
         <v-spacer></v-spacer>
+        <v-btn
+          color="info"
+          href="mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc."
+          flat
+          :icon="isMobile"
+        >
+          {{ isMobile ? null : $t("button.contactus") }}
+          <v-icon v-if="isMobile">email</v-icon>
+        </v-btn>
         <v-btn
           :class="{ 'app-btn-register': true, large: !isMobile }"
           color="success"
@@ -79,7 +107,7 @@
         {{ `${$t("label.snackbarText")}&nbsp;✌️` }}
         <v-btn
           class="app-btn-snackbar"
-          color="info"
+          color="accent"
           dark
           flat
           @click="snackbar.show = false"
@@ -122,7 +150,20 @@ export default {
         color: "primary",
         timeout: 6000
       },
-      menu: ["intro","about","challenges","awards","location","schedule","registration","staff","faq","parties","team","footer"]
+      menu: [
+        "intro",
+        "about",
+        "challenges",
+        "awards",
+        "location",
+        "schedule",
+        "registration",
+        "staff",
+        "faq",
+        "parties",
+        "team",
+        "footer"
+      ]
     };
   },
   mounted() {
@@ -172,7 +213,8 @@ export default {
       "footer": "Credits"
     },
     "button": {
-      "register": "Register Here"
+      "register": "Register Here",
+      "contactus": "Contact us"
     }
   },
   "de": {
@@ -180,10 +222,23 @@ export default {
       "snackbarText": "We don't need any analysis tools so enjoy a cookie-free experience.",
       "snackbarConfirm": "OK",
       "en": "Englisch",
-      "de": "Deutsch"
+      "de": "Deutsch",
+      "intro": "Intro",
+      "about": "Über den Climathon",
+      "challenges": "Herausforderungen",
+      "awards": "Auszeichnungen",
+      "location": "Austragungsort",
+      "schedule": "Eventablauf",
+      "registration": "Registrierung",
+      "staff": "Referenten, Jury & Mentoren",
+      "faq": "FAQ",
+      "parties": "Sponsoren & Partner",
+      "team": "Orga-Team",
+      "footer": "Credits"
     },
     "button": {
-      "register": "Hier Registrieren"
+      "register": "Hier Registrieren",
+      "contactus": "Kontaktiere uns"
     }
   }
 }
@@ -222,6 +277,12 @@ export default {
 
   .navigation
     background-color #10182F
+    .menu-item
+      font-family Gagalin,sans-serif
+      font-weight 400
+      font-style normal
+      letter-spacing 1.5px
+      color rgba(255,255,255,0.8)
 
   .language-list
     background-color #182445
@@ -231,4 +292,9 @@ export default {
     font-weight 400
     font-style normal
     letter-spacing 1.5px
+
+
+  a.link
+    color #70B4DF !important
+    text-decoration none
 </style>
