@@ -1,12 +1,6 @@
 os: linux
 language: node_js
 
-# env:
-#   global:
-#   - 'SFTP_USER=[user]'
-#   - 'SFTP_PASSWORD=[password]'
-#   - 'SFTP_KEY=[base64-encoded-rsa-key]'
-
 notifications:
   email:
     on_success: never # default: change
@@ -36,10 +30,8 @@ script:
   - yarn lint
   - yarn build
 
-after_success:
-  - curl --ftp-create-dirs
-        -T ./dist
-        sftp://${SFTP_USER}:${SFTP_PASSWORD}@sftp.hackerstolz.de/httpd.www/climathon
+# after_success:
+#   - find ./dist -type d \( -path "./.*" -o -path "./node_modules" \) -prune -o -name "*" -print -exec curl --ftp-create-dirs -T {} ftp://sftp.hackerstolz.de/httpd.www/climathon --user ${SFTP_USER}:${SFTP_PASSWORD} \;
 
 # after_success:
 #   - echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
