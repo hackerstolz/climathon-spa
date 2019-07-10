@@ -56,6 +56,7 @@
         <v-toolbar-side-icon @click.stop="drawer = !drawer" />
         <v-spacer></v-spacer>
         <v-btn
+          :class="{ 'app-btn-register': true, large: !isMobile }"
           color="info"
           href="mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc."
           flat
@@ -267,6 +268,13 @@ export default {
 
   .toolbar
     z-index 5
+    .app-btn-contact
+      font-family Gagalin,sans-serif
+      font-weight 400
+      font-style normal
+      letter-spacing 1.5px
+      &.large
+        font-size 22px
     .app-btn-register
       font-family Gagalin,sans-serif
       font-weight 400

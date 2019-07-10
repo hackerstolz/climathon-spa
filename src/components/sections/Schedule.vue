@@ -127,8 +127,8 @@ export default {
               i18nTitle: ["Start coding!", "Beginn des Programmierens!"],
               // TODO: add link to climathon site
               i18nDescription: [
-                "Most people probably started at 17:30, but that’s no problem, its just a number. Mutch more important is that you found a team and you registered your team here: link will be announced, soon",
-                "Die meisten Leute begannen wahrscheinlich um 17:30 Uhr, aber das ist kein Problem, es ist nur eine Zahl. Wichtiger ist, dass du ein Team gefunden hast und dein Team hier registriert ist: Link wird in Kürze bekannt gegeben."
+                "Most people probably started at 16:30, but that’s no problem, its just a number. Mutch more important is that you found a team and you registered your team here: link will be announced, soon",
+                "Die meisten Leute begannen wahrscheinlich um 16:30 Uhr, aber das ist kein Problem, es ist nur eine Zahl. Wichtiger ist, dass du ein Team gefunden hast und dein Team hier registriert ist: Link wird in Kürze bekannt gegeben."
               ]
             },
             {

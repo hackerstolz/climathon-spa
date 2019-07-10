@@ -233,6 +233,7 @@ section
     margin-bottom 64px
 
   .faq-card
+    cursor pointer
     .faq-title
       font-family Roboto Condensed,sans-serif
       font-weight 600
