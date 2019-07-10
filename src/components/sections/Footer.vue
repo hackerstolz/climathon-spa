@@ -102,7 +102,7 @@ export default {
     links: [
       {
         icon: require("../../assets/icon-twitter.svg"),
-        href: "https://twitter.com/hackerstolz?"
+        href: "https://twitter.com/hackerstolz"
       },
       {
         icon: require("../../assets/icon-meetup.svg"),
