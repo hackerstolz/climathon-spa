@@ -98,6 +98,7 @@
       </v-content>
 
       <v-snackbar
+        class="snackbar"
         auto-height
         v-model="snackbar.show"
         :color="snackbar.color"
@@ -108,7 +109,7 @@
         {{ `${$t("label.snackbarText")}&nbsp;✌️` }}
         <v-btn
           class="app-btn-snackbar"
-          color="accent"
+          color="primary"
           dark
           flat
           @click="snackbar.show = false"
@@ -148,7 +149,7 @@ export default {
       drawer: false,
       snackbar: {
         show: false,
-        color: "primary",
+        color: "success",
         timeout: 6000
       },
       menu: [
@@ -295,12 +296,16 @@ export default {
   .language-list
     background-color #182445
 
-  .app-btn-snackbar
-    font-family Gagalin,sans-serif
-    font-weight 400
-    font-style normal
-    letter-spacing 1.5px
-
+  .snackbar
+    font-family Roboto Condensed,sans-serif
+    font-weight 600
+    line-height 1.4
+    color rgba(0,0,0,0.8)
+    .app-btn-snackbar
+      font-family Gagalin,sans-serif
+      font-weight 400
+      font-style normal
+      letter-spacing 1.5px
 
   a.link
     color #70B4DF !important

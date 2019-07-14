@@ -68,8 +68,8 @@ export default {
     "awards": {
       "climateGrant": {
         "title": "3x Climate Grants",
-        "prize": "min. 10k EUR Total Grant budget",
-        "description": "The three projects best evaluated by the jury win a project grant with which the team can turn its idea into reality. Each project receives at least 5k EUR, we give everything to find a sponsor, so that the funding amount is higher."
+        "prize": "min. 6k EUR Total Grant budget",
+        "description": "The three projects best evaluated by the jury win a project grant with which the team can turn its idea into reality. Each project receives at least 2k EUR, we give everything to find a sponsor, so that the funding amount is higher."
       },
       "cityPrize": {
         "title": "City Prizes",
@@ -84,8 +84,8 @@ export default {
     "awards": {
       "climateGrant": {
         "title": "3x Klima Förderungen",
-        "prize": "min. 10t EUR gesamtes Förderbudget",
-        "description": "Die drei von der Jury am besten bewerteten Projekte erhalten einen Projektstipendium, mit dem das Team seine Idee in die Tat umsetzen kann. Jedes Projekt erhält mindestens 5t EUR, wir geben alles, um Sponsoren zu finden, so dass der Förderbetrag noch höher ist."
+        "prize": "min. 6t EUR gesamtes Förderbudget",
+        "description": "Die drei von der Jury am besten bewerteten Projekte erhalten einen Projektstipendium, mit dem das Team seine Idee in die Tat umsetzen kann. Jedes Projekt erhält mindestens 2t EUR, wir geben alles, um Sponsoren zu finden, so dass der Förderbetrag noch höher ist."
       },
       "cityPrize": {
         "title": "Stadtpreise",
