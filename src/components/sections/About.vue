@@ -13,7 +13,7 @@
         <div class="pa-2">{{ $t("imgDescription") }}</div>
         <v-btn
           class="link-to-cgoal mb-4"
-          href="https://youtu.be/VOQArPuEWU0"
+          href="https://www.ipcc.ch/sr15/"
           target="_blank"
           color="accent"
           outline
