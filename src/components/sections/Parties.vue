@@ -2,7 +2,7 @@
   <section :style="{ backgroundColor: sectionColor }">
     <v-container>
       <h2>{{ $t("sponsorsTitle") }}</h2>
-      <p class="intro-sponsors my-5">{{ $t("introSponsors") }}</p>
+      <p class="intro-sponsors my-5" v-html="$t('introSponsors')"></p>
       <v-img
         v-if="sponsors.length === 0"
         class="icon-large mt-4"
@@ -33,9 +33,9 @@
           <v-img
             class="mx-4 my-2"
             :src="sponsor.icon"
-            max-height="96px"
-            max-width="96px"
-            width="96px"
+            max-height="128px"
+            max-width="128px"
+            width="128px"
             contain
           ></v-img>
           <p class="sponsor-title my-1">{{ sponsor.name }}</p>
@@ -79,7 +79,7 @@
       </v-layout>
 
       <h2>{{ $t("partnersTitle") }}</h2>
-      <p class="intro-partners my-5">{{ $t("introPartners") }}</p>
+      <p class="intro-partners my-5" v-html="$t('introPartners')"></p>
       <v-img
         v-if="partners.length === 0"
         class="icon-large mt-4"
@@ -142,10 +142,10 @@ export default {
   data() {
     return {
       sponsors: [
-        // {
-        //   icon: require("../../assets/flat-icon-scientist.svg"),
-        //   name: "vsids"
-        // }
+        {
+          icon: require("../../assets/sponsor-valantic.jpg"),
+          name: "valantic"
+        }
       ],
       partners: []
     };
@@ -157,10 +157,10 @@ export default {
 {
   "en": {
     "sponsorsTitle": "Sponsors",
-    "introSponsors": "Make a difference, with your sponsoring you support promising projects or even startups which aim to save our planet – what else could you wish for? Not enough, as you wish, here some more arguments for you: You are mentioned at the event and on social media. Establish your company as a relevant and sustainable tech player in the dynamic coding community. And beside that you can provide your own challenge and prize depending on the sponsoring package of your choice. Benefit from the inventiveness of the teams working on your challenge. Act now and contact us!",
+    "introSponsors": "Make a difference, with your sponsoring you support promising projects or even startups which aim to save our planet – what else could you wish for? Not enough, as you wish, here some more arguments for you: You are mentioned at the event and on social media. Establish your company as a relevant and sustainable tech player in the dynamic coding community. And beside that you can provide your own challenge and prize depending on the sponsoring package of your choice. Benefit from the inventiveness of the teams working on your challenge. Act now and <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>contact us</a>!",
     "outroSponsors": "It is difficult to establish a clear and quantifiable criterion as to which sustainability criteria a sponsor must meet. Therefore, we will review different sources to get an idea of how sustainable a sponsor is. These criteria include: The last sustainability report, ISO-50001 certification, published climate indicators such as the X-Degree-Compatibility (XDC), rating in the CDP Climate Scoring etc., are all relevant criteria. If we have the impression that a sponsor does not meet our sustainability expectations, we can reject the sponsor.",
     "partnersTitle": "Partners",
-    "introPartners": "You can’t support us financially? No problem, help us to promote  the event, become a network and media partner or support us with an immaterial contribution like mentors for the teams, etc. Contact us!",
+    "introPartners": "You can’t support us financially? No problem, help us to promote  the event, become a network and media partner or support us with an immaterial contribution like mentors for the teams, etc. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Contact us</a>!",
     "button": {
       "link2Iso500001": "ISO-500001",
       "link2XDC": "XDC",
@@ -169,10 +169,10 @@ export default {
   },
   "de": {
     "sponsorsTitle": "Sponsoren",
-    "introSponsors": "Macht den Unterschied, mit eurem Sponsoring unterstützt ihr vielversprechende Projekte oder gar Start-ups, die darauf abzielen, unseren Planeten zu retten - was wollt ihr euch mehr wünschen? Nicht genug? Wie ihr wünscht, hier noch ein paar weitere Argumente für euch: Ihr werdet auf der Veranstaltung und in Social Media erwähnt. Etabliert euer Unternehmen als relevanten und nachhaltigen Technologiepartner in der dynamischen Programmiergemeinschaft. Und außerdem könnt ihr je nach Sponsoring-Paket eurer Wahl eure eigene Herausforderung und euren eigenen Preis anbieten. Profitiert vom Ideenreichtum der Teams, die an eurer Herausforderung arbeiten. Handelt jetzt und kontaktiert uns!",
+    "introSponsors": "Macht den Unterschied, mit eurem Sponsoring unterstützt ihr vielversprechende Projekte oder gar Start-ups, die darauf abzielen, unseren Planeten zu retten - was wollt ihr euch mehr wünschen? Nicht genug? Wie ihr wünscht, hier noch ein paar weitere Argumente für euch: Ihr werdet auf der Veranstaltung und in Social Media erwähnt. Etabliert euer Unternehmen als relevanten und nachhaltigen Technologiepartner in der dynamischen Programmiergemeinschaft. Und außerdem könnt ihr je nach Sponsoring-Paket eurer Wahl eure eigene Herausforderung und euren eigenen Preis anbieten. Profitiert vom Ideenreichtum der Teams, die an eurer Herausforderung arbeiten. Handelt jetzt und <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>kontaktiert uns</a>!",
     "outroSponsors": "Es ist schwierig, ein klares und quantifizierbares Kriterium festzulegen, welche Nachhaltigkeitskriterien ein Sponsor erfüllen muss. Daher werden wir verschiedene Quellen überprüfen, um eine Vorstellung davon zu bekommen, wie nachhaltig ein Sponsor ist. Zu diesen Kriterien gehören: Der letzte Nachhaltigkeitsbericht, die ISO-50001-Zertifizierung, veröffentlichte Klimaindikatoren wie die X-Degree-Compatibility (XDC), die Bewertung im CDP Climate Scoring etc. sind alle relevante Kriterien. Wenn wir den Eindruck haben, dass ein Sponsor unsere Nachhaltigkeitserwartungen nicht erfüllt, können wir den Sponsor ablehnen.",
     "partnersTitle": "Partner",
-    "introPartners": "Du kannst uns nicht finanziell unterstützen? Kein Problem, helft uns, die Veranstaltung zu bewerben, werdet Netzwerk- und Medienpartner oder unterstützt uns mit einem immateriellen Beitrag wie Mentoren für die Teams, etc. Kontaktiert uns!",
+    "introPartners": "Du kannst uns nicht finanziell unterstützen? Kein Problem, helft uns, die Veranstaltung zu bewerben, werdet Netzwerk- und Medienpartner oder unterstützt uns mit einem immateriellen Beitrag wie Mentoren für die Teams, etc. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Kontaktiert uns</a>!",
     "button": {
       "link2Iso500001": "ISO-500001",
       "link2XDC": "XDC",
@@ -217,6 +217,8 @@ section
     flex-direction column
     align-items center
     justify-content center
+    background-color rgba(255,255,255,0.1)
+    border-radius 8px
     .sponsor-title, .partner-title
       font-family Roboto Condensed,sans-serif
       font-weight 600

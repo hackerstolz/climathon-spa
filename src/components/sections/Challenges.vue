@@ -20,7 +20,11 @@
               'pa-3': true,
               'active-challenges': category.challenges.length > 0
             }"
-            color="rgba(255,255,255,0.1)"
+            :color="
+              category.challenges.length > 0
+                ? 'rgba(76,174,121,0.2)'
+                : 'rgba(255,255,255,0.1)'
+            "
             ripple
             flat
             @click="toogleTile(i)"
@@ -92,21 +96,53 @@
                       max-height="84px"
                       contain
                     ></v-img>
-                    <h4 class="mb-4">
-                      {{ challenge.title }}
-                    </h4>
+                    <p
+                      :class="{
+                        author: true,
+                        [challenge.type.toLowerCase()]: true,
+                        'mb-4': true
+                      }"
+                      v-html="
+                        $i18n.locale === 'en'
+                          ? challenge.i18nAuthor[0]
+                          : challenge.i18nAuthor[1]
+                      "
+                    ></p>
+                    <h4
+                      class="mb-4"
+                      v-html="
+                        $i18n.locale === 'en'
+                          ? challenge.i18nTitle[0]
+                          : challenge.i18nTitle[1]
+                      "
+                    ></h4>
                     <h5 class="mb-2">{{ $t("challangeSummary") }}</h5>
-                    <p class="mb-4">
-                      {{ challenge.summary }}
-                    </p>
+                    <p
+                      class="mb-4"
+                      v-html="
+                        $i18n.locale === 'en'
+                          ? challenge.i18nSummary[0]
+                          : challenge.i18nSummary[1]
+                      "
+                    ></p>
                     <h5 class="mb-2">{{ $t("challangeDescription") }}</h5>
-                    <p class="mb-4">
-                      {{ challenge.description }}
-                    </p>
+                    <p
+                      class="mb-4"
+                      v-html="
+                        $i18n.locale === 'en'
+                          ? challenge.i18nDescription[0]
+                          : challenge.i18nDescription[1]
+                      "
+                    ></p>
                     <h5 class="mb-2">{{ $t("challangeVision") }}</h5>
-                    <p class="mb-4">
-                      {{ challenge.vision }}
-                    </p>
+                    <p
+                      class="mb-4"
+                      v-html="
+                        $i18n.locale === 'en'
+                          ? challenge.i18nVision[0]
+                          : challenge.i18nVision[1]
+                      "
+                    ></p>
                   </div>
                 </div>
                 <v-card-actions class="dialog-card-footer">
@@ -151,11 +187,11 @@
 import debounce from "lodash/debounce";
 import { Stack, StackItem } from "vue-stack-grid";
 
-// const CHALLENGE_TYPE = {
-//   CITY: "CITY",
-//   COMMUNITY: "COMMUNITY",
-//   SPONSOR: "SPONSOR"
-// };
+const CHALLENGE_TYPE = {
+  CITY: "CITY",
+  COMMUNITY: "COMMUNITY",
+  SPONSOR: "SPONSOR"
+};
 
 export default {
   name: "Challenges",
@@ -193,27 +229,7 @@ export default {
           key: "smartCity",
           img: require("../../assets/flat-icon-smartCity.svg"),
           show: false,
-          challenges: [
-            // {
-            //   type: CHALLENGE_TYPE.CITY,
-            //   title: "How can I make my city or district Smart?",
-            //   summary: "Lorem ipsum…",
-            //   description: "Lorem ipsum. Think about and write down how the current situation in your challenge area looks like and identify the main issues. Furthermore, this is the right section to link to existing data or APIs that can be used by the participating teams to work on your challenge. Think about and write down why the current solutions on the market are not sufficient and cannot solve your challenge.",
-            //   vision: "Lorem ipsum. Think about and write down how the best case scenario for your city could look like in the future and what specific output (app, product, service, network etc.) you would like to generate in 40 hours."
-            // },{
-            //   type: CHALLENGE_TYPE.COMMUNITY,
-            //   title: "How can I make my city or district Smart?",
-            //   summary: "Lorem ipsum…",
-            //   description: "Lorem ipsum. Think about and write down how the current situation in your challenge area looks like and identify the main issues. Furthermore, this is the right section to link to existing data or APIs that can be used by the participating teams to work on your challenge. Think about and write down why the current solutions on the market are not sufficient and cannot solve your challenge.",
-            //   vision: "Lorem ipsum. Think about and write down how the best case scenario for your city could look like in the future and what specific output (app, product, service, network etc.) you would like to generate in 40 hours."
-            // },{
-            //   type: CHALLENGE_TYPE.SPONSOR,
-            //   title: "How can I make my city or district Smart?",
-            //   summary: "Lorem ipsum…",
-            //   description: "Lorem ipsum. Think about and write down how the current situation in your challenge area looks like and identify the main issues. Furthermore, this is the right section to link to existing data or APIs that can be used by the participating teams to work on your challenge. Think about and write down why the current solutions on the market are not sufficient and cannot solve your challenge.",
-            //   vision: "Lorem ipsum. Think about and write down how the best case scenario for your city could look like in the future and what specific output (app, product, service, network etc.) you would like to generate in 40 hours."
-            // }
-          ]
+          challenges: []
         },
         {
           key: "mobility",
@@ -225,7 +241,31 @@ export default {
           key: "retrofitting",
           img: require("../../assets/flat-icon-retrofitting.svg"),
           show: false,
-          challenges: []
+          challenges: [
+            {
+              type: CHALLENGE_TYPE.CITY,
+              i18nAuthor: [
+                "City of Mannheim • Department of Real Estate Management",
+                "Stadt Mannheim • Fachbereich Immobilienmanagement"
+              ],
+              i18nTitle: [
+                "How must a central data management system be technically prepared in order to integrate sen-sors of real estate management that have not been able to interact so far?",
+                "Wie muss ein zentrales Datenmanagementsystem technisch vorbereitet werden, damit bislang nicht interaktionsfähige Sensoren des Immobilienmanagements eingebunden werden können?"
+              ],
+              i18nSummary: [
+                "All technical tasks and functions are integrated in the technical real estate management of the City of Mannheim in order to view the tasks from the perspective of the entire life cycle of a building. The field of building technology consists of 2 teams (heating, air-conditioning and san-itary technology as well as electrical/telecommunications and elevator technology) and the re-spective workshops.",
+                "Im technischen Immobilienmanagement der Stadt Mannheim sind alle technischen Aufgaben und Funktionen gebündelt, um die Aufgaben mit Blick auf den gesamten Lebenszyklus eines Ge-bäudes zu betrachten. Das Sachgebiet Gebäudetechnik besteht aus 2 Teams (Wärme, Klima- und Sanitärtechnik sowie Elektro-/Fernmelde- und Aufzugstechnik) und den jeweils zugeordneten Werkstätten."
+              ],
+              i18nDescription: [
+                "The following points must be noted when developing the solution:<ul class='list'><li>About 430 buildings are to be integrated in between 2 and 10 sensors.</li><li>The buildings are spread over the whole area of the city of Mannheim.</li><li>Solutions with wireless technology are preferable to wired solutions.</li><li>Cyber Security Standards according to the German Federal Office for Information Security have to be adhered to.</li></ul>",
+                "Zur Entwicklung der Lösung müssen folgende Punkte beachtet werden:<ul class='list'><li>Es sollen in etwa 430 Gebäuden zwischen 2 bis zu 10 Sensoren eingebunden wer-den.</li><li>Die Gebäude sind über das gesamte Gebiet der Stadt Mannheim verstreut.</li><li>Lösungen mit Funktechnik sind kabelgebundenen Lösungen vorzuziehen.</li><li>Cyber Security Standards nach Bundesamt für Sicherheit in der Informationstechnik sind zwingend einzuhalten.</li></ul>"
+              ],
+              i18nVision: [
+                "We hope our criterias are well defined, beside that there are really no limits to your imagination in this challenge.",
+                "Wir hoffen unsere Kriterien sind gut definiert, davon abgesehen sind deiner Phantasie in dieser Challenge wirklich keine Grenzen gesetzt."
+              ]
+            }
+          ]
         },
         {
           key: "circularEconomy",
@@ -249,7 +289,31 @@ export default {
           key: "behaviour",
           img: require("../../assets/flat-icon-behaviour.svg"),
           show: false,
-          challenges: []
+          challenges: [
+            {
+              type: CHALLENGE_TYPE.CITY,
+              i18nAuthor: [
+                "Climate Protection Agency Mannheim",
+                "Klimaschutzagentur Mannheim"
+              ],
+              i18nTitle: [
+                "How can we motivate the people of Mannheim to make their lifestyle more sustainable?",
+                "Wie können wir die Mannheimer*innen motivieren, ihren Lebensstil nachhaltiger zu gestalten?"
+              ],
+              i18nSummary: [
+                "For several years now, the Climate Protection Agency Mannheim has been organising motivation campaigns and actions on behalf of the City of Mannheim in all areas of sustainable living (energy saving, climate-friendly nutrition, sustainable consumption, waste avoidance, climate-friendly mobility). With your support, the Climate Protection Agency would like to spread this important awareness work more quickly.",
+                "Seit mehreren Jahren organisiert die Klimaschutzagentur Mannheim im Auftrag der Stadt Mann-heim Motivationskampagnen und -aktionen zu allen Bereichen des nachhaltigen Lebens (Ener-giesparen, klimafreundliche Ernährung, nachhaltiger Konsum, Abfallvermeidung, klimafreundli-che Mobilität). Mit Ihrer Unterstützung möchte die Klimaschutzagentur diese wichtige Sensibili-sierungsarbeit schneller verbreiten."
+              ],
+              i18nDescription: [
+                "The solution can focus on one area or on several areas. It is important that all Mannheim resi-dents can participate.<br/>The following points must be noted when developing the solution:<ul class='list'><li>The solution must encourage behavioural change.</li><li>The focus should be on local options for action and thereby strengthen the local value chain.</li><li>Consumer behaviour change and supplier best practice should be rewarded and recognised. It should motivate others to imitate iParticipants should feel part of a movement or community. </li><li>The solution could facilitate the exchange between participants.</li><li>Do not forget: Climate protection should be fun!</li></ul>",
+                "Die Lösung kann sich auf einen Bereich fokussieren oder auf mehrere fokussieren. Wichtig ist, dass sich alle Mannheimer*innen beteiligen können. Zur Entwicklung der Lösung müssen folgende Punkte betrachtet werden:<ul class='list'><li>Die Lösung muss zur Verhaltensänderung anregen.</li><li>Der Fokus sollte auf lokale Handlungsmöglichkeiten liegen und dabei die lokale Wertschöp-fungskette stärken.</li><li>Die Verhaltensänderung der Verbraucher*innen und die Best-Practice der Anbieter*innen sollten belohnt und anerkannt werden. Es sollte zum Nachahmen motivieren.</li><li>Die Teilnehmer*innen sollten sich als Teil einer Bewegung oder Community fühlen.</li><li>Die Lösung könnte den Austausch zwischen Beteiligten vereinfachen. </li><li>Nicht vergessen: Klimaschutz soll Spaß machen! </li></ul>"
+              ],
+              i18nVision: [
+                "Well we hope our goal is clear, there are really no limits to your imagination in this challenge.",
+                "Na wir hoffen unser Ziel ist klar, deiner Phantasie sind in dieser Challenge wirklich keine Grenzen gesetzt."
+              ]
+            }
+          ]
         },
         {
           key: "water",
@@ -422,7 +486,13 @@ export default {
 }
 </i18n>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<!-- global rules -->
+<style lang="stylus">
+.v-dialog--fullscreen
+  background-color #2f3a58
+</style>
+
+<!-- scoped rules -->
 <style scoped lang="stylus">
 section
   h2
@@ -532,7 +602,7 @@ section
         background #70B4DF
     h4
       font-family Roboto Condensed,sans-serif
-      font-size 32px
+      font-size 26px
       font-weight 600
       line-height 1.4
       letter-spacing 1.5px
@@ -553,6 +623,21 @@ section
       letter-spacing 1px
       text-align center
       color rgba(255, 255, 255, 0.8)
+      &.author
+        font-weight 600
+      &.author.city
+        color #DD543B
+      &.author.community
+        color #A8E5A3
+      &.author.sponsor
+        color #70B4DF
+  .dialog-card-footer
+    button
+      font-family Gagalin,sans-serif
+      font-weight 400
+      font-style normal
+      font-size 20px
+      letter-spacing 1.5px
   &.active-challenges
     div.count
       // TODO: replace with constants

@@ -150,7 +150,7 @@ export default {
       snackbar: {
         show: false,
         color: "success",
-        timeout: 6000
+        timeout: 10000
       },
       menu: [
         "intro",
@@ -260,6 +260,10 @@ export default {
     url("./assets/fonts/Gagalin-Regular.ttf"),
     url("./assets/fonts/Gagalin-Regular.otf")
 
+html, body
+  -webkit-overflow-scrolling touch
+  overflow-x hidden
+
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
@@ -285,6 +289,7 @@ export default {
         font-size 22px
 
   .navigation
+    z-index 10
     background-color #10182F
     .menu-item
       font-family Gagalin,sans-serif
@@ -307,7 +312,19 @@ export default {
       font-style normal
       letter-spacing 1.5px
 
+  /*
+   * Styles fo v-html content elements.
+   */
   a.link
     color #70B4DF !important
     text-decoration none
+  ul.list
+    li
+      margin 1rem 0
+      font-style italic
+      list-style none
+      &:after
+        content '\00a0\00a0~'
+      &:before
+        content '~\00a0\00a0'
 </style>

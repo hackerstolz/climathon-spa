@@ -2,7 +2,7 @@
   <section :style="{ backgroundColor: sectionColor }">
     <v-container>
       <h2>{{ $t("title") }}</h2>
-      <p class="intro-text my-5">{{ $t("intro") }}</p>
+      <p class="intro-text my-5" v-html="$t('intro')"></p>
       <v-layout class="my-4" row wrap align-start justify-center>
         <v-flex
           v-for="(member, i) in members"
@@ -132,11 +132,11 @@ export default {
 {
   "en": {
     "title": "Orga Team",
-    "intro": "Such a hackathon really needs a lot of helpers, you can identify yourself with our vision and want to support the climathon? Awesome, we can still use a lot of support. Contact us right now!"
+    "intro": "Such a hackathon really needs a lot of helpers, you can identify yourself with our vision and want to support the climathon? Awesome, we can still use a lot of support. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Contact us</a> right now!"
   },
   "de": {
     "title": "Orga-Team",
-    "intro": "Ein solcher Hackathon braucht wirklich viele Helfer, du kannst dich mit unserer Vision identifizieren und willst den Climathon unterstützen? Fantastisch, wir können immer noch eine Menge Unterstützung gebrauchen. Kontaktiere uns jetzt!"
+    "intro": "Ein solcher Hackathon braucht wirklich viele Helfer, du kannst dich mit unserer Vision identifizieren und willst den Climathon unterstützen? Fantastisch, wir können immer noch eine Menge Unterstützung gebrauchen. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Kontaktiere uns</a> jetzt!"
   }
 }
 </i18n>

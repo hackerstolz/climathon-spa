@@ -38,9 +38,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [ ] Add countdown clocks  
 [ ] Add Travis CI pipeline for auto-deployment  
 [X] Add link to Slack or Spectrum Community  
-[ ] Fix language switch in prod mode
-[ ] Fix cache invalidation on one.com
-[ ] Fix horizontal scrolling on iPhone
+[X] Fix language switch in prod mode
+[X] Fix cache invalidation on one.com
+[~] Fix horizontal scrolling on iPhone
 [ ] Submit final version to awwwards.com
 
 ### TODOs Content
@@ -48,4 +48,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [ ] Update Hackathon rules in FAQ  
 [ ] Add jury/prize rules in FAQ  
 [ ] Add links to schedule  
-[ ] Add 1st sponsor "valantic"
+[X] Add 1st sponsor "valantic" (128x128 as logo)

@@ -15,11 +15,14 @@
         <div :style="{ color: award.color }" class="prize my-3">
           {{ $t(`awards.${award.key}.prize`) }}
         </div>
-        <p class="description">{{ $t(`awards.${award.key}.description`) }}</p>
+        <p
+          class="description"
+          v-html="$t(`awards.${award.key}.description`)"
+        ></p>
       </v-card>
 
       <div class="infoArea mt-5">
-        <p class="awardInfo">{{ $t("awardInfo") }}</p>
+        <p class="awardInfo" v-html="$t('awardInfo')"></p>
       </div>
     </v-container>
   </section>
@@ -64,7 +67,7 @@ export default {
 {
   "en": {
     "title": "Awards",
-    "awardInfo": "Guess what, we’re working on getting more prices out (e.g. we’re planning special prizes for challenges from sponsors to Start-Up pre-seed promotions). The rules by which the jury  evaluates as well as all requirements for your project and team to meet all criteria will all  be published here soon. The whole process should be made transparent to you. You still have questions? Have a look at our FAQ section or just contact us.",
+    "awardInfo": "Guess what, we’re working on getting more prices out (e.g. we’re planning special prizes for challenges from sponsors to Start-Up pre-seed promotions). The rules by which the jury  evaluates as well as all requirements for your project and team to meet all criteria will all  be published here soon. The whole process should be made transparent to you. You still have questions? Have a look at our FAQ section or just <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>contact us</a>.",
     "awards": {
       "climateGrant": {
         "title": "3x Climate Grants",
@@ -80,7 +83,7 @@ export default {
   },
   "de": {
     "title": "Auszeichnungen",
-    "awardInfo": "Raten mal, wir arbeiten daran, mehr Preise aus zu schütten (z.B. planen wir Sonderpreise für Herausforderungen von Sponsoren bis hin zu speziellen Start-Up-Promotionen). Die Regeln, nach denen die Jury bewertet, sowie alle Anforderungen an dein Projekt und dein Team, um alle Kriterien zu erfüllen, werden in Kürze hier veröffentlicht. Der gesamte Prozess soll für dich transparent gemacht werden. Du hast noch Fragen? Werfen einen Blick in unseren FAQ-Bereich oder kontaktiere uns einfach.",
+    "awardInfo": "Raten mal, wir arbeiten daran, mehr Preise aus zu schütten (z.B. planen wir Sonderpreise für Herausforderungen von Sponsoren bis hin zu speziellen Start-Up-Promotionen). Die Regeln, nach denen die Jury bewertet, sowie alle Anforderungen an dein Projekt und dein Team, um alle Kriterien zu erfüllen, werden in Kürze hier veröffentlicht. Der gesamte Prozess soll für dich transparent gemacht werden. Du hast noch Fragen? Werfen einen Blick in unseren FAQ-Bereich oder <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>kontaktiere uns</a> einfach.",
     "awards": {
       "climateGrant": {
         "title": "3x Klima Förderungen",

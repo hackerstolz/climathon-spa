@@ -2,7 +2,7 @@
   <section :style="{ backgroundColor: sectionColor }">
     <v-container>
       <h2>{{ $t("speakersTitle") }}</h2>
-      <p class="introSpeakers my-5">{{ $t("introSpeakers") }}</p>
+      <p class="introSpeakers my-5" v-html="$t('introSpeakers')"></p>
       <v-img
         v-if="speakers.length === 0"
         class="icon-large mt-4"
@@ -56,7 +56,7 @@
       </v-layout>
 
       <h2>{{ $t("juryTitle") }}</h2>
-      <p class="introJury my-5">{{ $t("introJury") }}</p>
+      <p class="introJury my-5" v-html="$t('introJury')"></p>
       <v-layout
         v-if="jury.length > 0"
         class="my-4"
@@ -99,7 +99,7 @@
       </v-layout>
 
       <h2>{{ $t("mentorsTitle") }}</h2>
-      <p class="introMentors my-5">{{ $t("introMentors") }}</p>
+      <p class="introMentors my-5" v-html="$t('introMentors')"></p>
       <v-img
         v-if="speakers.length === 0"
         class="icon-large mt-4"
@@ -233,19 +233,19 @@ export default {
 {
   "en": {
     "speakersTitle": "Speakers",
-    "introSpeakers": "Here we will soon publish the speakers who will give you a goose bump moment at the opening ceremony on Friday.",
+    "introSpeakers": "Here we will soon publish the speakers who will give you a goose bump moment at the opening ceremony on Friday. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Contact us</a> to become a speaker.",
     "juryTitle": "Jury",
-    "introJury": "These faces and names will soon be replaced by really cool jury members. And because science has not been given enough attention so far, we have two jury members from this category.",
+    "introJury": "These faces and names will soon be replaced by really cool jury members. And because science has not been given enough attention so far, we have two jury members from this category. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Contact us</a> to become a jury member.",
     "mentorsTitle": "Mentors",
-    "introMentors": "So that you have a contact person ready to answer questions on a wide variety of topics, we will put a battalion of mentors at your side. Find out more soon who you can expect here."
+    "introMentors": "So that you have a contact person ready to answer questions on a wide variety of topics, we will put a battalion of mentors at your side. Find out more soon who you can expect here. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Contact us</a> to become a mentor."
   },
   "de": {
     "speakersTitle": "Referenten",
-    "introSpeakers": "Hier werden wir in Kürze die Referenten veröffentlichen, die dir bei der Eröffnung am Freitag einen Gänsehautmoment verpassen werden.",
+    "introSpeakers": "Hier werden wir in Kürze die Referenten veröffentlichen, die dir bei der Eröffnung am Freitag einen Gänsehautmoment verpassen werden. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Kontaktiere uns</a> um dich als Redner zu bewerben.",
     "juryTitle": "Jury",
-    "introJury": "Diese Gesichter und Namen werden bald durch wirklich coole Jurymitglieder ersetzt. Und weil der Wissenschaft bisher nicht genügend Aufmerksamkeit geschenkt wurde, haben wir zwei Jurymitglieder aus dieser Kategorie.",
+    "introJury": "Diese Gesichter und Namen werden bald durch wirklich coole Jurymitglieder ersetzt. Und weil der Wissenschaft bisher nicht genügend Aufmerksamkeit geschenkt wurde, haben wir zwei Jurymitglieder aus dieser Kategorie. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Kontaktiere uns</a> um dich als Jury-Mitglied zu bewerben.",
     "mentorsTitle": "Mentoren",
-    "introMentors": "Damit du immer einen Ansprechpartner hast, der dir bei Fragen zu den unterschiedlichsten Themen zur Seite steht, stellen wir dir ein Bataillon von Mentoren zur Seite. Mehr darüber, wen du hier erwarten kannst, erfährst du in Kürze."
+    "introMentors": "Damit du immer einen Ansprechpartner hast, der dir bei Fragen zu den unterschiedlichsten Themen zur Seite steht, stellen wir dir ein Bataillon von Mentoren zur Seite. Mehr darüber, wen du hier erwarten kannst, erfährst du in Kürze. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Kontaktiere uns</a> um Mentor zu werden."
   }
 }
 </i18n>
