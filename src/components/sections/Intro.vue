@@ -154,6 +154,7 @@ section
   .footer
     position absolute
     width 100%
+    max-width none !important
     max-width initial
     display flex
     left 0

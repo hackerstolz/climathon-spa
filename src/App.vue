@@ -327,4 +327,8 @@ html, body
         content '\00a0\00a0~'
       &:before
         content '~\00a0\00a0'
+
+  // override max width of other media queries
+  .container
+    max-width 1000px
 </style>
