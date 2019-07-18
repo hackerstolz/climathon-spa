@@ -128,8 +128,8 @@ export default {
     "textWhy": "In einer Welt, in der Informationen Macht sind, ist 2019 hoffentlich das Jahr, in dem die Welt endlich erkennt, dass wir etwas gegen die globale Erwärmung unternehmen müssen (nein Donald, es funktioniert nicht so, wie du denkst, bitte finde zuerst den Unterschied zwischen Wetter und Klima heraus). Leider befinden wir uns an einem Punkt, an dem das Vertrauen in unsere Regierung bei der Erreichung unserer Klimaziele schwindet und ein ernsthafter Kurswechsel nicht erkennbar ist. Deshalb sehen wir es als unsere Pflicht an – als Bürger des Planeten Erde –, alles in unserer Macht Stehende zu tun, um zur Lösung dieses globalen Problems beizutragen und etwas zu bewirken. Wir wollen nicht nur über Nachhaltigkeit sprechen, sondern versuchen zu sehen, was die Technologie zur Bekämpfung des Klimawandels beitragen kann. Deshalb veranstalten Hackerstolz und die Stadt Mannheim den Climathon. Der Climathon ist eine überregionale Initiative des ETI, die in Hunderten von Städten auf der ganzen Welt stattfindet. Werden Sie Teil davon!",
     "titleWhat": "Worum geht es beim Climathon?",
     "textWhat": [
-      "40 Stunden lang haben Sie die Möglichkeit, im Team gemeinsam Prototypen für digitale Lösungen zu entwickeln. Wir stellen Ihnen öffentliche und nicht-öffentliche Umweltdaten sowie Daten aus der Wirtschaft zur Verfügung, mit denen Sie innovative Lösungen entwickeln können.",
-      "Während des gesamten Hackathons werden Sie von einem Expertenteam unterstützt, das Ihnen bei der Entwicklung Ihrer Ideen hilft."
+      "40 Stunden lang hast du die Möglichkeit, im Team gemeinsam Prototypen für digitale Lösungen zu entwickeln. Wir stellen dir öffentliche und nicht-öffentliche Umweltdaten sowie Daten aus der Wirtschaft zur Verfügung, mit denen du innovative Lösungen entwickeln kannst.",
+      "Während des gesamten Hackathons wirst du von einem Expertenteam unterstützt, das dir bei der Entwicklung deiner Ideen hilft."
     ],
     "imgDescription": "1,5° und Null-Kohlenstoff-Ziel bis 2050",
     "button": {
