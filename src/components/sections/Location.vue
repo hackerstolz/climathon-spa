@@ -7,11 +7,11 @@
       ref="videobg"
       class="video-container"
       :sources="[
-        require('!file-loader!../../assets/video/ma-earth-footage.webm'),
-        require('!file-loader!../../assets/video/ma-earth-footage.ogv'),
-        require('!file-loader!../../assets/video/ma-earth-footage.mp4')
+        require('!file-loader!../../assets/video/mafinex-footage.webm'),
+        require('!file-loader!../../assets/video/mafinex-footage.ogv'),
+        require('!file-loader!../../assets/video/mafinex-footage.mp4')
       ]"
-      :img="require('../../assets/ma-footage-thumb.jpeg')"
+      :img="require('../../assets/video/mafinex-footage.jpg')"
     >
       <v-layout class="video-content flex align-center py-5" fill-height column>
         <h3 class="align-left">{{ $t("locationSlogan") }}</h3>
@@ -59,7 +59,7 @@ export default {
   },
   mounted() {
     // set video to play in slow motion
-    this.$refs.videobg.$refs.video.playbackRate = 0.5;
+    this.$refs.videobg.$refs.video.playbackRate = 1; // 0.5;
   },
   computed: {
     sectionColor: function() {
