@@ -33,6 +33,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [X] Replace Favicon  
 [X] Add contact button  
 [X] Add navbar menu for quick navigation  
+[ ] Add donate button  
 [ ] Finish intro animation  
 [ ] Add worst-case-4C switch  
 [ ] Add countdown clocks  
@@ -40,7 +41,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [X] Add link to Slack or Spectrum Community  
 [X] Fix language switch in prod mode
 [X] Fix cache invalidation on one.com
-[~] Fix horizontal scrolling on iPhone
+[X] Fix horizontal scrolling on iPhone
 [ ] Submit final version to awwwards.com
 
 ### TODOs Content
@@ -48,4 +49,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [ ] Update Hackathon rules in FAQ  
 [ ] Add jury/prize rules in FAQ  
 [ ] Add links to schedule  
+[ ] Add event language  
 [X] Add 1st sponsor "valantic" (128x128 as logo)
