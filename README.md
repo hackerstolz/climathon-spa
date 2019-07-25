@@ -46,6 +46,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [ ] Preview pic for sharing on LinkedIn etc.  
 [ ] Baby Faces with FaceApp and planet earth
 [ ] Cache busting mit vx
+[ ] Fix Bugs in IE
+[ ] Fix Bugs in MS Edge
 
 ### TODOs Content
 [X] Complete FAQ  
@@ -54,4 +56,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [ ] Add links to schedule  
 [ ] Add event language (DE except pitches)  
 [ ] Add UNO goals  
+[ ] Add objective partner
 [X] Add 1st sponsor "valantic" (128x128 as logo)  
