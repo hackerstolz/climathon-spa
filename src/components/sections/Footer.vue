@@ -74,10 +74,25 @@
 
       <v-divider></v-divider>
 
-      <v-card-text class="white--text">
-        &copy;2019 — <strong>Hackerstolz e.V.</strong>
-        <div>{{ $t("designedBy") }}</div>
-      </v-card-text>
+      <v-layout row align-center justify-center wrap>
+        <v-spacer></v-spacer>
+        <v-card-text class="white--text">
+          &copy;2019 — <strong>Hackerstolz e.V.</strong>
+          <div>{{ $t("designedBy") }}</div>
+        </v-card-text>
+        <v-spacer></v-spacer>
+        <v-btn
+          class="mb-4"
+          href="https://www.hackerstolz.de/impressum/"
+          target="_blank"
+          outline
+          small
+          flat
+        >
+          {{ $t("button.link2Legal") }}
+          <v-icon dark right>open_in_new</v-icon>
+        </v-btn>
+      </v-layout>
     </v-card>
   </v-footer>
 </template>
@@ -132,14 +147,20 @@ export default {
     "sloganAfterHeart": "by",
     "creditsTitle": "Credits",
     "credits": "font „Gagalin“ by Iordanis Passas • icons by „Özden Gelgec“, „Arnaud“ and „Squid Ink“",
-    "designedBy": "designed and coded by Jascha A. Quintern"
+    "designedBy": "designed and coded by Jascha A. Quintern",
+    "button": {
+      "link2Legal": "Imprint • Disclaimer • Privacy Policy"
+    }
   },
   "de": {
     "sloganBeforeHeart": "Ein Hackathon gemacht mit",
     "sloganAfterHeart": "von",
     "creditsTitle": "Credits",
     "credits": "Schriftart „Gagalin“ von Iordanis Passas • Icons von „Özden Gelgec“, „Arnaud“ und „Squid Ink“",
-    "designedBy": "entworfen und entwickelt von Jascha A. Quintern"
+    "designedBy": "entworfen und entwickelt von Jascha A. Quintern",
+    "button": {
+      "link2Legal": "Impressum • Haftungsausschluss • Datenschutzerklärung"
+    }
   }
 }
 </i18n>

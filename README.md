@@ -54,6 +54,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [ ] Update Hackathon rules in FAQ  
 [ ] Add jury/prize rules in FAQ  
 [ ] Add links to schedule  
+[X] Add data protection link
 [X] Add event language (DE except pitches)  
 [X] Add UNO goals  
 [X] Add objective partner
