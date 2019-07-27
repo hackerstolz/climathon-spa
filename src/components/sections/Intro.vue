@@ -17,14 +17,12 @@
       <div class="organizer">
         <p class="made-by-slogan my-3">
           <span>{{ $t("sloganBeforeHeart") }}</span>
-          <v-img
+          <img
             class="d-inline-block mx-1"
             :src="require('../../assets/icon-heart.svg')"
             height="24"
             width="24"
-            contain
-          >
-          </v-img>
+          />
           <span>{{ $t("sloganAfterHeart") }}</span>
         </p>
         <div class="logos ma-3">
@@ -36,28 +34,29 @@
             width="20%"
             position="center"
             contain
-          >
-          </v-img>
+          />
           <v-img
             class="mr-2"
             :src="require('../../assets/logo-mannheim.svg')"
+            :style="{
+              'max-height': '40px',
+              'max-width': '160px'
+            }"
             max-height="40"
             max-width="160"
             width="20%"
             position="center"
             contain
-          >
-          </v-img>
+          />
         </div>
         <div class="logos ma-3">
-          <v-img
+          <img
             :src="require('../../assets/logo-KIC-EU.svg')"
-            max-height="40"
+            :style="{
+              'max-height': '40px'
+            }"
             width="58%"
-            position="center"
-            contain
-          >
-          </v-img>
+          />
         </div>
       </div>
     </v-container>

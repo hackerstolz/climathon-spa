@@ -47,7 +47,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [ ] Baby Faces with FaceApp and planet earth
 [X] Cache busting mit url query parameters
 [X] Fix Bugs in IE
-[ ] Fix Bugs in MS Edge
+[ ] Fix SVG Bugs in MS Edge: see [bug issue](https://github.com/vuetifyjs/vuetify/issues/6316)
 
 ### TODOs Content
 [X] Complete FAQ  
