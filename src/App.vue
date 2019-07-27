@@ -83,7 +83,11 @@
 
       <v-content class="pa-0">
         <Intro id="intro" />
-        <About id="about" themeColor="primary" />
+        <About
+          id="about"
+          themeColor="primary"
+          :isMobile="isMobile"
+        />
         <Challenges
           id="challenges"
           themeColor="secondary"

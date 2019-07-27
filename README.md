@@ -55,6 +55,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [ ] Add jury/prize rules in FAQ  
 [ ] Add links to schedule  
 [X] Add event language (DE except pitches)  
-[ ] Add UNO goals  
-[ ] Add objective partner
+[X] Add UNO goals  
+[X] Add objective partner
 [X] Add 1st sponsor "valantic" (128x128 as logo)  

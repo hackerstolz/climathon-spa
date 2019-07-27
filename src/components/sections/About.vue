@@ -65,6 +65,36 @@
           </v-img>
         </v-card>
       </v-layout>
+
+      <h2 class="align-left">{{ $t("unoGoalsTitle") }}</h2>
+      <p class="align-left" v-html="$t('unoGoalsText')"></p>
+      <v-layout
+        row
+        :align-center="isMobile"
+        :justify-center="isMobile"
+        flexbox
+        wrap
+      >
+      <v-card
+          v-for="(goal, j) in goals"
+          :key="j"
+          class="uno-goal-card ma-1"
+          :href="goal"
+          target="_blank"
+          ripple
+          flat
+        >
+        <v-img
+          :src="require(`../../assets/uno-goals/uno-goal-${j}.png`)"
+          class="uno-goal-img"
+          :max-height="isMobile ? '96px' : '128px'"
+          :max-width="isMobile ? '96px' : '128px'"
+          :height="isMobile ? '96px' : '128px'"
+          :width="isMobile ? '96px' : '128px'"
+        >
+        </v-img>
+      </v-card>
+      </v-layout>
     </v-container>
   </section>
 </template>
@@ -76,7 +106,8 @@ export default {
     themeColor: {
       type: String,
       default: "primary"
-    }
+    },
+    isMobile: Boolean
   },
   computed: {
     sectionColor: function() {
@@ -87,6 +118,26 @@ export default {
   },
   data() {
     return {
+      goals: [
+        "https://www.un.org/sustainabledevelopment/sustainable-development-goals/",
+        "https://www.un.org/sustainabledevelopment/poverty/",
+        "https://www.un.org/sustainabledevelopment/hunger/",
+        "https://www.un.org/sustainabledevelopment/health/",
+        "https://www.un.org/sustainabledevelopment/education/",
+        "https://www.un.org/sustainabledevelopment/gender-equality/",
+        "https://www.un.org/sustainabledevelopment/water-and-sanitation/",
+        "https://www.un.org/sustainabledevelopment/energy/",
+        "https://www.un.org/sustainabledevelopment/economic-growth/",
+        "https://www.un.org/sustainabledevelopment/infrastructure-industrialization/",
+        "https://www.un.org/sustainabledevelopment/inequality/",
+        "https://www.un.org/sustainabledevelopment/cities/",
+        "https://www.un.org/sustainabledevelopment/sustainable-consumption-production/",
+        "https://www.un.org/sustainabledevelopment/climate-change/",
+        "https://www.un.org/sustainabledevelopment/oceans/",
+        "https://www.un.org/sustainabledevelopment/biodiversity/",
+        "https://www.un.org/sustainabledevelopment/peace-justice/",
+        "https://www.un.org/sustainabledevelopment/globalpartnerships/"
+      ],
       articles: [
         {
           img: require("../../assets/img-article-01.jpg"),
@@ -117,6 +168,8 @@ export default {
       "Throughout the entire hackathon, you will be supported by a team of experts who will help you develop your ideas."
     ],
     "imgDescription": "1,5° and zero-carbon  goal by 2050",
+    "unoGoalsTitle": "Support the UNO sustainability development goals",
+    "unoGoalsText": "The Sustainable Development Goals are the blueprint to achieve a better and more sustainable future for all. Goal 13 calls for urgent action to combat climate change and its impacts. It is intrinsically linked to all 16 of the other Goals of the 2030 Agenda for Sustainable Development. To address climate change, countries adopted the Paris Agreement to limit global temperature rise to well below 2 degrees Celsius. Learn more about <a class='link' target='_blank' href='https://www.un.org/sustainabledevelopment/climate-change/'>Goal 13</a>.",
     "button": {
       "link2Goal": "why this matters",
       "link2Article1": "7 reasons why you should go to a hackathon",
@@ -147,6 +200,7 @@ export default {
 // @import '../globals'
 
 section
+  padding-bottom 104px
   h2
     font-family Gagalin,sans-serif
     font-weight 400
@@ -191,7 +245,6 @@ section
 
   .article-container
     margin-top 64px
-    margin-bottom 104px
     .blog-article
       position relative
       cursor pointer
@@ -222,4 +275,13 @@ section
         .article-text, .link-icon
           color #10182F
           background-color #A8E5A3
+
+  .uno-goal-card
+    .uno-goal-img
+      opacity 0.25
+      transition all 300ms 
+      &:hover
+        opacity 1
+      @media screen and (max-width: 600px)
+        opacity 1
 </style>
