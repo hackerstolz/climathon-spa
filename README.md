@@ -33,7 +33,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [X] Replace Favicon  
 [X] Add contact button  
 [X] Add navbar menu for quick navigation  
-[ ] Add donate button  
+[X] Add donate button  
 [ ] Finish intro animation  
 [ ] Add worst-case-4C switch  
 [ ] Add countdown clocks  
@@ -54,7 +54,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [ ] Update Hackathon rules in FAQ  
 [ ] Add jury/prize rules in FAQ  
 [ ] Add links to schedule  
-[ ] Add event language (DE except pitches)  
+[X] Add event language (DE except pitches)  
 [ ] Add UNO goals  
 [ ] Add objective partner
 [X] Add 1st sponsor "valantic" (128x128 as logo)  

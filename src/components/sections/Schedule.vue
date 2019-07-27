@@ -1,7 +1,9 @@
 <template>
   <section :style="{ backgroundColor: sectionColor }">
     <v-container>
-      <h2>{{ $t("title") }}</h2>
+      <h2>{{ $t("language") }}<v-icon class="ml-3" :x-large="!isMobile">g_translate</v-icon></h2>
+      <p class="introText mb-5">{{ $t("introText") }}</p>
+      <h3>{{ $t("title") }}</h3>
       <v-card
         v-for="(day, i) in days"
         :key="i"
@@ -57,7 +59,8 @@ export default {
     themeColor: {
       type: String,
       default: "primary"
-    }
+    },
+    isMobile: Boolean
   },
   computed: {
     sectionColor: function() {
@@ -260,10 +263,14 @@ export default {
 <i18n>
 {
   "en": {
-    "title": "Schedule"
+    "title": "Schedule",
+    "language": "Event Language",
+    "introText": "The event language is German. This means the talks (unless otherwise marked) and the moderation are in German. However, we welcome all nationalities, languages and dialects. If you have any questions or don't understand something, the whole organizing team will be happy to help you in English. You also have the freedom to decide if you want to pitch in English or German."
   },
   "de": {
-    "title": "Eventablauf"
+    "title": "Eventablauf",
+    "language": "Eventsprache",
+    "introText": "Die Eventsprache ist Deutsch. Das bedeutet die Vorträge (soweit nicht anders gekennzeichnet) und die Moderation sind auf Deutsch. Wir heißen jedoch alle Nationalitäten, Sprachen und Dialekte willkommen. Wenn ihr Fragen habt oder etwas nicht verstanden habt, hilft euch das gesamte Orga-Team auf Englisch gerne weiter. Darüber hinaus habt ihr auch die Freiheit zu entscheiden ob ihr auf Englisch oder Deutsch pitchen wollt."
   }
 }
 </i18n>
@@ -276,12 +283,34 @@ section
     font-family Gagalin,sans-serif
     font-weight 400
     font-style normal
+    font-size 40px
+    letter-spacing 1.4px
+    text-align center
+    color #ffffff
+    margin-top 64px
+    margin-bottom 32px
+    @media screen and (max-width: 600px)
+      font-size 24px
+
+  h3
+    font-family Gagalin,sans-serif
+    font-weight 400
+    font-style normal
     font-size 28px
     letter-spacing 1.4px
     text-align center
     color #ffffff
-    margin-top 128px
-    margin-bottom 64px
+    margin-top 32px
+    margin-bottom 32px
+
+  .introText
+    font-family Roboto Condensed,sans-serif
+    font-weight 400
+    font-size 20px
+    line-height 1.4
+    letter-spacing normal
+    text-align center
+    color rgba(255, 255, 255, 0.8)
 
   .card
     h3

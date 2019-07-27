@@ -25,16 +25,23 @@
             <v-icon>close</v-icon>
           </v-btn>
         </v-toolbar>
-        <v-btn
-          color="info"
-          width="100%"
-          href="mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc."
-          large
-          flat
-        >
-          {{ $t("button.contactus") }}
-          <v-icon right>email</v-icon>
-        </v-btn>
+        <v-layout row="">
+          <v-btn
+            color="info"
+            href="mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc."
+            flat
+          >
+            {{ $t("button.contactus") }}
+          </v-btn>
+          <v-btn
+            color="info"
+            target="_blank"
+            href="https://betterplace.org/p71036"
+            flat
+          >
+            {{ $t("button.donate") }}
+          </v-btn>
+        </v-layout>
         <v-list>
           <template v-for="(item, i) in menu">
             <v-list-tile
@@ -84,7 +91,11 @@
         />
         <Awards id="awards" themeColor="primary" />
         <Location id="location" themeColor="secondary" />
-        <Schedule id="schedule" themeColor="secondary" />
+        <Schedule 
+          id="schedule"
+          themeColor="secondary"
+          :isMobile="isMobile" 
+        />
         <Registration
           id="registration"
           themeColor="primary"
@@ -199,8 +210,8 @@ export default {
     "label": {
       "snackbarText": "We don't need any analysis tools so enjoy a cookie-free experience.",
       "snackbarConfirm": "OK",
-      "en": "English",
-      "de": "German",
+      "en": "Language • EN",
+      "de": "Language • DE",
       "intro": "Intro",
       "about": "About Climathon",
       "challenges": "Challenges",
@@ -216,15 +227,16 @@ export default {
     },
     "button": {
       "register": "Register Here",
-      "contactus": "Contact us"
+      "contactus": "Contact us",
+      "donate": "Donate"
     }
   },
   "de": {
     "label": {
       "snackbarText": "We don't need any analysis tools so enjoy a cookie-free experience.",
       "snackbarConfirm": "OK",
-      "en": "Englisch",
-      "de": "Deutsch",
+      "en": "Sprache • EN",
+      "de": "Sprache • DE",
       "intro": "Intro",
       "about": "Über den Climathon",
       "challenges": "Herausforderungen",
@@ -240,7 +252,8 @@ export default {
     },
     "button": {
       "register": "Hier Registrieren",
-      "contactus": "Kontaktiere uns"
+      "contactus": "Kontaktiere uns",
+      "donate": "Spenden"
     }
   }
 }

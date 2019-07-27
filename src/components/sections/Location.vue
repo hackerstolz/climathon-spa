@@ -140,7 +140,7 @@ section
         text-align center
         color rgba(255, 255, 255, 0.38)
         @media screen and (max-width: 600px)
-          font-size 40px
+          font-size 32px
       .location-text
         // TODO: font seems not to be available on mobile
         font-family Roboto
