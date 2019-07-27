@@ -36,6 +36,19 @@
       </v-layout>
       <p class="highlightText my-3">{{ $t("highlightText") }}</p>
       <p class="outroText my-5">{{ $t("outroText") }}</p>
+      <v-card
+          class="my-5" 
+          v-scroll-to="'#faq'"
+          color="transparent"
+          ripple
+          flat
+          @click="()=>{}"
+      >
+        <p 
+          class="priceText my-5" 
+          v-html="$t('priceText')">
+        </p>
+      </v-card>
       <v-layout row align-center justify-center wrap>
         <v-btn
           class="mt-2"
@@ -165,6 +178,7 @@ export default {
     "introText": "Wondering what kind of hackers are needed to take on the challenges? Find them here, but please don’t forget, the only really important condition for you as a participant: planet earth lover!",
     "highlightText": "Teams of 3 to 7 people work together on a project idea.",
     "outroText": "If you don’t have a complete team yet, don’t worry, you can register as an individual participant in the application process and then find teammates before the event in our slack community or during the first day.",
+    "priceText": "Tickets are <strong>free of charge</strong>. You pay 10€ for the tickets in our ticket shop, but you get 10€ refund in cash when you show up at the event. More information can be found in our FAQ.",
     "button": {
       "link2Ticktes": "Go to Ticketshop",
       "link2Slack": "Join slack community",
@@ -176,6 +190,7 @@ export default {
     "introText": "Du fragst dich, welche Art von Hackern benötigt werden, um die Herausforderungen anzunehmen? Hier findest du sie, aber vergiss nicht, die einzige wirklich wichtige Bedingung für dich als Teilnehmer: Liebhaber von Planet Erde!",
     "highlightText": "Teams von 3 bis 7 Personen arbeiten gemeinsam an einer Projektidee.",
     "outroText": "Wenn du noch kein komplettes Team hast, kannst du dich als Einzelteilnehmer im Bewerbungsprozess anmelden und dann vor der Veranstaltung in unserer Slack Community oder am ersten Tag vor Ort Teamkollegen finden.",
+    "priceText": "Tickets sind <strong>kostenslos</strong>. Du bezahlst 10€ für die Tickets in unserem Ticketshop, aber du erhältst 10€ Rückerstattung in Bar, wenn du auf dem Event auftauchst. Weiter Informationen findest du in unserem FAQ.",
     "button": {
       "link2Ticktes": "Zum Ticketshop",
       "link2Slack": "Slack Community beitreten",
@@ -210,7 +225,7 @@ section
     // TODO: replace color by constant
     color #A8E5A3
 
-  .introText, .outroText
+  .introText, .outroText, .priceText
     font-family Roboto Condensed,sans-serif
     font-weight 400
     font-size 20px
@@ -218,6 +233,8 @@ section
     letter-spacing normal
     text-align center
     color rgba(255, 255, 255, 0.8)
+    &.priceText
+      cursor pointer
 
   .stack-grid-item
     transition all 300ms

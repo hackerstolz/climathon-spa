@@ -100,8 +100,20 @@ export default {
             "Muss ich die Tickets bezahlen?"
           ],
           i18nText: [
-            "No. But: You will pay 10€ for the tickets on our ticket shop, but you will get 10€ cashback when you show up.",
-            "Nein. Aber: Du bezahlst 10€ für die Tickets in unserem Ticketshop, aber du erhältst 10€ Rückerstattung in Bar, wenn du auf dem Event auftauchst."
+            "No. But: You pay 10€ for the tickets in our ticket shop, but you get 10€ refund in cash when you show up at the event. Want to cancel your registration? Then please <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>contact us</a>, at the moment we don't know yet if we can refund ticket prices.",
+            "Nein. Aber: Du bezahlst 10€ für die Tickets in unserem Ticketshop, aber du erhältst 10€ Rückerstattung in Bar, wenn du auf dem Event auftauchst. Du möchtest deine Registrierung stornieren? Dann wende dich bitte <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>an uns</a>, zum aktuellen Zeitpunkt wissen wir noch nicht ob wir Ticketpreise erstatten können."
+          ],
+          greenBatch: false
+        },
+        {
+          show: false,
+          i18nTitle: [
+            "What is the event language?",
+            "Was ist die Eventsprache?"
+          ],
+          i18nText: [
+            "The event language is German. This means the talks (unless otherwise marked) and the moderation are in German. However, we welcome all nationalities, languages and dialects. If you have any questions or don't understand something, the whole organizing team will be happy to help you in English. You also have the freedom to decide if you want to pitch in English or German.",
+            "Die Eventsprache ist Deutsch. Das bedeutet die Vorträge (soweit nicht anders gekennzeichnet) und die Moderation sind auf Deutsch. Wir heißen jedoch alle Nationalitäten, Sprachen und Dialekte willkommen. Wenn ihr Fragen habt oder etwas nicht verstanden habt, hilft euch das gesamte Orga-Team auf Englisch gerne weiter. Darüber hinaus habt ihr auch die Freiheit zu entscheiden ob ihr auf Englisch oder Deutsch pitchen wollt."
           ],
           greenBatch: false
         },

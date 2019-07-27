@@ -26,10 +26,21 @@
           :class="{
             'stack-grid-item': true,
             'pa-2': true,
+            'ma-2': true,
             xs4: !isMobile,
             xs12: isMobile
           }"
         >
+          <v-img
+            v-if="sponsor.challenge"
+            class="batch"
+            :src="require('../../assets/challenge-sponsor.svg')"
+            max-height="128px"
+            height="128px"
+            max-width="128px"
+            width="128px"
+            contain
+          ></v-img>
           <v-img
             class="mx-4 my-2"
             :src="sponsor.icon"
@@ -38,7 +49,14 @@
             width="128px"
             contain
           ></v-img>
-          <p class="sponsor-title my-1">{{ sponsor.name }}</p>
+          <p 
+            :class="{
+              'sponsor-title': true,
+              'challenge': sponsor.challenge,
+              'my-1': true
+            }">
+            {{ sponsor.name }}
+          </p>
         </v-flex>
       </v-layout>
       <p class="outro-sponsors my-5">{{ $t("outroSponsors") }}</p>
@@ -143,8 +161,14 @@ export default {
     return {
       sponsors: [
         {
+          icon: require("../../assets/sponsor-op.svg"),
+          name: "obejctive partner",
+          challenge: true
+        },
+        {
           icon: require("../../assets/sponsor-valantic.jpg"),
-          name: "valantic"
+          name: "valantic",
+          challenge: false
         }
       ],
       partners: []
@@ -212,6 +236,7 @@ section
       color #A8E5A3
 
   .stack-grid-item
+    position relative
     transition all 300ms
     display flex
     flex-direction column
@@ -229,4 +254,13 @@ section
       letter-spacing 1px
       text-align inherit
       color #ffffff
+      &.challenge
+        color #ffffff // #70B4DF
+    .batch
+      position absolute
+      z-index 1
+      top 0
+      right auto
+      left auto
+      transform translateY(-42%)
 </style>

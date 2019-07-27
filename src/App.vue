@@ -5,7 +5,7 @@
         <v-toolbar class="ma-0 pa-0" color="transparent" flat>
           <v-menu bottom>
             <v-btn slot="activator" flat>
-              {{ $t(`label.${$i18n.locale}`) }}
+              {{ $t(`button.${$i18n.locale}`) }}
             </v-btn>
 
             <v-list class="language-list">
@@ -210,8 +210,8 @@ export default {
     "label": {
       "snackbarText": "We don't need any analysis tools so enjoy a cookie-free experience.",
       "snackbarConfirm": "OK",
-      "en": "Language • EN",
-      "de": "Language • DE",
+      "en": "English",
+      "de": "German",
       "intro": "Intro",
       "about": "About Climathon",
       "challenges": "Challenges",
@@ -226,6 +226,8 @@ export default {
       "footer": "Credits"
     },
     "button": {
+      "en": "Language • EN",
+      "de": "Language • DE",
       "register": "Register Here",
       "contactus": "Contact us",
       "donate": "Donate"
@@ -235,8 +237,8 @@ export default {
     "label": {
       "snackbarText": "We don't need any analysis tools so enjoy a cookie-free experience.",
       "snackbarConfirm": "OK",
-      "en": "Sprache • EN",
-      "de": "Sprache • DE",
+      "en": "Englisch",
+      "de": "Deutsch",
       "intro": "Intro",
       "about": "Über den Climathon",
       "challenges": "Herausforderungen",
@@ -251,6 +253,8 @@ export default {
       "footer": "Credits"
     },
     "button": {
+      "en": "Sprache • EN",
+      "de": "Sprache • DE",
       "register": "Hier Registrieren",
       "contactus": "Kontaktiere uns",
       "donate": "Spenden"
