@@ -45,7 +45,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [ ] Submit final version to awwwards.com  
 [ ] Preview pic for sharing on LinkedIn etc.  
 [ ] Baby Faces with FaceApp and planet earth
-[ ] Cache busting mit vx
+[X] Cache busting mit url query parameters
 [ ] Fix Bugs in IE
 [ ] Fix Bugs in MS Edge
 

@@ -1,7 +1,10 @@
 <template>
   <section :style="{ backgroundColor: sectionColor }">
     <v-container>
-      <h2>{{ $t("language") }}<v-icon class="ml-3" :x-large="!isMobile">g_translate</v-icon></h2>
+      <h2>
+        {{ $t("language")
+        }}<v-icon class="ml-3" :x-large="!isMobile">g_translate</v-icon>
+      </h2>
       <p class="introText mb-5">{{ $t("introText") }}</p>
       <h3>{{ $t("title") }}</h3>
       <v-card

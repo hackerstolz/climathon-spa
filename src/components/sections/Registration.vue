@@ -37,17 +37,14 @@
       <p class="highlightText my-3">{{ $t("highlightText") }}</p>
       <p class="outroText my-5">{{ $t("outroText") }}</p>
       <v-card
-          class="my-5" 
-          v-scroll-to="'#faq'"
-          color="transparent"
-          ripple
-          flat
-          @click="()=>{}"
+        class="my-5"
+        v-scroll-to="'#faq'"
+        color="transparent"
+        ripple
+        flat
+        @click="() => {}"
       >
-        <p 
-          class="priceText my-5" 
-          v-html="$t('priceText')">
-        </p>
+        <p class="priceText my-5" v-html="$t('priceText')"></p>
       </v-card>
       <v-layout row align-center justify-center wrap>
         <v-btn

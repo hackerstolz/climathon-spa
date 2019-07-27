@@ -75,7 +75,7 @@
         flexbox
         wrap
       >
-      <v-card
+        <v-card
           v-for="(goal, j) in goals"
           :key="j"
           class="uno-goal-card ma-1"
@@ -84,16 +84,16 @@
           ripple
           flat
         >
-        <v-img
-          :src="require(`../../assets/uno-goals/uno-goal-${j}.png`)"
-          class="uno-goal-img"
-          :max-height="isMobile ? '96px' : '128px'"
-          :max-width="isMobile ? '96px' : '128px'"
-          :height="isMobile ? '96px' : '128px'"
-          :width="isMobile ? '96px' : '128px'"
-        >
-        </v-img>
-      </v-card>
+          <v-img
+            :src="require(`../../assets/uno-goals/uno-goal-${j}.png`)"
+            class="uno-goal-img"
+            :max-height="isMobile ? '96px' : '128px'"
+            :max-width="isMobile ? '96px' : '128px'"
+            :height="isMobile ? '96px' : '128px'"
+            :width="isMobile ? '96px' : '128px'"
+          >
+          </v-img>
+        </v-card>
       </v-layout>
     </v-container>
   </section>
@@ -279,7 +279,7 @@ section
   .uno-goal-card
     .uno-goal-img
       opacity 0.25
-      transition all 300ms 
+      transition all 300ms
       &:hover
         opacity 1
       @media screen and (max-width: 600px)

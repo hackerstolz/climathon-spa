@@ -49,12 +49,13 @@
             width="128px"
             contain
           ></v-img>
-          <p 
+          <p
             :class="{
               'sponsor-title': true,
-              'challenge': sponsor.challenge,
+              challenge: sponsor.challenge,
               'my-1': true
-            }">
+            }"
+          >
             {{ sponsor.name }}
           </p>
         </v-flex>

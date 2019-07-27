@@ -83,11 +83,7 @@
 
       <v-content class="pa-0">
         <Intro id="intro" />
-        <About
-          id="about"
-          themeColor="primary"
-          :isMobile="isMobile"
-        />
+        <About id="about" themeColor="primary" :isMobile="isMobile" />
         <Challenges
           id="challenges"
           themeColor="secondary"
@@ -95,11 +91,7 @@
         />
         <Awards id="awards" themeColor="primary" />
         <Location id="location" themeColor="secondary" />
-        <Schedule 
-          id="schedule"
-          themeColor="secondary"
-          :isMobile="isMobile" 
-        />
+        <Schedule id="schedule" themeColor="secondary" :isMobile="isMobile" />
         <Registration
           id="registration"
           themeColor="primary"
