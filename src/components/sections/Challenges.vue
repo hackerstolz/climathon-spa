@@ -37,9 +37,22 @@
               contain
               @load="reflow"
             ></v-img>
-            <div class="count my-3">
+            <div 
+              v-if="category.challenges.length === 0"
+              class="count my-3">
               {{ $tc("challengeCount", category.challenges.length) }}
             </div>
+            <v-btn
+              v-if="category.challenges.length > 0"
+              class="my-3"
+              color="accent"
+              outline
+              flat
+              small
+            >
+              {{ $tc("challengeCount", category.challenges.length) }}
+              <v-icon dark right>open_in_browser</v-icon>
+            </v-btn>
             <p class="description">
               {{
                 $t(`categories.${category.key}.description`)
@@ -69,9 +82,17 @@
                     'pa-3': true
                   }"
                 >
-                  <h3 class="mb-3">
-                    {{ $t(`categories.${category.key}.title`) }}
-                  </h3>
+                  <v-layout row>
+                    <div class="ml-3 mr-4">&nbsp;</div>
+                    <v-spacer />
+                    <h3 class="mb-3">
+                      {{ $t(`categories.${category.key}.title`) }}
+                    </h3>
+                    <v-spacer />
+                    <v-btn class="ma-0" color="accent" flat @click="category.show = false" icon>
+                      <v-icon>close</v-icon>
+                    </v-btn>
+                  </v-layout>
                   <v-img :src="category.img" max-height="128px" contain></v-img>
                   <div class="count my-3">
                     {{ $tc("challengeCount", category.challenges.length) }}
@@ -567,13 +588,13 @@ section
     font-family Gagalin,sans-serif
     font-weight 400
     font-style normal
-    font-size 20px
+    font-size 24px
     letter-spacing 1px
     color rgba(255, 255, 255, 0.8)
   .count
     font-family Roboto Condensed,sans-serif
     font-weight 600
-    font-size 16px
+    font-size 20px
     line-height 1.4
     letter-spacing 1px
     text-transform uppercase

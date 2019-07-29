@@ -129,12 +129,12 @@ export default {
         {
           show: false,
           i18nTitle: [
-            "What if I’ve never been at a hackathon?",
-            "Was, wenn ich noch nie bei einem Hackathon war?"
+            "What if I've never been to a hackathon or don't have any experience?",
+            "Was, wenn ich noch nie bei einem Hackathon war oder keine Erfahrungen mitbringe?"
           ],
           i18nText: [
-            "Don’t worry. The Climathon is specifically designed to accommodate beginners as well as people with more experience. If you've never been to a hackathon, or are just getting started coding: Don't panic! We will help you in person if necessary. It will be a safe environment.",
-            "Mach dir keine Sorgen. Der Climathon wurde speziell für Anfänger und Fortgeschrittene entwickelt. Wenn du noch nie bei einem Hackathon warst oder gerade erst mit dem Programmieren angefangen hast: Keine Panik! Bei Bedarf helfen wir dir persönlich weiter. Es wird eine sichere Umgebung geben."
+            "Don’t worry. The Climathon is specifically designed to accommodate beginners as well as people with more experience. If you've never been to a hackathon or just started programming, or don't think you have any skills at all: Don't panic!  Ask yourself the following question: Is our planet close to your heart? If you can answer the question with YES, you have already fulfilled all requirements as a participant. There will be a safe environment with many mentors who can support you every step of the way, more contacts and the organization team in person who will always be at your side when you need them.",
+            "Mach dir keine Sorgen. Der Climathon wurde speziell für Anfänger und Fortgeschrittene entwickelt. Wenn du noch nie bei einem Hackathon warst oder gerade erst mit dem Programmieren angefangen hast oder glaubst gar keine Fähigkeiten mitzubringen: Keine Panik! Stell dir folgende Frage: Liegt dir unser Planet am herzen? Wenn du die Frage mit JA beantworten kannst, hast du alle Voraussetzungen als Teilnehmer bereits erfüllt. Es wird eine sichere Umgebung geben mit vielen Mentoren die dich bei jeden Schritt unterstützen können, weiteren Ansprechpartnern und das Organisationsteam höchstpersönlich was dir immer zur Seite steht wenn Bedarf besteht."
           ],
           greenBatch: false
         },

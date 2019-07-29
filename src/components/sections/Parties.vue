@@ -2,7 +2,18 @@
   <section :style="{ backgroundColor: sectionColor }">
     <v-container>
       <h2>{{ $t("sponsorsTitle") }}</h2>
-      <p class="intro-sponsors my-5" v-html="$t('introSponsors')"></p>
+      <p class="intro-sponsors mt-5 mb-4" v-html="$t('introSponsors')"></p>
+      <v-btn
+        class="mb-5"
+        color="info"
+        target="_blank"
+        href="https://betterplace.org/p71036"
+        flat
+        outline
+      >
+        {{ $t("button.donate") }}
+        <v-icon right>card_giftcard</v-icon>
+      </v-btn>
       <v-img
         v-if="sponsors.length === 0"
         class="icon-large mt-4"
@@ -189,7 +200,8 @@ export default {
     "button": {
       "link2Iso500001": "ISO-500001",
       "link2XDC": "XDC",
-      "link2CDP": "CDP Climate Scoring"
+      "link2CDP": "CDP Climate Scoring",
+      "donate": "Donate without sponsorhip"
     }
   },
   "de": {
@@ -201,7 +213,8 @@ export default {
     "button": {
       "link2Iso500001": "ISO-500001",
       "link2XDC": "XDC",
-      "link2CDP": "CDP Climate Scoring"
+      "link2CDP": "CDP Climate Scoring",
+      "donate": "Spenden ohne Sponsoring"
     }
   }
 }
