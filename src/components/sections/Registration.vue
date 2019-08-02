@@ -2,10 +2,7 @@
   <section :style="{ backgroundColor: sectionColor }">
     <v-container>
       <h2>{{ $t("title") }}</h2>
-      <p 
-        class="introText my-5"
-        v-html="$t('introText')"
-      ></p>
+      <p class="introText my-5" v-html="$t('introText')"></p>
       <v-layout class="my-4" row wrap align-start justify-center>
         <v-flex
           v-for="(type, i) in types"

@@ -3,7 +3,6 @@ import Vue from "vue";
 import Vuetify from "vuetify";
 import VueScrollTo from "vue-scrollto";
 import App from "./App.vue";
-import "./registerServiceWorker";
 import { i18n } from "./i18n";
 
 // register plug-ins

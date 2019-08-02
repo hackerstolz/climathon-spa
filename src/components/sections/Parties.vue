@@ -174,7 +174,7 @@ export default {
       sponsors: [
         {
           icon: require("../../assets/sponsor-op.svg"),
-          name: "obejctive partner",
+          name: "objective partner",
           challenge: true
         },
         {

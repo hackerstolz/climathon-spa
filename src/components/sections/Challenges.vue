@@ -37,9 +37,7 @@
               contain
               @load="reflow"
             ></v-img>
-            <div 
-              v-if="category.challenges.length === 0"
-              class="count my-3">
+            <div v-if="category.challenges.length === 0" class="count my-3">
               {{ $tc("challengeCount", category.challenges.length) }}
             </div>
             <v-btn
@@ -89,7 +87,13 @@
                       {{ $t(`categories.${category.key}.title`) }}
                     </h3>
                     <v-spacer />
-                    <v-btn class="ma-0" color="accent" flat @click="category.show = false" icon>
+                    <v-btn
+                      class="ma-0"
+                      color="accent"
+                      flat
+                      @click="category.show = false"
+                      icon
+                    >
                       <v-icon>close</v-icon>
                     </v-btn>
                   </v-layout>

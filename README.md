@@ -43,7 +43,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [X] Fix cache invalidation on one.com  
 [X] Fix horizontal scrolling on iPhone  
 [ ] Submit final version to awwwards.com  
-[ ] Preview pic for sharing on LinkedIn etc.  
+[X] Preview pic for sharing on LinkedIn etc.  
 [ ] Baby Faces with FaceApp and planet earth
 [X] Cache busting mit url query parameters
 [X] Fix Bugs in IE
