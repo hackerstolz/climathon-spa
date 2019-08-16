@@ -21,19 +21,43 @@
         <h4 class="mb-5">
           {{ $i18n.locale === "en" ? day.i18nDate[0] : day.i18nDate[1] }}
         </h4>
-        <div
-          class="schedule-item mb-5"
+        <v-card
           v-for="(item, j) in day.schedule"
           :key="j"
+          :class="{
+            'schedule-item': true,
+            'mb-5': true,
+            'py-2': item.speaker,
+            speaker: item.speaker
+          }"
+          v-scroll-to="item.speaker ? `#${item.speakerID}` : ''"
+          :color="item.speaker ? 'rgba(255,255,255,0.1)' : 'transparent'"
+          :ripple="item.speaker"
+          click="()=>{}"
+          flat
         >
           <v-img
-            class="mx-4"
+            :class="{
+              'mx-4': true,
+              avatar: item.speaker
+            }"
             :src="item.icon"
             max-height="96px"
             max-width="96px"
             width="96px"
-            contain
-          ></v-img>
+            cover
+          >
+            <v-img
+              class="speaker-icon"
+              v-if="item.speaker"
+              :src="require('../../assets/flat-icon-schedule-mic.svg')"
+              max-height="36px"
+              max-width="36px"
+              width="36px"
+              cover
+            >
+            </v-img>
+          </v-img>
           <div class="info-area">
             <div class="time my-1">{{ item.time }}</div>
             <p class="item-title my-1">
@@ -49,7 +73,7 @@
               }}
             </p>
           </div>
-        </div>
+        </v-card>
       </v-card>
     </v-container>
   </section>
@@ -104,6 +128,20 @@ export default {
               i18nDescription: [
                 "Don’t read what’s for dinner.",
                 "Lies nicht, was es zum Abendessen gibt."
+              ]
+            },
+            {
+              speaker: true,
+              speakerID: "agnes-schoenfelder",
+              icon: require("../../assets/speaker/speaker-agnes.jpg"),
+              time: "14:30",
+              i18nTitle: [
+                '"Wind of Change for Mannheim on Climate Track"',
+                '"Frischer Wind für Mannheim auf Klimakurs"'
+              ],
+              i18nDescription: [
+                "Speaker: Agnes Schönfelder",
+                "Speakerin: Agnes Schönfelder"
               ]
             },
             {
@@ -342,6 +380,18 @@ section
       justify-content flex-start
       align-items center
       flex 1 1 auto
+      &.speaker
+        cursor pointer
+      .avatar
+        position relative
+        border-radius 50%
+        border 2px solid #ffffff
+        .speaker-icon
+          position absolute
+          top auto
+          bottom 4px
+          left 28px
+          right 28px
       .info-area
         text-align left
         .time

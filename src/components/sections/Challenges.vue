@@ -28,7 +28,7 @@
             "
             ripple
             flat
-            @click="toogleTile(i)"
+            @click="toggleTile(i)"
           >
             <h3 class="mb-3">{{ $t(`categories.${category.key}.title`) }}</h3>
             <v-img
@@ -49,7 +49,7 @@
               small
             >
               {{ $tc("challengeCount", category.challenges.length) }}
-              <v-icon dark right>open_in_browser</v-icon>
+              <!-- <v-icon dark right>open_in_browser</v-icon> -->
             </v-btn>
             <p class="description">
               {{
@@ -59,7 +59,6 @@
               }}
             </p>
 
-            <!-- dialog -->
             <v-dialog
               v-model="category.show"
               scrollable
@@ -237,7 +236,7 @@ export default {
     }
   },
   methods: {
-    toogleTile(i) {
+    toggleTile(i) {
       const clickedCategory = this.categories[i];
       const prevShow = this.categories[i].show;
 

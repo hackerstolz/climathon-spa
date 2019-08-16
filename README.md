@@ -36,7 +36,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [X] Add donate button  
 [ ] Finish intro animation  
 [ ] Add worst-case-4C switch  
-[ ] Add countdown clocks  
+[X] Add countdown clocks  
 [ ] Add Travis CI pipeline for auto-deployment  
 [X] Add link to Slack or Spectrum Community  
 [X] Fix language switch in prod mode  

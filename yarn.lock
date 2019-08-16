@@ -7384,6 +7384,10 @@ vue-loader@^15.7.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-responsive-text@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/vue-responsive-text/-/vue-responsive-text-0.1.4.tgz#b075a0118aac3b47e8d7d93246f989cb060fe135"
+
 vue-scrollto@^2.15.0:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/vue-scrollto/-/vue-scrollto-2.15.0.tgz#e6e4645dfd2efc0d960123f607c2ab448b81670a"

@@ -1,14 +1,40 @@
 <template>
   <section>
     <v-spacer />
-    <div class="title">
-      <h1>
-        <div>CLIMATHON 2019</div>
-        <div>MANNHEIM</div>
-      </h1>
-      <h2>{{ $t("subtitle") }}</h2>
-      <h3>{{ $t("date") }}&nbsp;•&nbsp;{{ $t("event") }}</h3>
-    </div>
+    <header>
+      <div class="countdown-wrapper-co2">
+        <Countdown
+          :time="new Date(2028, 0, 1, 12, 0).getTime() - Date.now()"
+          :title="$t('countdownCO2Budget')"
+        />
+        <v-btn
+          class="link-to-co2-budget ma-0"
+          href="https://www.mcc-berlin.net/en/research/co2-budget.html"
+          target="_blank"
+          color="#ffffff"
+          outline
+          small
+          flat
+        >
+          {{ $t("link2C02Budget") }}
+          <v-icon dark right small>open_in_new</v-icon>
+        </v-btn>
+      </div>
+      <div class="title-box mx-5">
+        <h1>
+          <div>CLIMATHON 2019</div>
+          <div>MANNHEIM</div>
+        </h1>
+        <h2>{{ $t("subtitle") }}</h2>
+        <h3>{{ $t("date") }}&nbsp;•&nbsp;{{ $t("event") }}</h3>
+      </div>
+      <div class="countdown-wrapper-event">
+        <Countdown
+          :time="new Date(2019, 9, 25, 8, 30).getTime() - Date.now()"
+          :title="$t('countdownEvent')"
+        />
+      </div>
+    </header>
     <v-spacer />
     <v-spacer />
 
@@ -64,8 +90,11 @@
 </template>
 
 <script>
+import Countdown from "../Countdown";
+
 export default {
-  name: "Intro"
+  name: "Intro",
+  components: { Countdown }
 };
 </script>
 
@@ -76,14 +105,20 @@ export default {
     "event": "40h Hackathon",
     "subtitle": "Drive climate action!",
     "sloganBeforeHeart": "A hackathon made with",
-    "sloganAfterHeart": "by"
+    "sloganAfterHeart": "by",
+    "countdownEvent": "Countdown to the Climathon",
+    "countdownCO2Budget": "Time to CO2 budget collapse",
+    "link2C02Budget": "Lear more"
   },
   "de": {
     "date": "25.-27. Oktober",
     "event": "40h Hackathon",
     "subtitle": "Klimaschutz antreiben!",
     "sloganBeforeHeart": "Ein Hackathon gemacht mit",
-    "sloganAfterHeart": "von"
+    "sloganAfterHeart": "von",
+    "countdownEvent": "Countdown bis zum Climathon",
+    "countdownCO2Budget": "Zeit bis zum CO2-Budget Kollaps",
+    "link2C02Budget": "Erfahre mehr"
   }
 }
 </i18n>
@@ -102,44 +137,87 @@ section
   align-items center
   color #ffffff
 
-  .title
+  header
     z-index 1
-    transition transform 0.3s ease-in-out
+    display flex
+    flex-direction row
+    align-items flex-end
+    & > *
+      transition all 0.3s ease-in-out
+    @media screen and (max-width: 1250px)
+      .title-box
+        transform scale(0.75)
+      .countdown-wrapper-event
+        transform scale(0.75) translateX(-50%) translateY(-50%)
+      .countdown-wrapper-co2
+        transform scale(0.75) translateX(50%) translateY(-50%)
+    @media screen and (max-width: 1000px)
+      flex-direction column
+      align-items center
+      .title-box
+        order 0
+      .countdown-wrapper-event
+        order 1
+        opacity 0.8
+        transform scale(1) translateY(-25%)
+        margin-bottom 16px
+      .countdown-wrapper-co2
+        order 2
+        opacity 0.8
+        transform scale(1) translateY(-25%)
     @media screen and (max-width: 600px)
-        transform scale(0.5)
-    h1
-      font-family Gagalin,sans-serif
-      font-weight 400
-      font-style normal
-      > div:first-child
-        font-size 76px
-        line-height 1
-        letter-spacing normal
-        text-align center
-      > div:nth-child(2)
-        font-size 100px
-        line-height 1
-        letter-spacing 10px
-        text-align center
-        margin-top -15px
+      .title-box
+        transform scale(0.5) translateY(25%)
+        margin-bottom 32px
+      .countdown-wrapper-event
+        transform scale(0.75) translateY(-80px)
+        margin-bottom 0px
+      .countdown-wrapper-co2
+        transform scale(0.75) translateY(-80px)
+    .title-box
+      z-index 1
+      h1
+        font-family Gagalin,sans-serif
+        font-weight 400
+        font-style normal
+        > div:first-child
+          font-size 76px
+          line-height 1
+          letter-spacing normal
+          text-align center
+        > div:nth-child(2)
+          font-size 100px
+          line-height 1
+          letter-spacing 10px
+          text-align center
+          margin-top -15px
 
-    h2
-      font-family steinzeit,sans-serif
-      font-weight 400
-      font-style normal
-      font-size 70px
-      line-height 1.33
-      letter-spacing 1.2px
-      text-align center
+      h2
+        font-family steinzeit,sans-serif
+        font-weight 400
+        font-style normal
+        font-size 70px
+        line-height 1.33
+        letter-spacing 1.2px
+        text-align center
 
-    h3
-      font-family click-clack,sans-serif
-      font-weight 400
-      font-style normal
-      font-size 28px
-      line-height 1.24
-      letter-spacing 2px
-      text-align center
+      h3
+        font-family click-clack,sans-serif
+        font-weight 400
+        font-style normal
+        font-size 28px
+        line-height 1.24
+        letter-spacing 2px
+        text-align center
+
+    .countdown-wrapper-co2, .countdown-wrapper-event
+      position relative
+      overflow visible
+      .link-to-co2-budget
+        position absolute
+        top 100%
+        left 50%
+        transform translateX(-50%)
 
   .footer-bgr-gradient
     position absolute
