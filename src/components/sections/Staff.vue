@@ -261,8 +261,8 @@ export default {
           icon: require("../../assets/speaker/speaker-agnes.jpg"),
           name: "Agnes Schönfelder",
           i18nSubtitle: [
-            "Leiterin der Klimaschutzleitstelle, Stadt Mannheim",
-            "Head of the Climate Change Strategy Office, City of Mannheim "
+            "Head of the Climate Change Strategy Office, City of Mannheim ",
+            "Leiterin der Klimaschutzleitstelle, Stadt Mannheim"
           ],
           i18nDescription: [
             '"Wind of Change for Mannheim on Climate Track"',
