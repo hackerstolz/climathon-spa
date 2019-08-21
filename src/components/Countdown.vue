@@ -26,19 +26,15 @@
       class="title-text"
       v-if="title && title.length > 0"
       :style="{
-        width: (width + 32) + 'px'
+        width: width + 32 + 'px'
       }"
     >
-      <!-- <VueResponsiveText :transition="100"> -->
       {{ title }}
-      <!-- </VueResponsiveText> -->
     </div>
   </div>
 </template>
 
 <script>
-import VueResponsiveText from "vue-responsive-text";
-
 const MILLISECONDS_SECOND = 1000;
 const MILLISECONDS_MINUTE = 60 * MILLISECONDS_SECOND;
 const MILLISECONDS_HOUR = 60 * MILLISECONDS_MINUTE;
@@ -48,10 +44,6 @@ const EVENT_VISIBILITY_CHANGE = "visibilitychange";
 
 export default {
   name: "Countdown",
-
-  components: {
-    VueResponsiveText
-  },
 
   data() {
     return {

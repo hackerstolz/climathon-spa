@@ -55,9 +55,9 @@
           <v-img
             class="mx-4 my-2"
             :src="sponsor.icon"
-            max-height="128px"
-            max-width="128px"
-            width="128px"
+            max-height="160px"
+            max-width="160px"
+            width="160px"
             contain
           ></v-img>
           <p
@@ -140,12 +140,17 @@
           <v-img
             class="mx-4 my-2"
             :src="partner.icon"
-            max-height="96px"
-            max-width="96px"
-            width="96px"
+            max-height="160px"
+            max-width="160px"
+            width="160px"
             contain
           ></v-img>
           <p class="partner-title my-1">{{ partner.name }}</p>
+          <p class="partner-subtitle my-1">
+            {{
+              $i18n.locale === "en" ? partner.purpose[0] : partner.purpose[1]
+            }}
+          </p>
         </v-flex>
       </v-layout>
     </v-container>
@@ -183,7 +188,14 @@ export default {
           challenge: false
         }
       ],
-      partners: []
+      partners: [
+        {
+          icon: require("../../assets/partner-startup-ma.svg"),
+          name: "STARTUP MANNHEIM",
+          important: true,
+          purpose: ["Location Partner", "Location Partner"]
+        }
+      ]
     };
   }
 };
@@ -270,6 +282,15 @@ section
       color #ffffff
       &.challenge
         color #ffffff // #70B4DF
+    .partner-subtitle
+      font-family click-clack,sans-serif
+      font-weight 500
+      font-size 20px
+      font-style normal
+      line-height 1.2
+      letter-spacing 0.5px
+      text-align inherit
+      color #70B4DF
     .batch
       position absolute
       z-index 1
