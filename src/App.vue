@@ -59,7 +59,13 @@
         </v-list>
       </v-navigation-drawer>
 
-      <v-toolbar class="toolbar" app color="transparent" flat :scroll-off-screen="isMobile">
+      <v-toolbar
+        class="toolbar"
+        app
+        color="transparent"
+        flat
+        :scroll-off-screen="isMobile"
+      >
         <v-toolbar-side-icon @click.stop="drawer = !drawer" />
         <v-spacer></v-spacer>
         <v-btn

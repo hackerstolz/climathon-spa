@@ -133,6 +133,7 @@
           :class="{
             'stack-grid-item': true,
             'pa-2': true,
+            'ma-2': true,
             xs4: !isMobile,
             xs12: isMobile
           }"
@@ -194,6 +195,12 @@ export default {
           name: "STARTUP MANNHEIM",
           important: true,
           purpose: ["Location Partner", "Location Partner"]
+        },
+        {
+          icon: require("../../assets/partner-ksa.svg"),
+          name: "Klimaschutzagentur Mannheim",
+          important: true,
+          purpose: ["Sustainability Partner", "Sustainability Partner"]
         }
       ]
     };
