@@ -174,6 +174,32 @@
 
       <h2>{{ $t("mentorsTitle") }}</h2>
       <p class="introMentors my-5" v-html="$t('introMentors')"></p>
+      <v-layout row align-center justify-center wrap>
+        <v-btn
+          class="mt-2"
+          width="auto"
+          href="https://drive.google.com/open?id=1lUkfoDLM9URdCJRqDsVAI7X83AYuTgpC"
+          target="_blank"
+          color="info"
+          outline
+          flat
+        >
+          {{ $t("button.downloadMentoringFacts") }}
+          <v-icon dark right>open_in_new</v-icon>
+        </v-btn>
+        <v-btn
+          class="mt-2"
+          width="auto"
+          href="https://forms.gle/ZvJ6ZSBu7YvGpiBRA"
+          target="_blank"
+          color="warning"
+          outline
+          flat
+        >
+          {{ $t("button.registerAsMentor") }}
+          <v-icon dark right>open_in_new</v-icon>
+        </v-btn>
+      </v-layout>
       <v-img
         v-if="mentors.length === 0"
         class="icon-large mt-4"
@@ -344,9 +370,11 @@ export default {
     "juryTitle": "Jury",
     "introJury": "These faces and names will soon be replaced by really cool jury members. And because science has not been given enough attention so far, we have two jury members from this category. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Contact us</a> to become a jury member.",
     "mentorsTitle": "Mentors",
-    "introMentors": "So that you have a contact person ready to answer questions on a wide variety of topics, we will put a battalion of mentors at your side. Find out more soon who you can expect here. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Contact us</a> to become a mentor.",
+    "introMentors": "So that you have a contact person ready to answer questions on a wide variety of topics, we will put a battalion of mentors at your side. Find out more soon who you can expect here.",
     "button": {
-      "close": "Close"
+      "close": "Close",
+      "downloadMentoringFacts": "Mentoring Fact-Sheet",
+      "registerAsMentor": "Register as Mentor"
     }
   },
   "de": {
@@ -359,9 +387,11 @@ export default {
     "juryTitle": "Jury",
     "introJury": "Diese Gesichter und Namen werden bald durch wirklich coole Jurymitglieder ersetzt. Und weil der Wissenschaft bisher nicht genügend Aufmerksamkeit geschenkt wurde, haben wir zwei Jurymitglieder aus dieser Kategorie. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Kontaktiere uns</a> um dich als Jury-Mitglied zu bewerben.",
     "mentorsTitle": "Mentoren",
-    "introMentors": "Damit du immer einen Ansprechpartner hast, der dir bei Fragen zu den unterschiedlichsten Themen zur Seite steht, stellen wir dir ein Bataillon von Mentoren zur Seite. Mehr darüber, wen du hier erwarten kannst, erfährst du in Kürze. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Kontaktiere uns</a> um Mentor zu werden.",
+    "introMentors": "Damit du immer einen Ansprechpartner hast, der dir bei Fragen zu den unterschiedlichsten Themen zur Seite steht, stellen wir dir ein Bataillon von Mentoren zur Seite. Mehr darüber, wen du hier erwarten kannst, erfährst du in Kürze.",
     "button": {
-      "close": "Schliessen"
+      "close": "Schliessen",
+      "downloadMentoringFacts": "Mentoring Fact-Sheet",
+      "registerAsMentor": "Als Mentor*in registrieren"
     }
   }
 }

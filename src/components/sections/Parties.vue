@@ -147,7 +147,13 @@
             contain
           ></v-img>
           <p class="partner-title my-1">{{ partner.name }}</p>
-          <p class="partner-subtitle my-1">
+          <p
+            :class="{
+              'partner-subtitle': true,
+              'my-1': true,
+              important: partner.important
+            }"
+          >
             {{
               $i18n.locale === "en" ? partner.purpose[0] : partner.purpose[1]
             }}
@@ -201,6 +207,12 @@ export default {
           name: "Klimaschutzagentur Mannheim",
           important: true,
           purpose: ["Sustainability Partner", "Sustainability Partner"]
+        },
+        {
+          icon: require("../../assets/partner-kompass.jpg"),
+          name: "Hochschule Mannheim • Kompass",
+          important: false,
+          purpose: ["Network Partner", "Netzwerk Partner"]
         }
       ]
     };
@@ -297,7 +309,9 @@ section
       line-height 1.2
       letter-spacing 0.5px
       text-align inherit
-      color #70B4DF
+      color darken(#FFFFFF, 20%)
+      &.important
+        color #70B4DF
     .batch
       position absolute
       z-index 1
