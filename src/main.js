@@ -2,11 +2,13 @@ import "babel-polyfill";
 import Vue from "vue";
 import Vuetify from "vuetify";
 import VueScrollTo from "vue-scrollto";
+import VueClipboard from "vue-clipboard2";
 import App from "./App.vue";
 import { i18n } from "./i18n";
 
 // register plug-ins
 Vue.use(VueScrollTo);
+Vue.use(VueClipboard);
 Vue.use(Vuetify, {
   lang: {
     t: (key, ...params) => i18n.t(key, params)

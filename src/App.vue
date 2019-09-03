@@ -67,6 +67,20 @@
         :scroll-off-screen="isMobile"
       >
         <v-toolbar-side-icon @click.stop="drawer = !drawer" />
+        <v-btn
+          class="hashtag"
+          flat
+          outline
+          ripple
+          small
+          v-clipboard:copy="'#climathonMA'"
+          v-clipboard:success="
+            () => onCopySuccess($t('label.hashtagCopySuccess'))
+          "
+          @click="() => {}"
+        >
+          #climathonMA
+        </v-btn>
         <v-spacer></v-spacer>
         <v-btn
           :class="{ 'app-btn-register': true, large: !isMobile }"
@@ -110,6 +124,27 @@
         <Footer id="footer" themeColor="primary" />
       </v-content>
 
+      <v-snackbar
+        class="snackbar"
+        auto-height
+        top
+        v-model="notification.show"
+        :color="notification.color"
+        :multi-line="isMobile"
+        :vertical="isMobile"
+        :timeout="notification.timeout"
+      >
+        {{ notification.text }}
+        <v-btn
+          class="app-btn-snackbar"
+          color="primary"
+          dark
+          flat
+          @click="notification.show = false"
+        >
+          {{ $t("label.snackbarClose") }}
+        </v-btn>
+      </v-snackbar>
       <v-snackbar
         class="snackbar"
         auto-height
@@ -165,6 +200,12 @@ export default {
         color: "success",
         timeout: 10000
       },
+      notification: {
+        show: false,
+        color: "success",
+        timeout: 3000,
+        text: ""
+      },
       menu: [
         "intro",
         "about",
@@ -192,6 +233,10 @@ export default {
     window.addEventListener("resize", this.onResize, { passive: true });
   },
   methods: {
+    onCopySuccess(text) {
+      this.notification.text = text;
+      this.notification.show = true;
+    },
     onSetNewLocale(lang) {
       // switch locale
       setI18nLanguage(lang);
@@ -212,6 +257,8 @@ export default {
     "label": {
       "snackbarText": "We don't need any analysis tools so enjoy a cookie-free experience.",
       "snackbarConfirm": "OK",
+      "snackbarClose": "CLose",
+      "hashtagCopySuccess": "You just copied '#climathonMA'.",
       "en": "English",
       "de": "German",
       "intro": "Intro",
@@ -239,6 +286,8 @@ export default {
     "label": {
       "snackbarText": "We don't need any analysis tools so enjoy a cookie-free experience.",
       "snackbarConfirm": "OK",
+      "snackbarClose": "Schließen",
+      "hashtagCopySuccess": "Du hast \"#climathonMA\" kopiert.",
       "en": "Englisch",
       "de": "Deutsch",
       "intro": "Intro",
@@ -292,6 +341,10 @@ html, body
 
   .toolbar
     z-index 5
+    .hashtag
+      font-family Roboto Condensed,sans-serif
+      font-weight 600
+      text-transform none
     .app-btn-contact
       font-family Gagalin,sans-serif
       font-weight 400
