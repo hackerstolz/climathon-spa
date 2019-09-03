@@ -174,7 +174,7 @@
 
       <h2>{{ $t("mentorsTitle") }}</h2>
       <p class="introMentors my-5" v-html="$t('introMentors')"></p>
-      <v-layout row align-center justify-center wrap>
+      <v-layout class="mb-5" row align-center justify-center wrap>
         <v-btn
           class="mt-2"
           width="auto"
@@ -228,7 +228,7 @@
           }"
         >
           <v-img
-            class="mx-4 my-2"
+            class="mx-4 my-2 rounded-image"
             :src="mentor.icon"
             max-height="96px"
             max-width="96px"
@@ -236,15 +236,27 @@
             contain
           ></v-img>
           <p class="mentor-title my-1">
+            {{ mentor.name }}
+          </p>
+          <p class="mentor-description my-1">
             {{
-              $i18n.locale === "en" ? mentor.i18nTitle[0] : mentor.i18nTitle[1]
+              $i18n.locale === "en"
+                ? mentor.i18nOrganisation[0]
+                : mentor.i18nOrganisation[1]
             }}
           </p>
           <p class="mentor-description my-1">
             {{
               $i18n.locale === "en"
-                ? mentor.i18nDescription[0]
-                : mentor.i18nDescription[1]
+                ? mentor.i18nExpertise[0]
+                : mentor.i18nExpertise[1]
+            }}
+          </p>
+          <p class="mentor-description my-1">
+            {{
+              $i18n.locale === "en"
+                ? mentor.i18nAvailability[0]
+                : mentor.i18nAvailability[1]
             }}
           </p>
         </v-flex>
@@ -254,6 +266,12 @@
 </template>
 
 <script>
+const MENTOR_CATEGORY = {
+  TEAM_BUILDER: "TEAM_BUILDER",
+  EXPERT: "EXPERT",
+  PITCH_TRAINER: "PITCH_TRAINER"
+};
+
 export default {
   name: "Staff",
   props: {
@@ -352,7 +370,25 @@ export default {
           ]
         }
       ],
-      mentors: []
+      mentors: [
+        {
+          icon: require("../../assets/mentor/mentor-bandtel.jpg"),
+          name: "Matthias Bandtel",
+          category: MENTOR_CATEGORY.TEAM_BUILDER,
+          i18nOrganisation: [
+            "Mannheim University of Applied Sciences | kompass",
+            "Hochschule Mannheim | kompass"
+          ],
+          i18nExpertise: [
+            "Design Thinking, Human Centered Design, Interdisciplinarity",
+            "Design Thinking, Human Centered Design, Interdisziplinarität"
+          ],
+          i18nAvailability: [
+            "Friday 16:00h - 19:00h",
+            "Freitag 16:00h - 19:00h"
+          ]
+        }
+      ]
     };
   }
 };
