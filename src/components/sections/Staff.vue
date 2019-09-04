@@ -150,7 +150,7 @@
           }"
         >
           <v-img
-            class="mx-4 my-2"
+            class="mx-4 my-2 rounded-image"
             :src="judge.icon"
             max-height="96px"
             max-width="96px"
@@ -159,7 +159,8 @@
           ></v-img>
           <p class="judge-title my-1">
             {{
-              $i18n.locale === "en" ? judge.i18nTitle[0] : judge.i18nTitle[1]
+              judge.name ||
+              ($i18n.locale === "en" ? judge.i18nTitle[0] : judge.i18nTitle[1])
             }}
           </p>
           <p class="judge-description my-1">
@@ -305,7 +306,7 @@ export default {
           icon: require("../../assets/speaker/speaker-agnes.jpg"),
           name: "Agnes Schönfelder",
           i18nSubtitle: [
-            "Head of the Climate Change Strategy Office, City of Mannheim ",
+            "Head of the Climate Change Strategy Office, City of Mannheim",
             "Leiterin der Klimaschutzleitstelle, Stadt Mannheim"
           ],
           i18nDescription: [
@@ -322,6 +323,20 @@ export default {
       ],
       jury: [
         {
+          icon: require("../../assets/jury/jury-LMS.jpg"),
+          name: "Prof. Dr. Laura Marie Edinger-Schons",
+          i18nDescription: [
+            "Universität Mannheim | Business School | Lehrstuhl für Corporate Social Responsibility",
+            "University of Mannheim | Business School | Chair of Corporate Social Responsibility"
+          ],
+          i18nLongDescription: [
+            "Laura Marie Edinger-Schons ist Professorin für Corporate Social Responsibility an der Universität Mannheim. In ihrer Forschung interessiert sie sich für die Frage, wie Organisationen (for-profit, non-profit und alles dazwischen) zu einer nachhaltigen Entwicklung im Sinne der Ziele der Vereinten Nationen für nachhaltige Entwicklung beitragen können. Ihre Arbeiten wurden in renommierten Fachzeitschriften wie dem Journal Marketing, dem Journal of the Academy of Marketing Science, dem Journal of Business Ethics oder dem Journal of Consumer Psychology veröffentlicht. Sie ist Mitbegründerin des Digital Social Innovation Lab sowie der Peer School for Sustainable Development.",
+            "Laura Marie Edinger-Schons is a Professor of Corporate Social Responsibility at the University of Mannheim. In her research, she is interested in the question how organizations (for-profit, non-profit and everything in between) can contribute to sustainable development as defined in the United Nations Sustainable Development Goals. Her work has been published in renowned academic journals such as the Journal Marketing, Journal of the Academy of Marketing Science, Journal of Business Ethics, or the Journal of Consumer Psychology. She is a co-founder of the Digital Social Innovation Lab as well as the Peer School for Sustainable Development."
+          ],
+          female: true,
+          show: false
+        },
+        {
           icon: require("../../assets/flat-icon-scientist.svg"),
           i18nTitle: ["The Scientist", "Die Wissenschaftlerin"],
           i18nDescription: [
@@ -337,14 +352,14 @@ export default {
             "Erfahren, brillant und hörenswert, können unsere Wissenschaftler nicht ignoriert werden."
           ]
         },
-        {
-          icon: require("../../assets/flat-icon-man.svg"),
-          i18nTitle: ["The Economist", "Der Ökonom"],
-          i18nDescription: [
-            "Every project must also be financed, if there are gaps in the business model our expert will find them.",
-            "Jedes Projekt muss auch finanziert werden, wenn es Lücken im Geschäftsmodell gibt, wird unser Experte sie finden."
-          ]
-        },
+        // {
+        //   icon: require("../../assets/flat-icon-man.svg"),
+        //   i18nTitle: ["The Economist", "Der Ökonom"],
+        //   i18nDescription: [
+        //     "Every project must also be financed, if there are gaps in the business model our expert will find them.",
+        //     "Jedes Projekt muss auch finanziert werden, wenn es Lücken im Geschäftsmodell gibt, wird unser Experte sie finden."
+        //   ]
+        // },
         {
           icon: require("../../assets/flat-icon-man-sunglasses.svg"),
           i18nTitle: ["Media Expert", "Medienexperte"],
@@ -382,6 +397,23 @@ export default {
           i18nExpertise: [
             "Design Thinking, Human Centered Design, Interdisciplinarity",
             "Design Thinking, Human Centered Design, Interdisziplinarität"
+          ],
+          i18nAvailability: [
+            "Friday 16:00h - 19:00h",
+            "Freitag 16:00h - 19:00h"
+          ]
+        },
+        {
+          icon: require("../../assets/mentor/mentor-jasmin.png"),
+          name: "Jasmin Weber",
+          category: MENTOR_CATEGORY.TEAM_BUILDER,
+          i18nOrganisation: [
+            "GfK Entertainment GmbH",
+            "GfK Entertainment GmbH"
+          ],
+          i18nExpertise: [
+            "Team Building",
+            "Team Building"
           ],
           i18nAvailability: [
             "Friday 16:00h - 19:00h",
