@@ -160,9 +160,9 @@ export default {
 <i18n>
 {
   "en": {
-    "titleWhy": "Why a climathon?",
+    "titleWhy": "Why climathon?",
     "textWhy": "In a world where information is power 2019 is hopefully the year the world finally realizes that we need to do something about global warming (to all dissenting heads of government - Donald *cough* -, its not working how you think, please find out the difference between weather and climate first). Unfortunately, we are at a point where confidence in our government is waning as far as achieving our climate targets is concerned, and a serious change of course is not discernible. We therefore see it as our duty – as citizens of Planet Earth – to do everything in our power to help tackle this global problem and hopefully make a difference. We want to not just talk about sustainability but try to see what technology can do to fight climate change. That is why Hackerstolz and the City of Mannheim is hosting the Climathon. The Climathon is an over regional initiative by the Climate-KIC from EIT that take place in hundreds of cities all over the world. Become part of it!",
-    "titleWhat": "What is the climathon about?",
+    "titleWhat": "What is climathon about?",
     "textWhat": [
       "For 40 hours you have the opportunity to develop prototypes for digital solutions together in a team. We provide you with public and non-public environmental data as well as data from the economy, with  which you can develop innovative solutions.",
       "Throughout the entire hackathon, you will be supported by a team of experts who will help you develop your ideas."

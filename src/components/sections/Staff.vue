@@ -39,17 +39,17 @@
             width="96px"
             cover
           ></v-img>
-          <p class="speaker-title my-1">
+          <p class="speaker-name my-1">
             {{ speaker.name }}
           </p>
-          <p class="subtitle my-1">
+          <p class="speaker-description my-1">
             {{
               $i18n.locale === "en"
                 ? speaker.i18nSubtitle[0]
                 : speaker.i18nSubtitle[1]
             }}
           </p>
-          <p class="speaker-description my-1">
+          <p class="speaker-talk my-1">
             {{
               $i18n.locale === "en"
                 ? speaker.i18nDescription[0]
@@ -160,7 +160,9 @@
           <p class="judge-title my-1">
             {{
               judge.name ||
-              ($i18n.locale === "en" ? judge.i18nTitle[0] : judge.i18nTitle[1])
+                ($i18n.locale === "en"
+                  ? judge.i18nTitle[0]
+                  : judge.i18nTitle[1])
             }}
           </p>
           <p class="judge-description my-1">
@@ -246,14 +248,14 @@
                 : mentor.i18nOrganisation[1]
             }}
           </p>
-          <p class="mentor-description my-1">
+          <p class="mentor-expertise my-1">
             {{
               $i18n.locale === "en"
                 ? mentor.i18nExpertise[0]
                 : mentor.i18nExpertise[1]
             }}
           </p>
-          <p class="mentor-description my-1">
+          <p class="mentor-availability my-1">
             {{
               $i18n.locale === "en"
                 ? mentor.i18nAvailability[0]
@@ -335,23 +337,23 @@ export default {
           ],
           female: true,
           show: false
-        },
-        {
-          icon: require("../../assets/flat-icon-scientist.svg"),
-          i18nTitle: ["The Scientist", "Die Wissenschaftlerin"],
-          i18nDescription: [
-            "She observes, discusses and concludes with a knife sharp mind and a concentrated understanding.",
-            "Sie beobachtet, diskutiert und besticht mit einem messerscharfen Verstand und einem konzentrierten Verständnis."
-          ]
-        },
-        {
-          icon: require("../../assets/flat-icon-alien.svg"),
-          i18nTitle: ["The Second Scientist", "Der zweite Wissenschaftler"],
-          i18nDescription: [
-            "Experienced, brilliant and heard, our scientists cannot be ignored.",
-            "Erfahren, brillant und hörenswert, können unsere Wissenschaftler nicht ignoriert werden."
-          ]
-        },
+        }
+        // {
+        //   icon: require("../../assets/flat-icon-scientist.svg"),
+        //   i18nTitle: ["The Scientist", "Die Wissenschaftlerin"],
+        //   i18nDescription: [
+        //     "She observes, discusses and concludes with a knife sharp mind and a concentrated understanding.",
+        //     "Sie beobachtet, diskutiert und besticht mit einem messerscharfen Verstand und einem konzentrierten Verständnis."
+        //   ]
+        // },
+        // {
+        //   icon: require("../../assets/flat-icon-alien.svg"),
+        //   i18nTitle: ["The Second Scientist", "Der zweite Wissenschaftler"],
+        //   i18nDescription: [
+        //     "Experienced, brilliant and heard, our scientists cannot be ignored.",
+        //     "Erfahren, brillant und hörenswert, können unsere Wissenschaftler nicht ignoriert werden."
+        //   ]
+        // },
         // {
         //   icon: require("../../assets/flat-icon-man.svg"),
         //   i18nTitle: ["The Economist", "Der Ökonom"],
@@ -360,30 +362,30 @@ export default {
         //     "Jedes Projekt muss auch finanziert werden, wenn es Lücken im Geschäftsmodell gibt, wird unser Experte sie finden."
         //   ]
         // },
-        {
-          icon: require("../../assets/flat-icon-man-sunglasses.svg"),
-          i18nTitle: ["Media Expert", "Medienexperte"],
-          i18nDescription: [
-            "With a broad overview of other climate projects, the media expert knows which needs are not yet covered.",
-            "Mit einem breiten Überblick über andere Klimaprojekte weiß der Medienexperte, welche Bedürfnisse noch nicht abgedeckt sind."
-          ]
-        },
-        {
-          icon: require("../../assets/flat-icon-man-beard.svg"),
-          i18nTitle: ["Rep of the City", "Vertreter der Stadt"],
-          i18nDescription: [
-            "Mannheim is his specialty, you think you are already an expert of your city? Think about it again.",
-            "Mannheim ist seine Spezialität. Du denkst, du bist schon ein Experte deiner Stadt? Denke noch einmal darüber nach."
-          ]
-        },
-        {
-          icon: require("../../assets/flat-icon-woman.svg"),
-          i18nTitle: ["Hackerwoman", "Hackerwoman"],
-          i18nDescription: [
-            "0010 1001 1111 1001 1001 1000 0000 0111 0001 0110 1010 0101 0011 1100 0011 0000 0010 0100",
-            "0010 1001 1111 1001 1001 1000 0000 0111 0001 0110 1010 0101 0011 1100 0011 0000 0010 0100"
-          ]
-        }
+        // {
+        //   icon: require("../../assets/flat-icon-man-sunglasses.svg"),
+        //   i18nTitle: ["Media Expert", "Medienexperte"],
+        //   i18nDescription: [
+        //     "With a broad overview of other climate projects, the media expert knows which needs are not yet covered.",
+        //     "Mit einem breiten Überblick über andere Klimaprojekte weiß der Medienexperte, welche Bedürfnisse noch nicht abgedeckt sind."
+        //   ]
+        // },
+        // {
+        //   icon: require("../../assets/flat-icon-man-beard.svg"),
+        //   i18nTitle: ["Rep of the City", "Vertreter der Stadt"],
+        //   i18nDescription: [
+        //     "Mannheim is his specialty, you think you are already an expert of your city? Think about it again.",
+        //     "Mannheim ist seine Spezialität. Du denkst, du bist schon ein Experte deiner Stadt? Denke noch einmal darüber nach."
+        //   ]
+        // },
+        // {
+        //   icon: require("../../assets/flat-icon-woman.svg"),
+        //   i18nTitle: ["Hackerwoman", "Hackerwoman"],
+        //   i18nDescription: [
+        //     "0010 1001 1111 1001 1001 1000 0000 0111 0001 0110 1010 0101 0011 1100 0011 0000 0010 0100",
+        //     "0010 1001 1111 1001 1001 1000 0000 0111 0001 0110 1010 0101 0011 1100 0011 0000 0010 0100"
+        //   ]
+        // }
       ],
       mentors: [
         {
@@ -411,10 +413,7 @@ export default {
             "GfK Entertainment GmbH",
             "GfK Entertainment GmbH"
           ],
-          i18nExpertise: [
-            "Team Building",
-            "Team Building"
-          ],
+          i18nExpertise: ["Team Building", "Team Building"],
           i18nAvailability: [
             "Friday 16:00h - 19:00h",
             "Freitag 16:00h - 19:00h"
@@ -500,7 +499,7 @@ section
     justify-content center
     .rounded-image
       border-radius 8px
-    .speaker-title, .judge-title, .mentor-title
+    .speaker-name, .judge-title, .mentor-title
       font-family Gagalin,sans-serif
       font-weight 400
       font-style normal
@@ -510,15 +509,6 @@ section
       letter-spacing 1px
       text-align inherit
       color #ffffff
-    .subtitle
-      font-family click-clack,sans-serif
-      font-weight 500
-      font-size 20px
-      font-style normal
-      line-height 1.2
-      letter-spacing 0.5px
-      text-align inherit
-      color #A8E5A3
     .speaker-description, .judge-description, .mentor-description
       font-family click-clack,sans-serif
       font-weight 300
@@ -527,6 +517,23 @@ section
       line-height 1.2
       letter-spacing 0.5px
       text-align inherit
+      color rgba(255, 255, 255, 0.8)
+    .speaker-talk, .mentor-expertise
+      font-family click-clack,sans-serif
+      font-weight 500
+      font-size 20px
+      font-style normal
+      line-height 1.2
+      letter-spacing 0.5px
+      text-align inherit
+      color #A8E5A3
+    .mentor-availability
+      font-family Roboto Condensed,sans-serif
+      font-weight 400
+      font-size 20px
+      line-height 1.2
+      letter-spacing normal
+      text-align center
       color rgba(255, 255, 255, 0.8)
 
 .v-dialog--fullscreen
