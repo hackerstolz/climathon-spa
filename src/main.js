@@ -5,6 +5,7 @@ import VueScrollTo from "vue-scrollto";
 import VueClipboard from "vue-clipboard2";
 import App from "./App.vue";
 import { i18n } from "./i18n";
+import router from "./router";
 
 // register plug-ins
 Vue.use(VueScrollTo);
@@ -28,6 +29,7 @@ Vue.config.productionTip = false;
 
 new Vue({
   i18n,
+  router,
   render: h => h(App)
 }).$mount("#app");
 
