@@ -307,7 +307,7 @@
           }"
         >
           <v-img
-            class="mx-4 my-2 avatar-image mentor"
+            :class="`mx-4 my-2 avatar-image mentor ${mentor.category}`"
             :src="mentor.icon"
             max-height="96px"
             max-width="96px"
@@ -324,7 +324,7 @@
                 : mentor.i18nOrganisation[1]
             }}
           </p>
-          <p class="mentor-expertise my-1">
+          <p :class="`mentor-expertise my-1 ${mentor.category}`">
             {{
               $i18n.locale === "en"
                 ? mentor.i18nExpertise[0]
@@ -346,9 +346,9 @@
 
 <script>
 const MENTOR_CATEGORY = {
-  TEAM_BUILDER: "TEAM_BUILDER",
-  EXPERT: "EXPERT",
-  PITCH_TRAINER: "PITCH_TRAINER"
+  TEAM_BUILDER: "teamBuilder",
+  EXPERT: "expert",
+  PITCH_TRAINER: "pitchTrainer"
 };
 
 export default {
@@ -512,11 +512,27 @@ export default {
           ],
           i18nExpertise: [
             "Innovation Facilitation, Moderation",
-            "Innovation Facilitation, Moderation"
+            "Innovationsförderung, Moderation"
           ],
           i18nAvailability: [
             "Friday 16:00h - 19:00h",
             "Freitag 16:00h - 19:00h"
+          ]
+        },
+
+        // EXPERTS
+        {
+          icon: require("../../assets/mentor/mentor-sergey.jpg"),
+          name: "M.Sc., Sergey Makaryan",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: ["", ""],
+          i18nExpertise: [
+            "Sustainability (ecology, climate protection, climate change, etc.)",
+            "Nachhaltigkeit (Ökologie, Klimaschutz, Klimawandel, etc.)"
+          ],
+          i18nAvailability: [
+            "Saturday 10:00h - 20:00h",
+            "Samstag 10:00h - 20:00h"
           ]
         }
       ]
@@ -610,6 +626,8 @@ section
         border-color rgba(255,255,255,0.8)
       &.mentor
         border-color #ffc533
+        &.expert
+          border-color #70b4df
     .speaker-name, .judge-title, .mentor-title
       font-family Gagalin,sans-serif
       font-weight 400
@@ -641,6 +659,8 @@ section
         color #A8E5A3
       &.mentor-expertise
         color #ffc533
+        &.expert
+          color #70b4df
     .mentor-availability
       font-family Roboto Condensed,sans-serif
       font-weight 400
