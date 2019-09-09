@@ -10,7 +10,7 @@
         max-height="245px"
         max-width="245px"
         width="245px"
-        contain
+        cover
       ></v-img>
       <v-layout
         v-if="speakers.length > 0"
@@ -32,7 +32,7 @@
           }"
         >
           <v-img
-            class="mx-4 my-2 rounded-image"
+            class="mx-4 my-2 avatar-image speaker"
             :src="speaker.icon"
             max-height="96px"
             max-width="96px"
@@ -68,7 +68,7 @@
             :fullscreen="isMobile"
           >
             <v-card class="card" color="#2f3a58">
-              <div class="dialog-card-content pa-3">
+              <div class="dialog-card-content pa-4">
                 <v-layout row>
                   <div class="ml-3 mr-4">&nbsp;</div>
                   <v-spacer />
@@ -87,13 +87,20 @@
                   </v-btn>
                 </v-layout>
                 <v-img
-                  class="mb-4 avatar"
+                  class="mb-2 avatar"
                   :src="speaker.icon"
                   max-height="128px"
                   max-width="128px"
                   width="128px"
                   cover
                 ></v-img>
+                <p class="annotation-text mb-4">
+                  {{
+                    $i18n.locale === "en"
+                      ? speaker.i18nSubtitle[0]
+                      : speaker.i18nSubtitle[1]
+                  }}
+                </p>
                 <h4>{{ $t("talkTitle") }}</h4>
                 <p class="description mb-4" v-show="speaker.show">
                   {{
@@ -150,12 +157,12 @@
           }"
         >
           <v-img
-            class="mx-4 my-2 rounded-image"
+            class="mx-4 my-2 avatar-image judge"
             :src="judge.icon"
             max-height="96px"
             max-width="96px"
             width="96px"
-            contain
+            cover
           ></v-img>
           <p class="judge-title my-1">
             {{
@@ -172,6 +179,75 @@
                 : judge.i18nDescription[1]
             }}
           </p>
+          <v-btn class="my-3" outline flat small @click="toggleJudge(i)">
+            {{ $t("more") }}
+          </v-btn>
+
+          <v-dialog
+            v-model="judge.show"
+            scrollable
+            width="80%"
+            max-width="640px"
+            :fullscreen="isMobile"
+          >
+            <v-card class="card" color="#2f3a58">
+              <div class="dialog-card-content pa-4">
+                <v-layout row>
+                  <div class="ml-3 mr-4">&nbsp;</div>
+                  <v-spacer />
+                  <h3 class="mb-3">
+                    {{ judge.name }}
+                  </h3>
+                  <v-spacer />
+                  <v-btn
+                    class="ma-0"
+                    color="accent"
+                    flat
+                    @click="judge.show = false"
+                    icon
+                  >
+                    <v-icon>close</v-icon>
+                  </v-btn>
+                </v-layout>
+                <v-img
+                  class="mb-4 avatar"
+                  :src="judge.icon"
+                  max-height="128px"
+                  max-width="128px"
+                  width="128px"
+                  cover
+                ></v-img>
+                <p class="annotation-text judge mb-4">
+                  {{
+                    $i18n.locale === "en"
+                      ? judge.i18nDescription[0]
+                      : judge.i18nDescription[1]
+                  }}
+                </p>
+                <h4>
+                  {{
+                    judge.female
+                      ? $t("aboutTheJudgeFemale")
+                      : $t("aboutTheJudgeMale")
+                  }}
+                </h4>
+                <p
+                  class="long-description mb-4"
+                  v-html="
+                    $i18n.locale === 'en'
+                      ? judge.i18nLongDescription[0]
+                      : judge.i18nLongDescription[1]
+                  "
+                ></p>
+              </div>
+              <v-card-actions class="dialog-card-footer">
+                <v-spacer />
+                <v-btn color="accent" flat @click="judge.show = false">{{
+                  $t("button.close")
+                }}</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
         </v-flex>
       </v-layout>
 
@@ -210,7 +286,7 @@
         max-height="245px"
         max-width="245px"
         width="245px"
-        contain
+        cover
       ></v-img>
       <v-layout
         v-if="mentors.length > 0"
@@ -231,12 +307,12 @@
           }"
         >
           <v-img
-            class="mx-4 my-2 rounded-image"
+            class="mx-4 my-2 avatar-image mentor"
             :src="mentor.icon"
             max-height="96px"
             max-width="96px"
             width="96px"
-            contain
+            cover
           ></v-img>
           <p class="mentor-title my-1">
             {{ mentor.name }}
@@ -291,6 +367,13 @@ export default {
 
       this.speakers.forEach(c => (c.show = false));
       clickedSpeaker.show = !prevShow;
+    },
+    toggleJudge(i) {
+      const clickedJury = this.jury[i];
+      const prevShow = this.jury[i].show;
+
+      this.jury.forEach(c => (c.show = false));
+      clickedJury.show = !prevShow;
     }
   },
   computed: {
@@ -418,6 +501,23 @@ export default {
             "Friday 16:00h - 19:00h",
             "Freitag 16:00h - 19:00h"
           ]
+        },
+        {
+          icon: require("../../assets/mentor/mentor-boes.jpg"),
+          name: "Matthias Bös",
+          category: MENTOR_CATEGORY.TEAM_BUILDER,
+          i18nOrganisation: [
+            "valantic CEC Deutschland GmbH",
+            "valantic CEC Deutschland GmbH"
+          ],
+          i18nExpertise: [
+            "Innovation Facilitation, Moderation",
+            "Innovation Facilitation, Moderation"
+          ],
+          i18nAvailability: [
+            "Friday 16:00h - 19:00h",
+            "Freitag 16:00h - 19:00h"
+          ]
         }
       ]
     };
@@ -434,6 +534,8 @@ export default {
     "talkTitle": "title of the talk",
     "aboutTheSpeakerFemale": "About the speaker",
     "aboutTheSpeakerMale": "About the speaker",
+    "aboutTheJudgeFemale": "About the jury member",
+    "aboutTheJudgeMale": "About the jury member",
     "juryTitle": "Jury",
     "introJury": "Here we will publish really cool jury members, one after each other. And because science has not been given enough attention so far, we have at least two jury members from this category. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Contact us</a> to become a jury member.",
     "mentorsTitle": "Mentors",
@@ -451,6 +553,8 @@ export default {
     "talkTitle": "Titel des Vortrags",
     "aboutTheSpeakerFemale": "Über die Speakerin",
     "aboutTheSpeakerMale": "Über den Speaker",
+    "aboutTheJudgeFemale": "Über die Jurorin",
+    "aboutTheJudgeMale": "Über den Juror",
     "juryTitle": "Jury",
     "introJury": "Hier werden wir Jurymitglieder veröffentlichen, eine*r nach der/m anderen. Und weil der Wissenschaft bisher nicht genügend Aufmerksamkeit geschenkt wurde, haben wir zwei Jurymitglieder aus dieser Kategorie. <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>Kontaktiere uns</a> um dich als Jury-Mitglied zu bewerben.",
     "mentorsTitle": "Mentoren",
@@ -497,8 +601,15 @@ section
     flex-direction column
     align-items center
     justify-content center
-    .rounded-image
+    .avatar-image
       border-radius 8px
+      border 1px solid transparent
+      &.speaker
+        border-color #a8e5a3
+      &.judge
+        border-color rgba(255,255,255,0.8)
+      &.mentor
+        border-color #ffc533
     .speaker-name, .judge-title, .mentor-title
       font-family Gagalin,sans-serif
       font-weight 400
@@ -526,7 +637,10 @@ section
       line-height 1.2
       letter-spacing 0.5px
       text-align inherit
-      color #A8E5A3
+      &.speaker-talk
+        color #A8E5A3
+      &.mentor-expertise
+        color #ffc533
     .mentor-availability
       font-family Roboto Condensed,sans-serif
       font-weight 400
@@ -565,6 +679,17 @@ section
   .avatar
     margin 0 auto
     border-radius 50%
+  .annotation-text
+    font-family click-clack,sans-serif
+    font-weight 500
+    font-size 20px
+    font-style normal
+    line-height 1.2
+    letter-spacing 0.5px
+    text-align inherit
+    color #A8E5A3
+    &.judge
+      color #ffffff
   .description
     font-family Roboto Condensed,sans-serif
     font-weight 400
