@@ -136,7 +136,7 @@
         </v-flex>
       </v-layout>
 
-      <h2>{{ $t("juryTitle") }}</h2>
+      <h2 id="jury">{{ $t("juryTitle") }}</h2>
       <p class="introJury my-5" v-html="$t('introJury')"></p>
       <v-layout
         v-if="jury.length > 0"
@@ -251,7 +251,7 @@
         </v-flex>
       </v-layout>
 
-      <h2>{{ $t("mentorsTitle") }}</h2>
+      <h2 id="mentor">{{ $t("mentorsTitle") }}</h2>
       <p class="introMentors my-5" v-html="$t('introMentors')"></p>
       <v-layout class="mb-5" row align-center justify-center wrap>
         <v-btn
