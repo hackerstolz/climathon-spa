@@ -1,6 +1,6 @@
 # DISABLE CACHING
-<filesMatch "\.(json|html|htm|js|css|ico|png|svg|jpg|jpeg)$">
-    FileETag None
+# <filesMatch "\.(json|html|htm|js|css|ico|png|svg|jpg|jpeg)$">
+<filesMatch "\.(html|htm)$">
     <ifModule mod_headers.c>
         Header unset ETag
         Header set Cache-Control "no-cache, no-store, must-revalidate"
@@ -8,6 +8,7 @@
         Header set Expires 0
     </ifModule>
     <ifModule mod_expires.c>
-        ExpiresActive Off
+        ExpiresActive On
+        ExpiresDefault "modification"
     </ifModule>
 </filesMatch>

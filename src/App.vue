@@ -223,9 +223,16 @@ export default {
     };
   },
   mounted() {
-    // show snackbar with delay
+    const [section] = this.$route.path.match(/[a-z0-9]+/i);
+
     setTimeout(() => {
+      // show snackbar with delay
       this.snackbar.show = true;
+
+      // nav to section initially
+      if (section) {
+        this.$scrollTo(`#${section}`);
+      }
     }, 500);
 
     // reigster resize handler
@@ -387,9 +394,10 @@ html, body
   /*
    * Styles fo v-html content elements.
    */
-  a.link
-    color #70B4DF !important
+  a, a:-webkit-any-link
     text-decoration none
+    &.link
+      color #70B4DF !important
   ul.list
     li
       margin 1rem 0
