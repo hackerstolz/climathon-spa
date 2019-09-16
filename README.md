@@ -48,6 +48,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [X] Cache busting mit url query parameters
 [X] Fix Bugs in IE
 [ ] Fix SVG Bugs in MS Edge: see [bug issue](https://github.com/vuetifyjs/vuetify/issues/6316)
+[X] Add deep link for challenges
+[ ] Add language setup via URL (and via browser default)
 
 ### TODOs Content
 [X] Complete FAQ  
