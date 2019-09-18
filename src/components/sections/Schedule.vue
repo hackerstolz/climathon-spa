@@ -122,6 +122,20 @@ export default {
               ]
             },
             {
+              speaker: true,
+              speakerID: "hannah-helmke",
+              icon: require("../../assets/speaker/speaker-hannah.jpg"),
+              time: "12:30",
+              i18nTitle: [
+                '"On the other side of the Rubicon"',
+                '"Auf der anderen Seite des Rubikon"'
+              ],
+              i18nDescription: [
+                "Speaker: Hannah Helmke",
+                "Speakerin: Hannah Helmke"
+              ]
+            },
+            {
               icon: require("../../assets/flat-icon-schedule-lunch.svg"),
               time: "13:00",
               i18nTitle: ["Lunch time", "Mittagspause"],

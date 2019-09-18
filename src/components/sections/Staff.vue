@@ -387,6 +387,25 @@ export default {
     return {
       speakers: [
         {
+          speakerID: "hannah-helmke",
+          icon: require("../../assets/speaker/speaker-hannah.jpg"),
+          name: "Hannah Helmke",
+          i18nSubtitle: [
+            "Managing director and co-founder of right. based on science",
+            "Geschäftsführerin und Mitbegründerin von right. based on science"
+          ],
+          i18nDescription: [
+            '"On the other side of the Rubicon"',
+            '"Auf der anderen Seite des Rubikon"'
+          ],
+          i18nLongDescription: [
+            'Hannah Helmke is managing director of right. based on science, a model developer for climate impact calculations based in Frankfurt am Main. Together with Dr. Sebastian Müller, she founded the young company in August 2016 with the aim of generating transparency on economic risks and opportunities associated with climate change. Using the proprietary X-Degree Compatibility (XDC) model developed by right. based on science, Climate Impact performs calculations that quantify the contribution of an economic unit to climate change. Hannah Helmke has an academic background in psychology and international business. She gained experience in the use of science-based climate metrics at Deutsche Post DHL and the IT service provider BridgingIT GmbH. Her expertise in scenario analysis stems from the development of the XDC model, scenario analysis for customers in the real and financial economy, the design of the "TCFD Think Tank" of the Green and Sustainable Finance Cluster Germany e.V. and her participation in conferences such as the Scenarios Forum 2019 in Denver.',
+            "Hannah Helmke ist Geschäftsführerin von right. based on science, einem Modellentwickler für Climate Impact Berechnungen aus Frankfurt am Main. Zusammen mit Dr. Sebastian Müller gründete sie im August 2016 das junge Unternehmen mit dem Ziel, Transparenz zu wirtschaftlichen Risiken und Chancen einhergehend mit dem Klimawandel zu generieren. Mit dem eigens entwickelten proprietären X-Degree Compatibility (XDC) Modell führt right. based on science Climate Impact Berechnungen durch, die den Beitrag einer wirtschaftlichen Einheit zum Klimawandel beziffern. Hannah Helmke hat einen akademischen Hintergrund in Psychologie und International Business. Erfahrungen zum Einsatz von wissenschaftsbasierten Klimametriken sammelte sie u.a. bei der Deutschen Post DHL und dem IT-Servicedienstleister BridgingIT GmbH. Ihre Fachexpertise zur Szenarioanalyse entstammt der Entwicklung des XDC Modells, der Szenarioanalyse bei Kunden aus Real- und Finanzwirtschaft, der Ausgestaltung des „TCFD Think Tank“ des Green and Sustainable Finance Cluster Germany e.V. sowie ihrer Teilnahme an Fachkonferenzen wie dem Scenarios Forum 2019 in Denver."
+          ],
+          female: true,
+          show: false
+        },
+        {
           speakerID: "agnes-schoenfelder",
           icon: require("../../assets/speaker/speaker-agnes.jpg"),
           name: "Agnes Schönfelder",
