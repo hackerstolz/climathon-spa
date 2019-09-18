@@ -304,7 +304,31 @@ export default {
           key: "mobility",
           img: require("../../assets/flat-icon-mobility.svg"),
           show: false,
-          challenges: []
+          challenges: [
+            {
+              type: CHALLENGE_TYPE.SPONSOR,
+              i18nAuthor: [
+                "Rhein-Neckar-Verkehr GmbH",
+                "Rhein-Neckar-Verkehr GmbH"
+              ],
+              i18nTitle: [
+                "By which means does a modern and smart public transportation system really change our behaviour, enhance our lives, and protects the environment?",
+                "Mit welchen Mitteln verändert ein modernes und intelligentes öffentliches Verkehrssystem wirklich unser Verhalten, verbessert unser Leben und schützt die Umwelt?"
+              ],
+              i18nSummary: [
+                "Mobility, as a basic need of mankind, affects all of us permanently. The Rhein-Neckar-Verkehr GmbH (rnv) fosters a sustainable strategy of innovation, efficiency, an increase of the modal split, benefits for the environment, and cohesiveness to ensure the highest quality possible for its existing customers. In addition, the rnv strives to attract as many new customers as possible - esp. those switching from the usage of their own car to the usage of public transportation.</br>Now you can be part of this offensive by shaping the public transportation sector towards a customer-focused mobility as a service landscape by using data in new ways, taking advantage of digitalization and new technology, and by the innovative combination of hard- and software in the internet of things.",
+                "Mobilität als Grundbedürfnis des Menschen betrifft uns alle dauerhaft. Die Rhein-Neckar-Verkehr GmbH (rnv) fördert eine nachhaltige Strategie der Innovation, Effizienz, Erhöhung des Modal Splits, Nutzen für die Umwelt und Kohäsion, um ihren Bestandskunden die bestmögliche Qualität zu gewährleisten. Darüber hinaus ist das rnv bestrebt, möglichst viele neue Kunden zu gewinnen - insbesondere solche, die von der Nutzung des eigenen Autos auf die Nutzung des öffentlichen Verkehrs umsteigen.</br>Jetzt können Sie Teil dieser Offensive sein, indem Sie den ÖPNV durch neue Datennutzung, Nutzung von Daten, Digitalisierung und neuen Technologien sowie durch die innovative Kombination von Hard- und Software im Internet der Dinge zu einer kundenorientierten Mobilitätslandschaft entwickeln."
+              ],
+              i18nDescription: [
+                'The rnv provides its open service Start.Info API as well as already published data on its open data portal for its 81 bus and tram lines plus exclusive data just for this challenge! Together with all kinds of additional data from partner challenges or the web you can focus on one or more topics in the context of the following areas:<ul class="list"><li>Navigation for mobility-impaired and visually handicapped people to and from our stops, within our vehicles, etc. Tons of open maps, open routing services, gits with open source codes are available. Different technologies may apply. Do you want to solve this jigsaw?</li><li>Enhancements of the rnv/VRN eTarif app: What is your dream of seamless traveling without the need of having a ticket? CICO, CIBO, BIBO! Psycho?</li><li>Occupancy rates of our public transportation vehicles allow varieties towards a more efficient usage of our vehicles. But how to get the data as cheap as possible for a given accuracy? How to predict those rates? How to influence customer behaviour in using our vehicles as a win-win? How to…??? It’s your turn!</li><li>User information itself: What are the newest trends or the latest technologies to inform our customers on the go or at a location? What kind of information can be given by stationary monitors and all kinds of wearables? Think for example about mobility hubs or how a new residential quarter should look like, if no individual cars are allowed?</li></ul>',
+                'Das rnv bietet seinen offenen Dienst Start.Info API sowie bereits veröffentlichte Daten auf seinem offenen Datenportal für seine 81 Bus- und Straßenbahnlinien sowie exklusive Daten speziell für diese Herausforderung! Zusammen mit allen möglichen Zusatzdaten von Partnerherausforderungen oder dem Web können Sie sich auf ein oder mehrere Themen im Rahmen der folgenden Bereiche konzentrieren: <ul class="list"><li>Navigation für mobilitätseingeschränkte und sehbehinderte Menschen zu und von unseren Haltestellen, innerhalb unserer Fahrzeuge, etc. Tonnen von offenen Karten, offenen Routing-Diensten, Gits mit offenen Quellcodes sind verfügbar. Es können verschiedene Technologien zum Einsatz kommen. Möchten Sie dieses Puzzle lösen? </li><li><li>Erweiterungen der rnv/VRN eTarif App: Was ist Ihr Traum vom nahtlosen Reisen ohne Ticket? CICO, CIBO, CIBO, BIBO! Psycho?</li><li><li>Auslastung unserer öffentlichen Verkehrsmittel ermöglicht Varianten zu einer effizienteren Nutzung unserer Fahrzeuge. Aber wie bekommt man die Daten bei einer gegebenen Genauigkeit so günstig wie möglich? Wie kann man diese Raten vorhersagen? Wie kann man das Kundenverhalten beim Einsatz unserer Fahrzeuge als Win-Win-Situation beeinflussen? Wie kann man....??? Du bist an der Reihe!</li><li><li>Benutzerinformationen selbst: Welche sind die neuesten Trends oder die neuesten Technologien, um unsere Kunden unterwegs oder an einem Standort zu informieren? Welche Informationen können stationäre Monitore und alle Arten von Wearables liefern? Denken Sie zum Beispiel an Mobilitätszentren oder wie ein neues Wohnquartier aussehen soll, wenn keine Einzelfahrzeuge erlaubt sind?</li></ul>'
+              ],
+              i18nVision: [
+                "We encourage you and strongly believe that you will come up with awesome ideas and thoughts, lovely sketches and scribbles, solutions, prototypes, and demonstrators, we never even dared to dream about before. The sky is the limit!",
+                "Wir ermutigen dich und glauben fest daran, dass du fantastische Ideen und Gedanken, schöne Skizzen und Schmierereien, Lösungen, Prototypen und Demonstratoren hervorbringen wirst, von denen wir noch nie zuvor geträumt haben. Der Himmel ist die Grenze!"
+              ]
+            }
+          ]
         },
         {
           key: "retrofitting",

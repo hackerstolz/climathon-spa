@@ -190,6 +190,11 @@ export default {
           challenge: true
         },
         {
+          icon: require("../../assets/sponsor-rnv.svg"),
+          name: "Rhein-Neckar-Verkehr GmbH",
+          challenge: true
+        },
+        {
           icon: require("../../assets/sponsor-valantic.jpg"),
           name: "valantic",
           challenge: false
