@@ -69,23 +69,24 @@
           >
             {{ sponsor.name }}
           </p>
-          <router-link 
-            v-if="sponsor.challenge && typeof sponsor.challengeCategoryID === 'number'"
-            :to="'/challenges/' + sponsor.challengeCategoryID">
-            <v-btn
-              class="mt-2"
-              width="auto"
-              color="info"
-              outline
-              flat
-              small
-            >
+          <router-link
+            v-if="
+              sponsor.challenge &&
+                typeof sponsor.challengeCategoryID === 'number'
+            "
+            :to="'/challenges/' + sponsor.challengeCategoryID"
+          >
+            <v-btn class="mt-2" width="auto" color="info" outline flat small>
               {{ $t("button.showChallenge") }}
             </v-btn>
           </router-link>
-          <div 
-            v-if="!sponsor.challenge || typeof sponsor.challengeCategoryID !== 'number'" 
-            style="height: 42px">
+          <div
+            v-if="
+              !sponsor.challenge ||
+                typeof sponsor.challengeCategoryID !== 'number'
+            "
+            style="height: 42px"
+          >
             &nbsp;
           </div>
         </v-flex>
