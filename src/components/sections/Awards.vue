@@ -53,6 +53,16 @@ export default {
           color: this.$vuetify.theme.warning
         },
         {
+          key: "shubAward",
+          img: require("../../assets/award-shub.png"),
+          color: this.$vuetify.theme.warning
+        },
+        {
+          key: "projectTogetherAward",
+          img: require("../../assets/award-projecttogether.png"),
+          color: this.$vuetify.theme.info
+        },
+        {
           key: "cityPrize",
           img: require("../../assets/award-red.svg"),
           color: this.$vuetify.theme.error
@@ -78,6 +88,16 @@ export default {
         "title": "City Prizes",
         "prize": "to be announced soon",
         "description": "If you take part in a city challenge, then you have already won. Not only is your project guaranteed to be a source of inspiration for the city, but every team in a city challenge wins a prize for its participation."
+      },
+      "shubAward": {
+        "title": "1 Year Accelerator Award",
+        "prize": "2x S-HUB Accelerator",
+        "description": "Free participation in the <a class='link' target='_blank' href='https://www.shub-mannheim.de'>S-HUB Accelerator Program</a> with an individual start of about 1 year of systematic and intensive support from the idea to the foundation. Prerequisite is a desired foundation as a team in Mannheim, the seriousness behind the foundation wish should be high and all participants must have a certain degree of common welfare and environmental sensitivity."
+      },
+      "projectTogetherAward": {
+        "title": "6 Months Accelerator Award",
+        "prize": "10x ProjectTogether Accelerator",
+        "description": "Free participation in the <a class='link' target='_blank' href='https://projecttogether.org/climate-action/'>ProjectTogether Accelerator Program</a> with a direct start of an approx. 6-month systematic and intensive support from the idea to the foundation. Prerequisite is a desired foundation as a team in Germany, the seriousness behind the foundation wish should be high and all participants must have a certain degree of common welfare and environmental sensitivity."
       }
     }
   },
@@ -94,6 +114,16 @@ export default {
         "title": "Stadtpreise",
         "prize": "wird in Kürze bekannt gegeben",
         "description": "Wenn du an einer City Challenge teilnimmst, dann hast du bereits gewonnen. Nicht nur, dass dein Projekt garantiert eine Quelle der Inspiration für die Stadt ist, sondern jedes Team in einer Stadtherausforderung erhält einen Preis für seine Teilnahme."
+      },
+      "shubAward": {
+        "title": "1 Jahr Accelerator Award",
+        "prize": "2x S-HUB Accelerator",
+        "description": "Kostenfreie Teilnahme am <a class='link' target='_blank' href='https://www.shub-mannheim.de'>S-HUB Accelerator Programm</a> mit zeitlich individuellem Start einer ca. 1-jährigen systematischen und intensiven Betreuung von der Idee bis zur Gründung. Voraussetzung ist eine angestrebte Gründung als Team in Mannheim, die Ernsthaftigkeit hinter dem Gründungswunsch sollte hoch sein und alle Teilnehmer müssen ein gewisses Maß an Gemeinwohl- und Umweltempfinden mitbringen."
+      },
+      "projectTogetherAward": {
+        "title": "6 Monate Accelerator Award",
+        "prize": "10x ProjectTogether Accelerator",
+        "description": "Kostenfreie Teilnahme am <a class='link' target='_blank' href='https://projecttogether.org/climate-action/'>ProjectTogether Accelerator Programm</a> mit zeitlich direktem Start einer ca. 6-Monatigen systematischen und intensiven Betreuung von der Idee bis zur Gründung. Voraussetzung ist eine angestrebte Gründung als Team in Deutschland, die Ernsthaftigkeit hinter dem Gründungswunsch sollte hoch sein und alle Teilnehmer müssen ein gewisses Maß an Gemeinwohl- und Umweltempfinden mitbringen."
       }
     }
   }

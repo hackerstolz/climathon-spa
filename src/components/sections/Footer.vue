@@ -68,8 +68,7 @@
       </div>
 
       <h4 class="credits-title my-1">{{ $t("creditsTitle") }}</h4>
-      <p class="credits pa-2 mb-5">
-        {{ $t("credits") }}
+      <p class="credits pa-2 mb-5" v-html="$t('credits')">
       </p>
 
       <v-divider></v-divider>
@@ -78,7 +77,7 @@
         <v-spacer></v-spacer>
         <v-card-text class="white--text">
           &copy;2019 — <strong>Hackerstolz e.V.</strong>
-          <div>{{ $t("designedBy") }}</div>
+          <div v-html="$t('designedBy')"></div>
         </v-card-text>
         <v-spacer></v-spacer>
         <v-btn
@@ -146,7 +145,7 @@ export default {
     "sloganBeforeHeart": "A hackathon made with",
     "sloganAfterHeart": "by",
     "creditsTitle": "Credits",
-    "credits": "font „Gagalin“ by Iordanis Passas • icons by „Özden Gelgec“, „Arnaud“ and „Squid Ink“",
+    "credits": "font <a class='link' target='_blank' href='https://www.fontfabric.com/fonts/gagalin/'>„Gagalin“</a> by Iordanis Passas • icons by „Özden Gelgec“, <a class='link' target='_blank' href='http://www.iconarchive.com/show/small-n-flat-icons-by-paomedia.html'>„Arnaud“</a>, <a class='link' target='_blank' href='https://www.flaticon.com'>„Freepik“</a> and <a class='link' target='_blank' href='http://www.iconarchive.com/show/free-flat-sample-icons-by-thesquid.ink.html'>„Squid Ink“</a>",
     "designedBy": "designed and coded by Jascha A. Quintern",
     "button": {
       "link2Legal": "Imprint • Disclaimer • Privacy Policy"
@@ -156,7 +155,7 @@ export default {
     "sloganBeforeHeart": "Ein Hackathon gemacht mit",
     "sloganAfterHeart": "von",
     "creditsTitle": "Credits",
-    "credits": "Schriftart „Gagalin“ von Iordanis Passas • Icons von „Özden Gelgec“, „Arnaud“ und „Squid Ink“",
+    "credits": "Schriftart <a class='link' target='_blank' href='https://www.fontfabric.com/fonts/gagalin/'>\"Gagalin\"</a> von Iordanis Passas - Symbole von \"Özden Gelgec\", <a class='link' target='_blank' href='http://www.iconarchive.com/show/small-n-flat-icons-by-paomedia.html'>\"Arnaud\"</a>, <a class='link' target='_blank' href='https://www.flaticon.com'>\"Freepik\"</a> und <a class='link' target='_blank' href='http://www.iconarchive.com/show/free-flat-sample-icons-by-thesquid.ink.html'>\"Squid Ink\"</a>",
     "designedBy": "entworfen und entwickelt von Jascha A. Quintern",
     "button": {
       "link2Legal": "Impressum • Haftungsausschluss • Datenschutzerklärung"

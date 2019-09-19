@@ -237,6 +237,18 @@ export default {
           purpose: ["Sustainability Partner", "Sustainability Partner"]
         },
         {
+          icon: require("../../assets/partner-shub.png"),
+          name: "S-HUB Accelerator",
+          important: true,
+          purpose: ["Award Partner", "Award Partner"]
+        },
+        {
+          icon: require("../../assets/partner-projecttogether.png"),
+          name: "ProjectTogether",
+          important: true,
+          purpose: ["Award Partner", "Award Partner"]
+        },
+        {
           icon: require("../../assets/partner-kompass.jpg"),
           name: "Hochschule Mannheim • Kompass",
           important: false,
