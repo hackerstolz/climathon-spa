@@ -69,6 +69,25 @@
           >
             {{ sponsor.name }}
           </p>
+          <router-link 
+            v-if="sponsor.challenge && typeof sponsor.challengeCategoryID === 'number'"
+            :to="'/challenges/' + sponsor.challengeCategoryID">
+            <v-btn
+              class="mt-2"
+              width="auto"
+              color="info"
+              outline
+              flat
+              small
+            >
+              {{ $t("button.showChallenge") }}
+            </v-btn>
+          </router-link>
+          <div 
+            v-if="!sponsor.challenge || typeof sponsor.challengeCategoryID !== 'number'" 
+            style="height: 42px">
+            &nbsp;
+          </div>
         </v-flex>
       </v-layout>
       <p class="outro-sponsors my-5">{{ $t("outroSponsors") }}</p>
@@ -187,17 +206,20 @@ export default {
         {
           icon: require("../../assets/sponsor-op.svg"),
           name: "objective partner",
-          challenge: true
+          challenge: true,
+          challengeCategoryID: null
         },
         {
           icon: require("../../assets/sponsor-rnv.svg"),
           name: "Rhein-Neckar-Verkehr GmbH",
-          challenge: true
+          challenge: true,
+          challengeCategoryID: 1
         },
         {
           icon: require("../../assets/sponsor-valantic.jpg"),
           name: "valantic",
-          challenge: false
+          challenge: false,
+          challengeCategoryID: null
         }
       ],
       partners: [
@@ -237,7 +259,8 @@ export default {
       "link2Iso500001": "ISO-500001",
       "link2XDC": "XDC",
       "link2CDP": "CDP Climate Scoring",
-      "donate": "Donate without sponsorhip"
+      "donate": "Donate without sponsorhip",
+      "showChallenge": "Show Challenge"
     }
   },
   "de": {
@@ -250,7 +273,8 @@ export default {
       "link2Iso500001": "ISO-500001",
       "link2XDC": "XDC",
       "link2CDP": "CDP Climate Scoring",
-      "donate": "Spenden ohne Sponsoring"
+      "donate": "Spenden ohne Sponsoring",
+      "showChallenge": "Challenge anzeigen"
     }
   }
 }
