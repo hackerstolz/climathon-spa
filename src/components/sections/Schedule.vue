@@ -225,7 +225,10 @@ export default {
             {
               icon: require("../../assets/flat-icon-yoga.svg"),
               time: "10:00",
-              i18nTitle: ["Sweat & Code: Yoga Workout", "Schweiß & Code: Yoga-Training"],
+              i18nTitle: [
+                "Sweat & Code: Yoga Workout",
+                "Schweiß & Code: Yoga-Training"
+              ],
               i18nDescription: [
                 "You look right, so that you stay fit over the weekend, there is a yoga workout only for you. If you want to participate, please don't forget to bring a towel, optionally you can pack a sleeping pad and sports clothes. By the way: The MAFINEX has a shower.",
                 "Du siehst richtig, damit ihr über das Wochenende fit bleibt, gibt es nur für euch ein Yoga-Workout. Wenn du teilnehmen willst, bitte vergiss nicht ein Handtuch mitzubringen, optional kannst du auch Isomatte und Sportklammotten einpacken. Übrigens: Im MAFINEX gibt es eine Dusche."

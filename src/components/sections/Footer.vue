@@ -68,8 +68,7 @@
       </div>
 
       <h4 class="credits-title my-1">{{ $t("creditsTitle") }}</h4>
-      <p class="credits pa-2 mb-5" v-html="$t('credits')">
-      </p>
+      <p class="credits pa-2 mb-5" v-html="$t('credits')"></p>
 
       <v-divider></v-divider>
 
