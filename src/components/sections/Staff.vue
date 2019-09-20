@@ -406,6 +406,25 @@ export default {
           show: false
         },
         {
+          speakerID: "daniel-erlemeier",
+          icon: require("../../assets/speaker/speaker-daniel.jpg"),
+          name: "Daniel Erlemeier",
+          i18nSubtitle: [
+            "Head of Donor Communications and Education, BOS Deutschland e.V.",
+            "Leiter der Spenderkommunikation und Bildung, BOS Deutschland e.V."
+          ],
+          i18nDescription: [
+            '"Why should you care about Indonesian peat?"',
+            '"Warum solltest du dich um indonesischen Torf sorgen?"'
+          ],
+          i18nLongDescription: [
+            "Daniel Erlemeier is working for Borneo Orangutan Survival (BOS) and is responsible for donor communications as well as the organizations educational programs. His motto: In order to be able to communicate you need to understand first. Therefore, he volunteered eight weeks in the projects of BOS in Indonesia that include two rescue centers for more than 500 orphaned orangutans. But what keeps him awake at night even more than orangutan babies, is the shocking view of the degraded peatland of Mawas: A dire landscape that used to be vivid rainforest and home of wild orangutans.",
+            "Daniel Erlemeier arbeitet für Borneo Orang-Utan Survival (BOS) und ist verantwortlich für die Spenderkommunikation sowie die Bildungsprogramme der Organisation. Sein Motto: Um kommunizieren zu können, muss man zuerst verstehen. Deshalb engagierte er sich ehrenamtlich acht Wochen lang in den Projekten von BOS in Indonesien, darunter zwei Rettungszentren für mehr als 500 verwaiste Orang-Utans. Aber was ihn nachts noch mehr wach hält als Orang-Utan-Babys, ist der schockierende Blick auf das degradierte Moorland von Mawas: Eine entsetzliche Landschaft, die einst lebendiger Regenwald war und Heimat wilder Orang-Utans."
+          ],
+          female: false,
+          show: false
+        },
+        {
           speakerID: "agnes-schoenfelder",
           icon: require("../../assets/speaker/speaker-agnes.jpg"),
           name: "Agnes Schönfelder",

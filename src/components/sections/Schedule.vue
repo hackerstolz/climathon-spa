@@ -146,6 +146,20 @@ export default {
             },
             {
               speaker: true,
+              speakerID: "daniel-erlemeier",
+              icon: require("../../assets/speaker/speaker-daniel.jpg"),
+              time: "14:00",
+              i18nTitle: [
+                '"Why should you care about Indonesian peat?"',
+                '"Warum solltest du dich um indonesischen Torf sorgen?"'
+              ],
+              i18nDescription: [
+                "Speaker: Daniel Erlemeier",
+                "Speaker: Daniel Erlemeier"
+              ]
+            },
+            {
+              speaker: true,
               speakerID: "agnes-schoenfelder",
               icon: require("../../assets/speaker/speaker-agnes.jpg"),
               time: "14:30",
