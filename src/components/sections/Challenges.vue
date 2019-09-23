@@ -214,6 +214,7 @@
         <p class="submitDeadline">{{ $t("submitDeadline") }}</p>
         <p class="submitInfo">{{ $t("submitInfo") }}</p>
       </div>
+      <!-- <p class="submitInfo">{{ $t("submitDeadline") }}</p> -->
     </v-container>
   </section>
 </template>
@@ -659,6 +660,7 @@ export default {
 <!-- scoped rules -->
 <style scoped lang="stylus">
 section
+  padding-bottom 128px
   h2
     font-family Gagalin,sans-serif
     font-weight 400
@@ -685,7 +687,6 @@ section
       cursor pointer
 
   .submitArea
-    margin-bottom 128px
     h2
       margin-bottom 32px
     .submitText
@@ -713,6 +714,15 @@ section
       letter-spacing normal
       text-align center
       color #dd543b
+  .submitInfo
+    font-family Roboto Condensed,sans-serif
+    font-weight 600
+    font-size 20px
+    line-height 1.4
+    letter-spacing normal
+    text-transform uppercase
+    text-align center
+    color #FFC533
 
 .v-dialog--fullscreen
   .card

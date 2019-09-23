@@ -577,7 +577,10 @@ export default {
           icon: require("../../assets/mentor/mentor-cookie.png"),
           name: "Christoph Martens",
           category: MENTOR_CATEGORY.EXPERT,
-          i18nOrganisation: ["Artificial Engineering", "Artificial Engineering"],
+          i18nOrganisation: [
+            "Artificial Engineering",
+            "Artificial Engineering"
+          ],
           i18nExpertise: [
             "Technology (software, automation, adaptive and self-learning systems, web intelligence)",
             "Technologie (Software, Automatisierung, Adaptive und selbstlernende Systeme, Web Intelligence)"
@@ -585,6 +588,25 @@ export default {
           i18nAvailability: [
             "Friday 18:00h - 20:00h & Saturday 14:00h - 20:00h",
             "Freitag 18:00h - 20:00h & Samstag 14:00h - 20:00h"
+          ]
+        },
+
+        // PITCH TRAINER
+        {
+          icon: require("../../assets/mentor/mentor-uwe.jpeg"),
+          name: "Uwe Langohr",
+          category: MENTOR_CATEGORY.PITCH_TRAINER,
+          i18nOrganisation: [
+            "4XP Ventures",
+            "4XP Ventures"
+          ],
+          i18nExpertise: [
+            "Pitch Trainer",
+            "Pitch Trainer"
+          ],
+          i18nAvailability: [
+            "Saturday 20:00h - 21:00h",
+            "Samstag 20:00h - 21:00h"
           ]
         }
       ]
@@ -680,6 +702,8 @@ section
         border-color #ffc533
         &.expert
           border-color #70b4df
+        &.pitchTrainer
+          border-color #DD543B
     .speaker-name, .judge-title, .mentor-title
       font-family Gagalin,sans-serif
       font-weight 400
@@ -713,6 +737,8 @@ section
         color #ffc533
         &.expert
           color #70b4df
+        &.pitchTrainer
+          color #DD543B
     .mentor-availability
       font-family Roboto Condensed,sans-serif
       font-weight 400

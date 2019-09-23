@@ -139,18 +139,18 @@ export default {
         "https://www.un.org/sustainabledevelopment/globalpartnerships/"
       ],
       articles: [
-        {
-          img: require("../../assets/img-article-01.jpg"),
-          i18nLink: "button.link2Article1",
-          href:
-            "https://medium.com/@Hackerstolz/7-reasons-why-you-should-go-to-a-hackathon-5242c092e2c4"
-        },
-        {
-          img: require("../../assets/img-article-02.jpg"),
-          i18nLink: "button.link2Article2",
-          href:
-            "https://medium.com/@Hackerstolz/42-hours-at-a-hackathon-4f6444a3c3bd"
-        }
+        // {
+        //   img: require("../../assets/img-article-01.jpg"),
+        //   i18nLink: "button.link2Article1",
+        //   href:
+        //     "https://medium.com/@Hackerstolz/7-reasons-why-you-should-go-to-a-hackathon-5242c092e2c4"
+        // },
+        // {
+        //   img: require("../../assets/img-article-02.jpg"),
+        //   i18nLink: "button.link2Article2",
+        //   href:
+        //     "https://medium.com/@Hackerstolz/42-hours-at-a-hackathon-4f6444a3c3bd"
+        // }
       ]
     };
   }
