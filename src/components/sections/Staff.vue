@@ -572,6 +572,20 @@ export default {
             "Saturday 10:00h - 20:00h",
             "Samstag 10:00h - 20:00h"
           ]
+        },
+        {
+          icon: require("../../assets/mentor/mentor-cookie.png"),
+          name: "Christoph Martens",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: ["Artificial Engineering", "Artificial Engineering"],
+          i18nExpertise: [
+            "Technology (software, automation, adaptive and self-learning systems, web intelligence)",
+            "Technologie (Software, Automatisierung, Adaptive und selbstlernende Systeme, Web Intelligence)"
+          ],
+          i18nAvailability: [
+            "Friday 18:00h - 20:00h & Saturday 14:00h - 20:00h",
+            "Freitag 18:00h - 20:00h & Samstag 14:00h - 20:00h"
+          ]
         }
       ]
     };
