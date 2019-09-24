@@ -565,12 +565,26 @@ export default {
           category: MENTOR_CATEGORY.EXPERT,
           i18nOrganisation: ["", ""],
           i18nExpertise: [
-            "Sustainability (ecology, climate protection, climate change, etc.)",
-            "Nachhaltigkeit (Ökologie, Klimaschutz, Klimawandel, etc.)"
+            "Sustainability (Circular Economy, Environment/Sustainability Management, Life Cycle Assessment)",
+            "Nachhaltigkeit (Kreislaufwirtschaft, Umwelt-/Nachhaltigkeitsmanagement, Ökobilanz)"
           ],
           i18nAvailability: [
             "Saturday 10:00h - 20:00h",
             "Samstag 10:00h - 20:00h"
+          ]
+        },
+        {
+          icon: require("../../assets/mentor/mentor-bos.jpg"),
+          name: "Denitza Toteva",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: ["BOS Deutschland e.V.", "BOS Deutschland e.V."],
+          i18nExpertise: [
+            "Sustainability (sustainable economics)",
+            "Nachhaltigkeit (Nachhaltigkeitsökonomie)"
+          ],
+          i18nAvailability: [
+            "Friday 18:00h - 22:00h & Saturday 10:00h - 18:00h",
+            "Freitag 18:00h - 22:00h & Samstag 10:00h - 18:00h"
           ]
         },
         {

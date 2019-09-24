@@ -217,6 +217,12 @@ export default {
           challengeCategoryID: 1
         },
         {
+          icon: require("../../assets/sponsor-gbg.svg"),
+          name: "GBG - Mannheimer Wohnungsbaugesellschaft mbH",
+          challenge: true,
+          challengeCategoryID: null
+        },
+        {
           icon: require("../../assets/sponsor-valantic.jpg"),
           name: "valantic",
           challenge: false,
