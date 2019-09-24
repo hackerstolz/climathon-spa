@@ -610,14 +610,8 @@ export default {
           icon: require("../../assets/mentor/mentor-uwe.jpeg"),
           name: "Uwe Langohr",
           category: MENTOR_CATEGORY.PITCH_TRAINER,
-          i18nOrganisation: [
-            "4XP Ventures",
-            "4XP Ventures"
-          ],
-          i18nExpertise: [
-            "Pitch Trainer",
-            "Pitch Trainer"
-          ],
+          i18nOrganisation: ["4XP Ventures", "4XP Ventures"],
+          i18nExpertise: ["Pitch Trainer", "Pitch Trainer"],
           i18nAvailability: [
             "Saturday 20:00h - 21:00h",
             "Samstag 20:00h - 21:00h"

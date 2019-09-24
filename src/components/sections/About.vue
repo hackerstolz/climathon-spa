@@ -185,6 +185,8 @@ export default {
       "Während des gesamten Hackathons wirst du von einem Expertenteam unterstützt, das dir bei der Entwicklung deiner Ideen hilft."
     ],
     "imgDescription": "1,5° und Null-Kohlenstoff-Ziel bis 2050",
+    "unoGoalsTitle": "Unterstützung der UNO-Entwicklungsziele für Nachhaltigkeit",
+    "unoGoalsText": "Die Ziele der nachhaltigen Entwicklung sind der Leitfaden für eine bessere und nachhaltigere Zukunft für alle. Ziel 13 fordert dringende Maßnahmen zur Bekämpfung des Klimawandels und seiner Auswirkungen. Sie ist untrennbar mit allen 16 anderen Zielen der Agenda für nachhaltige Entwicklung von 2030 verbunden. Um dem Klimawandel zu begegnen, haben die Länder das Pariser Abkommen angenommen, um den globalen Temperaturanstieg auf deutlich unter 2 Grad Celsius zu begrenzen. Erfahren Sie mehr über <a class='link' target='_blank' href='https://www.un.org/sustainabledevelopment/climate-change/'>Ziel 13</a>.",
     "button": {
       "link2Goal": "Warum das wichtig ist",
       "link2Article1": "7 Gründe, warum du zu einem Hackathon gehen solltest",
