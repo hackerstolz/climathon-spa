@@ -47,24 +47,29 @@ export default {
   data() {
     return {
       awards: [
+        // {
+        //   key: "climateGlobal",
+        //   img: require("../../assets/award/award-global.png"),
+        //   color: this.$vuetify.theme.success
+        // },
         {
           key: "climateGrant",
-          img: require("../../assets/award-gold.svg"),
+          img: require("../../assets/award/award-gold.svg"),
           color: this.$vuetify.theme.warning
         },
         {
           key: "shubAward",
-          img: require("../../assets/award-shub.png"),
+          img: require("../../assets/award/award-shub.png"),
           color: this.$vuetify.theme.warning
         },
         {
           key: "projectTogetherAward",
-          img: require("../../assets/award-projecttogether.png"),
+          img: require("../../assets/award/award-projecttogether.png"),
           color: this.$vuetify.theme.info
         },
         {
           key: "cityPrize",
-          img: require("../../assets/award-red.svg"),
+          img: require("../../assets/award/award-red.svg"),
           color: this.$vuetify.theme.error
         }
       ]
@@ -98,6 +103,11 @@ export default {
         "title": "6 Months Accelerator Award",
         "prize": "10x ProjectTogether Accelerator",
         "description": "Free participation in the <a class='link' target='_blank' href='https://projecttogether.org/climate-action/'>ProjectTogether Accelerator Program</a> with a direct start of an approx. 6-month systematic and intensive support from the idea to the foundation. Prerequisite is a desired foundation as a team in Germany, the seriousness behind the foundation wish should be high and all participants must have a certain degree of common welfare and environmental sensitivity."
+      },
+      "climateGlobal": {
+        "title": "Climathon Global Awards",
+        "prize": "Global Citizens Award",
+        "description": "Winning proposals and finalists can receive prizes of up to €10,000, including an invitation to the Climathon Global Awards Ceremony during the ChangeNOW summit on January 31st in Paris. Learn more the Climathon Global Awrads <a href='https://www.climathonglobalawards.org' class='link' target='_blank'>here</a>."
       }
     }
   },
@@ -124,6 +134,11 @@ export default {
         "title": "6 Monate Accelerator Award",
         "prize": "10x ProjectTogether Accelerator",
         "description": "Kostenfreie Teilnahme am <a class='link' target='_blank' href='https://projecttogether.org/climate-action/'>ProjectTogether Accelerator Programm</a> mit zeitlich direktem Start einer ca. 6-Monatigen systematischen und intensiven Betreuung von der Idee bis zur Gründung. Voraussetzung ist eine angestrebte Gründung als Team in Deutschland, die Ernsthaftigkeit hinter dem Gründungswunsch sollte hoch sein und alle Teilnehmer müssen ein gewisses Maß an Gemeinwohl- und Umweltempfinden mitbringen."
+      },
+      "climateGlobal": {
+        "title": "Climathon Global Awards",
+        "prize": "Globaler Bürgerpreis",
+        "description": "Die Gewinner von Vorschlägen und Finalisten können Preise von bis zu 10.000 € erhalten, darunter eine Einladung zur Climathon Global Awards Ceremony während des ChangeNOW-Gipfels am 31. Januar in Paris. Erfahren Sie mehr über die Climathon Global Awrads <a href='https://www.climathonglobalawards.org' class='link' target='_blank'>hier</a>."
       }
     }
   }
