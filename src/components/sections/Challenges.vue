@@ -299,7 +299,28 @@ export default {
           key: "smartCity",
           img: require("../../assets/flat-icon-smartCity.svg"),
           show: false,
-          challenges: []
+          challenges: [
+            {
+              type: CHALLENGE_TYPE.SPONSOR,
+              i18nAuthor: [
+                "GBG - Mannheimer housing company ltd.",
+                "GBG - Mannheimer Wohnungsbaugesellschaft mbH"
+              ],
+              i18nTitle: [
+                "What new business models can the housing industry offer (e.g. drone loading columns on roofs, logistics hubs, etc.) to support smart and climate-friendly urban development?",
+                "Welche neuen Geschäftsmodelle kann die Wohnungswirtschaft anbieten (z.B. Drohnenladesäulen auf Dächern, Logistikzentren, etc.), um eine intelligente und klimafreundliche Stadtentwicklung zu unterstützen?"
+              ],
+              i18nSummary: [
+                "With around 18,846 apartments, GBG Mannheim is the largest local housing association in Baden-Württemberg. It provides living space for about 13 percent of Mannheim's citizens. On commission from the City of Mannheim, GBG is taking over individual construction projects that are important for the sustainable development of the city.",
+                "Die GBG Mannheim ist mit rund 18.846 Wohnungen die größte lokale Wohnungsgesellschaft in Baden-Württemberg. Sie bietet rund 13 Prozent der Mannheimer Bevölkerung Lebensraum. Im Auftrag der Stadt Mannheim übernimmt die GBG einzelne Bauvorhaben, die für die nachhaltige Entwicklung der Stadt wichtig sind."
+              ],
+              i18nDescription: ["Feel free!", "Fühlt euch frei!"],
+              i18nVision: [
+                "There are no limits to your imagination in this challenge.",
+                "Der Fantasie sind bei dieser Herausforderung keine Grenzen gesetzt."
+              ]
+            }
+          ]
         },
         {
           key: "mobility",

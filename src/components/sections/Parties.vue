@@ -218,9 +218,9 @@ export default {
         },
         {
           icon: require("../../assets/sponsor-gbg.svg"),
-          name: "GBG - Mannheimer Wohnungsbaugesellschaft mbH",
+          name: "GBG Mannheim",
           challenge: true,
-          challengeCategoryID: null
+          challengeCategoryID: 0
         },
         {
           icon: require("../../assets/sponsor-valantic.jpg"),
