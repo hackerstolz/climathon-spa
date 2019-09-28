@@ -571,6 +571,20 @@ export default {
             "Freitag 16:00h - 19:00h"
           ]
         },
+        {
+          icon: require("../../assets/mentor/mentor-konstantin.jpeg"),
+          name: "Konstantin Heine",
+          category: MENTOR_CATEGORY.TEAM_BUILDER,
+          i18nOrganisation: ["SAP SE", "SAP SE"],
+          i18nExpertise: [
+            "Design Thinking, Business Model Innovation",
+            "Design Thinking, Business Model Innovation"
+          ],
+          i18nAvailability: [
+            "Friday 16:00h - 19:00h",
+            "Freitag 16:00h - 19:00h"
+          ]
+        },
 
         // EXPERTS
         {
