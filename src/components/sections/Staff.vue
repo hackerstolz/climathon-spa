@@ -463,11 +463,11 @@ export default {
           icon: require("../../assets/jury/jury-marianne.jpg"),
           name: "Marianne Crevon",
           i18nDescription: [
-            "Commercial Manager Climate Protection Agency Mannheim gGmbH",
+            "Financial Director Climate Protection Agency Mannheim gGmbH",
             "Kaufmännische Leiterin Klimaschutzagentur Mannheim gGmbH"
           ],
           i18nLongDescription: [
-            'Marianne Crevon is commercial director of the climate protection agency Mannheim gGmbH. After her first professional experience in Canada, the bioinformatician by profession has realigned her career and completed an Advanced Master in Environmental Protection Consulting in 2012. She then devoted herself to sustainable mobility and worked as a regional consultant for CarSharing in southern Alsace until she moved to Mannheim in 2015. At the Climate Protection Agency, she participated in numerous campaigns to strengthen climate awareness, further developed the range of courses on offer and led the "Save your car" campaign. She has been a certified energy consultant since 2018.',
+            'Marianne Crevon is financial director of the climate protection agency Mannheim gGmbH. After a first professional experience in Canada the trained bioinformatician has reoriented her career towards sustainability and completed an Advanced Master in Environmental Protection Consulting in 2012. She then devoted herself to sustainable mobility and worked as a development officer for CarSharing in southern Alsace until she moved to Mannheim in 2015. At the Climate Protection Agency, she participated in numerous campaigns to strengthen climate awareness, further developed the climate educational program and led the "Spare your car" campaign. She is a certified energy consultant since 2018.',
             "Marianne Crevon ist kaufmännische Leiterin der Klimaschutzagentur Mannheim gGmbH. Die Bioinformatikerin von Beruf hat nach einer ersten Berufserfahrung in Kanada ihre Karriere neu ausgerichtet und 2012 einen Advanced Master in Umweltschutzberatung absolviert. Im Anschluss hat sie sich der nachhaltigen Mobilität gewidmet und als regionale Referentin für CarSharing im Süd Elsass gearbeitet, bis sie 2015 nach Mannheim gezogen ist. Bei der Klimaschutzagentur hat sie bei zahlreichen Aktionen zur Stärkung des Klimabewusstseins mitgewirkt, das Bildungsangebot weiterentwickelt und die Kampagne „Spar dir dein Auto!“ geleitet. Seit 2018 ist sie zertifizierte Energieberaterin."
           ],
           female: true,
