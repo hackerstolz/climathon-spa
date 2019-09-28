@@ -307,22 +307,22 @@ export default {
                 "GBG - Mannheimer Wohnungsbaugesellschaft mbH"
               ],
               i18nTitle: [
-                "How could an algorithm for a smart and climate-friendly calculation of future housing demand, housing location and housing characteristics (\"foresighted housing supply\") look like and which data could be networked in a new way typical for meshup?",
-                "Wie könnte ein Algorithmus zur intelligenten und klimafreundlichen Berechnung von zukünftigem Wohnungsbedarf, Wohnlage und Wohnungseigenschaften (\"vorausschauendes Wohnungsangebot\") aussehen und welche Daten könnten auf neue Meshup-typische Weise vernetzt werden?"
+                'How could an algorithm for a smart and climate-friendly calculation of future housing demand, housing location and housing characteristics ("foresighted housing supply") look like and which data could be networked in a new way typical for meshup?',
+                'Wie könnte ein Algorithmus zur intelligenten und klimafreundlichen Berechnung von zukünftigem Wohnungsbedarf, Wohnlage und Wohnungseigenschaften ("vorausschauendes Wohnungsangebot") aussehen und welche Daten könnten auf neue Meshup-typische Weise vernetzt werden?'
               ],
               i18nSummary: [
-                "With around 18,846 apartments, GBG Mannheim is the largest local housing association in Baden-Württemberg. It provides living space for about 13 percent of Mannheim's citizens. On commission from the City of Mannheim, GBG is taking over individual construction projects that are important for the sustainable development of the city. How could an algorithm for a smart and climate-friendly calculation of future housing demand, housing location and housing characteristics (\"foresighted housing supply\") look like and which data could be networked in a new way typical for meshup?",
-                "Die GBG Mannheim ist mit rund 18.846 Wohnungen die größte lokale Wohnungsgesellschaft in Baden-Württemberg. Sie bietet rund 13 Prozent der Mannheimer Bevölkerung Lebensraum. Im Auftrag der Stadt Mannheim übernimmt die GBG einzelne Bauvorhaben, die für die nachhaltige Entwicklung der Stadt wichtig sind. Wie könnte ein Algorithmus zur intelligenten und klimafreundlichen Berechnung von zukünftigem Wohnungsbedarf, Wohnlage und Wohnungseigenschaften (\"vorausschauendes Wohnungsangebot\") aussehen und welche Daten könnten auf neue Meshup-typische Weise vernetzt werden?"
+                'With around 18,846 apartments, GBG Mannheim is the largest local housing association in Baden-Württemberg. It provides living space for about 13 percent of Mannheim\'s citizens. On commission from the City of Mannheim, GBG is taking over individual construction projects that are important for the sustainable development of the city. How could an algorithm for a smart and climate-friendly calculation of future housing demand, housing location and housing characteristics ("foresighted housing supply") look like and which data could be networked in a new way typical for meshup?',
+                'Die GBG Mannheim ist mit rund 18.846 Wohnungen die größte lokale Wohnungsgesellschaft in Baden-Württemberg. Sie bietet rund 13 Prozent der Mannheimer Bevölkerung Lebensraum. Im Auftrag der Stadt Mannheim übernimmt die GBG einzelne Bauvorhaben, die für die nachhaltige Entwicklung der Stadt wichtig sind. Wie könnte ein Algorithmus zur intelligenten und klimafreundlichen Berechnung von zukünftigem Wohnungsbedarf, Wohnlage und Wohnungseigenschaften ("vorausschauendes Wohnungsangebot") aussehen und welche Daten könnten auf neue Meshup-typische Weise vernetzt werden?'
               ],
               i18nDescription: [
-                "<ul class='list'><li>A wide variety of creative and visionary data can be \"linked\"! Also very complex!</li><li>For example: statistical data (birth rate, death rate, place of residence, place of work, but also future data that may become available through an X-Road architecture in Germany), data from the housing sector, social media data or participative data and IoT data (e.g. environmental data).</li></ul>", 
+                "<ul class='list'><li>A wide variety of creative and visionary data can be \"linked\"! Also very complex!</li><li>For example: statistical data (birth rate, death rate, place of residence, place of work, but also future data that may become available through an X-Road architecture in Germany), data from the housing sector, social media data or participative data and IoT data (e.g. environmental data).</li></ul>",
                 "<ul class='list'><li>Eine Vielzahl von kreativen und visionären Daten kann \"verknüpft\" werden! Auch sehr komplex!</li><li><li>Zum Beispiel: statistische Daten (Geburtenrate, Sterblichkeitsrate, Wohnort, Arbeitsplatz, aber auch zukünftige Daten, die durch eine X-Road-Architektur in Deutschland verfügbar werden können), Daten aus dem Wohnungssektor, Social Media-Daten oder partizipative Daten und IoT-Daten (z.B. Umweltdaten).</li></ul>"
               ],
               i18nVision: [
                 "There are no limits to your imagination in this challenge.",
                 "Der Fantasie sind bei dieser Herausforderung keine Grenzen gesetzt."
               ]
-            },
+            }
             // {
             //   type: CHALLENGE_TYPE.SPONSOR,
             //   i18nAuthor: [
