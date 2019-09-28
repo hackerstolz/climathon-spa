@@ -47,11 +47,11 @@ export default {
   data() {
     return {
       awards: [
-        // {
-        //   key: "climateGlobal",
-        //   img: require("../../assets/award/award-global.png"),
-        //   color: this.$vuetify.theme.success
-        // },
+        {
+          key: "climateGlobal",
+          img: require("../../assets/award/award-global.png"),
+          color: this.$vuetify.theme.success
+        },
         {
           key: "climateGrant",
           img: require("../../assets/award/award-gold.svg"),
