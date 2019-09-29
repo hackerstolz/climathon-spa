@@ -587,7 +587,7 @@ export default {
     "titleSubmit": "Submit your own challenge",
     "submitText": "I bet you can come up with something so much more innovative than we do! Go ahead and submit your own challenge to complete our puzzle – if we agree with it, it will be listed on this side as well. This also means that other teams can work on solutions for your challenge, even if you decide spontaneously for another challenge.",
     "submitDeadline": "Submit deadline is Friday 25. Oct 15:00",
-    "submitInfo": "Please be aware that you can only attend when working on a published challenge.",
+    "submitInfo": "ATTENTION, CURRENTLY NO NEW CHALLENGES ARE PUBLISHED. There are already many good challenges online and we have already registered more than half of the participants. Hooray! However, since it is important to us that each challenge is processed, new challenges will only be unlocked once we have reached the next milestone of 80% tickets sold.",
     "button": {
       "link2Form": "Open submit form",
       "close": "Close"
@@ -653,7 +653,7 @@ export default {
     "titleSubmit": "Reichen Sie Ihre eigene Herausforderung ein",
     "submitText": "Ich wette, du kannst dir etwas so viel Innovativeres einfallen lassen als wir! Reiche deine eigene Herausforderung ein – wenn wir diese genehmigen, wird diese auch auf der Climathon Seite aufgeführt. Das bedeutet auch, dass andere Teams an Lösungen für deine Herausforderung arbeiten können, auch wenn du dich auf dem Event spontan für eine andere Herausforderung entscheiden solltest.",
     "submitDeadline": "Einsendeschluss ist Freitag, der 25. Okt 15:00",
-    "submitInfo": "Bitte beachte, dass du nur teilnehmen kannst, wenn du an einer veröffentlichten Herausforderung arbeitest.",
+    "submitInfo": "ACHTUNG, AKTUELL WERDEN KEINE NEUEN CHALLENGES VERÖFFENTLICHT. Es sind bereits viele gute Challenges online und wir haben auch bereit über die Hälfte an Teilnehmer*innen registriert. Hurra! Da es uns jedoch wichtig ist, dass jede Challenge bearbeitet wird, werden neue Challenges erst freigeschaltet, wenn wir den nächsten Meilenstein von 80% verkauften Tickets erreicht haben.",
     "button": {
       "link2Form": "Formular öffnen",
       "close": "Schliessen"
