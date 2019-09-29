@@ -502,7 +502,28 @@ export default {
           key: "water",
           img: require("../../assets/flat-icon-water.svg"),
           show: false,
-          challenges: []
+          challenges: [
+            {
+              type: CHALLENGE_TYPE.SPONSOR,
+              i18nAuthor: ["objective partner AG", "objective partner AG"],
+              i18nTitle: [
+                "How can technology support African farmers with smarter irrigation?",
+                "Wie kann die Technologie afrikanische Landwirte bei der intelligenteren Bewässerung unterstützen?"
+              ],
+              i18nSummary: [
+                "Water is a precious good in countries like Africa. Too much of it is wasted for agriculture, while it would be necessary as drinking water as well. With your help, we want to reduce the waste of water in these scenarios, with the help of technology.",
+                "Wasser ist ein kostbares Gut in Ländern wie Afrika. Zu viel davon wird für die Landwirtschaft verschwendet, während es auch als Trinkwasser notwendig wäre. Mit Ihrer Hilfe wollen wir in diesen Szenarien mit Hilfe der Technologie den Wasserverbrauch reduzieren."
+              ],
+              i18nDescription: [
+                'To reduce the waste of water, we want to create a smarter system to water plants. This system consists of a small IoT Device, which monitors the environment and soil and controls the irrigation of the plants.<br/><br/>The following points should be considered when developing the solution:<ul class="list"><li>The system needs to be affordable for everybody and its usage should be profitable in a short amount of time.</li><li>Components should be easily obtainable and in large quantities.</li><li>Algorithm to determine the amount of water, based on current quality of soil, environmental factors as sun intensity as well as the type of plant.</li></ul>We will provide you with the parts for a prototype. However, the final solution needs to include a parts list with recommended parts.',
+                'Um die Verschwendung von Wasser zu reduzieren, wollen wir ein intelligenteres System zur Bewässerung von Pflanzen schaffen. Dieses System besteht aus einem kleinen IoT-Gerät, das die Umwelt und den Boden überwacht und die Bewässerung der Pflanzen steuert. <br/><br/><br/> Folgende Punkte sollten bei der Entwicklung der Lösung berücksichtigt werden: <ul class="list"><li>Das System muss für alle erschwinglich sein und seine Nutzung sollte in kurzer Zeit profitabel sein.</li><li><li>Komponenten sollten leicht und in großen Mengen erhältlich sein.</li><li><li>Algorithmus zur Bestimmung der Wassermenge, basierend auf der aktuellen Bodenqualität, Umweltfaktoren wie Sonnenintensität sowie dem Pflanzentyp.</li></ul>Wir liefern Ihnen die Teile für einen Prototyp. Die endgültige Lösung muss jedoch eine Stückliste mit empfohlenen Teilen enthalten.'
+              ],
+              i18nVision: [
+                "Our vision is to reduce the amount of wasted water on agriculture while helping people in 3rd world countries. The outcome will be a system which supports this vision.<br/>Nonetheless, the specific implementations, parts, algorithms and features are totally up to you and your creativity.",
+                "Unsere Vision ist es, die Menge an verschwendeten Wasser für die Landwirtschaft zu reduzieren und gleichzeitig den Menschen in den Ländern der Dritten Welt zu helfen. Das Ergebnis wird ein System sein, das diese Vision unterstützt.<br/>Die spezifischen Implementierungen, Teile, Algorithmen und Features liegen jedoch ganz bei Ihnen und Ihrer Kreativität."
+              ]
+            }
+          ]
         },
         {
           key: "energy",

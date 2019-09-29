@@ -46,10 +46,10 @@
             v-if="sponsor.challenge"
             class="batch"
             :src="require('../../assets/challenge-sponsor.svg')"
-            max-height="128px"
-            height="128px"
-            max-width="128px"
-            width="128px"
+            max-height="96px"
+            height="96px"
+            max-width="96px"
+            width="96px"
             contain
           ></v-img>
           <v-img
@@ -208,7 +208,7 @@ export default {
           icon: require("../../assets/sponsor-op.svg"),
           name: "objective partner",
           challenge: true,
-          challengeCategoryID: null
+          challengeCategoryID: 7
         },
         {
           icon: require("../../assets/sponsor-rnv.svg"),
@@ -221,6 +221,12 @@ export default {
           name: "GBG Mannheim",
           challenge: true,
           challengeCategoryID: 0
+        },
+        {
+          icon: require("../../assets/sponsor-mvv.jpg"),
+          name: "MVV Energie AG",
+          challenge: true,
+          challengeCategoryID: null
         },
         {
           icon: require("../../assets/sponsor-valantic.jpg"),
@@ -362,9 +368,10 @@ section
         color #70B4DF
     .batch
       position absolute
+      pointer-events none
       z-index 1
       top 0
       right auto
       left auto
-      transform translateY(-42%)
+      transform translateY(-42%) translateX(-45%)
 </style>
