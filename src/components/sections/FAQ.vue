@@ -86,6 +86,18 @@ export default {
         },
         {
           show: false,
+          i18nTitle: [
+            "How can I prepare for the Climathon?",
+            "Wie kann ich mich auf den Climathon vorbereiten?"
+          ],
+          i18nText: [
+            "You don't have to prepare for the climathon. Whether the decision for a challenge, the finding of team members or the development of an idea, everything can only arise on the opening day of the Climathon.  And our mentors will accompany and support you!  But if you want to get some advice, it's best to start by reading through the available challenges at your leisure. Furthermore, we recommend the following reading as inspiration:<ul class='list'><li>The <a class='link' target='_blank' href='https://www.sustainabilitydesign.org/karlskrona-manifesto/'>Karlskrona Manifesto</a> on all dimensions of sustainability.</li><li>The <a class='link' target='_blank' href='https://www.informatik.tuwien.ac.at/dighum/wp-content/uploads/2019/05/manifesto.pdf'>Vienna Manifesto</a> on the social impact of digitisation.</li></ul>",
+            "Du musst dich nicht auf den Climathon vorbereiten. Egal ob die Entscheidung für eine Challenge, die Findung von Teammitgliedern oder die Entwicklung einer Idee, alles kann erst am Eröffnungstag des Climathons entstehen. Und unsere Mentoren begleiten und unterstützen dich dabei!  Wenn du dich aber vorberieten möchtest beginnst da am besten damit, dir die verfügbaren Challenges in Ruhe durchzulesen. Des Weiteren empfehlen wir dir folgende Lektüre als Inspiration:<ul class='list'><li>Das <a class='link' target='_blank' href='https://www.sustainabilitydesign.org/karlskrona-manifesto/'>Karlskrona Manifesto</a> zu allen Dimensionen der Nachhaltigkeit.</li><li>Das <a class='link' target='_blank' href='https://www.informatik.tuwien.ac.at/dighum/wp-content/uploads/2019/05/manifesto.pdf'>Vienna Manifesto</a> zum sozialen Impact der Digitalisierung.</li></ul>"
+          ],
+          greenBatch: true
+        },
+        {
+          show: false,
           i18nTitle: ["What is a hackathon?", "Was ist ein Hackathon?"],
           i18nText: [
             "A hackathon is any event of any duration where people come together to solve problems with digital means and present them to each other. That’s it, really simple. In most cases a hackathon is on two days and you get 24-48 hours time for the hacking. In our case 40 (+1; thanks to the time change, we get one hour for free) hours. Hacking is meant in the sense of exploratory programming, not referenced to any computer crime.",
