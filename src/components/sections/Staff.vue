@@ -632,6 +632,23 @@ export default {
             "Freitag 18:00h - 20:00h & Samstag 14:00h - 20:00h"
           ]
         },
+        {
+          icon: require("../../assets/mentor/mentor-schreiber.jpg"),
+          name: "Clemens Schreiber",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: [
+            "Karlsruhe Institute of Technology",
+            "Karlsruher Institut für Technologie"
+          ],
+          i18nExpertise: [
+            "Sustainability (sustainable software development, machine learning, process mining)",
+            "Nachhaltigkeit (Nachhaltige Softwareentwicklung, Machine Learning, Process Mining)"
+          ],
+          i18nAvailability: [
+            "Saturday 10:00h - 18:00h",
+            "Samstag 10:00h - 18:00h"
+          ]
+        },
 
         // PITCH TRAINER
         {

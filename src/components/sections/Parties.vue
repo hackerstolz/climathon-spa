@@ -233,6 +233,12 @@ export default {
           name: "valantic",
           challenge: false,
           challengeCategoryID: null
+        },
+        {
+          icon: require("../../assets/sponsor-basf.svg"),
+          name: "BASF SE",
+          challenge: false,
+          challengeCategoryID: null
         }
       ],
       partners: [
