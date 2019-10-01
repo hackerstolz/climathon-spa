@@ -406,6 +406,25 @@ export default {
           show: false
         },
         {
+          speakerID: "robert-thomann",
+          icon: require("../../assets/speaker/speaker-thomann.jpg"),
+          name: "Dr. Robert Thomann",
+          i18nSubtitle: [
+            "Innovation Manager MVV Energie AG",
+            "Innovationsmanager MVV Energie AG"
+          ],
+          i18nDescription: [
+            '"Urbanization, digitization, utilities - at the interface to the Smart City."',
+            '"Urbanisierung, Digitalisierung, Versorger – An der Nahtstelle zur Smart City."'
+          ],
+          i18nLongDescription: [
+            "Dr. Robert Thomann is Innovation Manager at MVV Energie AG in Mannheim. There he is responsible for various research projects, including the E-Energy project Modellstadt Mannheim and the battery research project Strombank. He also represents MVV Energie on the Executive Board of the Mannheim Smart Production Initiative (Industry 4.0), StoREgio Energiespeichersysteme e.V. and Smart Grids-Plattform Baden-Württemberg e.V. Before joining MVV Energie, he headed the Innovation and Patents division at Carl Zeiss Vision. Dr. Robert Thomann started his career at tesa scribos GmbH, a start-up of the University of Mannheim, which offers technical solutions for product protection and product tracking and is now a wholly-owned subsidiary of tesa SE.",
+            "Dr. Robert Thomann ist Innovationsmanager der MVV Energie AG in Mannheim. Dort verantwortet er verschiedene Forschungsprojekte unter anderem das E-Energy Projekt Modellstadt Mannheim und das Batterieforschungsprojekt Strombank. Daneben sitzt er als Vertreter der MVV Energie im Executive Board der Initiative Smart Produktion Mannheim (Industrie 4.0), StoREgio Energiespeichersysteme e.V. und Smart Grids-Plattform Baden-Württemberg e.V. Vor seiner Tätigkeit bei der MVV Energie leitete er den Bereich Innovation und Patente bei der Carl Zeiss Vision. Dr. Robert Thomann startete seine berufliche Laufbahn bei der tesa scribos GmbH, einem Start-up der Universität Mannheim, das technischen Lösungen zum Produktschutz und Produktverfolgung anbietet und heute eine 100-ige Tochter der tesa SE ist."
+          ],
+          female: false,
+          show: false
+        },
+        {
           speakerID: "daniel-erlemeier",
           icon: require("../../assets/speaker/speaker-daniel.jpg"),
           name: "Daniel Erlemeier",
