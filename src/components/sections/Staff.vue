@@ -410,7 +410,7 @@ export default {
           icon: require("../../assets/speaker/speaker-thomann.jpg"),
           name: "Dr. Robert Thomann",
           i18nSubtitle: [
-            "Innovation Manager MVV Energie AG",
+            "Innovation Manager MVV Energy AG",
             "Innovationsmanager MVV Energie AG"
           ],
           i18nDescription: [
@@ -491,7 +491,35 @@ export default {
           ],
           female: true,
           show: false
-        }
+        },
+        {
+          icon: require("../../assets/jury/jury-thomann.jpg"),
+          name: "Dr. Robert Thomann",
+          i18nDescription: [
+            "Innovation Manager MVV Energy AG",
+            "Innovationsmanager MVV Energie AG"
+          ],
+          i18nLongDescription: [
+            "Dr. Robert Thomann is Innovation Manager at MVV Energie AG in Mannheim. There he is responsible for various research projects, including the E-Energy project Modellstadt Mannheim and the battery research project Strombank. He also represents MVV Energie on the Executive Board of the Mannheim Smart Production Initiative (Industry 4.0), StoREgio Energiespeichersysteme e.V. and Smart Grids-Plattform Baden-Württemberg e.V. Before joining MVV Energie, he headed the Innovation and Patents division at Carl Zeiss Vision. Dr. Robert Thomann started his career at tesa scribos GmbH, a start-up of the University of Mannheim, which offers technical solutions for product protection and product tracking and is now a wholly-owned subsidiary of tesa SE.",
+            "Dr. Robert Thomann ist Innovationsmanager der MVV Energie AG in Mannheim. Dort verantwortet er verschiedene Forschungsprojekte unter anderem das E-Energy Projekt Modellstadt Mannheim und das Batterieforschungsprojekt Strombank. Daneben sitzt er als Vertreter der MVV Energie im Executive Board der Initiative Smart Produktion Mannheim (Industrie 4.0), StoREgio Energiespeichersysteme e.V. und Smart Grids-Plattform Baden-Württemberg e.V. Vor seiner Tätigkeit bei der MVV Energie leitete er den Bereich Innovation und Patente bei der Carl Zeiss Vision. Dr. Robert Thomann startete seine berufliche Laufbahn bei der tesa scribos GmbH, einem Start-up der Universität Mannheim, das technischen Lösungen zum Produktschutz und Produktverfolgung anbietet und heute eine 100-ige Tochter der tesa SE ist."
+          ],
+          female: false,
+          show: false
+        },
+        {
+          icon: require("../../assets/jury/jury-schreiber.jpg"),
+          name: "Clemens Schreiber",
+          i18nDescription: [
+            "Karlsruhe Institute of Technology (KIT)",
+            "Karlsruher Institut für Technologie (KIT)"
+          ],
+          i18nLongDescription: [
+            "I am doing research at KIT in the area of sustainable software engineering. At KIT we are looking for opportunities to improve sustainability with the help of information technology and to integrate the sustainability approach in software development.",
+            "Ich forsche am KIT im Bereich des nachhaltigen Software-Engineerings. Am KIT suchen wir nach Möglichkeiten, die Nachhaltigkeit mit Hilfe der Informationstechnologie zu verbessern und den Nachhaltigkeitsansatz in die Softwareentwicklung zu integrieren."
+          ],
+          female: false,
+          show: false
+        },
         // {
         //   icon: require("../../assets/flat-icon-scientist.svg"),
         //   i18nTitle: ["The Scientist", "Die Wissenschaftlerin"],
@@ -643,7 +671,7 @@ export default {
             "Artificial Engineering"
           ],
           i18nExpertise: [
-            "Technology (software, automation, adaptive and self-learning systems, web intelligence)",
+            "Technology (Software, Automation, Adaptive and Self-Learning Systems, Web Intelligence)",
             "Technologie (Software, Automatisierung, Adaptive und selbstlernende Systeme, Web Intelligence)"
           ],
           i18nAvailability: [
@@ -656,16 +684,33 @@ export default {
           name: "Clemens Schreiber",
           category: MENTOR_CATEGORY.EXPERT,
           i18nOrganisation: [
-            "Karlsruhe Institute of Technology",
-            "Karlsruher Institut für Technologie"
+            "Karlsruhe Institute of Technology (KIT)",
+            "Karlsruher Institut für Technologie (KIT)"
           ],
           i18nExpertise: [
-            "Sustainability (sustainable software development, machine learning, process mining)",
+            "Sustainability (Sustainable Software Development, Machine Learning, Process Mining)",
             "Nachhaltigkeit (Nachhaltige Softwareentwicklung, Machine Learning, Process Mining)"
           ],
           i18nAvailability: [
             "Saturday 10:00h - 18:00h",
             "Samstag 10:00h - 18:00h"
+          ]
+        },
+        {
+          icon: require("../../assets/mentor/mentor-joerg.jpeg"),
+          name: "Jörg Bernauer",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: [
+            "Priming Cloud",
+            "Priming Cloud"
+          ],
+          i18nExpertise: [
+            "Technology (Development, BigData, Software Architecture)",
+            "Technologie (Entwicklung, BigData, Software Architektur)"
+          ],
+          i18nAvailability: [
+            "Friday 18:00h - 20:00h & Saturday 12:00h - 18:00h",
+            "Freitag 18:00h - 20:00h & Samstag 12:00h - 18:00h"
           ]
         },
 
@@ -795,7 +840,7 @@ section
       letter-spacing 0.5px
       text-align inherit
       color rgba(255, 255, 255, 0.8)
-    .speaker-talk, .mentor-expertise
+    .speaker-talk
       font-family click-clack,sans-serif
       font-weight 500
       font-size 20px
@@ -805,6 +850,14 @@ section
       text-align inherit
       &.speaker-talk
         color #A8E5A3
+    .mentor-expertise
+      font-family Roboto Condensed,sans-serif
+      font-weight 400
+      font-size 18px
+      font-style normal
+      line-height 1.2
+      letter-spacing 0.5px
+      text-align inherit
       &.mentor-expertise
         color #ffc533
         &.expert
@@ -814,7 +867,7 @@ section
     .mentor-availability
       font-family Roboto Condensed,sans-serif
       font-weight 400
-      font-size 20px
+      font-size 18px
       line-height 1.2
       letter-spacing normal
       text-align center
