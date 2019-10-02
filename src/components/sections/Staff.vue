@@ -519,7 +519,7 @@ export default {
           ],
           female: false,
           show: false
-        },
+        }
         // {
         //   icon: require("../../assets/flat-icon-scientist.svg"),
         //   i18nTitle: ["The Scientist", "Die Wissenschaftlerin"],
@@ -700,10 +700,7 @@ export default {
           icon: require("../../assets/mentor/mentor-joerg.jpeg"),
           name: "Jörg Bernauer",
           category: MENTOR_CATEGORY.EXPERT,
-          i18nOrganisation: [
-            "Priming Cloud",
-            "Priming Cloud"
-          ],
+          i18nOrganisation: ["Priming Cloud", "Priming Cloud"],
           i18nExpertise: [
             "Technology (Development, BigData, Software Architecture)",
             "Technologie (Entwicklung, BigData, Software Architektur)"
@@ -711,6 +708,23 @@ export default {
           i18nAvailability: [
             "Friday 18:00h - 20:00h & Saturday 12:00h - 18:00h",
             "Freitag 18:00h - 20:00h & Samstag 12:00h - 18:00h"
+          ]
+        },
+        {
+          icon: require("../../assets/mentor/mentor-doose.jpg"),
+          name: "Jens Doose",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: [
+            "Onwerk GmbH Software Agency",
+            "Onwerk GmbH Softwareagentur"
+          ],
+          i18nExpertise: [
+            "Technology (Software Development, Programming, Deployment)",
+            "Technologie (Softwareentwicklung, Programmierung, Deployment)"
+          ],
+          i18nAvailability: [
+            "Friday 18:00h - 22:00h & Saturday 12:00h - 18:00h",
+            "Freitag 18:00h - 22:00h & Samstag 12:00h - 18:00h"
           ]
         },
 
