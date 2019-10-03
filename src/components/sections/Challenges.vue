@@ -259,7 +259,7 @@ export default {
     routeUpdate($route) {
       if (
         $route &&
-        $route.name === "app" &&
+        ($route.name === "overview" || $route.name === "overviewDetails") &&
         $route.params.section === "challenges"
       ) {
         const index = parseInt($route.params.id, 10);

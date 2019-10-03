@@ -101,28 +101,7 @@
         </v-btn>
       </v-toolbar>
 
-      <v-content class="pa-0">
-        <Intro id="intro" />
-        <About id="about" themeColor="primary" :isMobile="isMobile" />
-        <Challenges
-          id="challenges"
-          themeColor="secondary"
-          :isMobile="isMobile"
-        />
-        <Awards id="awards" themeColor="primary" />
-        <Location id="location" themeColor="secondary" />
-        <Schedule id="schedule" themeColor="secondary" :isMobile="isMobile" />
-        <Registration
-          id="registration"
-          themeColor="primary"
-          :isMobile="isMobile"
-        />
-        <Staff id="staff" themeColor="secondary" :isMobile="isMobile" />
-        <FAQ id="faq" themeColor="primary" />
-        <Parties id="parties" themeColor="secondary" :isMobile="isMobile" />
-        <Team id="team" themeColor="primary" :isMobile="isMobile" />
-        <Footer id="footer" themeColor="primary" />
-      </v-content>
+      <router-view></router-view>
 
       <v-snackbar
         class="snackbar"
@@ -173,22 +152,8 @@
 import { setI18nLanguage } from "./i18n";
 import { setTimeout } from "timers";
 
-const sectionsContext = require.context(
-  "@/components/sections/",
-  true,
-  /\.vue$/
-);
-
 export default {
-  components: {
-    ...sectionsContext.keys().reduce(
-      (map, key) => ({
-        ...map,
-        [sectionsContext(key).default.name]: sectionsContext(key).default
-      }),
-      {}
-    )
-  },
+  name: "App",
   data() {
     return {
       isMobile: false,
@@ -223,7 +188,7 @@ export default {
     };
   },
   mounted() {
-    const [section] = this.$route.path.match(/[a-z0-9]+/i);
+    const [section] = this.$route.path.match(/[a-z0-9]+/i) || [null];
 
     setTimeout(() => {
       // show snackbar with delay
