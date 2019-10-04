@@ -74,7 +74,7 @@
               sponsor.challenge &&
                 typeof sponsor.challengeCategoryID === 'number'
             "
-            :to="'/challenges/' + sponsor.challengeCategoryID"
+            :to="'/overview/challenges/' + sponsor.challengeCategoryID"
           >
             <v-btn class="mt-2" width="auto" color="info" outline flat small>
               {{ $t("button.showChallenge") }}

@@ -15,7 +15,7 @@
           :key="i"
           class="stack-grid-item"
         >
-          <router-link :to="'/challenges/' + i">
+          <router-link :to="'/overview/challenges/' + i">
             <v-card
               :class="{
                 card: true,
@@ -87,7 +87,7 @@
                         {{ $t(`categories.${category.key}.title`) }}
                       </h3>
                       <v-spacer />
-                      <router-link to="/challenges">
+                      <router-link to="/overview/challenges">
                         <v-btn
                           class="ma-0"
                           color="accent"
@@ -179,7 +179,7 @@
                   </div>
                   <v-card-actions class="dialog-card-footer">
                     <v-spacer />
-                    <router-link to="/challenges">
+                    <router-link to="/overview/challenges">
                       <v-btn color="accent" flat>{{
                         $t("button.close")
                       }}</v-btn>
@@ -252,7 +252,7 @@ export default {
   methods: {
     onNavBack() {
       this.$router.push({
-        name: "app",
+        name: "overview",
         params: { section: "challenges", id: "none" }
       });
     },
