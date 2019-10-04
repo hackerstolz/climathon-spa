@@ -129,8 +129,6 @@ const [selectedUsersLocale] =
     availableI18nLocales.some(i18nLocale => i18nLocale === lang)
   ) || [];
 
-console.error(availableI18nLocales);
-
 // a11y: ensures the lang attribute of the <html> element has a valid value
 document
   .getElementsByTagName("html")[0]
