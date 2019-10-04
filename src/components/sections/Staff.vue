@@ -632,6 +632,23 @@ export default {
             "Freitag 16:00h - 19:00h"
           ]
         },
+        {
+          icon: require("../../assets/mentor/mentor-robert.jpg"),
+          name: "M.A., Robert Lahdo",
+          category: MENTOR_CATEGORY.TEAM_BUILDER,
+          i18nOrganisation: [
+            "Baden-Wuerttemberg Cooperative State University Mannheim",
+            "Duale Hochschule Baden-Württemberg Mannheim"
+          ],
+          i18nExpertise: [
+            "Design Thinking, BMC, Innovationsmanagement, Social Entrepreneurship",
+            "Design Thinking, BMC, Innovationsmanagement, Sozialunternehmertum"
+          ],
+          i18nAvailability: [
+            "Friday 16:00h - 19:00h",
+            "Freitag 16:00h - 19:00h"
+          ]
+        },
 
         // EXPERTS
         {

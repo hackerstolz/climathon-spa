@@ -205,69 +205,75 @@ export default {
     return {
       sponsors: [
         {
-          icon: require("../../assets/sponsor-op.svg"),
+          icon: require("../../assets/sponsor/sponsor-op.svg"),
           name: "objective partner",
           challenge: true,
           challengeCategoryID: 7
         },
         {
-          icon: require("../../assets/sponsor-rnv.svg"),
+          icon: require("../../assets/sponsor/sponsor-rnv.svg"),
           name: "Rhein-Neckar-Verkehr GmbH",
           challenge: true,
           challengeCategoryID: 1
         },
         {
-          icon: require("../../assets/sponsor-gbg.svg"),
+          icon: require("../../assets/sponsor/sponsor-gbg.svg"),
           name: "GBG Mannheim",
           challenge: true,
           challengeCategoryID: 0
         },
         {
-          icon: require("../../assets/sponsor-mvv.jpg"),
+          icon: require("../../assets/sponsor/sponsor-mvv.jpg"),
           name: "MVV Energie AG",
           challenge: true,
           challengeCategoryID: null
         },
         {
-          icon: require("../../assets/sponsor-valantic.jpg"),
+          icon: require("../../assets/sponsor/sponsor-valantic.jpg"),
           name: "valantic",
           challenge: false,
           challengeCategoryID: null
         },
         {
-          icon: require("../../assets/sponsor-basf.svg"),
+          icon: require("../../assets/sponsor/sponsor-basf.svg"),
           name: "BASF SE",
+          challenge: false,
+          challengeCategoryID: null
+        },
+        {
+          icon: require("../../assets/sponsor/sponsor-onwerk.jpeg"),
+          name: "Onwerk GmbH",
           challenge: false,
           challengeCategoryID: null
         }
       ],
       partners: [
         {
-          icon: require("../../assets/partner-startup-ma.svg"),
+          icon: require("../../assets/partner/partner-startup-ma.svg"),
           name: "STARTUP MANNHEIM",
           important: true,
           purpose: ["Location Partner", "Location Partner"]
         },
         {
-          icon: require("../../assets/partner-ksa.svg"),
+          icon: require("../../assets/partner/partner-ksa.svg"),
           name: "Klimaschutzagentur Mannheim",
           important: true,
           purpose: ["Sustainability Partner", "Sustainability Partner"]
         },
         {
-          icon: require("../../assets/partner-shub.png"),
+          icon: require("../../assets/partner/partner-shub.png"),
           name: "S-HUB Accelerator",
           important: true,
           purpose: ["Award Partner", "Award Partner"]
         },
         {
-          icon: require("../../assets/partner-projecttogether.png"),
+          icon: require("../../assets/partner/partner-projecttogether.png"),
           name: "ProjectTogether",
           important: true,
           purpose: ["Award Partner", "Award Partner"]
         },
         {
-          icon: require("../../assets/partner-kompass.jpg"),
+          icon: require("../../assets/partner/partner-kompass.jpg"),
           name: "Hochschule Mannheim • Kompass",
           important: false,
           purpose: ["Network Partner", "Netzwerk Partner"]

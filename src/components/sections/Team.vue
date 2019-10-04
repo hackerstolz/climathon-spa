@@ -63,7 +63,7 @@ export default {
     return {
       members: [
         {
-          avatar: require("../../assets/img-sascha-ulbrich.jpg"),
+          avatar: require("../../assets/team/img-sascha-ulbrich.jpg"),
           name: "Sascha Ulbrich",
           organisation: "Hackerstolz e.V.",
           orgColor: "#70B4DF",
@@ -73,7 +73,7 @@ export default {
           ]
         },
         {
-          avatar: require("../../assets/img-jascha-quintern.jpg"),
+          avatar: require("../../assets/team/img-jascha-quintern.jpg"),
           name: "Jascha A. Quintern",
           organisation: "Hackerstolz e.V.",
           orgColor: "#70B4DF",
@@ -83,7 +83,7 @@ export default {
           ]
         },
         {
-          avatar: require("../../assets/img-iris-broese.jpg"),
+          avatar: require("../../assets/team/img-iris-broese.jpg"),
           name: "Iris Bröse",
           organisation: "Hackerstolz e.V.",
           orgColor: "#70B4DF",
@@ -93,7 +93,7 @@ export default {
           ]
         },
         {
-          avatar: require("../../assets/img-michael-bahr.jpg"),
+          avatar: require("../../assets/team/img-michael-bahr.jpg"),
           name: "Michael Bahr",
           organisation: "Hackerstolz e.V.",
           orgColor: "#70B4DF",
@@ -103,7 +103,7 @@ export default {
           ]
         },
         {
-          avatar: require("../../assets/img-georg-pins.jpg"),
+          avatar: require("../../assets/team/img-georg-pins.jpg"),
           name: "Georg Pins",
           organisation: "City of Mannheim",
           orgColor: "#DD543B",
@@ -113,7 +113,7 @@ export default {
           ]
         },
         {
-          avatar: require("../../assets/img-nicolas-vierling.jpg"),
+          avatar: require("../../assets/team/img-nicolas-vierling.jpg"),
           name: "Nicolas Vierling",
           organisation: "City of Mannheim",
           orgColor: "#DD543B",
