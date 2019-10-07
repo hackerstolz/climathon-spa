@@ -322,6 +322,26 @@ export default {
                 "There are no limits to your imagination in this challenge.",
                 "Der Fantasie sind bei dieser Herausforderung keine Grenzen gesetzt."
               ]
+            },
+            {
+              type: CHALLENGE_TYPE.SPONSOR,
+              i18nAuthor: ["MVV Energy AG", "MVV Energie AG"],
+              i18nTitle: [
+                "How can life in the city of Mannheim be made more liveable through the use of LoRaWAN technology?",
+                "Wie kann das Leben in der Stadt Mannheim durch die Verwendung der LoRaWAN-Technologie lebenswerter gestaltet werden?"
+              ],
+              i18nSummary: [
+                "Create the cities of the future today. The development of a city into a Smart City is an individual task for every community. Smart Cities support the efficient, sustainable and liveable design of cities by intelligently using municipal infrastructure. This will be boosted with the help of IoT and various IT, mobile and cloud computing technologies.",
+                "Die Städte der Zukunft schon heute gestalten. Die Entwicklung einer Stadt zur „Smart City“ ist eine kommunale Zukunftsaufgabe. Smart Cities unterstützen eine effiziente, nachhaltige und lebenswerte Gestaltung der Städte durch die intelligente Nutzung der kommunalen Infrastruk-tur. Diese wird mit Hilfe von IoT und diversen IT-, Mobile- und Cloud-Computing-Technologien weiter vorangetrieben."
+              ],
+              i18nDescription: [
+                "In this context, MVV Energie AG is setting up a LoRaWAN (Long Range Wide Area Network) in Mannheim to enable efficient and cost-effective data collection. LoRaWAN is a great technology to collect, transmit and intelligently evaluate environmental data such as meteorological data or air pollutants. We are striving to monitor emissions and derive measures to improve the quality of life. In urban gardening, sensors can be used to measure moisture levels in order to motivate the community to maintain the garden, e.g. through reward systems. Thus the following ques-tion arises: How can life in the city of Mannheim be made more liveable through the use of LoRaWAN technology?",
+                "In diesem Zusammenhang baut MVV Energie AG ein LoRaWAN (Long Range Wide Area Network) in Mannheim auf, um so eine effiziente und kostengünstige Datenerfassung zu ermöglichen. Über LoRaWAN können u.a. Umweltdaten (wie z.B. meteorologische Daten oder Luftschadstoffe) erfasst, übertragen und intelligent ausgewertet werden. Diese Informationen können wir nut-zen, um Emissionen zu überwachen und Maßnahmen zur Verbesserung der Lebensqualität umzu-setzen. Aber auch in anderen Bereichen wie beispielsweise beim Urban Gardening können Sen-soren zur Erdfeuchtigkeitsmessung eingesetzt werden und so die Community zur Pflege des Gar-tens (z.B. über Belohnungssysteme) zu motivieren. Somit stellt sich folgende Frage: Wie kann das Leben in der Stadt Mannheim durch die Verwendung der LoRaWAN-Technologie lebenswerter gestaltet werden?"
+              ],
+              i18nVision: [
+                '<ul class="list"><li>The solution can either focus on a specific aspect e.g. mobility, energy supply etc., or con-sider the city as a whole. There are no limits to the ideas as long as LoRaWAN supports this technically. </li><li>For the challenge, current sensor data from the city, transmitted via LoRaWAN, will be made available to you. - You have the possibility to develop a concept or to realize prototypes - if you use the data provided by us is up to you. </li><li>The solution can either be an application for the municipality (B2M e.g. optimization sugges-tions) or for the citizens (B2C e.g. incentive for more sustainable behaviour).</li></ul>We are looking forward to your ideas!',
+                '<ul class="list"><li>Die Lösung kann sich entweder auf einen bestimmten Teilbereich (z.B. Mobilität oder Ener-gieversorgung) fokussieren, oder die Stadt als Ganzes betrachten. Den Ideen sind keine Grenzen gesetzt, solange LoRaWAN dies technisch unterstützt. </li><li>Für die Challenge werden Euch aktuelle Sensordaten aus der Stadt zur Verfügung gestellt, die via LoRaWAN übertragen werden.</li><li>Ihr habt die Möglichkeit ein Konzept zu entwickeln oder Prototypen praktisch umzusetzen – ob Ihr die von uns zur Verfügung gestellten Daten nutzt, bleibt dabei euch überlassen. </li>Die Lösung kann entweder eine Anwendung für die Gemeinde (z.B. Optimierungsvorschläge) oder für die Bürger (z.B. Anreiz für nachhaltigeres Verhalten) darstellen.</li></ul>Wir freuen uns auf Eure Ideen!'
+              ]
             }
             // {
             //   type: CHALLENGE_TYPE.SPONSOR,

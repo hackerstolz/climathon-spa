@@ -226,7 +226,7 @@ export default {
           icon: require("../../assets/sponsor/sponsor-mvv.jpg"),
           name: "MVV Energie AG",
           challenge: true,
-          challengeCategoryID: null
+          challengeCategoryID: 0
         },
         {
           icon: require("../../assets/sponsor/sponsor-valantic.jpg"),
