@@ -241,6 +241,12 @@ export default {
           challengeCategoryID: null
         },
         {
+          icon: require("../../assets/sponsor/sponsor-ueberbit.svg"),
+          name: "UEBERBIT GmbH",
+          challenge: false,
+          challengeCategoryID: null
+        },
+        {
           icon: require("../../assets/sponsor/sponsor-onwerk.jpeg"),
           name: "Onwerk GmbH",
           challenge: false,
