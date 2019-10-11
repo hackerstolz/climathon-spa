@@ -387,6 +387,22 @@ export default {
     return {
       speakers: [
         {
+          speakerID: "michael-groetsch",
+          icon: require("../../assets/speaker/speaker-mayor.jpg"),
+          name: "Michael Grötsch",
+          i18nSubtitle: [
+            "Mayor of the City of Mannheim for Economy, Labour, Social Affairs and Culture",
+            "Bürgermeister der Stadt Mannheim für Wirtschaft, Arbeit, Soziales und Kultur"
+          ],
+          i18nDescription: ['"Welcoming"', '"Grußwort"'],
+          i18nLongDescription: [
+            "Michael Grötsch has been Mayor of the City of Mannheim for Economy, Labour, Social Affairs and Culture since March 2008. The department, which emerged from the modernisation process of the city administration of Mannheim at the time, combines Mannheim's central strategic potential. In this context, a new economic policy strategy was launched in 2010 to position Mannheim even better as a leading business and industrial location. This strategy is being continuously further developed. One example of this is the regional competence fields of energy (efficiency) and the environment, which put topics such as the Climathon on the agenda.",
+            "Michael Grötsch ist seit März 2008 Bürgermeister der Stadt Mannheim für Wirtschaft, Arbeit, Soziales und Kultur. Das Dezernat – damals aus einem Modernisierungsprozess der Stadtverwaltung Mannheim hervorgegangen – vereint zentrale strategische Potenziale Mannheims. In diesem Zusammenhang wurde 2010 eine neue wirtschaftspolitische Strategie auf den Weg gebracht, um Mannheim als führenden Wirtschafts- und Industriestandort noch besser zu positionieren. Diese Strategie wird stetig weiterentwickelt. Ein Beispiel dafür sind die regionalen Kompetenzfelder Energie(-effizienz) und Umwelt, die Themen wie den Climathon auf die Agenda nehmen."
+          ],
+          female: false,
+          show: false
+        },
+        {
           speakerID: "hannah-helmke",
           icon: require("../../assets/speaker/speaker-hannah.jpg"),
           name: "Hannah Helmke",
@@ -649,6 +665,17 @@ export default {
             "Freitag 16:00h - 19:00h"
           ]
         },
+        {
+          icon: require("../../assets/mentor/mentor-elena.png"),
+          name: "Elena Langenfelder",
+          category: MENTOR_CATEGORY.TEAM_BUILDER,
+          i18nOrganisation: ["BASF SE", "BASF SE"],
+          i18nExpertise: ["Team Building", "Team Building"],
+          i18nAvailability: [
+            "Friday 16:00h - 19:00h",
+            "Freitag 16:00h - 19:00h"
+          ]
+        },
 
         // EXPERTS
         {
@@ -744,6 +771,34 @@ export default {
             "Freitag 18:00h - 22:00h & Samstag 12:00h - 18:00h"
           ]
         },
+        {
+          icon: require("../../assets/mentor/mentor-michael.jpg"),
+          name: "Michael Binder",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: ["UEBERBIT GmbH", "UEBERBIT GmbH"],
+          i18nExpertise: [
+            "Technology (Web-Development, Programming)",
+            "Technologie (Web-Entwicklung, Programmierung)"
+          ],
+          i18nAvailability: [
+            "Friday 18:00h - 20:00h & Saturday 10:00h - 14:00h",
+            "Freitag 18:00h - 20:00h & Samstag 10:00h - 14:00h"
+          ]
+        },
+        {
+          icon: require("../../assets/mentor/mentor-hannes.jpg"),
+          name: "Hannes Schütz",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: ["UEBERBIT GmbH", "UEBERBIT GmbH"],
+          i18nExpertise: [
+            "Technology (Web-Development, Programming)",
+            "Technologie (Web-Entwicklung, Programmierung)"
+          ],
+          i18nAvailability: [
+            "Friday 18:00h - 20:00h & Saturday 10:00h - 14:00h",
+            "Freitag 18:00h - 20:00h & Samstag 10:00h - 14:00h"
+          ]
+        },
 
         // PITCH TRAINER
         {
@@ -752,6 +807,17 @@ export default {
           category: MENTOR_CATEGORY.PITCH_TRAINER,
           i18nOrganisation: ["4XP Ventures", "4XP Ventures"],
           i18nExpertise: ["Pitch Trainer", "Pitch Trainer"],
+          i18nAvailability: [
+            "Saturday 20:00h - 21:00h",
+            "Samstag 20:00h - 21:00h"
+          ]
+        },
+        {
+          icon: require("../../assets/mentor/mentor-elena.png"),
+          name: "Elena Langenfelder",
+          category: MENTOR_CATEGORY.PITCH_TRAINER,
+          i18nOrganisation: ["BASF SE", "BASF SE"],
+          i18nExpertise: ["Pitch Trainer", "Pitch Trainerin"],
           i18nAvailability: [
             "Saturday 20:00h - 21:00h",
             "Samstag 20:00h - 21:00h"

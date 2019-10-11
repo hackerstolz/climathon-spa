@@ -123,6 +123,17 @@ export default {
             },
             {
               speaker: true,
+              speakerID: "michael-groetsch",
+              icon: require("../../assets/speaker/speaker-mayor.jpg"),
+              time: "10:00",
+              i18nTitle: ['"Welcoming"', '"Grußwort"'],
+              i18nDescription: [
+                "Speaker: Mayor Michael Groetsch",
+                "Speaker: Bürgermeister Michael Grötsch"
+              ]
+            },
+            {
+              speaker: true,
               speakerID: "hannah-helmke",
               icon: require("../../assets/speaker/speaker-hannah.jpg"),
               time: "12:00",
