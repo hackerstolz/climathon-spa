@@ -1,6 +1,6 @@
-# DISABLE CACHING (for HTML only)
+# DISABLE CACHING
 # <filesMatch "\.(json|html|htm|js|css|ico|png|svg|jpg|jpeg)$">
-<filesMatch "\.(html|htm)$">
+# <filesMatch "\.(html|htm)$">
     Header add "Cache-Control" "no-cache"
     <ifModule mod_headers.c>
         Header unset ETag
@@ -12,4 +12,4 @@
         ExpiresActive On
         ExpiresDefault "modification"
     </ifModule>
-</filesMatch>
+# </filesMatch>
