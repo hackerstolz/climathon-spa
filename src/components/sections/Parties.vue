@@ -283,6 +283,12 @@ export default {
           name: "Hochschule Mannheim • Kompass",
           important: false,
           purpose: ["Network Partner", "Netzwerk Partner"]
+        },
+        {
+          icon: require("../../assets/partner/partner-stocard.jpg"),
+          name: "Stocard GmbH",
+          important: false,
+          purpose: ["Hydration Mate Partner", "Hydration Mate Partner"]
         }
       ]
     };
