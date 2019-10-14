@@ -535,6 +535,20 @@ export default {
           ],
           female: false,
           show: false
+        },
+        {
+          icon: require("../../assets/jury/jury-sonja.jpg"),
+          name: "Sonja Wilkens",
+          i18nDescription: [
+            "Startup Consultant for Economic and Structural Development of the City of Mannheim",
+            "Startup Beraterin der Wirtschafts- und Strukturförderung der Stadt Mannheim"
+          ],
+          i18nLongDescription: [
+            "Sonja Wilkens has been a start-up consultant for the economic and structural development of the City of Mannheim for over 10 years. Her focus is to support innovative teams from universities and colleges in the development of a business model. After studying business administration, the business graduate worked for many years at Investitionsbank Berlin and acquired special expertise in financing young companies. As a research associate at the University of Mannheim at the Institute for SME Research, she has investigated the implementation of technology and innovation in companies and their change. As an expert on business models and the financing of start-ups, she sees no contradiction in developing sustainable and social products or services while at the same time implementing them economically.",
+            "Sonja Wilkens ist seit über 10 Jahren Startup Beraterin der Wirtschafts- und Strukturförderung der Stadt Mannheim. Innovative Teams aus Universitäten und Hochschulen bei der Erarbeitung eines Geschäftsmodels zu unterstützen ist dabei ihr Schwerpunkt. Nach dem Studium der BWL hat die Diplom-Kauffrau viele Jahre bei der Investitionsbank Berlin gearbeitet und sich besondere Expertise in der Finanzierung von jungen Unternehmen angeeignet. Als wissenschaftliche Mitarbeiterin der Universität Mannheim am Institut für Mittelstandsforschung hat sie die Umsetzung von Technologie- und Innovation in Unternehmen und deren Wandel untersucht. Als Expertin für Geschäftsmodelle und Finanzierung von Startups sieht sie keinen Widerspruch darin, sowohl nachhaltige und soziale Produkte oder Dienstleistungen zu entwickeln und diese gleichzeitig wirtschaftlich umzusetzen."
+          ],
+          female: false,
+          show: false
         }
         // {
         //   icon: require("../../assets/flat-icon-scientist.svg"),

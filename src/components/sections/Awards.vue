@@ -91,7 +91,7 @@ export default {
       },
       "cityPrize": {
         "title": "City Prizes",
-        "prize": "to be announced soon",
+        "prize": "1x surprise shirt per team member from the Mannheim Climate Protection Agency",
         "description": "If you take part in a city challenge, then you have already won. Not only is your project guaranteed to be a source of inspiration for the city, but every team in a city challenge wins a prize for its participation."
       },
       "shubAward": {
@@ -122,7 +122,7 @@ export default {
       },
       "cityPrize": {
         "title": "Stadtpreise",
-        "prize": "wird in Kürze bekannt gegeben",
+        "prize": "1x Überraschungs-Shirt pro Teammitlgied von der Klimaschutzagentur Mannheim",
         "description": "Wenn du an einer City Challenge teilnimmst, dann hast du bereits gewonnen. Nicht nur, dass dein Projekt garantiert eine Quelle der Inspiration für die Stadt ist, sondern jedes Team in einer Stadtherausforderung erhält einen Preis für seine Teilnahme."
       },
       "shubAward": {
