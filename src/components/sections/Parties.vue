@@ -288,7 +288,7 @@ export default {
           icon: require("../../assets/partner/partner-stocard.jpg"),
           name: "Stocard GmbH",
           important: false,
-          purpose: ["Hydration Mate Partner", "Hydration Mate Partner"]
+          purpose: ["Hydration Mate", "Hydration Mate"]
         }
       ]
     };

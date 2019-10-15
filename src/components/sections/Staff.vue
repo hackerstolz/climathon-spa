@@ -813,6 +813,20 @@ export default {
             "Freitag 18:00h - 20:00h & Samstag 10:00h - 14:00h"
           ]
         },
+        {
+          icon: require("../../assets/mentor/mentor-leo.jpg"),
+          name: "Leonard Luthe",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: ["", ""],
+          i18nExpertise: [
+            "Technology (Web-Development, Social Sciences)",
+            "Technologie (Web-Entwicklung, Social Sciences)"
+          ],
+          i18nAvailability: [
+            "Friday 18:00h - 20:00h",
+            "Freitag 18:00h - 20:00h"
+          ]
+        },
 
         // PITCH TRAINER
         {
