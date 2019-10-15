@@ -39,14 +39,15 @@
         wrap
       >
         <!-- Climate KIC VIDEO -->
-        <iframe 
+        <iframe
           style="border-radius: 8px;"
           width="560"
           height="315"
           src="https://www.youtube-nocookie.com/embed/3v6XiFC_FaQ"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+          allowfullscreen
+        >
         </iframe>
         <v-card
           v-for="(article, i) in articles"

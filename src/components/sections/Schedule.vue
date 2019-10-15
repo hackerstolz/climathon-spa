@@ -30,10 +30,9 @@
             'py-2': item.speaker,
             speaker: item.speaker
           }"
-          v-scroll-to="item.speaker ? `#${item.speakerID}` : ''"
           :color="item.speaker ? 'rgba(255,255,255,0.1)' : 'transparent'"
           :ripple="item.speaker"
-          click="()=>{}"
+          @click="() => (item.speaker ? $scrollTo(`#${item.speakerID}`) : null)"
           flat
         >
           <v-img
@@ -65,13 +64,30 @@
                 $i18n.locale === "en" ? item.i18nTitle[0] : item.i18nTitle[1]
               }}
             </p>
-            <p class="item-description my-1">
-              {{
-                $i18n.locale === "en"
+            <p
+              class="item-description my-1"
+              v-html="
+                $i18n.locale === 'en'
                   ? item.i18nDescription[0]
                   : item.i18nDescription[1]
+              "
+            ></p>
+            <v-btn
+              v-for="(action, k) in item.actions"
+              :key="k"
+              class="mt-2"
+              width="auto"
+              :href="action.href"
+              target="_blank"
+              :color="action.color"
+              outline
+              flat
+            >
+              {{
+                $i18n.locale === "en" ? action.i18nText[0] : action.i18nText[1]
               }}
-            </p>
+              <v-icon dark right>open_in_new</v-icon>
+            </v-btn>
           </div>
         </v-card>
       </v-card>
@@ -222,10 +238,17 @@ export default {
               icon: require("../../assets/flat-icon-schedule-code.svg"),
               time: "17:00",
               i18nTitle: ["Start coding!", "Beginn des Programmierens!"],
-              // TODO: add link to climathon site
+              // link to team registration site
               i18nDescription: [
-                "Most people probably started at 16:30, but that’s no problem, its just a number. Mutch more important is that you found a team and you registered your team here: link will be announced, soon",
-                "Die meisten Leute begannen wahrscheinlich um 16:30 Uhr, aber das ist kein Problem, es ist nur eine Zahl. Wichtiger ist, dass du ein Team gefunden hast und dein Team hier registriert ist: Link wird in Kürze bekannt gegeben."
+                "Most people probably started at 16:30, but that’s no problem, its just a number. Much more important is that you found a team and you registered your team <a class='link' target='_blank' href='https://forms.gle/mFXwVSbUUvz8jwM38'>here (DE)</a>.",
+                "Die meisten Leute begannen wahrscheinlich um 16:30 Uhr, aber das ist kein Problem, es ist nur eine Zahl. Wichtiger ist, dass du ein Team gefunden hast und dein Team <a class='link' target='_blank' href='https://forms.gle/mFXwVSbUUvz8jwM38'>hier (DE)</a> registriert ist."
+              ],
+              actions: [
+                {
+                  color: "warning",
+                  href: "https://forms.gle/mFXwVSbUUvz8jwM38",
+                  i18nText: ["Register Your Team", "Registriere dein Team"]
+                }
               ]
             },
             {
@@ -319,10 +342,18 @@ export default {
               icon: require("../../assets/flat-icon-schedule-timer.svg"),
               time: "09:00",
               i18nTitle: ["Deadline of Coding", "Frist fürs Coden"],
-              // TODO: add link to climathon site
+              // link to climathon site
               i18nDescription: [
-                "We know, most of the work happens the 10 minutes before the deadline. But don’t forget to publish the documentation of your solution here: link will be announced, soon",
-                "Wir wissen, dass der größte Teil der Arbeit in 10 Minuten vor dem Termin stattfindet. Aber vergesse nicht, die Dokumentation deiner Lösung hier zu veröffentlichen: Link wird in Kürze bekannt gegeben."
+                "We know, most of the work happens the 10 minutes before the deadline. But don’t forget to publish the documentation of your solution here.",
+                "Wir wissen, dass der größte Teil der Arbeit in 10 Minuten vor dem Termin stattfindet. Aber vergesse nicht, die Dokumentation deiner Lösung hier zu veröffentlichen."
+              ],
+              actions: [
+                {
+                  color: "warning",
+                  href:
+                    "https://climathon.climate-kic.org/en/mannheim-challenges-page-2019",
+                  i18nText: ["Submit Solution", "Ergebnis einreichen"]
+                }
               ]
             },
             {

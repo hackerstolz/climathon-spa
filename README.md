@@ -53,9 +53,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### TODOs Content
 [X] Complete FAQ  
-[ ] Update Hackathon rules in FAQ  
+[X] Update Hackathon rules in FAQ  
 [ ] Add jury/prize rules in FAQ  
-[ ] Add links to schedule  
+[X] Add links to schedule  
 [X] Add data protection link
 [X] Add event language (DE except pitches)  
 [X] Add UNO goals  
