@@ -359,10 +359,12 @@ html, body
   /*
    * Styles fo v-html content elements.
    */
-  a, a:-webkit-any-link
+  a, a.link
     text-decoration none
-    &.link
-      color #70B4DF !important
+    color #70B4DF !important
+  a:-webkit-any-link, a:-webkit-any-link.link
+    text-decoration none
+    color #70B4DF !important
   ul.list
     li
       margin 1rem 0

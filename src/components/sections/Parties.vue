@@ -20,6 +20,7 @@
         :src="require('../../assets/flat-icon-money-large.svg')"
         max-height="245px"
         max-width="245px"
+        height="245px"
         width="245px"
         contain
       ></v-img>
@@ -47,8 +48,8 @@
             class="batch"
             :src="require('../../assets/challenge-sponsor.svg')"
             max-height="96px"
-            height="96px"
             max-width="96px"
+            height="96px"
             width="96px"
             contain
           ></v-img>
@@ -57,6 +58,7 @@
             :src="sponsor.icon"
             max-height="160px"
             max-width="160px"
+            height="160px"
             width="160px"
             contain
           ></v-img>
@@ -136,6 +138,7 @@
         :src="require('../../assets/flat-icon-heart-large.svg')"
         max-height="245px"
         max-width="245px"
+        height="245px"
         width="245px"
         contain
       ></v-img>
@@ -163,6 +166,7 @@
             :src="partner.icon"
             max-height="160px"
             max-width="160px"
+            height="160px"
             width="160px"
             contain
           ></v-img>
