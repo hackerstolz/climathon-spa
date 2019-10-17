@@ -157,8 +157,8 @@ export default {
       "climateGrant": {
         "title": "3x Climate Grants",
         "place": "1st to 3rd place • challenge independent",
-        "prize": "min. €6,000 Total Grant budget",
-        "description": "The three projects best evaluated by the jury win a project grant with which the team can turn its idea into reality. Each project receives at least €2,000, we give everything to find a sponsor, so that the funding amount is higher."
+        "prize": "min. €7,500 Total Grant budget",
+        "description": "The three projects best evaluated by the jury win a project grant with which the team can turn its idea into reality. Each project receives at least €2,500, we give everything to find a sponsor, so that the funding amount is higher."
       },
       "shubAward": {
         "title": "1 Year Accelerator Award",
@@ -202,8 +202,8 @@ export default {
       "climateGrant": {
         "title": "3x Klima Förderungen",
         "place": "1. bis 3. Platz • Challenge unabhängig",
-        "prize": "min. 6.000 € gesamtes Förderbudget",
-        "description": "Die drei von der Jury am besten bewerteten Projekte erhalten einen Projektstipendium, mit dem das Team seine Idee in die Tat umsetzen kann. Jedes Projekt erhält mindestens 2.000 €, wir geben alles, um Sponsoren zu finden, so dass der Förderbetrag noch höher ist."
+        "prize": "min. 7.500 € gesamtes Förderbudget",
+        "description": "Die drei von der Jury am besten bewerteten Projekte erhalten einen Projektstipendium, mit dem das Team seine Idee in die Tat umsetzen kann. Jedes Projekt erhält mindestens 2.500 €, wir geben alles, um Sponsoren zu finden, so dass der Förderbetrag noch höher ist."
       },
       "shubAward": {
         "title": "1 Jahr Accelerator Award",
