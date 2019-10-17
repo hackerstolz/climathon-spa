@@ -307,8 +307,8 @@ export default {
                 "GBG - Mannheimer Wohnungsbaugesellschaft mbH"
               ],
               i18nTitle: [
-                'How could an algorithm for a smart and climate-friendly calculation of future housing demand, housing location and housing characteristics ("foresighted housing supply") look like and which data could be networked in a new way typical for meshup?',
-                'Wie könnte ein Algorithmus zur intelligenten und klimafreundlichen Berechnung von zukünftigem Wohnungsbedarf, Wohnlage und Wohnungseigenschaften ("vorausschauendes Wohnungsangebot") aussehen und welche Daten könnten auf neue Meshup-typische Weise vernetzt werden?'
+                'How could an algorithm for a smart and climate-friendly calculation of future housing demand, housing location and housing characteristics ("foresighted housing supply") look like and which data could be networked in a new way typical for mashup?',
+                'Wie könnte ein Algorithmus zur intelligenten und klimafreundlichen Berechnung von zukünftigem Wohnungsbedarf, Wohnlage und Wohnungseigenschaften ("vorausschauendes Wohnungsangebot") aussehen und welche Daten könnten auf neue Mashup-typische Weise vernetzt werden?'
               ],
               i18nSummary: [
                 'With around 18,846 apartments, GBG Mannheim is the largest local housing association in Baden-Württemberg. It provides living space for about 13 percent of Mannheim\'s citizens. On commission from the City of Mannheim, GBG is taking over individual construction projects that are important for the sustainable development of the city. How could an algorithm for a smart and climate-friendly calculation of future housing demand, housing location and housing characteristics ("foresighted housing supply") look like and which data could be networked in a new way typical for meshup?',
