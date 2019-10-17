@@ -195,12 +195,14 @@
       <div class="submitArea">
         <h2 class="align-left">{{ $t("titleSubmit") }}</h2>
         <v-img
+          class="mb-4"
           :src="require('../../assets/flat-icon-puzzle.svg')"
           max-height="128px"
           contain
         ></v-img>
         <v-btn
-          class="link-to-cgoal my-4"
+          v-if="challengeSubmissionOpen"
+          class="link-to-cgoal mb-4"
           href="https://forms.gle/d5EmFpQPosEJD2PKA"
           target="_blank"
           color="info"
@@ -210,9 +212,15 @@
           {{ $t("button.link2Form") }}
           <v-icon dark right>open_in_new</v-icon>
         </v-btn>
-        <p class="submitText">{{ $t("submitText") }}</p>
-        <p class="submitDeadline">{{ $t("submitDeadline") }}</p>
-        <p class="submitInfo">{{ $t("submitInfo") }}</p>
+        <p v-if="challengeSubmissionOpen" class="submitText">
+          {{ $t("submitText") }}
+        </p>
+        <p v-if="challengeSubmissionOpen" class="submitDeadline">
+          {{ $t("submitDeadline") }}
+        </p>
+        <p v-if="!challengeSubmissionOpen" class="submitInfo">
+          {{ $t("submitInfo") }}
+        </p>
       </div>
       <!-- <p class="submitInfo">{{ $t("submitDeadline") }}</p> -->
     </v-container>
@@ -294,6 +302,7 @@ export default {
   },
   data() {
     return {
+      challengeSubmissionOpen: false,
       categories: [
         {
           key: "smartCity",
@@ -607,7 +616,7 @@ export default {
     "titleSubmit": "Submit your own challenge",
     "submitText": "I bet you can come up with something so much more innovative than we do! Go ahead and submit your own challenge to complete our puzzle – if we agree with it, it will be listed on this side as well. This also means that other teams can work on solutions for your challenge, even if you decide spontaneously for another challenge.",
     "submitDeadline": "Submit deadline is Friday 25. Oct 15:00",
-    "submitInfo": "ATTENTION, CURRENTLY NO NEW CHALLENGES ARE PUBLISHED. There are already many good challenges online and we have already registered more than half of the participants. Hooray! However, since it is important to us that each challenge is processed, new challenges will only be unlocked once we have reached the next milestone of 80% tickets sold.",
+    "submitInfo": "PLEASE NOTE THAT NO FURTHER CHALLENGES CAN BE SUBMITTED. There are already enough good challenges online, so we decided not to accept any more challenges. If you disagree and think that we should accept yours, please send us an email.",
     "button": {
       "link2Form": "Open submit form",
       "close": "Close"
@@ -673,7 +682,7 @@ export default {
     "titleSubmit": "Reichen Sie Ihre eigene Herausforderung ein",
     "submitText": "Ich wette, du kannst dir etwas so viel Innovativeres einfallen lassen als wir! Reiche deine eigene Herausforderung ein – wenn wir diese genehmigen, wird diese auch auf der Climathon Seite aufgeführt. Das bedeutet auch, dass andere Teams an Lösungen für deine Herausforderung arbeiten können, auch wenn du dich auf dem Event spontan für eine andere Herausforderung entscheiden solltest.",
     "submitDeadline": "Einsendeschluss ist Freitag, der 25. Okt 15:00",
-    "submitInfo": "ACHTUNG, AKTUELL WERDEN KEINE NEUEN CHALLENGES VERÖFFENTLICHT. Es sind bereits viele gute Challenges online und wir haben auch bereit über die Hälfte an Teilnehmer*innen registriert. Hurra! Da es uns jedoch wichtig ist, dass jede Challenge bearbeitet wird, werden neue Challenges erst freigeschaltet, wenn wir den nächsten Meilenstein von 80% verkauften Tickets erreicht haben.",
+    "submitInfo": "ACHTUNG, ES KÖNNEN KEINE WEITEREN CHALLENGES MEHR EINGEREICHT WERDEN. Es sind bereits ausreichend viele gute Challenges online, daher haben wir beschlossen keine neuen Challenges mehr anzunehmen. Wenn du anderer Meinung bist und glaubst, dass wir genau deine doch noch annehmen sollen, schreibe uns gerne ein Mail.",
     "button": {
       "link2Form": "Formular öffnen",
       "close": "Schliessen"

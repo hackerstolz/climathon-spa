@@ -141,6 +141,12 @@ export default {
           challengeCategoryID: 0,
           img: require("../../assets/sponsor/sponsor-mvv.jpg"),
           color: this.$vuetify.theme.info
+        },
+        {
+          key: "rnvPrize",
+          challengeCategoryID: 1,
+          img: require("../../assets/sponsor/sponsor-rnv.svg"),
+          color: this.$vuetify.theme.info
         }
       ]
     };
@@ -157,8 +163,8 @@ export default {
       "climateGrant": {
         "title": "3x Climate Grants",
         "place": "1st to 3rd place • challenge independent",
-        "prize": "min. €7,500 Total Grant budget",
-        "description": "The three projects best evaluated by the jury win a project grant with which the team can turn its idea into reality. Each project receives at least €2,500, we give everything to find a sponsor, so that the funding amount is higher."
+        "prize": "€7,500 Total Grant budget",
+        "description": "The three projects best evaluated by the jury win a project grant with which the team can turn its idea into reality. Each project receives €2,500, we give everything to find a sponsor, so that the funding amount is higher."
       },
       "shubAward": {
         "title": "1 Year Accelerator Award",
@@ -189,6 +195,12 @@ export default {
         "place": "Challenge Winner",
         "prize": "Adler Mannheim Tickets",
         "description": "The winning team of the MVV-Challenge can win additional prizes. The winner of this Sponsor Challenge will not be determined by the main jury announced here, but by a*n representative* of the sponsor who is also a member of the jury. Each team member (max. seven) receives a ticket."
+      },
+      "rnvPrize": {
+        "title": "rnv Challenge",
+        "place": "all teams of the rnv Challenge",
+        "prize": "Surprise Goodie Bag per participant",
+        "description": "Each team that has worked on the rnv Challenge will receive a prize for its participation."
       }
     },
     "button": {
@@ -202,8 +214,8 @@ export default {
       "climateGrant": {
         "title": "3x Klima Förderungen",
         "place": "1. bis 3. Platz • Challenge unabhängig",
-        "prize": "min. 7.500 € gesamtes Förderbudget",
-        "description": "Die drei von der Jury am besten bewerteten Projekte erhalten einen Projektstipendium, mit dem das Team seine Idee in die Tat umsetzen kann. Jedes Projekt erhält mindestens 2.500 €, wir geben alles, um Sponsoren zu finden, so dass der Förderbetrag noch höher ist."
+        "prize": "7.500 € gesamtes Förderbudget",
+        "description": "Die drei von der Jury am besten bewerteten Projekte erhalten einen Projektstipendium, mit dem das Team seine Idee in die Tat umsetzen kann. Jedes Projekt erhält 2.500 €, wir geben alles, um Sponsoren zu finden, so dass der Förderbetrag noch höher ist."
       },
       "shubAward": {
         "title": "1 Jahr Accelerator Award",
@@ -234,6 +246,12 @@ export default {
         "place": "Challenge Sieger",
         "prize": "Adler Mannheim Tickets",
         "description": "Das Sieger Team der MVV-Challenge kann zusätzliche Preise gewinnen. Der Sieger dieser Sponsor-Challenge wird nicht durch die hier angekündigte Hauptjury bestimmt, sondern durch eine*n Vertreter*in des Sponsors die/der mit in der Jury sitz. Jedes Teammitglied (max. Sieben) erhält ein Ticket."
+      },
+      "rnvPrize": {
+        "title": "rnv Challenge",
+        "place": "alle Teams der rnv Challenge",
+        "prize": "Überraschungs-Goodie-Bag pro Teilnehmer",
+        "description": "Jedes Team, das an der rnv Challenge gearbeitet hat, erhält einen Preis für dessen Teilnahme."
       }
     },
     "button": {
