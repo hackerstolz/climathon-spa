@@ -73,7 +73,7 @@
         </v-btn>
       </v-layout>
       <v-btn
-        class="buy-tickets mt-4"
+        class="buy-tickets mt-4 white--text"
         width="auto"
         href="https://hackerstolz.mptickets.com"
         target="_blank"

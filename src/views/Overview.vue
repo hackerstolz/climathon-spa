@@ -11,7 +11,7 @@
     <FAQ id="faq" themeColor="primary" />
     <Parties id="parties" themeColor="secondary" :isMobile="isMobile" />
     <Team id="team" themeColor="primary" :isMobile="isMobile" />
-    <Footer id="footer" themeColor="primary" />
+    <Footer id="footer" themeColor="primary" :isMobile="isMobile" />
   </v-content>
 </template>
 

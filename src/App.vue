@@ -95,13 +95,14 @@
         <v-btn
           :class="{ 'app-btn-register': true, large: !isMobile }"
           color="success"
+          :small="isMobile"
           v-scroll-to="'#registration'"
         >
-          {{ $t("button.register") }}
+          {{ isMobile ? $t("button.registerShort") : $t("button.register") }}
         </v-btn>
       </v-toolbar>
 
-      <router-view></router-view>
+      <router-view :isMobile="isMobile"></router-view>
 
       <v-snackbar
         class="snackbar"
@@ -250,6 +251,7 @@ export default {
       "en": "Language • EN",
       "de": "Language • DE",
       "register": "Register Here",
+      "registerShort": "Register",
       "contactus": "Contact us",
       "donate": "Donate"
     }
@@ -279,6 +281,7 @@ export default {
       "en": "Sprache • EN",
       "de": "Sprache • DE",
       "register": "Hier Registrieren",
+      "registerShort": "Registrieren",
       "contactus": "Kontaktiere uns",
       "donate": "Spenden"
     }
@@ -359,10 +362,13 @@ html, body
   /*
    * Styles fo v-html content elements.
    */
-  a, a.link
+  a
     text-decoration none
-    color #70B4DF !important
-  a:-webkit-any-link, a:-webkit-any-link.link
+    color #70B4DF
+  a:-webkit-any-link
+    text-decoration none
+    color #70B4DF
+  a.link
     text-decoration none
     color #70B4DF !important
   ul.list

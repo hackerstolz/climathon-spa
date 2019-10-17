@@ -827,6 +827,20 @@ export default {
             "Freitag 18:00h - 20:00h"
           ]
         },
+        {
+          icon: require("../../assets/mentor/mentor-jannik.jpg"),
+          name: "Jannik Jung",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: ["objective partner AG", "objective partner AG"],
+          i18nExpertise: [
+            "Technology (Software/Backend/Mobile/Microcontroller-Development, Architecture, Deployments)",
+            "Technologie (Software/Backend/Mobil/Mikrocontroller-Entwicklung, Architektur, Deployments)"
+          ],
+          i18nAvailability: [
+            "Friday 18:00h - 20:00h",
+            "Freitag 18:00h - 20:00h"
+          ]
+        },
 
         // PITCH TRAINER
         {
