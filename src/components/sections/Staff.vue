@@ -837,8 +837,8 @@ export default {
             "Technologie (Software/Backend/Mobil/Mikrocontroller-Entwicklung, Architektur, Deployments)"
           ],
           i18nAvailability: [
-            "Friday 18:00h - 20:00h",
-            "Freitag 18:00h - 20:00h"
+            "Friday 18:00h - 22:00h & Saturday 10:00h - 22:00h",
+            "Freitag 18:00h - 22:00h & Samstag 10:00h - 22:00h"
           ]
         },
 
