@@ -129,6 +129,15 @@ export default {
               ]
             },
             {
+              icon: require("../../assets/flat-icon-schedule-carrot.svg"),
+              time: "08:45",
+              i18nTitle: ["Welcome Snack", "Willkommens Snack"],
+              i18nDescription: [
+                "There are pretzels, sandwiches, filled puff pastry snacks, apples and grapes (René's Kitchen).",
+                "Es gibt Brezeln, belegte Brötchen, gefüllte Blätterteig-Häppchen, Äpfel und Trauben (Renés Kitchen)."
+              ]
+            },
+            {
               icon: require("../../assets/flat-icon-schedule-mic.svg"),
               time: "10:00",
               i18nTitle: ["Key Note & Talks", "Key Note & Vorträge"],
@@ -167,8 +176,8 @@ export default {
               time: "12:30",
               i18nTitle: ["Lunch time", "Mittagspause"],
               i18nDescription: [
-                "Don’t read what’s for dinner.",
-                "Lies nicht, was es zum Abendessen gibt."
+                "Two dishes to choose from, \"Giovanni Gnocchi\" and \"Linse-Lotte powder\" a fruity stew, yummie (Renés Kitchen).",
+                "Zwei Gerichte zur Auswahl, \"Giovanni Gnocchi\", sowie \"Linse-Lotte Pulver\" ein fruchtiger Eintopf, yummie (Renés Kitchen)."
               ]
             },
             {
@@ -221,8 +230,8 @@ export default {
                 "Deadline der Einreichung von Challenges"
               ],
               i18nDescription: [
-                "If you don’t pick an existing challenge,  ensure your own challenge proposal have been submitted before the deadline!",
-                "Wenn du dich nicht für eine bestehende Challenge entscheidest, stelle sicher, dass dein eigener Challenge-Vorschlag vor Ablauf der Frist eingereicht wurde!"
+                "IMPORTNAT: No further challenges can be accepted. Please select an existing challenge you would like to work on. All rules and procedures will now be explained in detail.",
+                "WICHTIG: Es können keine weiteren Challenges mehr angenommen werden. Bitte suche dir eine existierende Challenge aus an der du arbeiten möchtest. Alle Regeln und Abläufe werden jetzt noch Mal in Ruhe erklärt."
               ]
             },
             {
@@ -230,8 +239,8 @@ export default {
               time: "16:00",
               i18nTitle: ["Challenge Pitch Time", "Challenge Pitch Zeit"],
               i18nDescription: [
-                "You submitted your own challenge and it was approved? Then get ready to pitch in 60 seconds why you think people should tackle solutions of your challenge.",
-                "Du hast deine eigene Herausforderung gestellt und sie wurde genehmigt? Dann mach dich bereit, in 60 Sekunden zu pitchen, warum du denkst, dass die Teilnehmer Lösungen für deine Herausforderung erarbeiten sollten."
+                "All Challenge providers now present their Challenge again in max. 3 minutes. You already have an idea for a challenge and are now looking for support? Then get ready to pitch in 60 seconds why you think other participants should work with you on your idea.",
+                "Alle Challenge-Anbieter stellen nun in knackigen 3 Minuten noch Mal ihre Challenge vor. Du hast bereits eine Idee für eine Challenge und suchst nun nach Unterstützung? Dann mach dich bereit, in 60 Sekunden zu pitchen, warum du denkst, dass andere Teilnehmer mit dir an deiner Idee arbeiten sollten."
               ]
             },
             {
@@ -256,8 +265,8 @@ export default {
               time: "19:00",
               i18nTitle: ["Dinner", "Abendessen"],
               i18nDescription: [
-                "Cooked Rats. I warned you.",
-                "Gekochte Ratten. Ich habe dich gewarnt."
+                "Two dishes to choose from, \"Simsalabim\" a Moroccan chickpea tajine with sweet potatoes and \"Renédemmi\" a mexican touched chili, naturally climate friendly without meat, this will be a highly aromatic dream (Renés Kitchen).",
+                "Zwei Gerichte zur Auswahl, \"Simsalabim\" ein Marokkanische Kichererbsen-Tajine mit Süßkartoffeln und \"Renédemmi\" ein mexikanisch angehauchtes Chili, natürlich klimaschonend ohne Fleisch, das wird ein hocharomatischer Traum (Renés Kitchen)."
               ]
             },
             {
@@ -280,8 +289,8 @@ export default {
               time: "08:30",
               i18nTitle: ["Breakfast", "Frühstück"],
               i18nDescription: [
-                "Caffeine infusions, sugar, even more sugar and everything you need after an intensive hacking night.",
-                "Koffeinaufgüsse, Zucker, noch mehr Zucker und alles, was du nach einer intensiven Hackernacht brauchen."
+                "Caffeine infusions, sugar, even more sugar and everything you need after an intensive hacking night. In addition there are homemade Bircher muesli, as well as baguette and bread with many spreads (Café Rost).",
+                "Koffeinaufgüsse, Zucker, noch mehr Zucker und alles, was du nach einer intensiven Hackernacht brauchen. Dazu gibt es hausgemachtes Bircher Müsli, sowie Baguette und Brot mit vielen Aufstrichen (Café Rost)."
               ]
             },
             {
@@ -301,8 +310,8 @@ export default {
               time: "13:00",
               i18nTitle: ["Lunch time", "Mittagszeit"],
               i18nDescription: [
-                "Don’t forget to eat, we need you.",
-                "Vergiss nicht zu essen, wir brauchen dich."
+                "The menu: marinated BBQ schnitzel wraps with potato wedges & sour cream and a chickpea potato curry, both dishes obviously vegan (Café Rost).",
+                "Vergiss nicht zu essen, wir brauchen dich. Das Menü: marinierte BBQ-Schnitzel-Wraps dazu Kartoffelecken & Sour Cream, sowie ein Kichererbsen-Kartoffelcurry, beide Gerichte natürlich vegan (Café Rost)."
               ]
             },
             {
@@ -310,8 +319,8 @@ export default {
               time: "19:00",
               i18nTitle: ["Dinner", "Dinner"],
               i18nDescription: [
-                "Last warm meal before the deadline, strengthen yourself one more time before the last night.",
-                "Letzte warme Mahlzeit vor der Deadline, stärke dich noch einmal vor der letzten Nacht."
+                "Last warm meal before the deadline, strengthen yourself one more time before the last night. There is pasta with soy Bolognese and lentil potato stew with smoked tofu and bread (Café Rost).",
+                "Letzte warme Mahlzeit vor der Deadline, stärke dich noch einmal vor der letzten Nacht. Es gibt Pasta mit Soja-Bolognese, sowie Linsen-Kartoffeleintopf mit Räuchertofu und Brot (Café Rost)."
               ]
             },
             {
@@ -334,8 +343,8 @@ export default {
               time: "08:30",
               i18nTitle: ["Breakfast", "Frühstück"],
               i18nDescription: [
-                "Almost done, enjoy your breakfast and look back proudly on what you have achieved in the last two days.",
-                "Fast fertig, genieße dein Frühstück und blicke stolz auf das zurück, was du in den letzten zwei Tagen erreicht hast."
+                "Almost done, enjoy your breakfast and look back proudly on what you have achieved in the last two days. There is: \"Oat of Space\", a delicious breakfast creation made from oats, cashew milk, dates and fruits (René's Kitchen).",
+                "Fast fertig, genieße dein Frühstück und blicke stolz auf das zurück, was du in den letzten zwei Tagen erreicht hast. Es gibt: \"Oat of Space\", eine köstliche Frühstückskreation aus Hafer, Cashewmilch, Datteln und Früchten (Renés Kitchen)."
               ]
             },
             {
@@ -385,8 +394,8 @@ export default {
               time: "15:00",
               i18nTitle: ["Meet the Winners", "Treffe die Gewinner"],
               i18nDescription: [
-                "Don’t forget to exchange numbers with your new friends.",
-                "Vergiss nicht, Nummern mit deinen neuen Freunden auszutauschen."
+                "Don’t forget to exchange numbers with your new friends. As a small GOod Bye Snack we offer our Hackathon Classic: Vegane Çiğ Köfte Happchen.",
+                "Vergiss nicht, Nummern mit deinen neuen Freunden auszutauschen. Als kleinen Good Bye Snack gibt es unseren Hackathon Klassiker: Vegane Çiğ Köfte Häppchen."
               ]
             }
           ]
