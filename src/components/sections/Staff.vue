@@ -549,6 +549,20 @@ export default {
           ],
           female: false,
           show: false
+        },
+        {
+          icon: require("../../assets/jury/jury-schacht.jpg"),
+          name: "Dr. Silvia Schacht",
+          i18nDescription: [
+            "Head of Digital Innovations Department • Rhein-Neckar-Verkehr GmbH",
+            "Abteilungsleitung Digitale Innovationen • Rhein-Neckar-Verkehr GmbH"
+          ],
+          i18nLongDescription: [
+            "I studied business informatics at the University of Mannheim and subsequently completed my doctorate in this field. In December 2017 I took up my position at rnv as a digitization consultant and since October 2019 I have been head of the Digital Development department at rnv.",
+            "Ich habe Wirtschaftsinformatik an der Uni Mannheim studiert und anschließend in diesem Fachbereich auch promoviert. Im Dezember 2017 bin ich bei der rnv meine Stelle als Referentin Digitalisierung angetreten und seit Oktober 2019 Abteilungsleiterin der Abteilung Digitale Entwicklungen in der rnv."
+          ],
+          female: false,
+          show: false
         }
         // {
         //   icon: require("../../assets/flat-icon-scientist.svg"),
