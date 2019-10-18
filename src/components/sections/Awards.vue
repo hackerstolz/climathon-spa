@@ -20,6 +20,18 @@
           class="description"
           v-html="$t(`awards.${award.key}.description`)"
         ></p>
+        <v-btn
+          v-if="award.officialCriteria"
+          class="mt-2"
+          width="auto"
+          color="warning"
+          outline
+          flat
+          small
+          @click="criteriaShow = true"
+        >
+          {{ $t("button.showCriteria") }}
+        </v-btn>
       </v-card>
 
       <stack
@@ -55,6 +67,17 @@
               class="description"
               v-html="$t(`awards.${award.key}.description`)"
             ></p>
+            <v-btn
+              v-if="award.officialCriteria"
+              class="mt-2"
+              width="auto"
+              color="warning"
+              outline
+              flat
+              small
+            >
+              {{ $t("button.showCriteria") }}
+            </v-btn>
             <router-link
               v-if="typeof award.challengeCategoryID === 'number'"
               :to="'/overview/challenges/' + award.challengeCategoryID"
@@ -77,6 +100,52 @@
       <div class="infoArea mt-5">
         <p class="awardInfo" v-html="$t('awardInfo')"></p>
       </div>
+
+      <!-- criteria -->
+      <v-dialog
+        v-model="criteriaShow"
+        scrollable
+        width="80%"
+        max-width="640px"
+        :fullscreen="isMobile"
+        @click="criteriaShow = true"
+      >
+        <v-card class="card" color="#2f3a58">
+          <div class="dialog-card-content pa-4">
+            <v-layout row>
+              <div class="ml-3 mr-4">&nbsp;</div>
+              <v-spacer />
+              <h3 class="mb-3">
+                {{ $t("juryCriteriaTitle") }}
+              </h3>
+              <v-spacer />
+              <v-btn
+                class="ma-0"
+                color="accent"
+                flat
+                @click="criteriaShow = false"
+                icon
+              >
+                <v-icon>close</v-icon>
+              </v-btn>
+            </v-layout>
+            <p
+              class="annotation-text mb-4"
+              v-html="$t('juryCriteriaIntro')"
+            ></p>
+            <p
+              class="long-description mb-4"
+              v-html="$t('juryCriteriaList')"
+            ></p>
+          </div>
+          <v-card-actions class="dialog-card-footer">
+            <v-spacer />
+            <v-btn color="accent" flat @click="criteriaShow = false">{{
+              $t("button.close")
+            }}</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
     </v-container>
   </section>
 </template>
@@ -92,7 +161,8 @@ export default {
     themeColor: {
       type: String,
       default: "primary"
-    }
+    },
+    isMobile: Boolean
   },
   computed: {
     sectionColor: function() {
@@ -108,28 +178,33 @@ export default {
   },
   data() {
     return {
+      criteriaShow: false,
       mainAwards: [
         {
           key: "climateGlobal",
           img: require("../../assets/award/award-global.png"),
-          color: this.$vuetify.theme.success
+          color: this.$vuetify.theme.success,
+          officialCriteria: true
         },
         {
           key: "climateGrant",
           img: require("../../assets/award/award-gold.svg"),
-          color: this.$vuetify.theme.warning
+          color: this.$vuetify.theme.warning,
+          officialCriteria: true
         }
       ],
       awards: [
         {
           key: "shubAward",
           img: require("../../assets/award/award-shub.png"),
-          color: this.$vuetify.theme.warning
+          color: this.$vuetify.theme.warning,
+          officialCriteria: true
         },
         {
           key: "projectTogetherAward",
           img: require("../../assets/award/award-projecttogether.png"),
-          color: this.$vuetify.theme.warning
+          color: this.$vuetify.theme.warning,
+          officialCriteria: true
         },
         {
           key: "cityPrize",
@@ -164,7 +239,10 @@ export default {
 {
   "en": {
     "title": "Awards",
-    "awardInfo": "Guess what, we’re working on getting more prices out (e.g. we’re planning special prizes for challenges from sponsors to Start-Up pre-seed promotions). The rules by which the jury  evaluates as well as all requirements for your project and team to meet all criteria will all  be published here soon. The whole process should be made transparent to you. You still have questions? Have a look at our FAQ section or just <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>contact us</a>.",
+    "juryCriteriaTitle":"Bewertungskriterien der Jury",
+    "juryCriteriaIntro":"All applications will be reviewed by the Climathon team and independent experts from the Climathon and Climate KIC network according to the evaluation criteria listed below. We will announce the top 10 finalists on 13 December 2019. You will be invited by email, so keep an eye on your inbox! <br/><br/>We have kept very close to the Climathon Global Award criteria of the Climathon and Climate KIC network in creating the scoring sheet. So that it is already certain that the winning teams of the Mannheim Climathon were measured against these criteria. We have only replaced the point \"commercialization potential\" by \"technical implementation\", this is more important for us at a hackathon where technical solutions are more important than the requirement to be able to make profits with an idea.<br/><br/>When selecting ideas, the judges will consider the following criteria: ",
+    "juryCriteriaList":"<strong>1. Transformative potential (30%)</strong><ul class='list'><li>Does the solution offer something unique and innovative that challenges conventional thinking or systems?</li><li>Has the solution been tried before?</li><li>Does the solution address a core need, rather than solving an already existing problem?</li><li>Has the solution been designed with a systemic, integrated approach in mind?</li><li>Does the solution have the potential for impact outside the city boundaries?</li><li>Does the solution interact with local/regional city plans, policy or legislation or vice versa?</li><li>Could the solution be used/ benefitted by 10 billion people?</li></ul><br/><strong>2. Operational viability (20%)</strong><ul class='list'><li>Is the timing right for the team to solve the problem they are addressing with the solution?</li><li>Is the solution’s defensibility convincing? (i.e. Why won’t an existing \"demand owner\" or company do this? Why can the team do better or faster?)</li><li>Did the team identify and address potential barriers to (market) entry?</li><li>Did the team identify major product and business development milestones to launch and grow their solution?</li><li>Did the team identify regulatory approvals and have a plan to protect intellectual property?</li></ul><br/><strong>3. Social and environmental value potential (15%)</strong><ul class='list'><li>Is the solution relevant to the Sustainable Development Goal number 13 on Climate Action, at a minimum?</li><li>Does the solution have the potential to significantly avoid or reduce C02 emissions?</li><li>Does the solution contribute to increasing the resilience of cities to climate-related disasters?</li><li>Is the solution inclusive of less active or knowledgeable communities in addressing climate action?</li><li>Does the solution have the potential to create employment opportunities?</li></ul><br/><strong>4. Exchanged: Technical realisation (15%)</strong><ul class='list'><li>Is the prototype usable for producatization? </li><li>Is the technology stack scalable? </li><li>Is the prototype/hack running stable? </li><li>How high is the degree of realization after this short time and how much is just mocked?</li><li>Was the solution well documented (code versioning used, rough draft of a README, a clear open source licensing model chosen, etc.)?</li></ul><br/><strong>5. Team capability (10%)</strong><ul class='list'><li>Did the team show indication of high commitment?</li><li>Does the team have relevant domain experience given the problem they are trying to solve?</li><li>Does the team have any prior entrepreneurial experience?</li><li>Did the team identify key roles that may need to be hired for soon?</li><li>Does the team intend to involve advisers and external experts to introduce the solution?</li></ul><br/><strong>6. Pitch quality (10%)</strong><ul class='list'><li>Did the team present a compelling story to the audience?</li><li>Did the team address the why, how and what of their solution?</li><li>Did the team make their solution understandable to a layperson?</li></ul>",
+    "awardInfo": "The rules according to which the jury evaluates the teams are callable at the prizes which require an evaluation. The main jury is not responsible for the selection of the winners of a sponsor challenge (if advertised), but a jury representative of the challenge sponsor. All requirements for your project and your team are listed in the FAQ section. If you still have questions <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>contact us</a> simply.",
     "awards": {
       "climateGrant": {
         "title": "3x Climate Grants",
@@ -216,12 +294,17 @@ export default {
       }
     },
     "button": {
-      "showChallenge": "Show Challenge"
+      "showChallenge": "Show Challenge",
+      "showCriteria": "evaluation criteria",
+      "close": "Close"
     }
   },
   "de": {
     "title": "Auszeichnungen",
-    "awardInfo": "Raten mal, wir arbeiten daran, mehr Preise aus zu schütten (z.B. planen wir Sonderpreise für Herausforderungen von Sponsoren bis hin zu speziellen Start-Up-Promotionen). Die Regeln, nach denen die Jury bewertet, sowie alle Anforderungen an dein Projekt und dein Team, um alle Kriterien zu erfüllen, werden in Kürze hier veröffentlicht. Der gesamte Prozess soll für dich transparent gemacht werden. Du hast noch Fragen? Werfen einen Blick in unseren FAQ-Bereich oder <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>kontaktiere uns</a> einfach.",
+    "juryCriteriaTitle":"Bewertungskriterien der Jury",
+    "juryCriteriaIntro":"Alle Bewerbungen werden vom Climathon-Team und unabhängigen Experten aus dem Climathon- und Climate-KIC-Netzwerk nach den unten aufgeführten Bewertungskriterien geprüft. Wir werden die Top 10 Finalisten am 13. Dezember 2019 bekannt geben. Du wirst per E-Mail eingeladen, also behalte deinen Posteingang im Auge!<br/><br/>Bei der Erstellung des Bewertungsbogens haben wir uns sehr nah den den Kriterien für den Climathon Global Award vom Climathon- und Climate-KIC-Netzwerk gehalten. Sodass bereits sichergestellt ist, dass die Gewinnerteams des Mannheim Climathons an diesen Kriterien gemessen wurden. Wir haben einzig den Punkt \"Kommerzialisierungspotenzial\" durch \"Technische Umsetzung\" ersetzt, dieser ist für uns bei einem Hackathon bei dem es um technische Lösungen wichtiger als die Anforderung mit einer Idee Gewinne erzielen zu können.<br/><br/>Bei der Auswahl der Ideen berücksichtigen die Juroren die folgenden Kriterien:",
+    "juryCriteriaList":"<strong>1. Transformatives Potenzial (30%)</strong><ul class='list'><li>Bietet die Lösung etwas Einzigartiges und Innovatives, das konventionelles Denken oder Systeme herausfordert?</li><li>Wurde die Lösung schon einmal ausprobiert?</li><li>Spricht die Lösung ein Kernbedürfnis an, anstatt ein bereits bestehendes Problem zu lösen?</li><li>Wurde die Lösung mit Blick auf einen systemischen, integrierten Ansatz konzipiert?</li><li>Hat die Lösung das Potenzial für Auswirkungen außerhalb der Stadtgrenzen?</li><li>Beeinflusst die Lösung lokale/regionale Stadtpläne, Richtlinien oder Gesetze oder umgekehrt?</li><li>Könnte die Lösung von 10 Milliarden Menschen genutzt/genutzt werden?</li></ul><br/><strong>2. Betriebsfähigkeit (20%)</strong><ul class='list'><li>Ist der Zeitpunkt für das Team, das Problem zu lösen, das es mit der Lösung angeht, richtig?</li><li>Überzeugt die Verteidigungsfähigkeit der Lösung? (d.h. Warum tut ein bestehender \"Demand Owner\" oder Unternehmen dies nicht? Warum kann das Team besser oder schneller werden?)</li><li>Hat das Team potenzielle Barrieren für den (Markt-)Einstieg identifiziert und angegangen?</li><li>Hat das Team wichtige Meilensteine für die Produkt- und Geschäftsentwicklung identifiziert, um ihre Lösung einzuführen und zu erweitern?</li><li>Hat das Team behördliche Genehmigungen identifiziert und einen Plan zum Schutz des geistigen Eigentums vorgelegt?</li></ul><br/><strong>3. Soziales und ökologisches Wertpotenzial (15%)</strong><ul class='list'><li>Ist die Lösung zumindest für das Ziel der nachhaltigen Entwicklung Nr. 13 zum Klimaschutz relevant?</li><li>Hat die Lösung das Potenzial, C02-Emissionen deutlich zu vermeiden oder zu reduzieren?</li><li>Trägt die Lösung dazu bei, die Widerstandsfähigkeit der Städte gegen klimabedingte Katastrophen zu erhöhen?</li><li>Beinhaltet die Lösung weniger aktive oder sachkundige Gemeinschaften bei der Bekämpfung von Klimaschutzmaßnahmen?</li><li>Hat die Lösung das Potenzial, Arbeitsplätze zu schaffen?</li></ul><br/><strong>4. Ausgetauscht: Technische Umsetzung (15%)</strong><ul class='list'><li>Ist der Prototyp für die Produktion nutzbar? </li><li>Ist der Technologie-Stack skalierbar? </li><li>Ist der Prototyp/Hack stabil? </li><li>Wie hoch ist der Realisierungsgrad nach dieser kurzen Zeit und wie viel wird nur verspottet?</li><li>Wurde die Lösung gut dokumentiert (Codeversionierung verwendet, Grobentwurf eines README, ein klares Open-Source-Lizenzmodell gewählt, etc.)?</li></ul><br/><strong>5. Teamfähigkeit (10%)</strong><ul class='list'><li>Hat das Team Anzeichen für ein hohes Engagement gezeigt?</li><li>Verfügt das Team angesichts des Problems, das es zu lösen gilt, über relevante Domänenerfahrung?</li><li>Verfügt das Team über unternehmerische Vorkenntnisse?</li><li>Hat das Team Schlüsselpositionen identifiziert, die möglicherweise bald besetzt werden müssen?</li><li>Beabsichtigt das Team, Berater und externe Experten in die Einführung der Lösung einzubeziehen?</li></ul><br/><strong>6. Tonhöhenqualität (10%)</strong><ul class='list'><li>Hat das Team dem Publikum eine spannende Geschichte präsentiert?</li><li>Hat das Team das Warum, Wie und Was ihrer Lösung angesprochen?</li><li>Hat das Team ihre Lösung für einen Laien verständlich gemacht?</li></ul>",
+    "awardInfo": "Die Regeln, nach denen die Jury die Teams bewertet ist an den Preisen die eine Bewertung voraussetzen aufrufbar. Für die Auswahl der Sieger einer Sponsoren-Challenge  (sofern ausgeschrieben) ist nicht die Hauptjury, sondern ein Jury-Vertreter des Challenge-Sponsors zuständig. Alle Anforderungen an dein Projekt und dein Team sind im FAQ-Bereich untergebracht. Sofern du noch Fragen hast <a class='link' href='mailto:climathon@hackerstolz.de?subject=I%20want%20to%20be%20sponsor,%20mentor,%20speaker,%20etc.'>kontaktiere uns</a> einfach.",
     "awards": {
       "climateGrant": {
         "title": "3x Klima Förderungen",
@@ -273,7 +356,9 @@ export default {
       }
     },
     "button": {
-      "showChallenge": "Challenge anzeigen"
+      "showChallenge": "Challenge anzeigen",
+      "showCriteria": "Bewertungskriterien",
+      "close": "Schliessen"
     }
   }
 }
@@ -338,4 +423,37 @@ section
       letter-spacing normal
       text-align center
       color rgba(255, 255, 255, 0.8)
+
+.card
+  height 100%
+  h3
+    font-family Gagalin,sans-serif
+    font-weight 400
+    font-style normal
+    font-size 24px
+    letter-spacing 1px
+    color rgba(255, 255, 255, 0.8)
+  .annotation-text
+    font-family Roboto Condensed,sans-serif
+    font-weight 400
+    font-size 20px
+    font-style normal
+    line-height 1.2
+    letter-spacing 0.5px
+    text-align inherit
+    color #ffffff
+  .long-description
+    font-family Roboto Condensed,sans-serif
+    font-size 20px
+    line-height 1.4
+    letter-spacing 1px
+    text-align center
+    color rgba(255, 255, 255, 0.8)
+  .dialog-card-footer
+    button
+      font-family Gagalin,sans-serif
+      font-weight 400
+      font-style normal
+      font-size 20px
+      letter-spacing 1.5px
 </style>

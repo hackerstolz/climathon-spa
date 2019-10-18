@@ -176,8 +176,8 @@ export default {
               time: "12:30",
               i18nTitle: ["Lunch time", "Mittagspause"],
               i18nDescription: [
-                "Two dishes to choose from, \"Giovanni Gnocchi\" and \"Linse-Lotte powder\" a fruity stew, yummie (Renés Kitchen).",
-                "Zwei Gerichte zur Auswahl, \"Giovanni Gnocchi\", sowie \"Linse-Lotte Pulver\" ein fruchtiger Eintopf, yummie (Renés Kitchen)."
+                'Two dishes to choose from, "Giovanni Gnocchi" and "Linse-Lotte powder" a fruity stew, yummie (Renés Kitchen).',
+                'Zwei Gerichte zur Auswahl, "Giovanni Gnocchi", sowie "Linse-Lotte Pulver" ein fruchtiger Eintopf, yummie (Renés Kitchen).'
               ]
             },
             {
@@ -265,8 +265,8 @@ export default {
               time: "19:00",
               i18nTitle: ["Dinner", "Abendessen"],
               i18nDescription: [
-                "Two dishes to choose from, \"Simsalabim\" a Moroccan chickpea tajine with sweet potatoes and \"Renédemmi\" a mexican touched chili, naturally climate friendly without meat, this will be a highly aromatic dream (Renés Kitchen).",
-                "Zwei Gerichte zur Auswahl, \"Simsalabim\" ein Marokkanische Kichererbsen-Tajine mit Süßkartoffeln und \"Renédemmi\" ein mexikanisch angehauchtes Chili, natürlich klimaschonend ohne Fleisch, das wird ein hocharomatischer Traum (Renés Kitchen)."
+                'Two dishes to choose from, "Simsalabim" a Moroccan chickpea tajine with sweet potatoes and "Renédemmi" a mexican touched chili, naturally climate friendly without meat, this will be a highly aromatic dream (Renés Kitchen).',
+                'Zwei Gerichte zur Auswahl, "Simsalabim" ein Marokkanische Kichererbsen-Tajine mit Süßkartoffeln und "Renédemmi" ein mexikanisch angehauchtes Chili, natürlich klimaschonend ohne Fleisch, das wird ein hocharomatischer Traum (Renés Kitchen).'
               ]
             },
             {
@@ -343,8 +343,8 @@ export default {
               time: "08:30",
               i18nTitle: ["Breakfast", "Frühstück"],
               i18nDescription: [
-                "Almost done, enjoy your breakfast and look back proudly on what you have achieved in the last two days. There is: \"Oat of Space\", a delicious breakfast creation made from oats, cashew milk, dates and fruits (René's Kitchen).",
-                "Fast fertig, genieße dein Frühstück und blicke stolz auf das zurück, was du in den letzten zwei Tagen erreicht hast. Es gibt: \"Oat of Space\", eine köstliche Frühstückskreation aus Hafer, Cashewmilch, Datteln und Früchten (Renés Kitchen)."
+                'Almost done, enjoy your breakfast and look back proudly on what you have achieved in the last two days. There is: "Oat of Space", a delicious breakfast creation made from oats, cashew milk, dates and fruits (René\'s Kitchen).',
+                'Fast fertig, genieße dein Frühstück und blicke stolz auf das zurück, was du in den letzten zwei Tagen erreicht hast. Es gibt: "Oat of Space", eine köstliche Frühstückskreation aus Hafer, Cashewmilch, Datteln und Früchten (Renés Kitchen).'
               ]
             },
             {
