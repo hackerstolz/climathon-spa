@@ -182,23 +182,9 @@ export default {
             },
             {
               speaker: true,
-              speakerID: "robert-thomann",
-              icon: require("../../assets/speaker/speaker-thomann.jpg"),
-              time: "13:30",
-              i18nTitle: [
-                '"Urbanization, digitization, utilities - at the interface to the Smart City."',
-                '"Urbanisierung, Digitalisierung, Versorger – An der Nahtstelle zur Smart City."'
-              ],
-              i18nDescription: [
-                "Speaker: Dr. Robert Thomann",
-                "Speaker: Dr. Robert Thomann"
-              ]
-            },
-            {
-              speaker: true,
               speakerID: "daniel-erlemeier",
               icon: require("../../assets/speaker/speaker-daniel.jpg"),
-              time: "14:00",
+              time: "13:30",
               i18nTitle: [
                 '"Why should you care about Indonesian peat?"',
                 '"Warum solltest du dich um indonesischen Torf sorgen?"'
@@ -206,6 +192,20 @@ export default {
               i18nDescription: [
                 "Speaker: Daniel Erlemeier",
                 "Speaker: Daniel Erlemeier"
+              ]
+            },
+            {
+              speaker: true,
+              speakerID: "robert-thomann",
+              icon: require("../../assets/speaker/speaker-thomann.jpg"),
+              time: "14:00",
+              i18nTitle: [
+                '"Urbanization, digitization, utilities - at the interface to the Smart City."',
+                '"Urbanisierung, Digitalisierung, Versorger – An der Nahtstelle zur Smart City."'
+              ],
+              i18nDescription: [
+                "Speaker: Dr. Robert Thomann",
+                "Speaker: Dr. Robert Thomann"
               ]
             },
             {
