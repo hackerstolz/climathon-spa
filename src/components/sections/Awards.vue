@@ -143,6 +143,12 @@ export default {
           color: this.$vuetify.theme.info
         },
         {
+          key: "obPrize",
+          challengeCategoryID: 7,
+          img: require("../../assets/sponsor/sponsor-op.svg"),
+          color: this.$vuetify.theme.info
+        },
+        {
           key: "rnvPrize",
           challengeCategoryID: 1,
           img: require("../../assets/sponsor/sponsor-rnv.svg"),
@@ -196,6 +202,12 @@ export default {
         "prize": "Adler Mannheim Tickets",
         "description": "The winning team of the MVV-Challenge can win additional prizes. The winner of this Sponsor Challenge will not be determined by the main jury announced here, but by a*n representative* of the sponsor who is also a member of the jury. Each team member (max. seven) receives a ticket."
       },
+      "obPrize": {
+        "title": "objective partner Challnege",
+        "place": "Challenge Winner",
+        "prize": "Stainless steel thermos from avoid waste",
+        "description": "The winning team of the objective partner Challenge can win additional prizes. The winner of this Sponsor Challenge will not be determined by the main jury announced here, but by a*n representative* of the sponsor who is also a member of the jury. Each team member (max. seven) receives a bottle."
+      },
       "rnvPrize": {
         "title": "rnv Challenge",
         "place": "all teams of the rnv Challenge",
@@ -246,6 +258,12 @@ export default {
         "place": "Challenge Sieger",
         "prize": "Adler Mannheim Tickets",
         "description": "Das Sieger Team der MVV-Challenge kann zusätzliche Preise gewinnen. Der Sieger dieser Sponsor-Challenge wird nicht durch die hier angekündigte Hauptjury bestimmt, sondern durch eine*n Vertreter*in des Sponsors die/der mit in der Jury sitz. Jedes Teammitglied (max. Sieben) erhält ein Ticket."
+      },
+      "obPrize": {
+        "title": "objective partner Challnege",
+        "place": "Challenge Sieger",
+        "prize": "Edelstahl Thermosflasche von avoid waste",
+        "description": "Das Sieger Team der objective partner Challenge kann zusätzliche Preise gewinnen. Der Sieger dieser Sponsor-Challenge wird nicht durch die hier angekündigte Hauptjury bestimmt, sondern durch eine*n Vertreter*in des Sponsors die/der mit in der Jury sitz. Jedes Teammitglied (max. Sieben) erhält eine Flasche."
       },
       "rnvPrize": {
         "title": "rnv Challenge",
