@@ -13,6 +13,12 @@
       ]"
       :img="require('../../assets/video/mafinex-footage.jpg')"
     >
+      <div
+        class="shade-top"
+        :style="{
+          'background-image': `linear-gradient(to top, rgba(16, 24, 47, 0), ${sectionColor})`
+        }"
+      ></div>
       <v-layout class="video-content flex align-center py-5" fill-height column>
         <h3 class="align-left">{{ $t("locationSlogan") }}</h3>
         <!-- <v-flex xs12 align-end> -->
@@ -39,6 +45,12 @@
         </v-btn>
         <!-- </v-flex> -->
       </v-layout>
+      <div
+        class="shade-bottom"
+        :style="{
+          'background-image': `linear-gradient(to bottom, rgba(24, 36, 69, 0), ${sectionColor})`
+        }"
+      ></div>
     </video-bg>
   </section>
 </template>
@@ -105,7 +117,7 @@ section
     margin-bottom 64px
 
   .video-container
-    &:before
+    .shade-top
       position absolute
       z-index 1
       top 0
@@ -114,8 +126,8 @@ section
       content ''
       width 100%
       height 30%
-      background-image linear-gradient(to top, rgba(16, 24, 47, 0), #182445)
-    &:after
+
+    .shade-bottom
       position absolute
       z-index 1
       bottom 0
@@ -124,7 +136,7 @@ section
       content ''
       width 100%
       height 30%
-      background-image linear-gradient(to bottom, rgba(24, 36, 69, 0), #182445)
+
     .video-content
       position relative
       z-index 2
