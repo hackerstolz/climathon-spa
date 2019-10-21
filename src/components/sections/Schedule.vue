@@ -159,6 +159,20 @@ export default {
             },
             {
               speaker: true,
+              speakerID: "julian-schroegel",
+              icon: require("../../assets/speaker/speaker-schroegel.jpeg"),
+              time: "10:30",
+              i18nTitle: [
+                '"Digital innovations and new business segments in public transport"',
+                '"Digitale Innovationen und neue Geschäftsfelder im ÖPNV"'
+              ],
+              i18nDescription: [
+                "Speaker: Julian Schrögel",
+                "Speaker: Julian Schrögel"
+              ]
+            },
+            {
+              speaker: true,
               speakerID: "hannah-helmke",
               icon: require("../../assets/speaker/speaker-hannah.jpg"),
               time: "12:00",
@@ -379,8 +393,8 @@ export default {
               time: "13:00",
               i18nTitle: ["Lunch Time", "Mittagessen"],
               i18nDescription: [
-                "Relax, it’s over, rediscover your taste buds and find the value in deceleration. You can choose between \"Curry Up!\", a delicious Far Eastern curry and \"Pasta Basta!\", a really delicious pasta with a vegan Bolognese a la René (René's Kitchen).",
-                "Entspannen dich, es ist vorbei, entdecke deine Geschmacksnerven wieder und finde die Bedeutung von Entschleunigung. Zur Auswahl stehen \"Curry Up!\", ein köstlich fernöstliches Curry und \"Pasta Basta!\", eine wirklich leckere Pasta mit einer veganen Bolognese a la René (Renés Kitchen)."
+                'Relax, it’s over, rediscover your taste buds and find the value in deceleration. You can choose between "Curry Up!", a delicious Far Eastern curry and "Pasta Basta!", a really delicious pasta with a vegan Bolognese a la René (René\'s Kitchen).',
+                'Entspannen dich, es ist vorbei, entdecke deine Geschmacksnerven wieder und finde die Bedeutung von Entschleunigung. Zur Auswahl stehen "Curry Up!", ein köstlich fernöstliches Curry und "Pasta Basta!", eine wirklich leckere Pasta mit einer veganen Bolognese a la René (Renés Kitchen).'
               ]
             },
             {

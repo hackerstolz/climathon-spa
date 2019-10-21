@@ -403,6 +403,25 @@ export default {
           show: false
         },
         {
+          speakerID: "julian-schroegel",
+          icon: require("../../assets/speaker/speaker-schroegel.jpeg"),
+          name: "Julian Schrögel",
+          i18nSubtitle: [
+            "Head of Unit • Rhein-Neckar-Verkehr GmbH",
+            "Referatsleiter • Rhein-Neckar-Verkehr GmbH"
+          ],
+          i18nDescription: [
+            '"Digital innovations and new business segments in public transport"',
+            '"Digitale Innovationen und neue Geschäftsfelder im ÖPNV"'
+          ],
+          i18nLongDescription: [
+            "Head of Unit • Rhein-Neckar-Verkehr GmbH",
+            "Referatsleiter • Rhein-Neckar-Verkehr GmbH"
+          ],
+          female: false,
+          show: false
+        },
+        {
           speakerID: "hannah-helmke",
           icon: require("../../assets/speaker/speaker-hannah.jpg"),
           name: "Hannah Helmke",
@@ -853,6 +872,34 @@ export default {
           i18nAvailability: [
             "Friday 18:00h - 22:00h & Saturday 10:00h - 22:00h",
             "Freitag 18:00h - 22:00h & Samstag 10:00h - 22:00h"
+          ]
+        },
+        {
+          icon: require("../../assets/mentor/mentor-conde.jpg"),
+          name: "Pascal Conde",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: ["MVV Energy AG", "MVV Energie AG"],
+          i18nExpertise: [
+            "Technology (Contact person for the MVV-Challenge)",
+            "Technologie (Ansprechpartner zur MVV-Challenge)"
+          ],
+          i18nAvailability: [
+            "Friday 18:00h - 20:00h & Saturday 10:00h - 14:00h",
+            "Freitag 18:00h - 20:00h & Samstag 10:00h - 14:00h"
+          ]
+        },
+        {
+          icon: require("../../assets/mentor/mentor-bauer.jpg"),
+          name: "Julia Bauer",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: ["", ""],
+          i18nExpertise: [
+            "Sustainability (Human-centred Design, integrated Water Management, International Development, SDGs)",
+            "Nachhaltigkeit (Menschenzentriertes Design, integriertes Wassermanagement, internationale Entwicklung, SDGs)"
+          ],
+          i18nAvailability: [
+            "Friday 18:00h - 22:00h & Saturday 10:00h - 18:00h",
+            "Freitag 18:00h - 22:00h & Samstag 10:00h - 18:00h"
           ]
         },
 
