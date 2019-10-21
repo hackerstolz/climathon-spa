@@ -394,8 +394,8 @@ export default {
               time: "15:00",
               i18nTitle: ["Meet the Winners", "Treffe die Gewinner"],
               i18nDescription: [
-                "Don’t forget to exchange numbers with your new friends. As a small GOod Bye Snack we offer our Hackathon Classic: Vegane Çiğ Köfte Happchen.",
-                "Vergiss nicht, Nummern mit deinen neuen Freunden auszutauschen. Als kleinen Good Bye Snack gibt es unseren Hackathon Klassiker: Vegane Çiğ Köfte Häppchen."
+                "Don’t forget to exchange numbers with your new friends. As a small GOod Bye Snack we offer our Hackathon Classic: Vegane Çiğ Köfte Happchen. Also and still something, the ceremony is accompanied by the music duo Enjoy.",
+                "Vergiss nicht, Nummern mit deinen neuen Freunden auszutauschen. Als kleinen Good Bye Snack gibt es unseren Hackathon Klassiker: Vegane Çiğ Köfte Häppchen. Auch und noch etwas, begleitet wird die Zeremonie vom Musikduo Enjoy."
               ]
             }
           ]
