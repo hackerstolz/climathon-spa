@@ -631,20 +631,20 @@ export default {
             "Freitag 16:00h - 19:00h"
           ]
         },
-        {
-          icon: require("../../assets/mentor/mentor-jasmin.png"),
-          name: "Jasmin Weber",
-          category: MENTOR_CATEGORY.TEAM_BUILDER,
-          i18nOrganisation: [
-            "GfK Entertainment GmbH",
-            "GfK Entertainment GmbH"
-          ],
-          i18nExpertise: ["Team Building", "Team Building"],
-          i18nAvailability: [
-            "Friday 16:00h - 19:00h",
-            "Freitag 16:00h - 19:00h"
-          ]
-        },
+        // {
+        //   icon: require("../../assets/mentor/mentor-jasmin.png"),
+        //   name: "Jasmin Weber",
+        //   category: MENTOR_CATEGORY.TEAM_BUILDER,
+        //   i18nOrganisation: [
+        //     "GfK Entertainment GmbH",
+        //     "GfK Entertainment GmbH"
+        //   ],
+        //   i18nExpertise: ["Team Building", "Team Building"],
+        //   i18nAvailability: [
+        //     "Friday 16:00h - 19:00h",
+        //     "Freitag 16:00h - 19:00h"
+        //   ]
+        // },
         {
           icon: require("../../assets/mentor/mentor-boes.jpg"),
           name: "Matthias Bös",

@@ -232,7 +232,7 @@ section
     background: rgba(255,255,255,0);
     z-index 0
     &.start-transition
-      animation blend 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards
+      animation blend 3s ease-out forwards
     &.reverse-transition
       animation blend-reverse 1s ease-out forwards
 
@@ -375,9 +375,10 @@ section.simulated-2050
         font-weight 400
         font-style normal
         > div:first-child
-          font-size 82px
+          font-size 80px
+          margin-bottom 4px
         > div:nth-child(2)
-          font-size 68px
+          font-size 64px
 
       h2
         font-family battery-park,sans-serif
