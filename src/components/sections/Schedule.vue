@@ -324,8 +324,8 @@ export default {
               time: "13:00",
               i18nTitle: ["Lunch time", "Mittagszeit"],
               i18nDescription: [
-                "The menu: marinated BBQ schnitzel wraps with potato wedges & sour cream and a chickpea potato curry, both dishes obviously vegan (Café Rost).",
-                "Vergiss nicht zu essen, wir brauchen dich. Das Menü: marinierte BBQ-Schnitzel-Wraps dazu Kartoffelecken & Sour Cream, sowie ein Kichererbsen-Kartoffelcurry, beide Gerichte natürlich vegan (Café Rost)."
+                "The menu: marinated BBQ schnitzel wraps with potato wedges & sour cream, all dishes obviously vegan (Café Rost).",
+                "Vergiss nicht zu essen, wir brauchen dich. Das Menü: marinierte BBQ-Schnitzel-Wraps dazu Kartoffelecken & Sour Cream, alles natürlich vegan (Café Rost)."
               ]
             },
             {
@@ -333,8 +333,8 @@ export default {
               time: "19:00",
               i18nTitle: ["Dinner", "Dinner"],
               i18nDescription: [
-                "Last warm meal before the deadline, strengthen yourself one more time before the last night. There is pasta with soy Bolognese and lentil potato stew with smoked tofu and bread (Café Rost).",
-                "Letzte warme Mahlzeit vor der Deadline, stärke dich noch einmal vor der letzten Nacht. Es gibt Pasta mit Soja-Bolognese, sowie Linsen-Kartoffeleintopf mit Räuchertofu und Brot (Café Rost)."
+                "Last warm meal before the deadline, strengthen yourself one more time before the last night. There is delicous pasta with soy Bolognese (Café Rost).",
+                "Letzte warme Mahlzeit vor der Deadline, stärke dich noch einmal vor der letzten Nacht. Es gibt köstliche Pasta mit Soja-Bolognese (Café Rost)."
               ]
             },
             {
