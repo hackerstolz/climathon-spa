@@ -21,6 +21,7 @@
 export default {
   name: "EventHeader",
   props: {
+    isMobile: Boolean,
     themeColor: {
       type: String,
       default: "primary"
@@ -55,7 +56,7 @@ section
   flex-direction column
   justify-content center
   align-items center
-  background-color #FAFAFA
+  padding-top 64px
 
   header
     z-index 1

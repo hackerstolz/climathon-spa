@@ -42,7 +42,7 @@
             {{ $t("button.donate") }}
           </v-btn>
         </v-layout>
-        <v-list>
+        <v-list v-if="$route.name !== 'event'">
           <template v-for="(item, i) in menu">
             <v-list-tile
               v-scroll-to="`#${item}`"
@@ -52,6 +52,21 @@
             >
               <v-list-tile-title class="menu-item">{{
                 $t(`label.${item}`)
+              }}</v-list-tile-title>
+            </v-list-tile>
+            <v-divider v-if="i < menu.length - 1" :key="i" inset />
+          </template>
+        </v-list>
+        <v-list v-if="$route.name === 'event'">
+          <template v-for="(item, i) in menuEvent">
+            <v-list-tile
+              v-scroll-to="`#${item}`"
+              :key="item"
+              ripple
+              @click="() => {}"
+            >
+              <v-list-tile-title class="menu-item">{{
+                $t(`label.eventMenu.${item}`)
               }}</v-list-tile-title>
             </v-list-tile>
             <v-divider v-if="i < menu.length - 1" :key="i" inset />
@@ -93,6 +108,7 @@
           <v-icon v-if="isMobile">email</v-icon>
         </v-btn>
         <v-btn
+          v-if="$route.name !== 'event'"
           :class="{ 'app-btn-register': true, large: !isMobile }"
           color="success"
           :small="isMobile"
@@ -185,7 +201,8 @@ export default {
         "parties",
         "team",
         "footer"
-      ]
+      ],
+      menuEvent: ["info", "location", "bag", "footer"]
     };
   },
   mounted() {
@@ -230,7 +247,7 @@ export default {
     "label": {
       "snackbarText": "We don't need any analysis tools so enjoy a cookie-free experience.",
       "snackbarConfirm": "OK",
-      "snackbarClose": "CLose",
+      "snackbarClose": "Close",
       "hashtagCopySuccess": "You just copied '#climathonMA'.",
       "en": "English",
       "de": "German",
@@ -245,7 +262,13 @@ export default {
       "faq": "FAQ",
       "parties": "Sponsors & Partners",
       "team": "Orga Team",
-      "footer": "Credits"
+      "footer": "Credits",
+      "eventMenu": {
+        "info": "Infos at a glance",
+        "location": "Room plan",
+        "bag": "Event-Bag",
+        "footer": "Credits"
+      }
     },
     "button": {
       "en": "Language • EN",
@@ -275,7 +298,13 @@ export default {
       "faq": "FAQ",
       "parties": "Sponsoren & Partner",
       "team": "Orga-Team",
-      "footer": "Credits"
+      "footer": "Credits",
+      "eventMenu": {
+        "info": "Infos auf einem Blick",
+        "location": "Raumplan",
+        "bag": "Veranstaltungstasche",
+        "footer": "Credits"
+      }
     },
     "button": {
       "en": "Sprache • EN",
