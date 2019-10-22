@@ -242,6 +242,12 @@ export default {
           challengeCategoryID: 1,
           img: require("../../assets/sponsor/sponsor-rnv.svg"),
           color: this.$vuetify.theme.info
+        },
+        {
+          key: "bosPrize",
+          challengeCategoryID: 5,
+          img: require("../../assets/award/award-bos.jpg"),
+          color: this.$vuetify.theme.accent
         }
       ]
     };
@@ -304,7 +310,13 @@ export default {
         "title": "rnv Challenge",
         "place": "all teams of the rnv Challenge",
         "prize": "Surprise Goodie Bag per participant",
-        "description": "Each team that has worked on the rnv Challenge will receive a prize for its participation."
+        "description": "Each team and its members that has worked on the rnv Challenge will receive a prize for its participation."
+      },
+      "bosPrize": {
+        "title": "BOS Challenge",
+        "place": "all teams of the BOS Challenge",
+        "prize": "BOS calendar and voucher per participant",
+        "description": "Each team and its members that has worked on the BOS Challenge will receive a prize for its participation."
       }
     },
     "button": {
@@ -367,7 +379,13 @@ export default {
         "title": "rnv Challenge",
         "place": "alle Teams der rnv Challenge",
         "prize": "Überraschungs-Goodie-Bag pro Teilnehmer",
-        "description": "Jedes Team, das an der rnv Challenge gearbeitet hat, erhält einen Preis für dessen Teilnahme."
+        "description": "Jedes Team und deren Mitglieder, das an der rnv Challenge gearbeitet hat, erhält einen Preis für dessen Teilnahme."
+      },
+      "bosPrize": {
+        "title": "BOS Challenge",
+        "place": "alle Teams der BOS Challenge",
+        "prize": "BOS Kalendar und Gutschein pro Teilnehmer",
+        "description": "Jedes Team und deren Mitglieder, das an der BOS Challenge gearbeitet hat, erhält einen Preis für dessen Teilnahme."
       }
     },
     "button": {

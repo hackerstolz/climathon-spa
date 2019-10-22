@@ -1,20 +1,22 @@
 <template>
   <v-content class="pa-0">
-    <section :style="{ backgroundColor: this.$vuetify.theme.secondary }">
+    <!-- <section :style="{ backgroundColor: this.$vuetify.theme.secondary }">
       <v-container>
-        <!-- add content here -->
       </v-container>
-    </section>
+    </section> -->
+    <EventHeader id="header" :isMobile="isMobile" themeColor="secondary" />
     <Footer id="footer" themeColor="primary" />
   </v-content>
 </template>
 
 <script>
+import EventHeader from "../components/sections/EventHeader.vue";
 import Footer from "../components/sections/Footer.vue";
 
 export default {
   name: "Event",
   components: {
+    EventHeader,
     Footer
   },
   props: {
