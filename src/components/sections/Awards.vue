@@ -32,6 +32,20 @@
         >
           {{ $t("button.showCriteria") }}
         </v-btn>
+        <v-btn
+          v-if="award.key === 'climateGrant'"
+          class="mt-2"
+          href="https://drive.google.com/a/hackerstolz.de/file/d/1xDptsnbemVbIcLefWYrxzC_xHA3d3AW7/view?usp=sharing"
+          target="_blank"
+          width="auto"
+          color="accent"
+          outline
+          flat
+          small
+        >
+          {{ $t("button.showFactSheet") }}
+          <v-icon dark right>open_in_new</v-icon>
+        </v-btn>
       </v-card>
 
       <stack
@@ -294,6 +308,7 @@ export default {
       }
     },
     "button": {
+      "showFactSheet": "Show Fact-Sheet (DE)",
       "showChallenge": "Show Challenge",
       "showCriteria": "evaluation criteria",
       "close": "Close"
@@ -356,6 +371,7 @@ export default {
       }
     },
     "button": {
+      "showFactSheet": "Fact-Sheet anzeigen (DE)",
       "showChallenge": "Challenge anzeigen",
       "showCriteria": "Bewertungskriterien",
       "close": "Schliessen"
