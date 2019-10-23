@@ -122,7 +122,7 @@ export default {
             {
               icon: require("../../assets/flat-icon-schedule-batch.svg"),
               time: "08:30",
-              i18nTitle: ["Registration & Onboarding", ""],
+              i18nTitle: ["Registration & Onboarding", "Registrierung & Onboarding"],
               i18nDescription: [
                 "No worries, for all people not coming for the talks, registration will be open until 15:00.",
                 "Keine Sorge, für alle, die nicht zu den Vorträgen kommen, die Anmeldung ist bis 15:00 Uhr geöffnet."
