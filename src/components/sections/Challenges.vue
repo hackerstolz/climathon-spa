@@ -645,7 +645,7 @@ export default {
       "link2Form": "Open submit form",
       "close": "Close"
     },
-    "challengeCount": "no challenge, yet | one challenge | {count} challenges",
+    "challengeCount": "Processing at Climathon 2020 | one challenge | {count} challenges",
     "challangeSummary": "Summary",
     "challangeDescription": "Status quo & Resources",
     "challangeVision": "Vision & Outcome",
@@ -711,7 +711,7 @@ export default {
       "link2Form": "Formular öffnen",
       "close": "Schliessen"
     },
-    "challengeCount": "keine Herausforderung, bisher | eine Herausforderung | {count} Herausforderungen",
+    "challengeCount": "Bearbeitung beim Climathon 2020 | eine Herausforderung | {count} Herausforderungen",
     "challangeSummary": "Zusammenfassung",
     "challangeDescription": "Status quo & Ressourcen",
     "challangeVision": "Vision & Ergebnis",
