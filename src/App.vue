@@ -72,6 +72,18 @@
             <v-divider v-if="i < menu.length - 1" :key="i" inset />
           </template>
         </v-list>
+        <router-link :to="$route.name !== 'event' ? '/event' : '/overview'">
+          <v-btn color="success" width="100%" raised @click="() => {}">
+            {{
+              $route.name !== "event"
+                ? $t("button.toEvent")
+                : $t("button.toOverview")
+            }}
+            <v-icon right>{{
+              $route.name !== "event" ? "room" : "public"
+            }}</v-icon>
+          </v-btn>
+        </router-link>
       </v-navigation-drawer>
 
       <v-toolbar
@@ -276,7 +288,9 @@ export default {
       "register": "Register Here",
       "registerShort": "Register",
       "contactus": "Contact us",
-      "donate": "Donate"
+      "donate": "Donate",
+      "toEvent": "On-Event App",
+      "toOverview": "Climathon Overview"
     }
   },
   "de": {
@@ -312,7 +326,9 @@ export default {
       "register": "Hier Registrieren",
       "registerShort": "Registrieren",
       "contactus": "Kontaktiere uns",
-      "donate": "Spenden"
+      "donate": "Spenden",
+      "toEvent": "On-Event App",
+      "toOverview": "Climathon Übersicht"
     }
   }
 }

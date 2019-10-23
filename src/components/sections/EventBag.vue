@@ -93,6 +93,20 @@
             <p class="mb-3">{{ $t("seedbombDescription") }}</p>
           </v-card>
         </stack-item>
+
+        <!-- Sticker -->
+        <stack-item class="stack-grid-item">
+          <v-card
+            class="card pa-3"
+            width="100%"
+            color="rgba(255,255,255,0.1)"
+            flat
+          >
+            <h3 class="mb-3">{{ $t("sticker") }}</h3>
+            <div class="icon">{{ "🌍" }}</div>
+            <p class="mb-3">{{ $t("stickerDescription") }}</p>
+          </v-card>
+        </stack-item>
       </stack>
     </v-container>
   </section>
@@ -142,7 +156,9 @@ export default {
     "saddleProtectionBag": "saddle protection",
     "saddleProtectionBagDescription": "A saddle protector made of recycled plastic. Thanks to valantic.",
     "seedbomb": "Seedbomb",
-    "seedbombDescription": "A sea bomb for guerilla gardening, throwing into nature, waiting for rain and flowers. Thanks to Onwerk."
+    "seedbombDescription": "A sea bomb for guerilla gardening, throwing into nature, waiting for rain and flowers. Thanks to Onwerk.",
+    "sticker": "Sticker",
+    "stickerDescription": "Climathon sticker for your laptop, smartphone cover or other favorite items. Unfortunately not water and UV resistant, but 100% vegan and compostable (we trust the manufacturer's specifications)."
   },
   "de": {
     "title": "Was ist in deiner Tasche?",
@@ -150,15 +166,17 @@ export default {
     "cup": "Bleib deinem Becher Treu Becher",
     "cupDescription": "Ein Mehrweg Kaffeebecher, damit du Rund um die Uhr bei Café Agáta nachüllen kannst. Danke an die Klimaschutzagentur Mannheim.",
     "bottle": "0,5l Buegelflasche",
-    "bottleDescription": "Eine Trankflasche aus Glas und mit Bügelverschluss sowie vergrößerter Mundöffnung. Auch wenn es Mate, Cola und mehr gibt, wollen wir wollen dich motivieren das saubere Mannheimer Leitungswasser zu trinken.",
+    "bottleDescription": "Eine Trankflasche aus Glas und mit Bügelverschluss sowie vergrößerter Mundöffnung. Auch wenn es Mate, Cola und mehr gibt, wollen wir dich motivieren das saubere Mannheimer Leitungswasser zu trinken.",
     "smallBag": "Kleiner Stoffbeutel",
     "smallBagDescription": "Ein Stoffbeutel in Miniaturform für Obst und Gemüse. Danke an die Klimaschutzagentur Mannheim.",
     "postItsBag": "Post-It Blöcke",
     "postItsBagDescription": "Post-It Blöcke aus recycletem Papier, diese könnt ihr direkt bei eurer frühen Konzept und Design Thinking verwenden. Fragt mal die Mentoren, die haben garantiert gute Tipps, wie ihr damit gut arbeitet. Danke an die BASF.",
     "saddleProtectionBag": "Sattelschutz",
-    "saddleProtectionBagDescription": "Ein Sattelschutz aus recycletem Plastik. Damnke an valantic.",
+    "saddleProtectionBagDescription": "Ein Sattelschutz aus recycletem Plastik. Danke an valantic.",
     "seedbomb": "Seedbomb",
-    "seedbombDescription": "Eine Seedbomb für Guerilla-Gardening, in die Natur werfen, auf Regen warten und die Blumen abwarten. Danke an Onwerk."
+    "seedbombDescription": "Eine Seedbomb für Guerilla-Gardening, in die Natur werfen, auf Regen warten und die Blumen abwarten. Danke an Onwerk.",
+    "sticker": "Sticker",
+    "stickerDescription": "Climathon Sticker für deinen Laptop, dein Smartphone-Cover oder andere Lieblingsgegenstände. Leider nicht Wasser und UV beständig, dafür aber 100% vegan und kompostierbar (wir vertrauen hier mal den Herstellerangaben)."
   }
 }
 </i18n>

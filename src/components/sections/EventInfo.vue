@@ -347,7 +347,10 @@ export default {
 </i18n>
 
 <!-- Global scope -->
-<style lang="stylus"></style>
+<style lang="stylus">
+.v-dialog--fullscreen
+  background-color #2f3a58
+</style>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
