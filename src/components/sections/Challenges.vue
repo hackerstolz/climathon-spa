@@ -11,11 +11,11 @@
         monitor-images-loaded
       >
         <stack-item
-          v-for="(category, i) in categories"
-          :key="i"
+          v-for="category in categoriesSorted"
+          :key="category.id"
           class="stack-grid-item"
         >
-          <router-link :to="'/overview/challenges/' + i">
+          <router-link :to="'/overview/challenges/' + category.id">
             <v-card
               :class="{
                 card: true,
@@ -228,6 +228,7 @@
 </template>
 
 <script>
+import clone from "lodash/clone";
 import debounce from "lodash/debounce";
 import { Stack, StackItem } from "vue-stack-grid";
 
@@ -251,7 +252,12 @@ export default {
     this.routeUpdate(this.$route);
   },
   computed: {
-    sectionColor: function() {
+    categoriesSorted() {
+      return clone(this.categories).sort(
+        (a, b) => b.challenges.length - a.challenges.length
+      );
+    },
+    sectionColor() {
       return Object.keys(this.$vuetify.theme).indexOf(this.themeColor) !== -1
         ? this.$vuetify.theme[this.themeColor]
         : this.$vuetify.theme.primary;
@@ -305,6 +311,7 @@ export default {
       challengeSubmissionOpen: false,
       categories: [
         {
+          id: 0,
           key: "smartCity",
           img: require("../../assets/flat-icon-smartCity.svg"),
           show: false,
@@ -375,6 +382,7 @@ export default {
           ]
         },
         {
+          id: 1,
           key: "mobility",
           img: require("../../assets/flat-icon-mobility.svg"),
           show: false,
@@ -405,6 +413,7 @@ export default {
           ]
         },
         {
+          id: 2,
           key: "retrofitting",
           img: require("../../assets/flat-icon-retrofitting.svg"),
           show: false,
@@ -435,12 +444,14 @@ export default {
           ]
         },
         {
+          id: 3,
           key: "circularEconomy",
           img: require("../../assets/flat-icon-circularEconomy.svg"),
           show: false,
           challenges: []
         },
         {
+          id: 4,
           key: "food",
           img: require("../../assets/flat-icon-food.svg"),
           show: false,
@@ -471,6 +482,7 @@ export default {
           ]
         },
         {
+          id: 5,
           key: "finance",
           img: require("../../assets/flat-icon-finance.svg"),
           show: false,
@@ -498,6 +510,7 @@ export default {
           ]
         },
         {
+          id: 6,
           key: "behaviour",
           img: require("../../assets/flat-icon-behaviour.svg"),
           show: false,
@@ -528,6 +541,7 @@ export default {
           ]
         },
         {
+          id: 7,
           key: "water",
           img: require("../../assets/flat-icon-water.svg"),
           show: false,
@@ -555,6 +569,7 @@ export default {
           ]
         },
         {
+          id: 8,
           key: "energy",
           img: require("../../assets/flat-icon-energy.svg"),
           show: false,
@@ -585,6 +600,7 @@ export default {
           ]
         },
         {
+          id: 9,
           key: "extremeWeather",
           img: require("../../assets/flat-icon-extremeWeather.svg"),
           show: false,
@@ -615,12 +631,14 @@ export default {
           ]
         },
         {
+          id: 10,
           key: "waste",
           img: require("../../assets/flat-icon-waste.svg"),
           show: false,
           challenges: []
         },
         {
+          id: 11,
           key: "pollution",
           img: require("../../assets/flat-icon-pollution.svg"),
           show: false,
