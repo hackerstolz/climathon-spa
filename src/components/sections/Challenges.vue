@@ -588,7 +588,28 @@ export default {
           key: "extremeWeather",
           img: require("../../assets/flat-icon-extremeWeather.svg"),
           show: false,
-          challenges: []
+          challenges: [
+            {
+              type: CHALLENGE_TYPE.CITY,
+              i18nAuthor: ["City of Mannheim - Climate Protection Control Centre", "Stadt Mannheim – Klimaschutzleitstelle"],
+              i18nTitle: [
+                "How can we sensitize people in Mannheim to the risks of extreme weather events and motivate them to take precautions themselves?",
+                "Wie können wir Mannheimerinnen und Mannheimer für die Risiken von Extremwetterereignissen sensibilisieren und sie zur Eigenvorsorge motivieren?"
+              ],
+              i18nSummary: [
+                "In recent decades, extreme weather events such as heat waves, cold waves, intense storms and droughts have become more frequent and more intense. Further unprecedented increases are expected, making the development of resilience an urgent need for all cities.",
+                "In den letzten Jahrzehnten sind extreme Wetterereignisse wie Hitzewellen, Kältewellen, intensive Stürme und Dürren häufiger und intensiver geworden. Es wird erwartet, dass es zu weiteren Zunahmen in noch nie dagewesenem Ausmaß kommen wird, weshalb die Entwicklung der Widerstandsfähigkeit für alle Städte ein dringender Bedarf ist."
+              ],
+              i18nDescription: [
+                "In order to make our city more resistant to extreme weather events, we are looking for creative solutions to sensitise urban society to the consequences of climate change and to inform them about adaptation options in relevant areas so that they can then take action themselves. Possible fields of action are:<ul class='list'><li>Public Health and Social Infrastructure</li><li>City society and city structure</li><li>Traffic and air quality</li><li>Urban water resources management</li><li>Buildings and building materials</li><li>Industry, commerce and tourism</li><li>Green areas, agriculture and forestry, biodiversity</li></ul>",
+                "Um unsere Stadt widerstandsfähiger gegen Extremwetterereignisse zu machen, suchen wir nach kreativen Lösungen, die Stadtgesellschaft für die Folgen des Klimawandels zu sensibilisieren und zu Anpassungsmöglichkeiten in relevanten Bereichen zu informieren, damit sie dann selbst aktiv werden können. Mögliche Handlungsfelder sind:<ul class='list'><li>Öffentliche Gesundheit und soziale Infrastruktur</li><li>Stadtgesellschaft und Stadtstruktur</li><li>Verkehrswesen und Luftqualität</li><li>Siedlungswasserwirtschaft</li><li>Gebäude und Baumaterialien</li><li>Industrie, Gewerbe und Tourismus</li><li>Grünflächen, Land- und Fortwirtschaft, Biodiversität</li></ul>"
+              ],
+              i18nVision: [
+                'Our goal is a climate-friendly urban structure that can withstand any heat wave and any thunderstorm, thus helping to maintain and improve the quality of urban life. The people of Mannheim are strengthened as urban actors by knowing the risks and dangers of extreme weather events and acting accordingly. Awareness and adaptability increase as a result of the multiplier effect of the citizens.',
+                'Unser Ziel ist eine klimaresiliente Stadtstruktur, die jeder Hitzewelle und jedem Gewitter standhält und somit dem Erhalt und der Verbesserung der städtischen Lebensqualität dient. Die Mannheimerinnen und Mannheimer werden als städtische Akteurinnen und Akteure gestärkt, indem sie Risiken und Gefahren von Extremwetterereignissen kennen und dementsprechend vorsorglich handeln. Das Bewusstsein und die Anpassungsfähigkeit steigen durch die Multiplikatorenwirkung durch die Bürgerinnen und Bürger.'
+              ]
+            }
+          ]
         },
         {
           key: "waste",
