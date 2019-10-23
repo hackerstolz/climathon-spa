@@ -422,6 +422,25 @@ export default {
           show: false
         },
         {
+          speakerID: "michael-thron",
+          icon: require("../../assets/speaker/speaker-michael.jpg"),
+          name: "Michael Thron",
+          i18nSubtitle: [
+            "Board member and founder of objective partner AG",
+            "Vorstand und Gründer der objective partner AG"
+          ],
+          i18nDescription: [
+            '"There is no planet B - What IT can contribute to climate protection"',
+            '"There is no planet B – Was die IT zum Klimaschutz beitragen kann"'
+          ],
+          i18nLongDescription: [
+            "Board member and founder of objective partner AG",
+            "Vorstand und Gründer der objective partner AG"
+          ],
+          female: false,
+          show: false
+        },
+        {
           speakerID: "hannah-helmke",
           icon: require("../../assets/speaker/speaker-hannah.jpg"),
           name: "Hannah Helmke",

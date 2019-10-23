@@ -71,6 +71,7 @@
             <v-img
               :src="award.img"
               max-height="128px"
+              height="128px"
               contain
               @load="reflow"
             ></v-img>

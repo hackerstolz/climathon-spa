@@ -173,6 +173,20 @@ export default {
             },
             {
               speaker: true,
+              speakerID: "michael-thron",
+              icon: require("../../assets/speaker/speaker-michael.jpg"),
+              time: "11:30",
+              i18nTitle: [
+                '"There is no planet B - What IT can contribute to climate protection"',
+                '"There is no planet B – Was die IT zum Klimaschutz beitragen kann"'
+              ],
+              i18nDescription: [
+                "Speaker: Michael Thron",
+                "Speaker: Michael Thron"
+              ]
+            },
+            {
+              speaker: true,
               speakerID: "hannah-helmke",
               icon: require("../../assets/speaker/speaker-hannah.jpg"),
               time: "12:00",
