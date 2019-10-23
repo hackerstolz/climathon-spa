@@ -473,25 +473,6 @@ export default {
           show: false
         },
         {
-          speakerID: "robert-thomann",
-          icon: require("../../assets/speaker/speaker-thomann.jpg"),
-          name: "Dr. Robert Thomann",
-          i18nSubtitle: [
-            "Innovation Manager MVV Energy AG",
-            "Innovationsmanager MVV Energie AG"
-          ],
-          i18nDescription: [
-            '"Urbanization, digitization, utilities - at the interface to the Smart City."',
-            '"Urbanisierung, Digitalisierung, Versorger – An der Nahtstelle zur Smart City."'
-          ],
-          i18nLongDescription: [
-            "Dr. Robert Thomann is Innovation Manager at MVV Energie AG in Mannheim. There he is responsible for various research projects, including the E-Energy project Modellstadt Mannheim and the battery research project Strombank. He also represents MVV Energie on the Executive Board of the Mannheim Smart Production Initiative (Industry 4.0), StoREgio Energiespeichersysteme e.V. and Smart Grids-Plattform Baden-Württemberg e.V. Before joining MVV Energie, he headed the Innovation and Patents division at Carl Zeiss Vision. Dr. Robert Thomann started his career at tesa scribos GmbH, a start-up of the University of Mannheim, which offers technical solutions for product protection and product tracking and is now a wholly-owned subsidiary of tesa SE.",
-            "Dr. Robert Thomann ist Innovationsmanager der MVV Energie AG in Mannheim. Dort verantwortet er verschiedene Forschungsprojekte unter anderem das E-Energy Projekt Modellstadt Mannheim und das Batterieforschungsprojekt Strombank. Daneben sitzt er als Vertreter der MVV Energie im Executive Board der Initiative Smart Produktion Mannheim (Industrie 4.0), StoREgio Energiespeichersysteme e.V. und Smart Grids-Plattform Baden-Württemberg e.V. Vor seiner Tätigkeit bei der MVV Energie leitete er den Bereich Innovation und Patente bei der Carl Zeiss Vision. Dr. Robert Thomann startete seine berufliche Laufbahn bei der tesa scribos GmbH, einem Start-up der Universität Mannheim, das technischen Lösungen zum Produktschutz und Produktverfolgung anbietet und heute eine 100-ige Tochter der tesa SE ist."
-          ],
-          female: false,
-          show: false
-        },
-        {
           speakerID: "daniel-erlemeier",
           icon: require("../../assets/speaker/speaker-daniel.jpg"),
           name: "Daniel Erlemeier",
@@ -506,6 +487,25 @@ export default {
           i18nLongDescription: [
             "Daniel Erlemeier is working for Borneo Orangutan Survival (BOS) and is responsible for donor communications as well as the organizations educational programs. His motto: In order to be able to communicate you need to understand first. Therefore, he volunteered eight weeks in the projects of BOS in Indonesia that include two rescue centers for more than 500 orphaned orangutans. But what keeps him awake at night even more than orangutan babies, is the shocking view of the degraded peatland of Mawas: A dire landscape that used to be vivid rainforest and home of wild orangutans.",
             "Daniel Erlemeier arbeitet für Borneo Orang-Utan Survival (BOS) und ist verantwortlich für die Spenderkommunikation sowie die Bildungsprogramme der Organisation. Sein Motto: Um kommunizieren zu können, muss man zuerst verstehen. Deshalb engagierte er sich ehrenamtlich acht Wochen lang in den Projekten von BOS in Indonesien, darunter zwei Rettungszentren für mehr als 500 verwaiste Orang-Utans. Aber was ihn nachts noch mehr wach hält als Orang-Utan-Babys, ist der schockierende Blick auf das degradierte Moorland von Mawas: Eine entsetzliche Landschaft, die einst lebendiger Regenwald war und Heimat wilder Orang-Utans."
+          ],
+          female: false,
+          show: false
+        },
+        {
+          speakerID: "robert-thomann",
+          icon: require("../../assets/speaker/speaker-thomann.jpg"),
+          name: "Dr. Robert Thomann",
+          i18nSubtitle: [
+            "Innovation Manager MVV Energy AG",
+            "Innovationsmanager MVV Energie AG"
+          ],
+          i18nDescription: [
+            '"Urbanization, digitization, utilities - at the interface to the Smart City."',
+            '"Urbanisierung, Digitalisierung, Versorger – An der Nahtstelle zur Smart City."'
+          ],
+          i18nLongDescription: [
+            "Dr. Robert Thomann is Innovation Manager at MVV Energie AG in Mannheim. There he is responsible for various research projects, including the E-Energy project Modellstadt Mannheim and the battery research project Strombank. He also represents MVV Energie on the Executive Board of the Mannheim Smart Production Initiative (Industry 4.0), StoREgio Energiespeichersysteme e.V. and Smart Grids-Plattform Baden-Württemberg e.V. Before joining MVV Energie, he headed the Innovation and Patents division at Carl Zeiss Vision. Dr. Robert Thomann started his career at tesa scribos GmbH, a start-up of the University of Mannheim, which offers technical solutions for product protection and product tracking and is now a wholly-owned subsidiary of tesa SE.",
+            "Dr. Robert Thomann ist Innovationsmanager der MVV Energie AG in Mannheim. Dort verantwortet er verschiedene Forschungsprojekte unter anderem das E-Energy Projekt Modellstadt Mannheim und das Batterieforschungsprojekt Strombank. Daneben sitzt er als Vertreter der MVV Energie im Executive Board der Initiative Smart Produktion Mannheim (Industrie 4.0), StoREgio Energiespeichersysteme e.V. und Smart Grids-Plattform Baden-Württemberg e.V. Vor seiner Tätigkeit bei der MVV Energie leitete er den Bereich Innovation und Patente bei der Carl Zeiss Vision. Dr. Robert Thomann startete seine berufliche Laufbahn bei der tesa scribos GmbH, einem Start-up der Universität Mannheim, das technischen Lösungen zum Produktschutz und Produktverfolgung anbietet und heute eine 100-ige Tochter der tesa SE ist."
           ],
           female: false,
           show: false
