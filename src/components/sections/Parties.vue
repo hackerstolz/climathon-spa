@@ -233,6 +233,12 @@ export default {
           challengeCategoryID: 0
         },
         {
+          icon: require("../../assets/sponsor/sponsor-camelot.jpg"),
+          name: "CAMELOT Management Consultants AG",
+          challenge: true,
+          challengeCategoryID: null
+        },
+        {
           icon: require("../../assets/sponsor/sponsor-valantic.jpg"),
           name: "valantic",
           challenge: false,
