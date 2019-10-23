@@ -176,6 +176,17 @@ export default {
             },
             {
               speaker: true,
+              speakerID: "jonas-wagner",
+              icon: require("../../assets/speaker/speaker-wagner.jpg"),
+              time: "11:00",
+              i18nTitle: ['"Mission to Zero"', '"Mission to Zero"'],
+              i18nDescription: [
+                "Speaker: Jonas Wagner",
+                "Speaker: Jonas Wagner"
+              ]
+            },
+            {
+              speaker: true,
               speakerID: "michael-thron",
               icon: require("../../assets/speaker/speaker-michael.jpg"),
               time: "11:30",

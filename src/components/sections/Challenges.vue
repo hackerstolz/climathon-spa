@@ -591,7 +591,10 @@ export default {
           challenges: [
             {
               type: CHALLENGE_TYPE.CITY,
-              i18nAuthor: ["City of Mannheim - Climate Protection Control Centre", "Stadt Mannheim – Klimaschutzleitstelle"],
+              i18nAuthor: [
+                "City of Mannheim - Climate Protection Control Centre",
+                "Stadt Mannheim – Klimaschutzleitstelle"
+              ],
               i18nTitle: [
                 "How can we sensitize people in Mannheim to the risks of extreme weather events and motivate them to take precautions themselves?",
                 "Wie können wir Mannheimerinnen und Mannheimer für die Risiken von Extremwetterereignissen sensibilisieren und sie zur Eigenvorsorge motivieren?"
@@ -605,8 +608,8 @@ export default {
                 "Um unsere Stadt widerstandsfähiger gegen Extremwetterereignisse zu machen, suchen wir nach kreativen Lösungen, die Stadtgesellschaft für die Folgen des Klimawandels zu sensibilisieren und zu Anpassungsmöglichkeiten in relevanten Bereichen zu informieren, damit sie dann selbst aktiv werden können. Mögliche Handlungsfelder sind:<ul class='list'><li>Öffentliche Gesundheit und soziale Infrastruktur</li><li>Stadtgesellschaft und Stadtstruktur</li><li>Verkehrswesen und Luftqualität</li><li>Siedlungswasserwirtschaft</li><li>Gebäude und Baumaterialien</li><li>Industrie, Gewerbe und Tourismus</li><li>Grünflächen, Land- und Fortwirtschaft, Biodiversität</li></ul>"
               ],
               i18nVision: [
-                'Our goal is a climate-friendly urban structure that can withstand any heat wave and any thunderstorm, thus helping to maintain and improve the quality of urban life. The people of Mannheim are strengthened as urban actors by knowing the risks and dangers of extreme weather events and acting accordingly. Awareness and adaptability increase as a result of the multiplier effect of the citizens.',
-                'Unser Ziel ist eine klimaresiliente Stadtstruktur, die jeder Hitzewelle und jedem Gewitter standhält und somit dem Erhalt und der Verbesserung der städtischen Lebensqualität dient. Die Mannheimerinnen und Mannheimer werden als städtische Akteurinnen und Akteure gestärkt, indem sie Risiken und Gefahren von Extremwetterereignissen kennen und dementsprechend vorsorglich handeln. Das Bewusstsein und die Anpassungsfähigkeit steigen durch die Multiplikatorenwirkung durch die Bürgerinnen und Bürger.'
+                "Our goal is a climate-friendly urban structure that can withstand any heat wave and any thunderstorm, thus helping to maintain and improve the quality of urban life. The people of Mannheim are strengthened as urban actors by knowing the risks and dangers of extreme weather events and acting accordingly. Awareness and adaptability increase as a result of the multiplier effect of the citizens.",
+                "Unser Ziel ist eine klimaresiliente Stadtstruktur, die jeder Hitzewelle und jedem Gewitter standhält und somit dem Erhalt und der Verbesserung der städtischen Lebensqualität dient. Die Mannheimerinnen und Mannheimer werden als städtische Akteurinnen und Akteure gestärkt, indem sie Risiken und Gefahren von Extremwetterereignissen kennen und dementsprechend vorsorglich handeln. Das Bewusstsein und die Anpassungsfähigkeit steigen durch die Multiplikatorenwirkung durch die Bürgerinnen und Bürger."
               ]
             }
           ]

@@ -422,6 +422,19 @@ export default {
           show: false
         },
         {
+          speakerID: "jonas-wagner",
+          icon: require("../../assets/speaker/speaker-wagner.jpg"),
+          name: "Jonas Wagner",
+          i18nSubtitle: ["ABB AG", "ABB AG"],
+          i18nDescription: ['"Mission to Zero"', '"Mission to Zero"'],
+          i18nLongDescription: [
+            "My goal is for everyone to do exactly what they do best. I studied dual project engineering at ABB. There I am in sales and support companies with OPTIMAX as an energy management solution on their way to saving energy costs and making their electricity purchases CO2-neutral. I am also an independent financial planner with start-up experience and a strong interest in personal development. I wish all participants lots of fun and success over the weekend - let's bundle our energy, create great things and drive change.",
+            "Mein Ziel ist es, dass jeder nur genau das macht, was er am besten kann. Ich habe dual Projekt Engineering bei ABB studiert. Dort bin ich im Vertrieb und unterstütze Firmen mit OPTIMAX als Lösung für Energiemanagement auf dem Weg, Energiekosten zu sparen und ihren Strombezug CO2-neutral zu gestalten. Daneben bin ich selbstständiger Finanzplaner mit Gründererfahrung und starkem Interesse an persönlicher Entwicklung. Allen Teilnehmern wünsche ich an dem Wochenende viel Spaß und Erfolg - lasst uns unsere Energie bündeln, Großes schaffen und Veränderung treiben."
+          ],
+          female: false,
+          show: false
+        },
+        {
           speakerID: "michael-thron",
           icon: require("../../assets/speaker/speaker-michael.jpg"),
           name: "Michael Thron",
