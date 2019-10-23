@@ -122,7 +122,10 @@ export default {
             {
               icon: require("../../assets/flat-icon-schedule-batch.svg"),
               time: "08:30",
-              i18nTitle: ["Registration & Onboarding", "Registrierung & Onboarding"],
+              i18nTitle: [
+                "Registration & Onboarding",
+                "Registrierung & Onboarding"
+              ],
               i18nDescription: [
                 "No worries, for all people not coming for the talks, registration will be open until 15:00.",
                 "Keine Sorge, für alle, die nicht zu den Vorträgen kommen, die Anmeldung ist bis 15:00 Uhr geöffnet."
@@ -382,7 +385,7 @@ export default {
               // link to climathon site
               i18nDescription: [
                 "We know, most of the work happens the 10 minutes before the deadline. But don’t forget to publish the documentation of your solution here.",
-                "Wir wissen, dass der größte Teil der Arbeit in 10 Minuten vor dem Termin stattfindet. Aber vergesse nicht, die Dokumentation deiner Lösung hier zu veröffentlichen."
+                "Wir wissen, der größte Teil der Arbeit findet 10 Minuten vor der Deadline statt. Aber vergesse nicht, die Dokumentation deiner Lösung hier zu veröffentlichen."
               ],
               actions: [
                 {
@@ -422,8 +425,8 @@ export default {
               time: "15:00",
               i18nTitle: ["Meet the Winners", "Treffe die Gewinner"],
               i18nDescription: [
-                "Don’t forget to exchange numbers with your new friends. As a small GOod Bye Snack we offer our Hackathon Classic: Vegane Çiğ Köfte Happchen. Also and still something, the ceremony is accompanied by the music duo Enjoy.",
-                "Vergiss nicht, Nummern mit deinen neuen Freunden auszutauschen. Als kleinen Good Bye Snack gibt es unseren Hackathon Klassiker: Vegane Çiğ Köfte Häppchen. Auch und noch etwas, begleitet wird die Zeremonie vom Musikduo Enjoy."
+                "Don’t forget to exchange numbers with your new friends. As a small GOod Bye Snack we offer our Hackathon Classic: Vegane Çiğ Köfte Happchen. Oh I almost forgot, the ceremony is accompanied by the music duo Enjoy.",
+                "Vergiss nicht, Nummern mit deinen neuen Freunden auszutauschen. Als kleinen Good Bye Snack gibt es unseren Hackathon Klassiker: Vegane Çiğ Köfte Häppchen. Ach und noch etwas, begleitet wird die Zeremonie vom Musikduo Enjoy."
               ]
             }
           ]
