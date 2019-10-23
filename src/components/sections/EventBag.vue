@@ -156,7 +156,7 @@ export default {
     "saddleProtectionBag": "saddle protection",
     "saddleProtectionBagDescription": "A saddle protector made of recycled plastic. Thanks to valantic.",
     "seedbomb": "Seedbomb",
-    "seedbombDescription": "A sea bomb for guerilla gardening, throwing into nature, waiting for rain and flowers. Thanks to Onwerk.",
+    "seedbombDescription": "A seedbomb for guerilla gardening, throwing into nature, waiting for rain and flowers. Thanks to Onwerk.",
     "sticker": "Sticker",
     "stickerDescription": "Climathon sticker for your laptop, smartphone cover or other favorite items. Unfortunately not water and UV resistant, but 100% vegan and compostable (we trust the manufacturer's specifications)."
   },
