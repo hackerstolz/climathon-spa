@@ -5,7 +5,10 @@
       <v-card class="card pa-3 mb-4" width="100%" color="info" flat>
         <!-- <h3 class="mb-1">{{ $t(`awards.${award.key}.title`) }}</h3>
         <h4 class="mb-3">{{ $t(`awards.${award.key}.place`) }}</h4> -->
-        <v-img :src="require('../../assets/event/location.svg')"></v-img>
+        <v-img
+          class="room-plan"
+          :src="require('../../assets/event/location.svg')"
+        ></v-img>
         <!-- <p v-html="'hallo'"></p> -->
       </v-card>
     </v-container>
@@ -88,4 +91,8 @@ section
       letter-spacing 1px
       text-align center
       color rgba(255, 255, 255, 0.8)
+
+    .room-plan
+      border 1px solid #ffffff
+      border-radius 4px
 </style>
