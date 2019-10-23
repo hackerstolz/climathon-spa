@@ -934,6 +934,20 @@ export default {
             "Freitag 18:00h - 22:00h & Samstag 10:00h - 18:00h"
           ]
         },
+        {
+          icon: require("../../assets/mentor/mentor-allbach.jpg"),
+          name: "Dr. Benjamin Allbach",
+          category: MENTOR_CATEGORY.EXPERT,
+          i18nOrganisation: ["GBG - Mannheimer housing company ltd.", "GBG - Mannheimer Wohnungsbaugesellschaft mbH"],
+          i18nExpertise: [
+            "Sustainability (Urban Climatology, Urban Planning, IoT)",
+            "Nachhaltigkeit (Stadtklimatologie, Stadtplanung, IoT)"
+          ],
+          i18nAvailability: [
+            "Friday 18:00h - 20:00h & Saturday 10:00h - 12:00h",
+            "Freitag 18:00h - 20:00h & Samstag 10:00h - 12:00h"
+          ]
+        },
 
         // PITCH TRAINER
         {
