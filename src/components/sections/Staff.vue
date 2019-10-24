@@ -938,7 +938,10 @@ export default {
           icon: require("../../assets/mentor/mentor-allbach.jpg"),
           name: "Dr. Benjamin Allbach",
           category: MENTOR_CATEGORY.EXPERT,
-          i18nOrganisation: ["GBG - Mannheimer housing company ltd.", "GBG - Mannheimer Wohnungsbaugesellschaft mbH"],
+          i18nOrganisation: [
+            "GBG - Mannheimer housing company ltd.",
+            "GBG - Mannheimer Wohnungsbaugesellschaft mbH"
+          ],
           i18nExpertise: [
             "Sustainability (Urban Climatology, Urban Planning, IoT)",
             "Nachhaltigkeit (Stadtklimatologie, Stadtplanung, IoT)"
