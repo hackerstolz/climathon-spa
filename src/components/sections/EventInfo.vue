@@ -18,7 +18,7 @@
             flat
           >
             <h3 class="mb-3">{{ $t("wlan") }}</h3>
-            <p class="mb-3">{{ $t("wlanSSID") }}</p>
+            <p class="mb-3" v-html="$t('wlanSSID')"></p>
             <p class="mb-3">{{ $t("wlanPassword") }}</p>
           </v-card>
         </stack-item>
@@ -320,7 +320,7 @@ export default {
     "hashtagCopySuccess": "You just copied '{hashtag}'.",
     "snackbarClose": "Close",
     "wlan": "WLAN • Your gate to productivity",
-    "wlanSSID": "SSID: Pfalzkom MANet",
+    "wlanSSID": "SSID: <span class='code'>MAFINEX by Pfalzkom MAnet</span>",
     "wlanPassword": "Password: There is no password.",
     "joinSlack": "Join Climathon Community",
     "joinSlackDescription": "Here on Slack are all participants and the organization team, exchange yourself, ask questions, stay informed 24/7.",
@@ -347,7 +347,7 @@ export default {
     "hashtagCopySuccess": "Du hast \"{hashtag}\" kopiert.",
     "snackbarClose": "Schliessen",
     "wlan": "WLAN • Dein Zugang zur Produktivität",
-    "wlanSSID": "SSID: Pfalzkom MANet",
+    "wlanSSID": "SSID: <span class='code'>MAFINEX by Pfalzkom MAnet</span>",
     "wlanPassword": "Passwort: Es gibt kein Passwort.",
     "joinSlack": "Climathon Community beitreten",
     "joinSlackDescription": "Hier auf Slack sind alle Teilnehmer und das Orga-Team, tausche dich aus, stelle Fragen, bleibe 24/7 informiert.",
@@ -411,6 +411,14 @@ section
       letter-spacing 1px
       text-align center
       color rgba(255, 255, 255, 0.8)
+      &.code
+        color rgb(255, 197, 51)
+        font-family monospace
+        font-weight 600
+        background rgba(255,255,255,0.2)
+        padding 2px 8px
+        display inline-block
+        border-radius 4px
     .onboarding
       font-family Gagalin,sans-serif
       font-weight 400
