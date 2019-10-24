@@ -204,6 +204,16 @@
               <v-icon light left>local_offer</v-icon>
               {{ $t("badgeGreen").toUpperCase() }}
             </v-chip>
+            <v-chip
+              class="ma-2 tags"
+              color="black"
+              label
+              :large="!isMobile"
+              text-color="white"
+            >
+              <v-icon left>local_offer</v-icon>
+              {{ $t("badgeGreen").toUpperCase() }}
+            </v-chip>
           </v-card>
         </stack-item>
 
