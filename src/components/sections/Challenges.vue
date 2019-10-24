@@ -616,8 +616,8 @@ export default {
                 "Wie können wir Mannheimerinnen und Mannheimer für die Risiken von Extremwetterereignissen sensibilisieren und sie zur Eigenvorsorge motivieren?"
               ],
               i18nSummary: [
-                "In recent decades, extreme weather events such as heat waves, cold waves, intense storms and droughts have become more frequent and more intense. Further unprecedented increases are expected, making the development of resilience an urgent need for all cities.",
-                "In den letzten Jahrzehnten sind extreme Wetterereignisse wie Hitzewellen, Kältewellen, intensive Stürme und Dürren häufiger und intensiver geworden. Es wird erwartet, dass es zu weiteren Zunahmen in noch nie dagewesenem Ausmaß kommen wird, weshalb die Entwicklung der Widerstandsfähigkeit für alle Städte ein dringender Bedarf ist."
+                "The consequences of climate change are already being felt in Mannheim. As part of the \"Adapting to climate change in Mannheim\" concept, the effects of heat and drought as well as heavy rainfall events and storms in the city were analysed and necessary fields of action derived.",
+                "Die Folgen des Klimawandels sind auch in Mannheim bereits zu spüren. Im Rahmen des Konzepts „Anpassung an den Klimawandel in Mannheim“ wurden die Auswirkungen von Hitze und Trockenheit sowie von Starkregenereignissen und Sturm in der Stadt analysiert und daraus notwendige Handlungsfelder abgeleitet."
               ],
               i18nDescription: [
                 "In order to make our city more resistant to extreme weather events, we are looking for creative solutions to sensitise urban society to the consequences of climate change and to inform them about adaptation options in relevant areas so that they can then take action themselves. Possible fields of action are:<ul class='list'><li>Public Health and Social Infrastructure</li><li>City society and city structure</li><li>Traffic and air quality</li><li>Urban water resources management</li><li>Buildings and building materials</li><li>Industry, commerce and tourism</li><li>Green areas, agriculture and forestry, biodiversity</li></ul>",
@@ -772,7 +772,7 @@ export default {
       },
       "extremeWeather": {
         "title": "Extremwetter",
-        "description": "In den letzten Jahrzehnten sind extreme Klimaereignisse wie Hitzewellen, Kältewellen, intensive Stürme und Dürren häufiger und intensiver geworden. Es wird erwartet, dass es zu weiteren Zunahmen in noch nie dagewesenem Ausmaß kommen wird, weshalb die Entwicklung der Widerstandsfähigkeit für alle Städte ein dringender Bedarf ist."
+        "description": "In den letzten Jahrzehnten sind extreme Wetterereignisse wie Hitzewellen, Kältewellen, intensive Stürme und Dürren häufiger und intensiver geworden. Es wird erwartet, dass es zu weiteren Zunahmen in noch nie dagewesenem Ausmaß kommen wird, weshalb die Entwicklung der Widerstandsfähigkeit für alle Städte ein dringender Bedarf ist."
       },
       "waste": {
         "title": "Abfallwirtschaft",
