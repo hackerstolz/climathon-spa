@@ -755,6 +755,40 @@ export default {
             "Freitag 16:00h - 19:00h"
           ]
         },
+        {
+          icon: require("../../assets/mentor/mentor-batista.jpg"),
+          name: "Catarina Batista",
+          category: MENTOR_CATEGORY.TEAM_BUILDER,
+          i18nOrganisation: [
+            "Mannheim University of Applied Sciences • inno.space Design Factory Mannheim",
+            "Hochschule Mannheim • inno.space Design Factory Mannheim"
+          ],
+          i18nExpertise: [
+            "Team Building (Human Centred Design, Passion-based Learning, Co-creation)",
+            "Team Building (Human Centred Design, Passion-based Learning, Co-creation)"
+          ],
+          i18nAvailability: [
+            "Friday 16:00h - 19:00h",
+            "Freitag 16:00h - 19:00h"
+          ]
+        },
+        {
+          icon: require("../../assets/mentor/mentor-damian.png"),
+          name: "Damian Wrobel",
+          category: MENTOR_CATEGORY.TEAM_BUILDER,
+          i18nOrganisation: [
+            "Mannheim University of Applied Sciences • inno.space Design Factory Mannheim",
+            "Hochschule Mannheim • inno.space Design Factory Mannheim"
+          ],
+          i18nExpertise: [
+            "Team Building (Human Centered Innovation, Ideation, User Research, Prototyping)",
+            "Team Building (Human Centered Innovation, Ideation, User Research, Prototyping)"
+          ],
+          i18nAvailability: [
+            "Friday 16:00h - 19:00h",
+            "Freitag 16:00h - 19:00h"
+          ]
+        },
 
         // EXPERTS
         {
