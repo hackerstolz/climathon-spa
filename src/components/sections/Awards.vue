@@ -239,6 +239,12 @@ export default {
           color: this.$vuetify.theme.info
         },
         {
+          key: "camelotPrize",
+          challengeCategoryID: 3,
+          img: require("../../assets/sponsor/sponsor-camelot.jpg"),
+          color: this.$vuetify.theme.info
+        },
+        {
           key: "rnvPrize",
           challengeCategoryID: 1,
           img: require("../../assets/sponsor/sponsor-rnv.svg"),
@@ -306,6 +312,12 @@ export default {
         "place": "Challenge Winner",
         "prize": "Stainless steel thermos from avoid waste",
         "description": "The winning team of the objective partner Challenge can win additional prizes. The winner of this Sponsor Challenge will not be determined by the main jury announced here, but by a*n representative* of the sponsor who is also a member of the jury. Each team member (max. seven) receives a bottle."
+      },
+      "camelotPrize": {
+        "title": "CAMELOT Challnege",
+        "place": "Challenge Winner",
+        "prize": "Surprise bags and Exclusive Dinner",
+        "description": "The winning team of the CAMELOT Challenge can win additional prizes. The winner of this Sponsor Challenge will not be determined by the main jury announced here, but by a*n representative* of the sponsor who is also a member of the jury. Each team member (max. seven) receives a suprise bag and an exclusive dinner."
       },
       "rnvPrize": {
         "title": "rnv Challenge",
@@ -375,6 +387,12 @@ export default {
         "place": "Challenge Sieger",
         "prize": "Edelstahl Thermosflasche von avoid waste",
         "description": "Das Sieger Team der objective partner Challenge kann zusätzliche Preise gewinnen. Der Sieger dieser Sponsor-Challenge wird nicht durch die hier angekündigte Hauptjury bestimmt, sondern durch eine*n Vertreter*in des Sponsors die/der mit in der Jury sitz. Jedes Teammitglied (max. Sieben) erhält eine Flasche."
+      },
+      "camelotPrize": {
+        "title": "CAMELOT Challnege",
+        "place": "Challenge Sieger",
+        "prize": "Überraschungs-Taschen und exklusives Dinner",
+        "description": "Das Sieger Team der CAMELOT Challenge kann zusätzliche Preise gewinnen. Der Sieger dieser Sponsor-Challenge wird nicht durch die hier angekündigte Hauptjury bestimmt, sondern durch eine*n Vertreter*in des Sponsors die/der mit in der Jury sitz. Jedes Teammitglied (max. Sieben) erhält eine Überraschungs-Tasche und ein exklusives Dinner."
       },
       "rnvPrize": {
         "title": "rnv Challenge",

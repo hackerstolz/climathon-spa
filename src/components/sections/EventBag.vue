@@ -20,7 +20,7 @@
           >
             <h3 class="mb-3">{{ $t("cup") }}</h3>
             <div class="icon">{{ "☕️" }}</div>
-            <p class="mb-3">{{ $t("cupDescription") }}</p>
+            <p class="mb-3" v-html="$t('cupDescription')"></p>
           </v-card>
         </stack-item>
 
@@ -34,7 +34,7 @@
           >
             <h3 class="mb-3">{{ $t("bottle") }}</h3>
             <div class="icon">{{ "🚰" }}</div>
-            <p class="mb-3">{{ $t("bottleDescription") }}</p>
+            <p class="mb-3" v-html="$t('bottleDescription')"></p>
           </v-card>
         </stack-item>
 
@@ -146,9 +146,9 @@ export default {
     "title": "Whats in your Bag?",
     "intro": "Unfortunately, not everyone can have a participant bag and not everyone will find all the goodies in his bag again. Why is that? Organizing a climate-neutral event is difficult. We wanted to avoid overordering, because throwing away is stupid, so there is only max. 120 of each goodie. Together with all speakers, mentors and jury members there will be far more than 120 people coming to the Climathon. But we have come up with something different: Not everyone needs saddle protection and some others already have a reusable coffee mug. In the atrium you will therefore find a large basket for sharing and giving: put things in that you don't need and take some goodies that you can use.",
     "cup": "Stay faithful to your cup cup",
-    "cupDescription": "A reusable coffee mug so you can refill at Café Agáta around the clock. Thanks to the Climate Protection Agency Mannheim.",
+    "cupDescription": "A reusable coffee mug so you can refill at Café Agáta around the clock. Thanks to the Climate Protection Agency Mannheim. <strong>Please rinse once with clear water before first use.</strong>",
     "bottle": "0,5l clip-on bottle",
-    "bottleDescription": "A glass drinking bottle with a swing stopper and enlarged mouth opening. Even if there is mate, cola and more, we want to motivate you to drink the clean Mannheim tap water.",
+    "bottleDescription": "A glass drinking bottle with a swing stopper and enlarged mouth opening. Even if there is mate, cola and more, we want to motivate you to drink the clean Mannheim tap water. <strong>Please rinse once with clear water before first use.</strong>",
     "smallBag": "Small fabric bag",
     "smallBagDescription": "A miniature fabric bag for fruit and vegetables. Thanks to the Climate Protection Agency Mannheim.",
     "postItsBag": "Post-It Blocks",
@@ -164,9 +164,9 @@ export default {
     "title": "Was ist in deiner Tasche?",
     "intro": "Leider kann nicht jeder eine Teilnehmertasche haben und nicht jeder wird alle Goodies in seiner Tasche wieder finden. Warum ist das so? Ein Klimaneutrales Event zu organisieren ist schwierig. Wir wollten Überbestellungen unbedingt vermeiden, denn wegwerfen ist blöd, daher gibt es von jedem Goodie nur max. 120. Zusammen mit allen Speakern, Mentoren und Jury-Mitgliedern werden es jedoch weit mehr als 120 Personen die zum Climathon kommen. Dafür haben wir uns etwas anderes einfallen lassen: Nicht jeder braucht einen Sattelschutz und manch andere haben bereits einen Mehrwegkaffeebecher. Im Atrium findest du daher einen großen Korb zum Teilen und Schenken: Lege Sachen rein die du nicht brauchst und bedien dich an Goodies die du gebrauchen kannst.",
     "cup": "Bleib deinem Becher Treu Becher",
-    "cupDescription": "Ein Mehrweg Kaffeebecher, damit du Rund um die Uhr bei Café Agáta nachüllen kannst. Danke an die Klimaschutzagentur Mannheim.",
+    "cupDescription": "Ein Mehrweg Kaffeebecher, damit du Rund um die Uhr bei Café Agáta nachüllen kannst. Danke an die Klimaschutzagentur Mannheim. <strong>Bitte vor dem ersten Verwenden einmal mit klarem Wasser ausspülen.</strong>",
     "bottle": "0,5l Buegelflasche",
-    "bottleDescription": "Eine Trankflasche aus Glas und mit Bügelverschluss sowie vergrößerter Mundöffnung. Auch wenn es Mate, Cola und mehr gibt, wollen wir dich motivieren das saubere Mannheimer Leitungswasser zu trinken.",
+    "bottleDescription": "Eine Trankflasche aus Glas und mit Bügelverschluss sowie vergrößerter Mundöffnung. Auch wenn es Mate, Cola und mehr gibt, wollen wir dich motivieren das saubere Mannheimer Leitungswasser zu trinken. <strong>Bitte vor dem ersten Verwenden einmal mit klarem Wasser ausspülen.</strong>",
     "smallBag": "Kleiner Stoffbeutel",
     "smallBagDescription": "Ein Stoffbeutel in Miniaturform für Obst und Gemüse. Danke an die Klimaschutzagentur Mannheim.",
     "postItsBag": "Post-It Blöcke",

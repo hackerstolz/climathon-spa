@@ -134,6 +134,79 @@
           </v-card>
         </stack-item>
 
+        <!-- BADGES -->
+        <stack-item>
+          <v-card
+            class="card pa-3"
+            width="100%"
+            color="rgba(255,255,255,0.1)"
+            flat
+          >
+            <h3 class="mb-3">{{ $t("badges") }}</h3>
+            <p class="mb-3">{{ $t("badgesDescription") }}</p>
+            <v-chip
+              class="ma-2 tags"
+              color="yellow"
+              label
+              :large="!isMobile"
+              text-color="black"
+            >
+              <v-icon light left>local_offer</v-icon>
+              {{ $t("badgeYello").toUpperCase() }}
+            </v-chip>
+            <v-chip
+              class="ma-2 tags"
+              color="red"
+              label
+              :large="!isMobile"
+              text-color="black"
+            >
+              <v-icon light left>local_offer</v-icon>
+              {{ $t("badgeRed").toUpperCase() }}
+            </v-chip>
+            <v-chip
+              class="ma-2 tags"
+              color="indigo"
+              label
+              :large="!isMobile"
+              text-color="white"
+            >
+              <v-icon left>local_offer</v-icon>
+              {{ $t("badgeIndigo").toUpperCase() }}
+            </v-chip>
+            <v-chip
+              class="ma-2 tags"
+              color="orange"
+              label
+              :large="!isMobile"
+              text-color="black"
+            >
+              <v-icon light left>local_offer</v-icon>
+              {{ $t("badgeOrange").toUpperCase() }}
+            </v-chip>
+            <v-chip
+              class="ma-2 tags"
+              color="light-blue"
+              label
+              :large="!isMobile"
+              text-color="black"
+            >
+              <v-icon light left>local_offer</v-icon>
+              {{ $t("badgeBlue").toUpperCase() }}
+            </v-chip>
+            <v-chip
+              class="ma-2 tags"
+              color="green"
+              label
+              :large="!isMobile"
+              text-color="black"
+            >
+              <v-icon light left>local_offer</v-icon>
+              {{ $t("badgeGreen").toUpperCase() }}
+            </v-chip>
+          </v-card>
+        </stack-item>
+
         <!-- MILESTONES -->
         <stack-item>
           <v-card
@@ -334,7 +407,15 @@ export default {
     "readRulesText": "1) please read the rules of the event in peace through.",
     "deadlineTeamSubmission": "2) team registration is possible until Friday midnight at the latest.",
     "deadlineSolutionSubmission": "3) Solutions can be submitted no later than Sunday 09:00h, if the submission is too late, your team can be excluded from the scoring.",
-    "codeOfConduct": "Code of Conduct"
+    "codeOfConduct": "Code of Conduct",
+    "badges": "Badge Meaning",
+    "badgesDescription": "As you may have noticed, there are different lanyard colors (these are the ribbons you wear around your neck). What these colors mean you can find here, we hope it will help you.",
+    "badgeYello": "Participant • Tech",
+    "badgeRed": "Participant • Maker",
+    "badgeIndigo": "Participant • Designer",
+    "badgeOrange": "Jury • Speaker • Mentor",
+    "badgeBlue": "Visitor",
+    "badgeGreen": "Orga"
   },
   "de": {
     "close": "Schliessen",
@@ -361,7 +442,15 @@ export default {
     "readRulesText": "1. Lest bitte die Regeln des Events in Ruhe durch.",
     "deadlineTeamSubmission": "2. Teamregistrierung ist bis spätestens Freitag Mitternacht möglich.",
     "deadlineSolutionSubmission": "3. Lösungen können bis spätestens Sonntag 09:00h eingereicht werden, erfolgt die Einreichung zu spät kann euer Team von der Wertung ausgeschlossen werden.",
-    "codeOfConduct": "Verhaltenskodex"
+    "codeOfConduct": "Verhaltenskodex",
+    "badges": "Badge Bedeutung",
+    "badgesDescription": "Wie euch vielleicht aufgefallen ist, gibt es unterschiedliche Lanyard Farben (das sind die Bänder die ihr um euren Hals tragt). Was diese Farben bedeuten findet ihr hier, wir hoffen es hilft euch weiter.",
+    "badgeYello": "Teilnehmer • Tech",
+    "badgeRed": "Teilnehmer • Maker",
+    "badgeIndigo": "Teilnehmer • Designer",
+    "badgeOrange": "Jury • Speaker • Mentor",
+    "badgeBlue": "Besucher",
+    "badgeGreen": "Orga"
   }
 }
 </i18n>
@@ -430,6 +519,8 @@ section
       font-weight 600
       letter-spacing 2px
       text-transform none
+    .tags
+      font-weight 600
 
   .snackbar
     font-family Roboto Condensed,sans-serif
