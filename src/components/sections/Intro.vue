@@ -18,7 +18,7 @@
           :time="
             simulate2050
               ? 0
-              : new Date(2028, 0, 1, 12, 0).getTime() - Date.now()
+              : Math.max(0, new Date(2028, 0, 1, 12, 0).getTime() - Date.now())
           "
           :title="$t('countdownCO2Budget')"
         />
@@ -60,7 +60,7 @@
           :time="
             simulate2050
               ? 0
-              : new Date(2019, 9, 25, 8, 30).getTime() - Date.now()
+              : Math.max(0, new Date(2019, 9, 25, 8, 30).getTime() - Date.now())
           "
           :title="$t('countdownEvent')"
         />

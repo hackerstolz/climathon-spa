@@ -205,6 +205,7 @@ export default {
         "about",
         "challenges",
         "awards",
+        "teams",
         "location",
         "schedule",
         "registration",
@@ -218,17 +219,17 @@ export default {
     };
   },
   mounted() {
-    const [section] = this.$route.path.match(/[a-z0-9]+/i) || [null];
-
     setTimeout(() => {
       // show snackbar with delay
       this.snackbar.show = true;
-
-      // nav to section initially
-      if (section) {
-        this.$scrollTo(`#${section}`);
-      }
     }, 500);
+
+    setTimeout(() => {
+      // nav to section initially
+      if (this.$route) {
+        this.routeUpdate(this.$route);
+      }
+    }, 1500);
 
     // reigster resize handler
     this.onResize();
@@ -248,6 +249,20 @@ export default {
     },
     onResize() {
       this.isMobile = window.innerWidth <= 600;
+    },
+    routeUpdate($route) {
+      if (
+        $route &&
+        ($route.name === "overview" || $route.name === "overviewDetails") &&
+        $route.params.section
+      ) {
+        this.$scrollTo(`#${$route.params.section}`);
+      }
+    }
+  },
+  watch: {
+    $route: function(value) {
+      this.routeUpdate(value);
     }
   }
 };
@@ -267,6 +282,7 @@ export default {
       "about": "About Climathon",
       "challenges": "Challenges",
       "awards": "Awards",
+      "teams": "Teams",
       "location": "Event Location",
       "schedule": "Event Schedule",
       "registration": "Registration",
@@ -305,6 +321,7 @@ export default {
       "about": "Über den Climathon",
       "challenges": "Herausforderungen",
       "awards": "Auszeichnungen",
+      "teams": "Teams",
       "location": "Austragungsort",
       "schedule": "Eventablauf",
       "registration": "Registrierung",

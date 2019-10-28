@@ -4,6 +4,7 @@
     <About id="about" themeColor="primary" :isMobile="isMobile" />
     <Challenges id="challenges" themeColor="secondary" :isMobile="isMobile" />
     <Awards id="awards" themeColor="primary" :isMobile="isMobile" />
+    <TeamOverview id="teams" themeColor="primary" :isMobile="isMobile" />
     <Location id="location" themeColor="secondary" />
     <Schedule id="schedule" themeColor="secondary" :isMobile="isMobile" />
     <Registration id="registration" themeColor="primary" :isMobile="isMobile" />
@@ -19,7 +20,7 @@
 const sectionsContext = require.context(
   "@/components/sections/",
   true,
-  /\.vue$/
+  /[^Event].*\.vue$/
 );
 
 export default {
