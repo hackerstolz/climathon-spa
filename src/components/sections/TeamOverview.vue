@@ -50,7 +50,7 @@
               {{ award.text }} </v-chip
             ><br />
             <v-btn
-              class="mt-2"
+              class="mt-3"
               width="auto"
               color="white"
               :href="winner.sulutionURL"
