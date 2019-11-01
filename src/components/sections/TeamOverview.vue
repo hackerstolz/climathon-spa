@@ -1,6 +1,55 @@
 <template>
   <section :style="{ backgroundColor: sectionColor }">
     <v-container>
+      <h2>{{ $t("prices") }}</h2>
+      <stack
+        class="mb-5"
+        ref="stack"
+        :column-min-width="320"
+        :gutter-width="24"
+        :gutter-height="24"
+        monitor-images-loaded
+      >
+        <stack-item
+          v-for="(price, i) in prices"
+          :key="i"
+          class="stack-grid-item"
+        >
+          <v-card
+            class="card pb-2"
+            width="100%"
+            color="rgba(255,255,255,0.1)"
+            flat
+          >
+            <v-img
+              class="white--text align-end mb-4"
+              :height="isMobile ? '200px' : '250px'"
+              :src="price.img"
+              @load="reflow"
+            >
+              <v-card-title
+                ><h3 class="mb-1">{{ $t(price.text) }}</h3></v-card-title
+              >
+            </v-img>
+            <v-chip
+              :class="{
+                'mr-1': true,
+                'mb-1': true,
+                tags: true,
+                winner: price.winner
+              }"
+              :color="price.color"
+              :large="!isMobile"
+              text-color="black"
+            >
+              <v-icon v-if="price.winner" light left>emoji_events</v-icon>
+              {{ price.text }}
+            </v-chip>
+            <p class="description px-2 my-4" v-html="$t(price.description)"></p>
+          </v-card>
+        </stack-item>
+      </stack>
+
       <h2>{{ $t("title") }}</h2>
       <stack
         ref="stack"
@@ -30,7 +79,7 @@
               @load="reflow"
             ></v-img>
             <p
-              class="description"
+              class="description mb-4"
               v-html="$t(winner.descriptionI18n[$i18n.locale])"
             ></p>
             <v-chip
@@ -50,7 +99,7 @@
               {{ award.text }} </v-chip
             ><br />
             <v-btn
-              class="mt-3"
+              class="mt-4"
               width="auto"
               color="white"
               :href="winner.sulutionURL"
@@ -96,6 +145,66 @@ export default {
   },
   data() {
     return {
+      prices: [
+        {
+          text: "Climate Grant Award",
+          description: "Bike Drop, 1&ONLY, LoRaWahn",
+          color: this.$vuetify.theme.warning,
+          winner: true,
+          img: require("../../assets/price/price-climategrant.jpg")
+        },
+        {
+          text: "S-HUB Award",
+          description: "1&ONLY, Zero2",
+          color: this.$vuetify.theme.warning,
+          winner: true,
+          img: require("../../assets/price/price-shub.jpg")
+        },
+        {
+          text: "ProjectTogether Award",
+          description:
+            "Escape Apocalypse, Localot, Mvua Nzuri, MeetMe, Tender, Videoclip Crashtest",
+          color: this.$vuetify.theme.warning,
+          winner: true,
+          img: require("../../assets/price/price-projecttogether.jpg")
+        },
+        {
+          text: "MVV Challenge Winner",
+          description: "LoRaWahn",
+          color: this.$vuetify.theme.info,
+          winner: true,
+          img: require("../../assets/price/price-mvv.jpg")
+        },
+        {
+          text: "CAMELOT Challenge Winner",
+          description: "1&ONLY, Zero2",
+          color: this.$vuetify.theme.info,
+          winner: true,
+          img: require("../../assets/price/price-camelot.jpg")
+        },
+        {
+          text: "objective partner Challenge Winner",
+          description: "Intel Inside",
+          color: this.$vuetify.theme.info,
+          winner: true,
+          img: require("../../assets/price/price-camelot.jpg")
+        },
+        {
+          text: "rnv Challenge",
+          description: "Bike Drop, op, Team Awesome, MaGreenLife, MeetMe",
+          color: this.$vuetify.theme.info,
+          winner: true,
+          img: require("../../assets/price/price-rnv.jpg")
+        },
+        {
+          text: "City Challenge",
+          description:
+            "Bike Drop, Zero2, Escape Apocalypse, Extremwetter, MaGreenLife, Localot, MeetMe, Tender, Plantzilla",
+          color: this.$vuetify.theme.error,
+          winner: true,
+          img: require("../../assets/price/price-city.jpg")
+        }
+      ],
       winners: [
         {
           title: "Bike Drop",
@@ -465,10 +574,12 @@ export default {
 {
   "en": {
     "title": "Teams",
+    "prices": "Prize Categories",
     "btnShowSolution": "Show Solution"
   },
   "de": {
     "title": "Teams",
+    "prices": "Preiskategorien",
     "btnShowSolution": "Lösung anzeigen"
   }
 }
