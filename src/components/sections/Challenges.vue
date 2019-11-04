@@ -678,7 +678,7 @@ export default {
 {
   "en": {
     "title": "Challenges",
-    "intro": "Wow, the first challenges are already online, but many will follow. Here you will find a list of all categories for which challenges can be offered, highlighted in green the categories for which at least one challenge already exists. Why is this important? At the Climathon you have to decide as a team for <strong>ONE CHALLENGE</strong> on which you want to work and at the end submit your solution. Only in a few exceptions where it makes sense, a solution for <strong>two</strong> challenges can be offered.",
+    "intro": "Here you will find a list of all categories for which challenges can be offered, highlighted in green the categories for which at least one challenge already exists. Why is this important? At the Climathon you have to decide as a team for <strong>ONE CHALLENGE</strong> on which you want to work and at the end submit your solution. Only in a few exceptions where it makes sense, a solution for <strong>two</strong> challenges can be offered.",
     "titleSubmit": "Submit your own challenge",
     "submitText": "I bet you can come up with something so much more innovative than we do! Go ahead and submit your own challenge to complete our puzzle – if we agree with it, it will be listed on this side as well. This also means that other teams can work on solutions for your challenge, even if you decide spontaneously for another challenge.",
     "submitDeadline": "Submit deadline is Friday 25. Oct 15:00",
@@ -744,7 +744,7 @@ export default {
   },
   "de": {
     "title": "Herausforderungen",
-    "intro": "Wow, die ersten Challenges sind bereits online, aber viele werden noch folgen. Hier findest du aufgelistet alle Kategorien zu denen Challenges angeboten werden können, grün hervorgehoben die Kategorien zu denen bereits mind. eine Challenge existiert. Warum das wichtig ist? Auf dem Climathon musst du dich als Team für <strong>EINE CHALLENGE</strong> entscheiden an der du arbeiten möchtest und am Ende deine Lösung zu einreichst. Nur in wenigen Ausnahmen bei denen es Sinn macht, kann eine Lösung für <strong>zwei</strong> Challenges angeboten werden.",
+    "intro": "Hier findest du aufgelistet alle Kategorien zu denen Challenges angeboten werden können, grün hervorgehoben die Kategorien zu denen bereits mind. eine Challenge existiert. Warum das wichtig ist? Auf dem Climathon musst du dich als Team für <strong>EINE CHALLENGE</strong> entscheiden an der du arbeiten möchtest und am Ende deine Lösung zu einreichst. Nur in wenigen Ausnahmen bei denen es Sinn macht, kann eine Lösung für <strong>zwei</strong> Challenges angeboten werden.",
     "titleSubmit": "Reichen Sie Ihre eigene Herausforderung ein",
     "submitText": "Ich wette, du kannst dir etwas so viel Innovativeres einfallen lassen als wir! Reiche deine eigene Herausforderung ein – wenn wir diese genehmigen, wird diese auch auf der Climathon Seite aufgeführt. Das bedeutet auch, dass andere Teams an Lösungen für deine Herausforderung arbeiten können, auch wenn du dich auf dem Event spontan für eine andere Herausforderung entscheiden solltest.",
     "submitDeadline": "Einsendeschluss ist Freitag, der 25. Okt 15:00",

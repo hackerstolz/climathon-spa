@@ -35,8 +35,9 @@
         </v-flex>
       </v-layout>
       <p class="highlightText my-3">{{ $t("highlightText") }}</p>
-      <p class="outroText my-5">{{ $t("outroText") }}</p>
+      <p v-if="!postEvent" class="outroText my-5">{{ $t("outroText") }}</p>
       <v-card
+        v-if="!postEvent"
         class="my-5"
         v-scroll-to="'#faq'"
         color="transparent"
@@ -48,6 +49,7 @@
       </v-card>
       <v-layout row align-center justify-center wrap>
         <v-btn
+          v-if="!postEvent"
           class="mt-2"
           width="auto"
           href="https://hackerstolz.mptickets.com"
@@ -73,6 +75,7 @@
         </v-btn>
       </v-layout>
       <v-btn
+        v-if="!postEvent"
         class="buy-tickets mt-4 white--text"
         width="auto"
         href="https://hackerstolz.mptickets.com"
@@ -105,6 +108,7 @@ export default {
   },
   data() {
     return {
+      postEvent: true,
       types: [
         {
           icon: require("../../assets/flat-icon-terminal.svg"),

@@ -255,8 +255,8 @@ export default {
           ],
           descriptionI18n: {
             de:
-              "BeniT - Eine Plattform zur Beschleunigung der industriellen Symbiose.",
-            en: "BeniT - A platform to accelerate Industrial symbiosis."
+              "BendiT - Eine Plattform zur Beschleunigung der industriellen Symbiose.",
+            en: "BendiT - A platform to accelerate Industrial symbiosis."
           },
           sulutionURL:
             "https://climathon.climate-kic.org/en/solutions/benit-the-industrial-symbiosis-accelerator"

@@ -33,14 +33,14 @@
           >
             {{ $t("button.contactus") }}
           </v-btn>
-          <v-btn
+          <!-- <v-btn
             color="info"
             target="_blank"
             href="https://betterplace.org/p71036"
             flat
           >
             {{ $t("button.donate") }}
-          </v-btn>
+          </v-btn> -->
         </v-layout>
         <v-list v-if="$route.name !== 'event'">
           <template v-for="(item, i) in menu">
@@ -120,7 +120,7 @@
           <v-icon v-if="isMobile">email</v-icon>
         </v-btn>
         <v-btn
-          v-if="$route.name !== 'event'"
+          v-if="$route.name !== 'event' && !postEvent"
           :class="{ 'app-btn-register': true, large: !isMobile }"
           color="success"
           :small="isMobile"
@@ -185,6 +185,7 @@ export default {
   name: "App",
   data() {
     return {
+      postEvent: true,
       isMobile: false,
       langs: ["en", "de"],
       darkMode: true,

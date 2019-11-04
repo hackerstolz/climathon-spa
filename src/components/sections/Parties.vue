@@ -2,8 +2,12 @@
   <section :style="{ backgroundColor: sectionColor }">
     <v-container>
       <h2>{{ $t("sponsorsTitle") }}</h2>
-      <p class="intro-sponsors mt-5 mb-4" v-html="$t('introSponsors')"></p>
-      <v-btn
+      <p
+        v-if="!postEvent"
+        class="intro-sponsors mt-5 mb-4"
+        v-html="$t('introSponsors')"
+      ></p>
+      <!-- <v-btn
         class="mb-5"
         color="info"
         target="_blank"
@@ -13,7 +17,7 @@
       >
         {{ $t("button.donate") }}
         <v-icon right>card_giftcard</v-icon>
-      </v-btn>
+      </v-btn> -->
       <v-img
         v-if="sponsors.length === 0"
         class="icon-large mt-4"
@@ -207,6 +211,7 @@ export default {
   },
   data() {
     return {
+      postEvent: true,
       sponsors: [
         {
           icon: require("../../assets/sponsor/sponsor-op.svg"),

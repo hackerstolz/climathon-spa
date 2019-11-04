@@ -2,7 +2,11 @@
   <section :style="{ backgroundColor: sectionColor }">
     <v-container>
       <h2 id="speaker">{{ $t("speakersTitle") }}</h2>
-      <p class="introSpeakers my-5" v-html="$t('introSpeakers')"></p>
+      <p
+        v-if="!postEvent"
+        class="introSpeakers my-5"
+        v-html="$t('introSpeakers')"
+      ></p>
       <v-img
         v-if="speakers.length === 0"
         class="icon-large mt-4"
@@ -137,7 +141,7 @@
       </v-layout>
 
       <h2 id="jury">{{ $t("juryTitle") }}</h2>
-      <p class="introJury my-5" v-html="$t('introJury')"></p>
+      <p v-if="!postEvent" class="introJury my-5" v-html="$t('introJury')"></p>
       <v-layout
         v-if="jury.length > 0"
         class="my-4"
@@ -252,8 +256,19 @@
       </v-layout>
 
       <h2 id="mentor">{{ $t("mentorsTitle") }}</h2>
-      <p class="introMentors my-5" v-html="$t('introMentors')"></p>
-      <v-layout class="mb-5" row align-center justify-center wrap>
+      <p
+        v-if="!postEvent"
+        class="introMentors my-5"
+        v-html="$t('introMentors')"
+      ></p>
+      <v-layout
+        v-if="!postEvent"
+        class="mb-5"
+        row
+        align-center
+        justify-center
+        wrap
+      >
         <v-btn
           class="mt-2"
           width="auto"
@@ -385,6 +400,7 @@ export default {
   },
   data() {
     return {
+      postEvent: true,
       speakers: [
         {
           speakerID: "michael-groetsch",
